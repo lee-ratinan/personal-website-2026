@@ -71,11 +71,11 @@ return [
             ]
         ],
         'resume'    => [
-            'title'          => 'Resume',
-            'experience'     => [
-                'label'     => 'Experience',
-                'title'     => 'Professional Experience',
-                'records'   => [
+            'title'      => 'Resume',
+            'experience' => [
+                'label'   => 'Experience',
+                'title'   => 'Professional Experience',
+                'records' => [
                     '1' => [
                         'current'   => 'Current',
                         'title'     => 'Technical Team Leader, Project Manager',
@@ -115,10 +115,10 @@ return [
                     ]
                 ]
             ],
-            'education'      => [
-                'label'     => 'Education',
-                'title'     => 'Academic Background',
-                'records'   => [
+            'education'  => [
+                'label'   => 'Education',
+                'title'   => 'Academic Background',
+                'records' => [
                     'certificates' => [
                         'label' => 'Certificates',
                         'years' => '2024 - 2025',
@@ -152,7 +152,29 @@ return [
             ]
         ],
         'services'  => [
-            'title' => 'Services'
+            'title'         => 'Services',
+            'paragraph'     => 'Learn more about my expertise!',
+            'list'          => [
+                '0' => [
+                    'item'        => 'Leadership &amp; Management',
+                    'description' => 'Guiding teams toward clear, confident, happy delivery.'
+                ],
+                '1' => [
+                    'item'        => 'System Analysis &amp; Design',
+                    'description' => 'Turning needs into clean, scalable technical blueprints.'
+                ],
+                '2' => [
+                    'item'        => 'Software Development',
+                    'description' => 'Building reliable, high-performance features end to end.'
+                ],
+                '3' => [
+                    'item'        => 'Team Coaching',
+                    'description' => 'Elevating teams with practical, empowering agile habits.'
+                ],
+            ],
+            'cta'           => 'Hire Me',
+            'cta-title'     => 'Transform Your Vision Into Reality',
+            'cta-paragraph' => 'Learn how to bring your ideas to life with innovative solutions tailored to your needs'
         ],
         'portfolio' => [
             'title' => 'Portfolio'

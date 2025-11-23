@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="<?= $locale ?>">
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Craftivo Bootstrap Template</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
+    <title><?= lang('Home.system.pages.home') ?> - <?= lang('Home.system.website-name') ?></title>
+    <meta name="description" content="<?= lang('Home.system.seo.description') ?>">
+    <meta name="keywords" content="<?= lang('Home.system.seo.keywords') ?>">
     <!-- Favicons -->
-    <link href="http://127.0.0.1:8888/2026/public/assets/img/favicon.png" rel="icon">
-    <link href="http://127.0.0.1:8888/2026/public/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+    <link href="<?= base_url('assets/img/favicon.png') ?>" rel="icon">
+    <link href="<?= base_url('assets/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
     <!-- Vendor CSS Files -->
-    <link href="http://127.0.0.1:8888/2026/public/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://127.0.0.1:8888/2026/public/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="http://127.0.0.1:8888/2026/public/assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="http://127.0.0.1:8888/2026/public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="http://127.0.0.1:8888/2026/public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+    <link href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/vendor/bootstrap-icons/bootstrap-icons.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/vendor/aos/aos.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/vendor/glightbox/css/glightbox.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet') ?>">
     <!-- Main CSS File -->
-    <link href="http://127.0.0.1:8888/2026/public/assets/css/main.css" rel="stylesheet">
-
+    <link href="<?= base_url('assets/css/main.css') ?>" rel="stylesheet">
     <!-- =======================================================
     * Template Name: Craftivo
     * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/
@@ -35,76 +29,45 @@
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
 </head>
-
 <body class="index-page">
-
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <a href="<?= base_url($locale) ?>" class="logo d-flex align-items-center me-auto">
             <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="http://127.0.0.1:8888/2026/public/assets/img/logo.webp" alt=""> -->
-            <h1 class="sitename">Craftivo</h1>
+            <!-- <img src="<?= base_url('assets/img/logo.webp') ?>" alt=""> -->
+            <h1 class="sitename fw-bold"><?= lang('Home.system.site-name-head') ?></h1>
         </a>
-
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                                <li><a href="#">Deep Dropdown 1</a></li>
-                                <li><a href="#">Deep Dropdown 2</a></li>
-                                <li><a href="#">Deep Dropdown 3</a></li>
-                                <li><a href="#">Deep Dropdown 4</a></li>
-                                <li><a href="#">Deep Dropdown 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hero" class="active"><?= lang('Home.sections.home.title') ?></a></li>
+                <li><a href="#about"><?= lang('Home.sections.about.title') ?></a></li>
+                <li><a href="#resume"><?= lang('Home.sections.resume.title') ?></a></li>
+                <li><a href="#services"><?= lang('Home.sections.services.title') ?></a></li>
+                <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
+                <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <a class="btn-getstarted" href="#about">Get Started</a>
-
     </div>
 </header>
-
 <main class="main">
-
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-        <img src="http://127.0.0.1:8888/2026/public/assets/img/profile/profile-bg-5.webp" alt="" data-aos="fade-in">
-
+        <img src="<?= base_url('assets/img/profile/profile-bg-5.webp') ?>" alt="" data-aos="fade-in">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2>Hi, I'm Alex Morgan</h2>
-                    <p>I'm a <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+                    <h2><?= lang('Home.sections.home.greetings') ?></h2>
+                    <p><?= lang('Home.sections.home.i-am-a') ?> <span class="typed" data-typed-items="<?= lang('Home.sections.home.occupations') ?>"></span><span class="typed-cursor" aria-hidden="true"></span></p>
                     <div class="social-links">
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/ratinanlee" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/lee-ratinan" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.instagram.com/ratinanlee/" target="_blank"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-
     </section><!-- /Hero Section -->
-
     <!-- About Section -->
     <section id="about" class="about section">
 
@@ -122,7 +85,7 @@
                     <div class="profile-card">
                         <div class="profile-header">
                             <div class="profile-avatar">
-                                <img src="http://127.0.0.1:8888/2026/public/assets/img/profile/profile-square-3.webp" class="img-fluid" alt="">
+                                <img src="<?= base_url('assets/img/profile/profile-square-3.webp') ?>" class="img-fluid" alt="">
                                 <div class="status-indicator"></div>
                             </div>
                             <h3>Jordan Mitchell</h3>
@@ -225,7 +188,7 @@
                             </div>
                         </div>
 
-                        <div class="skills-showcase" data-aos="fade-up" data-aos-delay="250">
+                        <!-- <div class="skills-showcase" data-aos="fade-up" data-aos-delay="250">
                             <div class="section-tag">Core Skills</div>
                             <h3>Technical Proficiency</h3>
 
@@ -280,15 +243,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
-
         </div>
-
     </section><!-- /About Section -->
-
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
@@ -619,14 +579,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
                         <div class="portfolio-card">
                             <div class="portfolio-image-container">
-                                <img src="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-1.webp" alt="Creative Project" class="img-fluid" loading="lazy">
+                                <img src="<?= base_url('assets/img/portfolio/portfolio-1.webp') ?>" alt="Creative Project" class="img-fluid" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <span class="project-category">Creative Design</span>
                                         <h4>Visual Identity System</h4>
                                     </div>
                                     <div class="portfolio-actions">
-                                        <a href="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-1.webp" class="glightbox portfolio-link">
+                                        <a href="<?= base_url('assets/img/portfolio/portfolio-1.webp') ?>" class="glightbox portfolio-link">
                                             <i class="bi bi-plus-lg"></i>
                                         </a>
                                         <a href="#" class="portfolio-details">
@@ -648,14 +608,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
                         <div class="portfolio-card">
                             <div class="portfolio-image-container">
-                                <img src="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-2.webp" alt="Digital Project" class="img-fluid" loading="lazy">
+                                <img src="<?= base_url('assets/img/portfolio/portfolio-2.webp') ?>" alt="Digital Project" class="img-fluid" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <span class="project-category">Digital Experience</span>
                                         <h4>Interactive Web Platform</h4>
                                     </div>
                                     <div class="portfolio-actions">
-                                        <a href="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-2.webp" class="glightbox portfolio-link">
+                                        <a href="<?= base_url('assets/img/portfolio/portfolio-2.webp') ?>" class="glightbox portfolio-link">
                                             <i class="bi bi-plus-lg"></i>
                                         </a>
                                         <a href="#" class="portfolio-details">
@@ -677,14 +637,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
                         <div class="portfolio-card">
                             <div class="portfolio-image-container">
-                                <img src="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-3.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                                <img src="<?= base_url('assets/img/portfolio/portfolio-3.webp') ?>" alt="Strategy Project" class="img-fluid" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <span class="project-category">Brand Strategy</span>
                                         <h4>Market Positioning</h4>
                                     </div>
                                     <div class="portfolio-actions">
-                                        <a href="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                                        <a href="<?= base_url('assets/img/portfolio/portfolio-3.webp') ?>" class="glightbox portfolio-link">
                                             <i class="bi bi-plus-lg"></i>
                                         </a>
                                         <a href="#" class="portfolio-details">
@@ -706,14 +666,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                         <div class="portfolio-card">
                             <div class="portfolio-image-container">
-                                <img src="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-4.webp" alt="Development Project" class="img-fluid" loading="lazy">
+                                <img src="<?= base_url('assets/img/portfolio/portfolio-4.webp') ?>" alt="Development Project" class="img-fluid" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <span class="project-category">Full Stack</span>
                                         <h4>Custom Application</h4>
                                     </div>
                                     <div class="portfolio-actions">
-                                        <a href="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-4.webp" class="glightbox portfolio-link">
+                                        <a href="<?= base_url('assets/img/portfolio/portfolio-4.webp') ?>" class="glightbox portfolio-link">
                                             <i class="bi bi-plus-lg"></i>
                                         </a>
                                         <a href="#" class="portfolio-details">
@@ -735,14 +695,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
                         <div class="portfolio-card">
                             <div class="portfolio-image-container">
-                                <img src="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-5.webp" alt="Creative Project" class="img-fluid" loading="lazy">
+                                <img src="<?= base_url('assets/img/portfolio/portfolio-5.webp') ?>" alt="Creative Project" class="img-fluid" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <span class="project-category">Art Direction</span>
                                         <h4>Campaign Design</h4>
                                     </div>
                                     <div class="portfolio-actions">
-                                        <a href="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-5.webp" class="glightbox portfolio-link">
+                                        <a href="<?= base_url('assets/img/portfolio/portfolio-5.webp') ?>" class="glightbox portfolio-link">
                                             <i class="bi bi-plus-lg"></i>
                                         </a>
                                         <a href="#" class="portfolio-details">
@@ -764,14 +724,14 @@
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
                         <div class="portfolio-card">
                             <div class="portfolio-image-container">
-                                <img src="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-6.webp" alt="Digital Project" class="img-fluid" loading="lazy">
+                                <img src="<?= base_url('assets/img/portfolio/portfolio-6.webp') ?>" alt="Digital Project" class="img-fluid" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <span class="project-category">Digital Product</span>
                                         <h4>Mobile Experience</h4>
                                     </div>
                                     <div class="portfolio-actions">
-                                        <a href="http://127.0.0.1:8888/2026/public/assets/img/portfolio/portfolio-6.webp" class="glightbox portfolio-link">
+                                        <a href="<?= base_url('assets/img/portfolio/portfolio-6.webp') ?>" class="glightbox portfolio-link">
                                             <i class="bi bi-plus-lg"></i>
                                         </a>
                                         <a href="#" class="portfolio-details">
@@ -946,33 +906,25 @@
 
         </div>
     </div>
-
     <div class="container copyright text-center mt-4">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span></p>
     </div>
-
 </footer>
-
 <!-- Scroll Top -->
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
 <!-- Preloader -->
 <div id="preloader"></div>
-
 <!-- Vendor JS Files -->
-<script src="http://127.0.0.1:8888/2026/public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="http://127.0.0.1:8888/2026/public/assets/vendor/php-email-form/validate.js"></script>
-<script src="http://127.0.0.1:8888/2026/public/assets/vendor/aos/aos.js"></script>
-<script src="http://127.0.0.1:8888/2026/public/assets/vendor/typed.js/typed.umd.js"></script>
-<script src="http://127.0.0.1:8888/2026/public/assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="http://127.0.0.1:8888/2026/public/assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="http://127.0.0.1:8888/2026/public/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="http://127.0.0.1:8888/2026/public/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="http://127.0.0.1:8888/2026/public/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+<script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/php-email-form/validate.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/aos/aos.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/typed.js/typed.umd.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/waypoints/noframework.waypoints.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/glightbox/js/glightbox.min.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/isotope-layout/isotope.pkgd.min.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/swiper/swiper-bundle.min.js') ?>"></script>
 <!-- Main JS File -->
-<script src="http://127.0.0.1:8888/2026/public/assets/js/main.js"></script>
-
+<script src="<?= base_url('assets/js/main.js') ?>"></script>
 </body>
-
 </html>

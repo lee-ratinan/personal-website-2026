@@ -1,18 +1,18 @@
 <?php
 return [
     'system'   => [
-        'website-name'    => '·𐑮𐑳𐑑𐑦𐑯𐑳𐑯 𐑤𐑰 Official',
+        'website-name'    => '·𐑮𐑳𐑑𐑦𐑯𐑳𐑯 𐑤𐑰 𐑩𐑓𐑦𐑖𐑩𐑤',
         'site-name-head'  => '·𐑮𐑳𐑑𐑦𐑯𐑳𐑯<span style="color:#080">𐑤𐑰</span>',
-        'footer-msg'      => 'This is an official personal website of Ratinan Lee. He is a senior software engineer and technology lead based in Singapore and Bangkok.',
-        'useful-links'    => 'Useful Links',
-        'change-language' => 'Change Language',
+        'footer-msg'      => '𐑞𐑦𐑕 𐑦𐑟 𐑩𐑯 𐑩𐑓𐑦𐑖𐑩𐑤 𐑐𐑻𐑕𐑩𐑯𐑩𐑤 𐑢𐑧𐑚𐑕𐑲𐑑 𐑝 ·𐑮𐑳𐑑𐑦𐑯𐑳𐑯 𐑤𐑰. 𐑣𐑰 𐑦𐑟 𐑩 𐑕𐑰𐑯𐑽 𐑕𐑪𐑓𐑑𐑢𐑺 𐑧𐑯𐑡𐑦𐑯𐑽 𐑯 𐑑𐑧𐑒𐑯𐑪𐑤𐑩𐑡𐑦 𐑤𐑰𐑛 𐑚𐑱𐑕𐑑 𐑦𐑯 𐑕𐑦𐑙𐑩𐑐𐑹 𐑯 𐑚𐑨𐑙𐑒𐑪𐑒.',
+        'useful-links'    => '𐑿𐑕𐑓𐑩𐑤 𐑤𐑦𐑙𐑒𐑕',
+        'change-language' => '𐑗𐑱𐑯𐑡 𐑤𐑨𐑙𐑜𐑢𐑦𐑡',
         'pages'           => [
-            'home'          => 'About Ratinan',
-            'personal-life' => 'Personal Life',
+            'home'          => '𐑩𐑚𐑬𐑑 ·𐑮𐑳𐑑𐑦𐑯𐑳𐑯',
+            'personal-life' => '𐑐𐑻𐑕𐑩𐑯𐑩𐑤 𐑤𐑲𐑓',
         ],
         'seo'             => [
-            'description' => 'CSM/PSM-certified technical project manager and scrum master with fintech and e-commerce experience, leading multicultural teams and delivering high-quality, scalable digital solutions.',
-            'keywords'    => 'technical project manager, scrum master, CSM, PSM, fintech, e-commerce, software development, agile coaching, cross-functional leadership, project management, technical lead, multicultural teams, portfolio, resume'
+            'description' => 'CSM/PSM-𐑕𐑻𐑑𐑦𐑓𐑲𐑛 𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑥𐑨𐑯𐑦𐑡𐑼 𐑯 𐑕𐑒𐑮𐑳𐑥 𐑥𐑭𐑕𐑑𐑼 𐑢𐑦𐑞 𐑓𐑦𐑯𐑑𐑧𐑒 𐑯 E-𐑒𐑪𐑥𐑻𐑕 𐑦𐑒𐑕𐑐𐑽𐑾𐑯𐑕, 𐑤𐑰𐑛𐑦𐑙 𐑥𐑳𐑤𐑑𐑦𐑒𐑳𐑤𐑗𐑼𐑩𐑤 𐑑𐑰𐑥𐑟 𐑯 𐑛𐑦𐑤𐑦𐑝𐑼𐑦𐑙 𐑣𐑲-𐑒𐑢𐑪𐑤𐑦𐑑𐑦, 𐑕𐑒𐑱𐑤𐑩𐑚𐑩𐑤 𐑛𐑦𐑡𐑦𐑑𐑩𐑤 𐑕𐑩𐑤𐑵𐑖𐑩𐑯𐑟.',
+            'keywords'    => '𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑥𐑨𐑯𐑦𐑡𐑼, 𐑕𐑒𐑮𐑳𐑥 𐑥𐑭𐑕𐑑𐑼, CSM, PSM, 𐑓𐑦𐑯𐑑𐑧𐑒, E-𐑒𐑪𐑥𐑻𐑕, 𐑕𐑪𐑓𐑑𐑢𐑺 𐑛𐑦𐑝𐑧𐑤𐑩𐑐𐑥𐑩𐑯𐑑, 𐑨𐑡𐑲𐑤 𐑒𐑴𐑗𐑦𐑙, 𐑒𐑮𐑪𐑕-𐑓𐑳𐑙𐑒𐑖𐑩𐑯𐑩𐑤 𐑤𐑰𐑛𐑼𐑖𐑦𐑐, 𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑥𐑨𐑯𐑦𐑡𐑥𐑩𐑯𐑑, 𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑤𐑰𐑛, 𐑥𐑳𐑤𐑑𐑦𐑒𐑳𐑤𐑗𐑼𐑩𐑤 𐑑𐑰𐑥𐑟, 𐑐𐑹𐑑𐑓𐑴𐑤𐑦𐑴, 𐑮𐑧𐑟𐑿𐑥𐑱'
         ]
     ],
     'numbers'  => [
@@ -24,169 +24,169 @@ return [
     ],
     'sections' => [
         'home'      => [
-            'title'       => 'Home',
-            'greetings'   => 'Hi! I’m Ratinan “Nat” Lee!',
-            'i-am-a'      => 'I am a',
-            'occupations' => 'Scrum Master, Software Developer, Project Manager, Freelancer'
+            'title'       => '𐑣𐑴𐑥',
+            'greetings'   => '𐑣𐑲! 𐑲𐑥 ·𐑮𐑳𐑑𐑦𐑯𐑳𐑯 “𐑯𐑨𐑑” 𐑤𐑰!',
+            'i-am-a'      => '𐑲 𐑨𐑥 𐑩',
+            'occupations' => '𐑕𐑒𐑮𐑳𐑥 𐑥𐑭𐑕𐑑𐑼, 𐑕𐑪𐑓𐑑𐑢𐑺 𐑛𐑦𐑝𐑧𐑤𐑩𐑐𐑼, 𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑥𐑨𐑯𐑦𐑡𐑼, 𐑓𐑮𐑰𐑤𐑨𐑯𐑕𐑩'
         ],
         'about'     => [
-            'title'            => 'About',
-            'about-me'         => 'About Me',
-            'main-paragraph'   => 'I’m a CSM/PSM-certified technical project manager and scrum master with fintech chops, steering cross-national teams toward smooth, scalable delivery. I keep projects sharp, people aligned, and momentum high—turning complex ideas into clean, future-ready outcomes.',
-            'ratinan-lee'      => 'Ratinan Lee',
-            'main-occupations' => 'Scrum Master, Project Manager',
+            'title'            => '𐑩𐑚𐑬𐑑',
+            'about-me'         => '𐑩𐑚𐑬𐑑 𐑥𐑰',
+            'main-paragraph'   => '𐑲𐑥 𐑩 CSM/PSM-𐑕𐑻𐑑𐑦𐑓𐑲𐑛 𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑥𐑨𐑯𐑦𐑡𐑼 𐑯 𐑕𐑒𐑮𐑳𐑥 𐑥𐑭𐑕𐑑𐑼 𐑢𐑦𐑞 𐑓𐑦𐑯𐑑𐑧𐑒 𐑗𐑪𐑐𐑕, 𐑕𐑑𐑽𐑦𐑙 𐑒𐑮𐑪𐑕-𐑯𐑨𐑖𐑩𐑯𐑩𐑤 𐑑𐑰𐑥𐑟 𐑑𐑩𐑢𐑹𐑛 𐑕𐑥𐑵𐑞, 𐑕𐑒𐑱𐑤𐑩𐑚𐑩𐑤 𐑛𐑦𐑤𐑦𐑝𐑼𐑦. 𐑲 𐑒𐑰𐑐 𐑐𐑮𐑪𐑡𐑧𐑒𐑑𐑕 𐑖𐑸𐑐, 𐑐𐑰𐑐𐑩𐑤 𐑩𐑤𐑲𐑯𐑛, 𐑯 𐑥𐑩𐑥𐑧𐑯𐑑𐑩𐑥 𐑣𐑲 — 𐑑𐑻𐑯𐑦𐑙 𐑒𐑪𐑥𐑐𐑤𐑧𐑒𐑕 𐑲𐑛𐑾𐑟 𐑦𐑯𐑑𐑵 𐑒𐑤𐑰𐑯, 𐑓𐑿𐑗𐑼-𐑮𐑧𐑛𐑦 𐑬𐑑𐑒𐑳𐑥𐑟.',
+            'ratinan-lee'      => '·𐑮𐑳𐑑𐑦𐑯𐑳𐑯 𐑤𐑰',
+            'main-occupations' => '𐑕𐑒𐑮𐑳𐑥 𐑥𐑭𐑕𐑑𐑼, 𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑥𐑨𐑯𐑦𐑡𐑼',
             'counts'           => [
-                'products'     => 'Products',
-                'years'        => 'Years',
-                'certificates' => 'Certificates',
+                'products'     => '𐑐𐑮𐑪𐑛𐑳𐑒𐑑𐑕',
+                'years'        => '𐑘𐑽𐑟',
+                'certificates' => '𐑕𐑼𐑑𐑦𐑓𐑦𐑒𐑩𐑑𐑕',
             ],
-            'download-cv'      => 'Download CV',
+            'download-cv'      => '𐑛𐑬𐑯𐑤𐑴𐑛 CV',
             'secondary'        => [
-                'title'       => 'I lead a happy team!',
-                'paragraph-1' => 'I lead by keeping my team genuinely happy—because energized people build better products. Empathy and active listening are my default settings, and anyone can come to me with challenges big or small. I don’t swoop in to fix everything; instead, I guide, coach, and let people solve problems their way. That independence builds confidence, sharpens skills, and creates a team that grows stronger with every sprint.',
-                'paragraph-2' => 'I care deeply about quality—real quality. “Verified” software isn’t enough for me; I want solutions that are validated, performant, and actually delightful to use. A feature that technically works but feels sluggish or clunky isn’t a win. When we build, we build with intention, speed, and craftsmanship. If we’re shipping something, it should be something we’re proud of—fast, reliable, and worth every user’s time.'
+                'title'       => '𐑲 𐑤𐑰𐑛 𐑩 𐑣𐑨𐑐𐑦 𐑑𐑰𐑥!',
+                'paragraph-1' => '𐑲 𐑤𐑰𐑛 𐑚𐑲 𐑒𐑰𐑐𐑦𐑙 𐑥𐑲 𐑑𐑰𐑥 𐑡𐑧𐑯𐑘𐑫𐑦𐑯𐑤𐑦 𐑣𐑨𐑐𐑦 — 𐑚𐑦𐑒𐑪𐑟 𐑧𐑯𐑼𐑡𐑲𐑟𐑛 𐑐𐑰𐑐𐑩𐑤 𐑚𐑦𐑤𐑛 𐑚𐑧𐑑𐑼 𐑐𐑮𐑪𐑛𐑳𐑒𐑑𐑕. 𐑧𐑥𐑐𐑩𐑔𐑦 𐑯 𐑨𐑒𐑑𐑦𐑝 𐑤𐑦𐑕𐑩𐑯𐑦𐑙 𐑸 𐑥𐑲 𐑛𐑦𐑓𐑷𐑤𐑑 𐑕𐑧𐑑𐑦𐑙𐑟, 𐑯 𐑧𐑯𐑦𐑢𐑳𐑯 𐑒𐑨𐑯 𐑒𐑳𐑥 𐑑 𐑥𐑰 𐑢𐑦𐑞 𐑗𐑨𐑤𐑩𐑯𐑡𐑩𐑟 𐑚𐑦𐑜 𐑹 𐑕𐑥𐑷𐑤. 𐑲 𐑛𐑴𐑯𐑑 𐑕𐑢𐑵𐑐 𐑦𐑯 𐑑 𐑓𐑦𐑒𐑕 𐑧𐑝𐑮𐑦𐑔𐑦𐑙; 𐑦𐑯𐑕𐑑𐑧𐑛, 𐑲 𐑜𐑲𐑛, 𐑒𐑴𐑗, 𐑯 𐑤𐑧𐑑 𐑐𐑰𐑐𐑩𐑤 𐑕𐑪𐑤𐑝 𐑐𐑮𐑪𐑚𐑤𐑩𐑥𐑟 𐑞𐑺 𐑢𐑱. 𐑞𐑨𐑑 𐑦𐑯𐑛𐑦𐑐𐑧𐑯𐑛𐑩𐑯𐑕 𐑚𐑦𐑤𐑛𐑟 𐑒𐑪𐑯𐑓𐑦𐑛𐑩𐑯𐑕, 𐑖𐑸𐑐𐑩𐑯𐑟 𐑕𐑒𐑦𐑤𐑟, 𐑯 𐑒𐑮𐑦𐑱𐑑𐑕 𐑩 𐑑𐑰𐑥 𐑞𐑨𐑑 𐑜𐑮𐑴𐑟 𐑕𐑑𐑮𐑪𐑙𐑜𐑼 𐑢𐑦𐑞 𐑧𐑝𐑮𐑦 𐑕𐑐𐑮𐑦𐑯𐑑.',
+                'paragraph-2' => '𐑲 𐑒𐑺 𐑛𐑰𐑐𐑤𐑦 𐑩𐑚𐑬𐑑 𐑒𐑢𐑪𐑤𐑦𐑑𐑦—𐑮𐑾𐑤 𐑒𐑢𐑪𐑤𐑦𐑑𐑦. “𐑝𐑧𐑮𐑦𐑓𐑲𐑛” 𐑕𐑪𐑓𐑑𐑢𐑺 𐑦𐑟𐑩𐑯𐑑 𐑦𐑯𐑳𐑓 𐑓 𐑥𐑰; 𐑲 𐑢𐑪𐑯𐑑 𐑕𐑩𐑤𐑵𐑖𐑩𐑯𐑟 𐑞𐑨𐑑 𐑸 𐑝𐑨𐑤𐑦𐑛𐑱𐑑𐑩𐑛, 𐑐𐑼𐑓𐑹𐑥𐑩𐑯𐑑, 𐑯 𐑨𐑒𐑗𐑫𐑩𐑤𐑦 𐑛𐑦𐑤𐑲𐑑𐑓𐑩𐑤 𐑑 𐑿𐑟. 𐑩 𐑓𐑰𐑗𐑼 𐑞𐑨𐑑 𐑑𐑧𐑒𐑯𐑦𐑒𐑤𐑦 𐑢𐑻𐑒𐑕 𐑚𐑳𐑑 𐑓𐑰𐑤𐑟 𐑕𐑤𐑳𐑜𐑦𐑖 𐑹 𐑒𐑤𐑳𐑙𐑒𐑦 𐑦𐑟𐑩𐑯𐑑 𐑩 𐑢𐑦𐑯. 𐑢𐑧𐑯 𐑢𐑰 𐑚𐑦𐑤𐑛, 𐑢𐑰 𐑚𐑦𐑤𐑛 𐑢𐑦𐑞 𐑦𐑯𐑑𐑧𐑯𐑖𐑩𐑯, 𐑕𐑐𐑰𐑛, 𐑯 𐑒𐑮𐑭𐑓𐑑𐑕𐑥𐑩𐑯𐑖𐑦𐑐. 𐑦𐑓 𐑢𐑰𐑼 𐑖𐑦𐑐𐑦𐑙 𐑕𐑳𐑥𐑔𐑦𐑙, 𐑦𐑑 𐑖𐑫𐑛 𐑚𐑰 𐑕𐑳𐑥𐑔𐑦𐑙 𐑢𐑰𐑼 𐑐𐑮𐑬𐑛 𐑝—𐑓𐑭𐑕𐑑, 𐑮𐑦𐑤𐑲𐑩𐑚𐑩𐑤, 𐑯 𐑢𐑻𐑔 𐑧𐑝𐑮𐑦 𐑿𐑟𐑼𐑟 𐑑𐑲𐑥.'
             ],
             'boxes'            => [
                 '1' => [
-                    'label' => 'Experiences',
-                    'value' => '{0, number}+ years'
+                    'label' => '𐑦𐑒𐑕𐑐𐑽𐑾𐑯𐑕𐑩𐑟',
+                    'value' => '{0, number}+ 𐑘𐑽𐑟'
                 ],
                 '2' => [
-                    'label' => 'Education',
-                    'value' => 'Master Degree'
+                    'label' => '𐑧𐑡𐑩𐑒𐑱𐑖𐑩𐑯',
+                    'value' => '𐑥𐑭𐑕𐑑𐑼 𐑛𐑦𐑜𐑮𐑰'
                 ],
                 '3' => [
-                    'label' => 'Based in',
-                    'value' => 'Singapore &amp; Bangkok'
+                    'label' => '𐑚𐑱𐑕𐑑 𐑦𐑯',
+                    'value' => '·𐑕𐑦𐑙𐑩𐑐𐑹 &amp; ·𐑚𐑨𐑙𐑒𐑪𐑒'
                 ],
                 '4' => [
-                    'label' => 'Availability',
-                    'value' => 'Open to Work'
+                    'label' => '𐑩𐑝𐑱𐑤𐑩𐑚𐑦𐑤𐑦𐑑𐑦',
+                    'value' => '𐑴𐑐𐑩𐑯 𐑑 𐑢𐑻𐑒'
                 ],
                 '5' => [
-                    'label' => 'I speak',
-                    'value' => 'English (C2), Thai (native)<br>Japanese (beginner)'
+                    'label' => '𐑲 𐑕𐑐𐑰𐑒',
+                    'value' => '𐑦𐑙𐑜𐑤𐑦𐑖 (C2), 𐑑𐑲 (𐑯𐑱𐑑𐑦𐑝)<br>𐑡𐑨𐑐𐑩𐑯𐑰𐑟 (𐑚𐑦𐑜𐑦𐑯𐑼)'
                 ],
                 '6' => [
-                    'label' => 'Nationality',
-                    'value' => 'Thai'
+                    'label' => '𐑯𐑨𐑖𐑩𐑯𐑨𐑤𐑦𐑑𐑦',
+                    'value' => '𐑑𐑲'
                 ]
             ]
         ],
         'resume'    => [
-            'title'      => 'Resume',
+            'title'      => '𐑮𐑧𐑟𐑿𐑥𐑱',
             'experience' => [
-                'label'   => 'Experience',
-                'title'   => 'Professional Experience',
+                'label'   => '𐑦𐑒𐑕𐑐𐑽𐑾𐑯𐑕',
+                'title'   => '𐑐𐑮𐑩𐑓𐑧𐑖𐑩𐑯𐑩𐑤 𐑦𐑒𐑕𐑐𐑽𐑾𐑯𐑕',
                 'records' => [
                     '1' => [
-                        'current'   => 'Current',
-                        'title'     => 'Technical Team Leader, Project Manager',
+                        'current'   => '𐑒𐑳𐑮𐑩𐑯𐑑',
+                        'title'     => '𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑑𐑰𐑥 𐑤𐑰𐑛𐑼, 𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑥𐑨𐑯𐑦𐑡𐑼',
                         'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
-                        'paragraph' => 'Project manager and technical lead with experience across e-commerce and fintech, guiding cross-functional teams, streamlining delivery, and driving high-quality, scalable solutions from concept to release.',
+                        'paragraph' => '𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑥𐑨𐑯𐑦𐑡𐑼 𐑯 𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑤𐑰𐑛 𐑢𐑦𐑞 𐑦𐑒𐑕𐑐𐑽𐑾𐑯𐑕 𐑩𐑒𐑮𐑪𐑕 𐑰-𐑒𐑪𐑥𐑻𐑕 𐑯 𐑓𐑦𐑯𐑑𐑧𐑒, 𐑜𐑲𐑛𐑦𐑙 𐑒𐑮𐑪𐑕-𐑓𐑳𐑙𐑒𐑖𐑩𐑯𐑩𐑤 𐑑𐑰𐑥𐑟, 𐑕𐑑𐑮𐑰𐑥𐑤𐑲𐑯𐑦𐑙 𐑛𐑦𐑤𐑦𐑝𐑼𐑦, 𐑯 𐑛𐑮𐑲𐑝𐑦𐑙 𐑣𐑲-𐑒𐑢𐑪𐑤𐑦𐑑𐑦, 𐑕𐑩𐑤𐑵𐑖𐑩𐑯𐑟 𐑓𐑮𐑕𐑒𐑱𐑤𐑩𐑚𐑩𐑤𐑪𐑥 𐑒𐑪𐑯𐑕𐑧𐑐𐑑 𐑑 𐑮𐑦𐑤𐑰𐑕.',
                         'tags'      => [
-                            '1' => 'Leadership',
-                            '2' => 'Management',
-                            '3' => 'Scrum',
-                            '4' => 'Innovation'
+                            '1' => '𐑤𐑰𐑛𐑼𐑖𐑦𐑐',
+                            '2' => '𐑥𐑨𐑯𐑦𐑡𐑥𐑩𐑯𐑑',
+                            '3' => '𐑕𐑒𐑮𐑳𐑥',
+                            '4' => '𐑦𐑯𐑩𐑝𐑱𐑖𐑩𐑯'
                         ]
                     ],
                     '2' => [
-                        'title'     => 'Independent Technology Consultant',
-                        'companies' => 'Freelance',
-                        'paragraph' => 'Freelance project lead delivering end-to-end website solutions for clients across diverse sectors and countries, managing requirements, development, and quality to ship polished, performance-focused digital experiences.',
+                        'title'     => '𐑦𐑯𐑛𐑦𐑐𐑧𐑯𐑛𐑩𐑯𐑑 𐑑𐑧𐑒𐑯𐑪𐑤𐑩𐑡𐑦 𐑒𐑩𐑯𐑕𐑳𐑤𐑑𐑩𐑯𐑑',
+                        'companies' => '𐑓𐑮𐑰𐑤𐑭𐑯𐑕',
+                        'paragraph' => '𐑓𐑮𐑰𐑤𐑭𐑯𐑕 𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑤𐑰𐑛 𐑛𐑦𐑤𐑦𐑝𐑼𐑦𐑙 𐑧𐑯𐑛-𐑑-𐑧𐑯𐑛 𐑢𐑧𐑚𐑕𐑲𐑑 𐑕𐑩𐑤𐑵𐑖𐑩𐑯𐑟 𐑓 𐑒𐑤𐑲𐑩𐑯𐑑𐑕 𐑩𐑒𐑮𐑪𐑕 𐑛𐑲𐑝𐑻𐑕 𐑕𐑧𐑒𐑑𐑼𐑟 𐑯 𐑒𐑳𐑯𐑑𐑮𐑦𐑟, 𐑥𐑨𐑯𐑦𐑡𐑦𐑙 𐑮𐑦𐑒𐑢𐑲𐑼𐑥𐑩𐑯𐑑𐑕, 𐑛𐑦𐑝𐑧𐑤𐑩𐑐𐑥𐑩𐑯𐑑, 𐑯 𐑒𐑢𐑪𐑤𐑦𐑑𐑦 𐑑 𐑖𐑦𐑐 𐑐𐑪𐑤𐑦𐑖𐑑, 𐑐𐑼𐑓𐑹𐑥𐑩𐑯𐑕-𐑓𐑴𐑒𐑩𐑕𐑑 𐑛𐑦𐑡𐑦𐑑𐑩𐑤 𐑦𐑒𐑕𐑐𐑽𐑾𐑯𐑕𐑩𐑟.',
                         'tags'      => [
-                            '1' => 'Management',
-                            '2' => 'Creativity',
+                            '1' => '𐑥𐑨𐑯𐑦𐑡𐑥𐑩𐑯𐑑',
+                            '2' => '𐑒𐑮𐑦𐑱𐑑𐑦𐑝𐑦𐑑𐑦',
                             '3' => 'SEO',
-                            '4' => 'Communication'
+                            '4' => '𐑒𐑩𐑥𐑿𐑯𐑦𐑒𐑱𐑖𐑩𐑯'
                         ]
                     ],
                     '3' => [
-                        'title'     => 'Software Engineer',
+                        'title'     => '𐑕𐑪𐑓𐑑𐑢𐑺 𐑧𐑯𐑡𐑦𐑯𐑽',
                         'companies' => 'Mobads, BuzzCity, DST',
-                        'paragraph' => 'Junior software engineer contributing to full-stack development, learning modern frameworks, and supporting feature delivery while building a strong foundation in clean code, testing, and collaborative engineering practices.',
+                        'paragraph' => '𐑡𐑵𐑯𐑽 𐑕𐑪𐑓𐑑𐑢𐑺 𐑧𐑯𐑡𐑦𐑯𐑽 𐑒𐑩𐑯𐑑𐑮𐑦𐑚𐑿𐑑𐑦𐑙 𐑑 𐑓𐑫𐑤-𐑕𐑑𐑨𐑒 𐑛𐑦𐑝𐑧𐑤𐑩𐑐𐑥𐑩𐑯𐑑, 𐑤𐑻𐑯𐑦𐑙 𐑥𐑪𐑛𐑼𐑯 𐑓𐑮𐑱𐑥𐑢𐑻𐑒𐑕, 𐑯 𐑕𐑩𐑐𐑹𐑑𐑦𐑙 𐑓𐑰𐑗𐑼 𐑛𐑦𐑤𐑦𐑝𐑼𐑦 𐑢𐑲𐑤 𐑚𐑦𐑤𐑛𐑦𐑙 𐑩 𐑕𐑑𐑮𐑪𐑙 𐑓𐑬𐑯𐑛𐑱𐑖𐑩𐑯 𐑦𐑯 𐑒𐑤𐑰𐑯 𐑒𐑴𐑛, 𐑑𐑧𐑕𐑑𐑦𐑙, 𐑯 𐑒𐑩𐑤𐑨𐑚𐑼𐑩𐑑𐑦𐑝 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑐𐑮𐑨𐑒𐑑𐑦𐑕𐑩𐑟.',
                         'tags'      => [
-                            '1' => 'Programming',
-                            '2' => 'Web Development',
-                            '3' => 'System Analysis',
-                            '4' => 'UX/UI Design',
+                            '1' => '𐑐𐑮𐑴𐑜𐑮𐑨𐑥𐑦𐑙',
+                            '2' => '𐑢𐑧𐑚 𐑛𐑦𐑝𐑧𐑤𐑩𐑐𐑥𐑩𐑯𐑑',
+                            '3' => '𐑕𐑦𐑕𐑑𐑩𐑥 𐑩𐑯𐑨𐑤𐑩𐑕𐑦𐑕',
+                            '4' => 'UX/UI 𐑛𐑦𐑟𐑲𐑯',
                         ]
                     ]
                 ]
             ],
             'education'  => [
-                'label'   => 'Education',
-                'title'   => 'Academic Background',
+                'label'   => '𐑧𐑡𐑩𐑒𐑱𐑖𐑩𐑯',
+                'title'   => '𐑨𐑒𐑩𐑛𐑧𐑥𐑦𐑒 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛',
                 'records' => [
                     'certificates' => [
-                        'label' => 'Certificates',
-                        'title' => 'Professional Certificates',
+                        'label' => '𐑕𐑼𐑑𐑦𐑓𐑦𐑒𐑩𐑑𐑕',
+                        'title' => '𐑐𐑮𐑩𐑓𐑧𐑖𐑩𐑯𐑩𐑤 𐑕𐑼𐑑𐑦𐑓𐑦𐑒𐑩𐑑𐑕',
                         'list'  => [
-                            ['Certified Scrum Master', [2025]],
-                            ['Professional Scrum Master I, II', [2024]],
-                            ['Professional Scrum Product Owner I, II', [2024, 2025]],
-                            ['Google Project Management', [2024]],
-                            ['Google AI Essentials', [2024]],
-                            ['Google Data Analytics', [2024]],
-                            ['Google UX Design', [2024]],
+                            ['𐑕𐑻𐑑𐑦𐑓𐑲𐑛 𐑕𐑒𐑮𐑳𐑥 𐑥𐑨𐑕𐑑𐑼', [2025]],
+                            ['𐑐𐑮𐑩𐑓𐑧𐑖𐑩𐑯𐑩𐑤 𐑕𐑒𐑮𐑳𐑥 𐑥𐑨𐑕𐑑𐑼 I, II', [2024]],
+                            ['𐑐𐑮𐑩𐑓𐑧𐑖𐑩𐑯𐑩𐑤 𐑕𐑒𐑮𐑳𐑥 𐑐𐑮𐑪𐑛𐑳𐑒𐑑 𐑴𐑯𐑼 I, II', [2024, 2025]],
+                            ['𐑜𐑵𐑜𐑩𐑤 𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑥𐑨𐑯𐑦𐑡𐑥𐑩𐑯𐑑', [2024]],
+                            ['𐑜𐑵𐑜𐑩𐑤 AI 𐑦𐑕𐑧𐑯𐑖𐑩𐑤𐑟', [2024]],
+                            ['𐑜𐑵𐑜𐑩𐑤 𐑛𐑱𐑑𐑩 𐑨𐑯𐑩𐑤𐑦𐑑𐑦𐑒𐑕', [2024]],
+                            ['𐑜𐑵𐑜𐑩𐑤 UX 𐑛𐑦𐑟𐑲𐑯', [2024]],
                         ]
                     ],
                     'masters'      => [
-                        'label'      => 'Masters',
-                        'title'      => 'Master of Science (Information Systems)',
-                        'university' => 'Wee Kim Wee School of Communication and Information, Nanyang Technological University',
-                        'paragraph'  => 'Mastered advanced information system engineering and management.'
+                        'label'      => '𐑥𐑨𐑕𐑑𐑼𐑟',
+                        'title'      => '𐑥𐑨𐑕𐑑𐑼 𐑝 𐑕𐑲𐑩𐑯𐑕 (𐑦𐑯𐑓𐑼𐑥𐑱𐑖𐑩𐑯 𐑕𐑦𐑕𐑑𐑩𐑥𐑟)',
+                        'university' => 'Wee Kim Wee 𐑕𐑒𐑵𐑤 𐑝 𐑒𐑩𐑥𐑿𐑯𐑦𐑒𐑱𐑖𐑩𐑯 𐑯 𐑦𐑯𐑓𐑼𐑥𐑱𐑖𐑩𐑯, Nanyang 𐑑𐑧𐑒𐑯𐑩𐑤𐑪𐑡𐑦𐑒𐑩𐑤 𐑿𐑯𐑦𐑝𐑻𐑕𐑦𐑑𐑦',
+                        'paragraph'  => '𐑥𐑨𐑕𐑑𐑼𐑛 𐑩𐑛𐑝𐑭𐑯𐑕𐑑 𐑦𐑯𐑓𐑼𐑥𐑱𐑖𐑩𐑯 𐑕𐑦𐑕𐑑𐑩𐑥 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑯 𐑥𐑨𐑯𐑦𐑡𐑥𐑩𐑯𐑑.'
                     ],
                     'bachelor'     => [
-                        'label'      => 'Bachelors',
-                        'title'      => 'Bachelor of Science (Computer Science)',
-                        'university' => 'Sirindhorn International Institute of Technology, Thammasat University',
-                        'paragraph'  => 'Learned a strong foundation in software engineering and architecture.',
-                        'honors'     => 'First Class Honors'
+                        'label'      => '𐑚𐑨𐑗𐑩𐑤𐑼𐑟',
+                        'title'      => '𐑚𐑨𐑗𐑩𐑤𐑼 𐑝 𐑕𐑲𐑩𐑯𐑕 (𐑒𐑩𐑥𐑐𐑿𐑑𐑼 𐑕𐑲𐑩𐑯𐑕)',
+                        'university' => 'Sirindhorn 𐑦𐑯𐑑𐑼𐑯𐑨𐑖𐑩𐑯𐑩𐑤 𐑦𐑯𐑕𐑑𐑦𐑑𐑿𐑑 𐑝 𐑑𐑧𐑒𐑯𐑪𐑤𐑩𐑡𐑦, Thammasat 𐑿𐑯𐑦𐑝𐑻𐑕𐑦𐑑𐑦',
+                        'paragraph'  => '𐑤𐑻𐑯𐑛 𐑩 𐑕𐑑𐑮𐑪𐑙 𐑓𐑬𐑯𐑛𐑱𐑖𐑩𐑯 𐑦𐑯 𐑕𐑪𐑓𐑑𐑢𐑺 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑯 𐑸𐑒𐑦𐑑𐑧𐑒𐑗𐑼.',
+                        'honors'     => '𐑓𐑻𐑕𐑑 𐑒𐑤𐑭𐑕 𐑪𐑯𐑼𐑟'
                     ],
                 ]
             ]
         ],
         'services'  => [
-            'title'         => 'Services',
+            'title'         => '𐑕𐑻𐑝𐑦𐑕𐑩𐑟',
             'list'          => [
                 '0' => [
-                    'item'        => 'Leadership &amp; Management',
-                    'description' => 'Guiding teams toward clear, confident, happy delivery.'
+                    'item'        => '𐑤𐑰𐑛𐑼𐑖𐑦𐑐 &amp; 𐑥𐑨𐑯𐑦𐑡𐑥𐑩𐑯𐑑',
+                    'description' => '𐑜𐑲𐑛𐑦𐑙 𐑑𐑰𐑥𐑟 𐑑𐑩𐑢𐑹𐑛 𐑒𐑤𐑽, 𐑒𐑪𐑯𐑓𐑦𐑛𐑩𐑯𐑑, 𐑣𐑨𐑐𐑦 𐑛𐑦𐑤𐑦𐑝𐑼𐑦.'
                 ],
                 '1' => [
-                    'item'        => 'System Analysis &amp; Design',
-                    'description' => 'Turning needs into clean, scalable technical blueprints.'
+                    'item'        => '	𐑕𐑦𐑕𐑑𐑩𐑥 𐑩𐑯𐑨𐑤𐑩𐑕𐑦𐑕 &amp; 𐑛𐑦𐑟𐑲𐑯',
+                    'description' => '𐑑𐑻𐑯𐑦𐑙 𐑯𐑰𐑛𐑟 𐑦𐑯𐑑𐑵 𐑒𐑤𐑰𐑯, scalable# 𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑚𐑤𐑵𐑐𐑮𐑦𐑯𐑑𐑕.'
                 ],
                 '2' => [
-                    'item'        => 'Software Development',
-                    'description' => 'Building reliable, high-performance features end to end.'
+                    'item'        => '𐑕𐑪𐑓𐑑𐑢𐑺 𐑛𐑦𐑝𐑧𐑤𐑩𐑐𐑥𐑩𐑯𐑑',
+                    'description' => '𐑚𐑦𐑤𐑛𐑦𐑙 𐑮𐑦𐑤𐑲𐑩𐑚𐑩𐑤, 𐑣𐑲-𐑐𐑼𐑓𐑹𐑥𐑩𐑯𐑕 𐑓𐑰𐑗𐑼𐑟 𐑧𐑯𐑛 𐑑 𐑧𐑯𐑛.'
                 ],
                 '3' => [
-                    'item'        => 'Team Coaching',
-                    'description' => 'Elevating teams with practical, empowering agile habits.'
+                    'item'        => '𐑑𐑰𐑥 𐑒𐑴𐑗𐑦𐑙',
+                    'description' => '𐑧𐑤𐑦𐑝𐑱𐑑𐑦𐑙 𐑑𐑰𐑥𐑟 𐑢𐑦𐑞 𐑐𐑮𐑨𐑒𐑑𐑦𐑒𐑩𐑤, 𐑦𐑥𐑐𐑬𐑼𐑦𐑙 𐑨𐑡𐑲𐑤 𐑣𐑨𐑚𐑦𐑑𐑕.'
                 ],
             ],
-            'cta'           => 'Hire Me!',
-            'cta-title'     => 'Transform Your Vision Into Reality',
-            'cta-paragraph' => 'Learn how to bring your ideas to life with innovative solutions tailored to your needs.'
+            'cta'           => '𐑣𐑲𐑼 𐑥𐑰!',
+            'cta-title'     => '𐑑𐑮𐑨𐑯𐑕𐑓𐑹𐑥 𐑘𐑹 𐑝𐑦𐑠𐑩𐑯 𐑦𐑯𐑑𐑵 𐑮𐑦𐑨𐑤𐑦𐑑𐑦',
+            'cta-paragraph' => '𐑤𐑻𐑯 𐑣𐑬 𐑑 𐑚𐑮𐑦𐑙 𐑘𐑹 𐑲𐑛𐑾𐑟 𐑑 𐑤𐑲𐑓 𐑢𐑦𐑞 𐑦𐑯𐑩𐑝𐑩𐑑𐑦𐑝 𐑕𐑩𐑤𐑵𐑖𐑩𐑯𐑟 𐑑𐑱𐑤𐑼𐑛 𐑑 𐑘𐑹 𐑯𐑰𐑛𐑟.'
         ],
         'portfolio' => [
-            'title'   => 'Portfolio',
-            'filters' => [
-                'all'     => 'All Work',
-                'website' => 'Website',
-                'backend' => 'Backend System',
-                'mobile'  => 'Mobile Application',
-                'ai'      => 'AI Application',
+            'title'         => '𐑐𐑹𐑑𐑓𐑴𐑤𐑦𐑴',
+            'filters'       => [
+                'all'     => '𐑷𐑤 𐑢𐑻𐑒',
+                'website' => '𐑢𐑧𐑚𐑕𐑲𐑑',
+                'backend' => '𐑚𐑨𐑒𐑧𐑯𐑛 𐑕𐑦𐑕𐑑𐑩𐑥',
+                'mobile'  => '𐑥𐑴𐑚𐑲𐑤 𐑨𐑐𐑤𐑦𐑒𐑱𐑖𐑩𐑯',
+                'ai'      => 'AI 𐑨𐑐𐑤𐑦𐑒𐑱𐑖𐑩𐑯',
             ],
-            'cta'           => 'Hire Me!',
-            'cta-title'     => 'Like What You See?',
-            'cta-paragraph' => 'Talk to me and hire me. Let me do it again for you!'
+            'cta'           => '𐑣𐑲𐑼 𐑥𐑰!',
+            'cta-title'     => '𐑤𐑲𐑒 𐑢𐑪𐑑 𐑿 𐑕𐑰?',
+            'cta-paragraph' => '𐑑𐑷𐑒 𐑑 𐑥𐑰 𐑯 𐑣𐑲𐑼 𐑥𐑰. 𐑤𐑧𐑑 𐑥𐑰 𐑛𐑵 𐑦𐑑 𐑩𐑜𐑧𐑯 𐑓 𐑿!'
         ],
         'contact'   => [
-            'title'     => 'Contact',
+            'title'     => '𐑒𐑪𐑯𐑑𐑨𐑒𐑑',
             'linkedin'  => 'LinkedIn',
             'instagram' => 'Instagram',
             'github'    => 'Github',

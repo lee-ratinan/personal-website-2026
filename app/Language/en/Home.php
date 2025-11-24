@@ -1,13 +1,16 @@
 <?php
 return [
     'system'   => [
-        'website-name'   => 'Ratinan Lee Official',
-        'site-name-head' => 'RATINAN<span style="color:#080">LEE</span>',
-        'pages'          => [
+        'website-name'    => 'Ratinan Lee Official',
+        'site-name-head'  => 'RATINAN<span style="color:#080">LEE</span>',
+        'footer-msg'      => 'This is an official personal website of Ratinan Lee. He is a senior software engineer and technology lead based in Singapore and Bangkok.',
+        'useful-links'    => 'Useful Links',
+        'change-language' => 'Change Language',
+        'pages'           => [
             'home'          => 'About Ratinan',
             'personal-life' => 'Personal Life',
         ],
-        'seo'            => [
+        'seo'             => [
             'description' => 'Home page containing information about Ratinan Lee',
             'keywords'    => 'personal website, ratinan lee, portfolio'
         ]

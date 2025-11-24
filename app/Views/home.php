@@ -48,6 +48,7 @@ $experience_years = date('Y') - 2012;
                 <li><a href="#services"><?= lang('Home.sections.services.title') ?></a></li>
                 <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
                 <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>
+                <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -692,57 +693,40 @@ $experience_years = date('Y') - 2012;
     </section><!-- /Contact Section -->
 </main>
 <footer id="footer" class="footer">
-
     <div class="container footer-top">
         <div class="row gy-4">
             <div class="col-lg-5 col-md-12 footer-about">
-                <a href="index.html" class="logo d-flex align-items-center">
-                    <span class="sitename">Craftivo</span>
+                <a href="<?= base_url($locale) ?>" class="logo d-flex align-items-center">
+                    <span class="sitename"><?= lang('Home.system.site-name-head') ?></span>
                 </a>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-                <div class="social-links d-flex mt-4">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <p><?= lang('Home.system.footer-msg') ?></p>
             </div>
-
-            <div class="col-lg-2 col-6 footer-links">
-                <h4>Useful Links</h4>
+            <div class="col-lg-3 col-6 footer-links">
+                <h4><?= lang('Home.system.useful-links') ?></h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#hero"><?= lang('Home.sections.home.title') ?></a></li>
+                    <li><a href="#about"><?= lang('Home.sections.about.title') ?></a></li>
+                    <li><a href="#resume"><?= lang('Home.sections.resume.title') ?></a></li>
+                    <li><a href="#services"><?= lang('Home.sections.services.title') ?></a></li>
+                    <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
+                    <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>
+                    <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
                 </ul>
             </div>
-
-            <div class="col-lg-2 col-6 footer-links">
-                <h4>Our Services</h4>
+            <div class="col-lg-3 col-6 footer-links">
+                <h4><?= lang('Home.system.change-language') ?></h4>
                 <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">Product Management</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="<?= base_url('en') ?>">English (US)</a></li>
+                    <li><a href="<?= base_url('th') ?>">ภาษาไทย</a></li>
+                    <li><a href="<?= base_url('ja') ?>">日本語</a></li>
+                    <li><a href="<?= base_url('zh-TW') ?>">中文（台灣）</a></li>
+                    <li><a href="<?= base_url('en-SHAW') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
                 </ul>
             </div>
-
-            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                <h4>Contact Us</h4>
-                <p>A108 Adam Street</p>
-                <p>New York, NY 535022</p>
-                <p>United States</p>
-                <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                <p><strong>Email:</strong> <span>info@example.com</span></p>
-            </div>
-
         </div>
     </div>
     <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">RatinanLee</strong> <span>All Rights Reserved</span></p>
     </div>
 </footer>
 <!-- Scroll Top -->

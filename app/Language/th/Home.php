@@ -193,7 +193,7 @@ return [
         ],
         'contact'   => [
             'title'     => 'ติดต่อ',
-            'linkedin'  => 'ลิงก์อิน',
+            'linkedin'  => 'LinkedIn',
             'instagram' => 'ไอจี',
             'github'    => 'Github',
             'line'      => 'ไลน์',

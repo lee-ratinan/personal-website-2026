@@ -407,42 +407,42 @@ $experience_years = date('Y') - 2012;
                                     'title'   => 'Golf School Website',
                                     'filters' => ['website'],
                                     'image'   => 'wisdomgolf.jpg',
-                                    'year'    => '2025',
+                                    'year'    => [2025],
                                     'tags'    => ['website', 'seo', 'ux design', 'thailand']
                             ],
                             [
                                     'title'   => 'Thai Massage Website',
                                     'filters' => ['website'],
                                     'image'   => 'skythai.jpg',
-                                    'year'    => '2025',
+                                    'year'    => [2025],
                                     'tags'    => ['website', 'seo', 'ux design', 'new zealand']
                             ],
                             [
                                     'title'   => 'Industrial Website',
                                     'filters' => ['website'],
                                     'image'   => 'meirdtech.jpg',
-                                    'year'    => '2025',
+                                    'year'    => [2025],
                                     'tags'    => ['website', 'seo', 'thailand']
                             ],
                             [
                                     'title'   => 'Remittance Application',
                                     'filters' => ['mobile', 'website', 'backend', 'ai'],
                                     'image'   => 'moolahgo.jpg',
-                                    'year'    => '2021-2024',
+                                    'year'    => [2021, 2024],
                                     'tags'    => ['fintech', 'website', 'ai']
                             ],
                             [
                                     'title'   => 'Snack Online Stores',
                                     'filters' => ['website', 'backend'],
                                     'image'   => 'irvins.jpg',
-                                    'year'    => '2020-2021',
+                                    'year'    => [2020, 2021],
                                     'tags'    => ['e-commerce', 'seo', 'shopify']
                             ],
                             [
                                     'title'   => 'Furniture Online Stores',
                                     'filters' => ['website', 'backend'],
                                     'image'   => 'secretlab.jpg',
-                                    'year'    => '2018-2020',
+                                    'year'    => [2018, 2020],
                                     'tags'    => ['e-commerce', 'seo', 'shopify']
                             ],
                     ];
@@ -469,7 +469,7 @@ $experience_years = date('Y') - 2012;
                                     <div class="project-tags">
                                         <?php foreach ($portfolio['tags'] as $tag) : ?><span class="tag"><?= $tag ?></span><?php endforeach; ?>
                                     </div>
-                                    <div class="project-year"><?= $portfolio['year'] ?></div>
+                                    <div class="project-year"><?= calculate_years($portfolio['year'], $locale, ' - ') ?></div>
                                 </div>
                             </div>
                         </div>

@@ -2,7 +2,7 @@
 return [
     'system'   => [
         'website-name'    => '力川エイキン',
-        'site-name-head'  => '力川<span style="color:#080">エイキン</span>',
+        'site-name-head'  => '力川<span style="color:#a00">エイキン</span>',
         'footer-msg'      => 'これは力川エイキンの公式個人サイトです。彼はシンガポールとバンコクを拠点とするシニアソフトウェアエンジニア兼テクノロジーリードです。',
         'useful-links'    => '便利なリンク',
         'change-language' => '言語を変更',
@@ -80,40 +80,40 @@ return [
                 'title'   => '実務経験',
                 'records' => [
                     '1' => [
-                        'current'   => 'Current',
-                        'title'     => 'Technical Team Leader, Project Manager',
+                        'current'   => '現在',
+                        'title'     => 'テクニカルチームリーダー、プロジェクトマネージャー',
                         'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
-                        'when'      => '2018 - Now',
+                        'when'      => '2018年 - 現在',
                         'paragraph' => 'Eコマースとフィンテック領域で経験を持つプロジェクトマネージャー兼テクニカルリードとして、クロスファンクショナルチームを導き、デリバリーを効率化し、構想からリリースまで高品質でスケーラブルなソリューションを推進しました。',
                         'tags'      => [
-                            '1' => 'Leadership',
-                            '2' => 'Management',
-                            '3' => 'Scrum',
-                            '4' => 'Innovation'
+                            '1' => 'リーダーシップ',
+                            '2' => 'マネジメント',
+                            '3' => 'スクラム',
+                            '4' => 'イノベーション'
                         ]
                     ],
                     '2' => [
-                        'title'     => 'Independent Technology Consultant',
-                        'companies' => 'Freelance',
-                        'when'      => '2024 - Now',
+                        'title'     => '独立系テクノロジーコンサルタント',
+                        'companies' => 'フリーランス',
+                        'when'      => '2024年 - 現在',
                         'paragraph' => 'フリーランスとして、複数業界・複数国のクライアント向けにエンドツーエンドのウェブサイト制作を主導。要件管理、開発、品質を統括し、完成度が高くパフォーマンス重視のデジタル体験を提供しました。',
                         'tags'      => [
-                            '1' => 'Management',
-                            '2' => 'Creativity',
+                            '1' => 'マネジメント',
+                            '2' => '創造性',
                             '3' => 'SEO',
-                            '4' => 'Communication'
+                            '4' => 'コミュニケーション'
                         ]
                     ],
                     '3' => [
-                        'title'     => 'Software Engineer',
+                        'title'     => 'ソフトウェアエンジニア',
                         'companies' => 'Mobads, BuzzCity, DST',
-                        'when'      => '2012 - 2017',
+                        'when'      => '2012年 - 2017年',
                         'paragraph' => '新人ソフトウェアエンジニアとしてフルスタック開発に携わり、最新フレームワークを学びながら、クリーンコード・テスト・協働開発の確かな基盤を築きつつ機能開発を支援しました。',
                         'tags'      => [
-                            '1' => 'Programming',
-                            '2' => 'Web Development',
-                            '3' => 'System Analysis',
-                            '4' => 'UX/UI Design',
+                            '1' => 'プログラミング',
+                            '2' => 'ウェブ開発',
+                            '3' => 'システム分析',
+                            '4' => 'UX/UI デザイン',
                         ]
                     ]
                 ]
@@ -123,33 +123,33 @@ return [
                 'title'   => '学術背景',
                 'records' => [
                     'certificates' => [
-                        'label' => 'Certificates',
-                        'years' => '2024 - 2025',
-                        'title' => 'Professional Certificates',
+                        'label' => '専門資格',
+                        'years' => '2024年 - 2025年',
+                        'title' => '専門資格',
                         'list'  => [
-                            ['Certified Scrum Master', '2025'],
-                            ['Professional Scrum Master I, II', '2024'],
-                            ['Professional Scrum Product Owner I, II', '2024 - 2025'],
-                            ['Google Project Management', '2024'],
-                            ['Google AI Essentials', '2024'],
-                            ['Google Data Analytics', '2024'],
-                            ['Google UX Design', '2024'],
+                            ['Certified Scrum Master', '2025年'],
+                            ['Professional Scrum Master I, II', '2024年'],
+                            ['Professional Scrum Product Owner I, II', '2024年 - 2025年'],
+                            ['Google Project Management', '2024年'],
+                            ['Google AI Essentials', '2024年'],
+                            ['Google Data Analytics', '2024年'],
+                            ['Google UX Design', '2024年'],
                         ]
                     ],
                     'masters'      => [
-                        'label'      => 'Masters',
-                        'year'       => '2014 - 2015',
-                        'title'      => 'Master of Science (Information Systems)',
-                        'university' => 'Wee Kim Wee School of Communication and Information, Nanyang Technological University',
-                        'paragraph'  => 'Mastered advanced information system engineering and management.'
+                        'label'      => '修士号',
+                        'year'       => '2014年 - 2015年',
+                        'title'      => '情報システム理学修士',
+                        'university' => '南洋理工大学 ウィー・キム・ウィー情報コミュニケーション学部',
+                        'paragraph'  => '高度な情報システム工学とマネジメントを習得。'
                     ],
                     'bachelor'     => [
-                        'label'      => 'Bachelors',
-                        'year'       => '2008 - 2012',
-                        'title'      => 'Bachelor of Science (Computer Science)',
-                        'university' => 'Sirindhorn International Institute of Technology, Thammasat University',
-                        'paragraph'  => 'Learned a strong foundation in software engineering and architecture.',
-                        'honors'     => 'First Class Honors'
+                        'label'      => '学士号',
+                        'year'       => '2008年 - 2012年',
+                        'title'      => 'コンピュータサイエンス理学学士',
+                        'university' => 'タマサート大学 シリンドーン国際工学部',
+                        'paragraph'  => 'ソフトウェア工学とアーキテクチャの確かな基礎を習得。',
+                        'honors'     => '最優等'
                     ],
                 ]
             ]
@@ -181,11 +181,11 @@ return [
         'portfolio' => [
             'title'   => 'ポートフォリオ',
             'filters' => [
-                'all'     => 'All Work',
-                'website' => 'Website',
-                'backend' => 'Backend System',
-                'mobile'  => 'Mobile Application',
-                'ai'      => 'AI Application',
+                'all'     => 'すべての作品',
+                'website' => 'ウェブサイト',
+                'backend' => 'バックエンドシステム',
+                'mobile'  => 'モバイルアプリ',
+                'ai'      => 'AIアプリ',
             ],
             'cta'           => '私を雇ってください！',
             'cta-title'     => '気に入りましたか？',
@@ -196,7 +196,7 @@ return [
             'linkedin'  => 'LinkedIn',
             'instagram' => 'Instagram',
             'github'    => 'Github',
-            'line'      => 'Line',
+            'line'      => 'LINE（ライン）',
             'medium'    => 'Medium',
             'telegram'  => 'Telegram',
             'facebook'  => 'Facebook',

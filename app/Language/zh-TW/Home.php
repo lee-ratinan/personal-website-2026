@@ -1,8 +1,8 @@
 <?php
 return [
     'system'   => [
-        'website-name'    => '李榮欽',
-        'site-name-head'  => '李<span style="color:#080">榮欽</span>',
+        'website-name'    => '李榮欽的網站',
+        'site-name-head'  => '李<span style="color:#00f">榮欽</span>',
         'footer-msg'      => '這是李榮欽的官方個人網站。他是一位常駐新加坡與曼谷的資深軟體工程師與技術領導者。',
         'useful-links'    => '實用連結',
         'change-language' => '切換語言',
@@ -27,20 +27,20 @@ return [
             'title'       => '首頁',
             'greetings'   => '你好！我是李榮欽！',
             'i-am-a'      => '我是',
-            'occupations' => 'Scrum Master, Software Developer, Project Manager, Freelancer'
+            'occupations' => 'Scrum Master, 軟體工程師, PM, 自由工作者'
         ],
         'about'     => [
             'title'            => '關於我',
             'about-me'         => '關於我',
             'main-paragraph'   => '我是一位具備 CSM/PSM 認證的技術專案經理與 Scrum Master，擁有金融科技經驗，帶領跨國團隊順利且可擴展地完成專案。我讓專案更銳利、團隊更協調、節奏更穩定，將複雜概念轉化為清晰並具未來性的成果。',
             'ratinan-lee'      => '李榮欽',
-            'main-occupations' => 'Scrum Master, Project Manager',
+            'main-occupations' => 'Scrum Master, PM',
             'counts'           => [
-                'products'     => 'Products',
-                'years'        => 'Years',
-                'certificates' => 'Certificates',
+                'products'     => '產品',
+                'years'        => '年',
+                'certificates' => '證書',
             ],
-            'download-cv'      => 'Download CV',
+            'download-cv'      => '下載CV',
             'secondary'        => [
                 'title'       => '我帶領著一個快樂的團隊！',
                 'paragraph-1' => '我以讓團隊真正快樂為核心來帶領大家，因為有活力的人才能打造更好的產品。共感與專注傾聽是我的基本態度，無論大小問題，任何人都可以來找我。我不會急著替大家把事情解決，而是引導、協助、並讓他們用自己的方式處理問題。這種自主性會建立自信、精進技能，讓團隊在每個衝刺中變得更強。',
@@ -80,40 +80,40 @@ return [
                 'title'   => '專業經驗',
                 'records' => [
                     '1' => [
-                        'current'   => 'Current',
-                        'title'     => 'Technical Team Leader, Project Manager',
+                        'current'   => '現在',
+                        'title'     => '技術團隊領導 / 技術主管、專案經理',
                         'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
-                        'when'      => '107 - Now',
+                        'when'      => '107年 - 現在',
                         'paragraph' => '具備電商與金融科技經驗的專案經理兼技術領導者，帶領跨職能團隊、優化交付流程，並從概念到上線推動高品質、可擴展的技術解決方案。',
                         'tags'      => [
-                            '1' => 'Leadership',
-                            '2' => 'Management',
+                            '1' => '領導力',
+                            '2' => '管理',
                             '3' => 'Scrum',
-                            '4' => 'Innovation'
+                            '4' => '創新'
                         ]
                     ],
                     '2' => [
-                        'title'     => 'Independent Technology Consultant',
-                        'companies' => 'Freelance',
-                        'when'      => '113 - Now',
+                        'title'     => '獨立技術顧問',
+                        'companies' => '自由接案者',
+                        'when'      => '113年 - 現在',
                         'paragraph' => '自由接案專案領導者，為多國、多領域客戶提供端到端網站解決方案，負責需求管理、開發與品質控管，交付精緻且高效的數位體驗。',
                         'tags'      => [
-                            '1' => 'Management',
-                            '2' => 'Creativity',
+                            '1' => '管理',
+                            '2' => '創意',
                             '3' => 'SEO',
-                            '4' => 'Communication'
+                            '4' => '溝通能力'
                         ]
                     ],
                     '3' => [
-                        'title'     => 'Software Engineer',
+                        'title'     => '軟體工程師',
                         'companies' => 'Mobads, BuzzCity, DST',
-                        'when'      => '101 - 106',
+                        'when'      => '101年 - 106年',
                         'paragraph' => '初階軟體工程師，參與全端開發，學習現代框架，支援功能交付，同時建立良好程式碼、測試與協作工程的扎實基礎。',
                         'tags'      => [
-                            '1' => 'Programming',
-                            '2' => 'Web Development',
-                            '3' => 'System Analysis',
-                            '4' => 'UX/UI Design',
+                            '1' => '程式設計',
+                            '2' => '網站開發',
+                            '3' => '系統分析',
+                            '4' => 'UX/UI 設計',
                         ]
                     ]
                 ]
@@ -123,33 +123,33 @@ return [
                 'title'   => '學術背景',
                 'records' => [
                     'certificates' => [
-                        'label' => 'Certificates',
-                        'years' => '113 - 114',
-                        'title' => 'Professional Certificates',
+                        'label' => '專業證照',
+                        'years' => '113年 - 114年',
+                        'title' => '專業證照',
                         'list'  => [
-                            ['Certified Scrum Master', '114'],
-                            ['Professional Scrum Master I, II', '113'],
-                            ['Professional Scrum Product Owner I, II', '113 - 114'],
-                            ['Google Project Management', '113'],
-                            ['Google AI Essentials', '113'],
-                            ['Google Data Analytics', '113'],
-                            ['Google UX Design', '113'],
+                            ['Certified Scrum Master', '114年'],
+                            ['Professional Scrum Master I, II', '113年'],
+                            ['Professional Scrum Product Owner I, II', '113年 - 114年'],
+                            ['Google Project Management', '113年'],
+                            ['Google AI Essentials', '113年'],
+                            ['Google Data Analytics', '113年'],
+                            ['Google UX Design', '113年'],
                         ]
                     ],
                     'masters'      => [
-                        'label'      => 'Masters',
-                        'year'       => '103 - 104',
-                        'title'      => 'Master of Science (Information Systems)',
-                        'university' => 'Wee Kim Wee School of Communication and Information, Nanyang Technological University',
-                        'paragraph'  => 'Mastered advanced information system engineering and management.'
+                        'label'      => '碩士學位',
+                        'year'       => '103年 - 104年',
+                        'title'      => '資訊系統理學碩士',
+                        'university' => '新加坡南洋理工大學 Wee Kim Wee 傳播與資訊學院',
+                        'paragraph'  => '修習高階資訊系統工程與管理。'
                     ],
                     'bachelor'     => [
-                        'label'      => 'Bachelors',
-                        'year'       => '97 - 101',
-                        'title'      => 'Bachelor of Science (Computer Science)',
-                        'university' => 'Sirindhorn International Institute of Technology, Thammasat University',
-                        'paragraph'  => 'Learned a strong foundation in software engineering and architecture.',
-                        'honors'     => 'First Class Honors'
+                        'label'      => '學士學位',
+                        'year'       => '97年 - 101年',
+                        'title'      => '資訊工程理學學士',
+                        'university' => '泰國塔馬薩特大學 SIIT 工學院',
+                        'paragraph'  => '建立扎實的軟體工程與架構基礎。',
+                        'honors'     => '一等榮譽'
                     ],
                 ]
             ]
@@ -181,11 +181,11 @@ return [
         'portfolio' => [
             'title'   => '作品集',
             'filters' => [
-                'all'     => 'All Work',
-                'website' => 'Website',
-                'backend' => 'Backend System',
-                'mobile'  => 'Mobile Application',
-                'ai'      => 'AI Application',
+                'all'     => '全部作品',
+                'website' => '網站',
+                'backend' => '後端系統',
+                'mobile'  => '手機 APP',
+                'ai'      => 'AI APP',
             ],
             'cta'           => '雇用我吧！',
             'cta-title'     => '喜歡你所看到的嗎？',
@@ -194,9 +194,9 @@ return [
         'contact'   => [
             'title'     => '聯絡方式',
             'linkedin'  => 'LinkedIn',
-            'instagram' => 'Instagram',
+            'instagram' => 'IG',
             'github'    => 'Github',
-            'line'      => 'Line',
+            'line'      => 'LINE',
             'medium'    => 'Medium',
             'telegram'  => 'Telegram',
             'facebook'  => 'Facebook',

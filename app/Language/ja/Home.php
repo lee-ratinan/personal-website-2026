@@ -1,18 +1,18 @@
 <?php
 return [
     'system'   => [
-        'website-name'    => '力川エイキン Official',
+        'website-name'    => '力川エイキン',
         'site-name-head'  => '力川<span style="color:#080">エイキン</span>',
-        'footer-msg'      => 'This is an official personal website of Ratinan Lee. He is a senior software engineer and technology lead based in Singapore and Bangkok.',
-        'useful-links'    => 'Useful Links',
-        'change-language' => 'Change Language',
+        'footer-msg'      => 'これは力川エイキンの公式個人サイトです。彼はシンガポールとバンコクを拠点とするシニアソフトウェアエンジニア兼テクノロジーリードです。',
+        'useful-links'    => '便利なリンク',
+        'change-language' => '言語を変更',
         'pages'           => [
-            'home'          => 'About エイキン',
-            'personal-life' => 'Personal Life',
+            'home'          => 'エイキンについて',
+            'personal-life' => 'プライベート',
         ],
         'seo'             => [
-            'description' => 'Home page containing information about 力川エイキン',
-            'keywords'    => 'personal website, 力川エイキン, portfolio'
+            'description' => 'CSM/PSM 認定のテクニカルプロジェクトマネージャー兼スクラムマスター。フィンテックとECで多国籍チームを率い、高品質でスケーラブルなソリューションを提供。',
+            'keywords'    => 'プロジェクトマネージャー, スクラムマスター, CSM, PSM, フィンテック, EC, ソフトウェア開発, アジャイルコーチング, 技術リード, 多国籍チーム, ポートフォリオ, レジュメ'
         ]
     ],
     'numbers'  => [
@@ -30,17 +30,17 @@ return [
             'occupations' => 'スクラムマスター,ソフトウェアエンジニア,プロジェクトマネージャー,フリーランサー'
         ],
         'about'     => [
-            'title'            => 'About',
-            'about-me'         => 'About Me',
+            'title'            => '私について',
+            'about-me'         => '私について',
             'main-paragraph'   => '私は CSM/PSM 認定を持つテクニカルプロジェクトマネージャー兼スクラムマスターとして、フィンテック分野で多国籍チームを率い、スムーズで拡張性の高いデリバリーを実現してきました。高度なアイデアを整理し、プロジェクトの軸を整え、未来につながる成果へとつなげます。',
             'ratinan-lee'      => '力川エイキン',
-            'main-occupations' => 'Scrum Master, Project Manager',
+            'main-occupations' => 'スクラムマスター、プロジェクトマネージャー',
             'counts'           => [
-                'products'     => 'Products',
-                'years'        => 'Years',
-                'certificates' => 'Certificates',
+                'products'     => '製品',
+                'years'        => '年間',
+                'certificates' => '認証',
             ],
-            'download-cv'      => 'Download CV',
+            'download-cv'      => 'CVをダウンロード',
             'secondary'        => [
                 'title'       => '私は幸せなチームを率いています！',
                 'paragraph-1' => '私はチームが本当に幸せであることを大切にしてリードしています。前向きなエネルギーを持つ人ほど、より良いプロダクトを生み出すからです。共感と傾聴は私の基本姿勢で、誰でも大小問わず課題を相談できます。私が何でもすぐに片付けるのではなく、導き、コーチし、各自が自分の方法で問題を解決できるようにします。その自立が自信を育て、スキルを磨き、スプリントごとに強いチームへと成長させます。',
@@ -48,36 +48,36 @@ return [
             ],
             'boxes'            => [
                 '1' => [
-                    'label' => 'Experiences',
-                    'value' => '{0, number}+ years'
+                    'label' => '職務経験',
+                    'value' => '{0, number}+年'
                 ],
                 '2' => [
-                    'label' => 'Education',
-                    'value' => 'Master Degree'
+                    'label' => '最高学歴',
+                    'value' => '修士号'
                 ],
                 '3' => [
-                    'label' => 'Based in',
+                    'label' => '拠点を置く',
                     'value' => 'シンガポールとバンコク'
                 ],
                 '4' => [
-                    'label' => 'Availability',
-                    'value' => 'Open to Work'
+                    'label' => '勤務可能時間',
+                    'value' => '勤務可能'
                 ],
                 '5' => [
-                    'label' => 'I speak',
-                    'value' => '英語（C2）、タイ語（）<br>日本語 (beginner)'
+                    'label' => '話せる言語',
+                    'value' => '英語（C2）、タイ語（ネイティブ）、<br>日本語（初級）'
                 ],
                 '6' => [
-                    'label' => 'Nationality',
+                    'label' => '国籍',
                     'value' => 'タイ'
                 ]
             ]
         ],
         'resume'    => [
-            'title'      => 'Resume',
+            'title'      => '履歴書',
             'experience' => [
-                'label'   => 'Experience',
-                'title'   => 'Professional Experience',
+                'label'   => '職務経験',
+                'title'   => '実務経験',
                 'records' => [
                     '1' => [
                         'current'   => 'Current',
@@ -119,8 +119,8 @@ return [
                 ]
             ],
             'education'  => [
-                'label'   => 'Education',
-                'title'   => 'Academic Background',
+                'label'   => '学歴',
+                'title'   => '学術背景',
                 'records' => [
                     'certificates' => [
                         'label' => 'Certificates',
@@ -179,7 +179,7 @@ return [
             'cta-paragraph' => 'あなたのニーズに合わせた革新的なソリューションで、アイデアを形にする方法を学びましょう。'
         ],
         'portfolio' => [
-            'title'   => 'Portfolio',
+            'title'   => 'ポートフォリオ',
             'filters' => [
                 'all'     => 'All Work',
                 'website' => 'Website',
@@ -192,7 +192,7 @@ return [
             'cta-paragraph' => 'まずは話しかけて、そして私を雇ってください。あなたのためにもう一度最高の成果を作ります！'
         ],
         'contact'   => [
-            'title'     => 'Contact',
+            'title'     => 'お問い合わせ',
             'linkedin'  => 'LinkedIn',
             'instagram' => 'Instagram',
             'github'    => 'Github',

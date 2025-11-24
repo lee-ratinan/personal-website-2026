@@ -1,18 +1,18 @@
 <?php
 return [
     'system'   => [
-        'website-name'    => '李榮欽 Official',
+        'website-name'    => '李榮欽',
         'site-name-head'  => '李<span style="color:#080">榮欽</span>',
-        'footer-msg'      => 'This is an official personal website of Ratinan Lee. He is a senior software engineer and technology lead based in Singapore and Bangkok.',
-        'useful-links'    => 'Useful Links',
-        'change-language' => 'Change Language',
+        'footer-msg'      => '這是李榮欽的官方個人網站。他是一位常駐新加坡與曼谷的資深軟體工程師與技術領導者。',
+        'useful-links'    => '實用連結',
+        'change-language' => '切換語言',
         'pages'           => [
-            'home'          => 'About Ratinan',
-            'personal-life' => 'Personal Life',
+            'home'          => '關於榮欽',
+            'personal-life' => '個人生活',
         ],
         'seo'             => [
-            'description' => 'Home page containing information about Ratinan Lee',
-            'keywords'    => 'personal website, ratinan lee, portfolio'
+            'description' => '具備 CSM/PSM 認證的技術專案經理與 Scrum Master，擁有電商與金融科技經驗，帶領跨國團隊交付高品質、可擴展的數位解決方案。',
+            'keywords'    => '專案經理, Scrum Master, CSM, PSM, 金融科技, 電子商務, 軟體開發, 敏捷教練, 技術主管, 跨國團隊, 履歷, 個人作品集'
         ]
     ],
     'numbers'  => [
@@ -24,14 +24,14 @@ return [
     ],
     'sections' => [
         'home'      => [
-            'title'       => 'Home',
+            'title'       => '首頁',
             'greetings'   => '你好！我是李榮欽！',
             'i-am-a'      => '我是',
             'occupations' => 'Scrum Master, Software Developer, Project Manager, Freelancer'
         ],
         'about'     => [
-            'title'            => 'About',
-            'about-me'         => 'About Me',
+            'title'            => '關於我',
+            'about-me'         => '關於我',
             'main-paragraph'   => '我是一位具備 CSM/PSM 認證的技術專案經理與 Scrum Master，擁有金融科技經驗，帶領跨國團隊順利且可擴展地完成專案。我讓專案更銳利、團隊更協調、節奏更穩定，將複雜概念轉化為清晰並具未來性的成果。',
             'ratinan-lee'      => '李榮欽',
             'main-occupations' => 'Scrum Master, Project Manager',
@@ -48,36 +48,36 @@ return [
             ],
             'boxes'            => [
                 '1' => [
-                    'label' => 'Experiences',
-                    'value' => '{0, number}+ years'
+                    'label' => '工作經驗',
+                    'value' => '{0, number}+年'
                 ],
                 '2' => [
-                    'label' => 'Education',
-                    'value' => 'Master Degree'
+                    'label' => '最高學歷',
+                    'value' => '碩士學位'
                 ],
                 '3' => [
-                    'label' => 'Based in',
-                    'value' => 'Singapore &amp; Bangkok'
+                    'label' => '總部位於',
+                    'value' => '新加坡和曼谷'
                 ],
                 '4' => [
-                    'label' => 'Availability',
-                    'value' => 'Open to Work'
+                    'label' => '工作時間',
+                    'value' => '可以接受工作安排'
                 ],
                 '5' => [
-                    'label' => 'I speak',
-                    'value' => 'English (C2), Thai (native)<br>Japanese (beginner)'
+                    'label' => '我會說',
+                    'value' => '英語（C2）、泰語（母語）、<br>日語（初級）'
                 ],
                 '6' => [
-                    'label' => 'Nationality',
-                    'value' => 'Thai'
+                    'label' => '國籍',
+                    'value' => '泰國'
                 ]
             ]
         ],
         'resume'    => [
-            'title'      => 'Resume',
+            'title'      => '履歷',
             'experience' => [
-                'label'   => 'Experience',
-                'title'   => 'Professional Experience',
+                'label'   => '工作經驗',
+                'title'   => '專業經驗',
                 'records' => [
                     '1' => [
                         'current'   => 'Current',
@@ -119,8 +119,8 @@ return [
                 ]
             ],
             'education'  => [
-                'label'   => 'Education',
-                'title'   => 'Academic Background',
+                'label'   => '學歷',
+                'title'   => '學術背景',
                 'records' => [
                     'certificates' => [
                         'label' => 'Certificates',
@@ -179,7 +179,7 @@ return [
             'cta-paragraph' => '透過量身打造的創新解決方案，了解如何讓你的想法真正實現。'
         ],
         'portfolio' => [
-            'title'   => 'Portfolio',
+            'title'   => '作品集',
             'filters' => [
                 'all'     => 'All Work',
                 'website' => 'Website',
@@ -192,7 +192,7 @@ return [
             'cta-paragraph' => '來跟我聊聊並雇用我吧！讓我再為你創造一次精彩成果！'
         ],
         'contact'   => [
-            'title'     => 'Contact',
+            'title'     => '聯絡方式',
             'linkedin'  => 'LinkedIn',
             'instagram' => 'Instagram',
             'github'    => 'Github',

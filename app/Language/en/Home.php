@@ -11,8 +11,8 @@ return [
             'personal-life' => 'Personal Life',
         ],
         'seo'             => [
-            'description' => 'Home page containing information about Ratinan Lee',
-            'keywords'    => 'personal website, ratinan lee, portfolio'
+            'description' => 'CSM/PSM-certified technical project manager and scrum master with fintech and e-commerce experience, leading multicultural teams and delivering high-quality, scalable digital solutions.',
+            'keywords'    => 'technical project manager, scrum master, CSM, PSM, fintech, e-commerce, software development, agile coaching, cross-functional leadership, project management, technical lead, multicultural teams, portfolio, resume'
         ]
     ],
     'numbers'  => [

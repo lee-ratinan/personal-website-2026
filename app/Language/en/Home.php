@@ -180,7 +180,15 @@ return [
             'title' => 'Portfolio'
         ],
         'contact'   => [
-            'title' => 'Contact'
+            'title'     => 'Contact',
+            'linkedin'  => 'LinkedIn',
+            'instagram' => 'Instagram',
+            'github'    => 'Github',
+            'line'      => 'Line',
+            'medium'    => 'Medium',
+            'telegram'  => 'Telegram',
+            'facebook'  => 'Facebook',
+            'whatsapp'  => 'WhatsApp',
         ],
     ]
 ];

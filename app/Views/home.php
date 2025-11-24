@@ -331,7 +331,6 @@ $experience_years = date('Y') - 2012;
     </section><!-- /Resume Section -->
     <!-- Services Section -->
     <section id="services" class="services section">
-
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <span class="subtitle"><?= lang('Home.numbers.3') ?></span>
@@ -376,18 +375,14 @@ $experience_years = date('Y') - 2012;
                     </div>
                 </div>
             </div>
-
         </div>
-
     </section><!-- /Services Section -->
-
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <span class="subtitle"><?= lang('Home.numbers.4') ?></span>
-            <h2>Portfolio</h2>
+            <h2><?= lang('Home.sections.portfolio.title') ?></h2>
             <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
         </div><!-- End Section Title -->
 
@@ -595,94 +590,107 @@ $experience_years = date('Y') - 2012;
         </div>
 
     </section><!-- /Portfolio Section -->
-
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <span class="subtitle"><?= lang('Home.numbers.5') ?></span>
-            <h2>Contact</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+            <h2><?= lang('Home.sections.contact.title') ?></h2>
         </div><!-- End Section Title -->
-
         <div class="container">
-
             <div class="row gy-4">
-
-                <div class="col-lg-4">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="info-item">
                         <div class="icon-wrapper">
-                            <i class="bi bi-geo-alt"></i>
+                            <i class="bi bi-linkedin"></i>
                         </div>
                         <div>
-                            <h3>Address</h3>
-                            <p>2847 Oak Street, San Francisco, CA 94102</p>
+                            <h3><?= lang('Home.sections.contact.linkedin') ?></h3>
+                            <p><a href="https://www.linkedin.com/in/ratinanlee" target="_blank">/in/ratinanlee</a></p>
                         </div>
                     </div>
-
-                    <div class="info-item">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-telephone"></i>
-                        </div>
-                        <div>
-                            <h3>Call Me</h3>
-                            <p>+1 (555) 234-5678</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-envelope"></i>
-                        </div>
-                        <div>
-                            <h3>Email Me</h3>
-                            <p>alex@example.com</p>
-                        </div>
-                    </div>
-
                 </div>
-
-                <div class="col-lg-8">
-                    <form action="forms/contact.php" method="post" class="php-email-form">
-                        <div class="row gy-4">
-
-                            <div class="col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                            </div>
-
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                            </div>
-
-                            <div class="col-md-12 text-center">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                <button type="submit">Send Message</button>
-                            </div>
-
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="info-item">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-github"></i>
                         </div>
-                    </form>
+                        <div>
+                            <h3><?= lang('Home.sections.contact.github') ?></h3>
+                            <p><a href="https://github.com/lee-ratinan" target="_blank">/lee-ratinan</a></p>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="info-item">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                        <div>
+                            <h3><?= lang('Home.sections.contact.instagram') ?></h3>
+                            <p><a href="https://www.instagram.com/ratinanlee/" target="_blank">/ratinanlee</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="info-item">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-line"></i>
+                        </div>
+                        <div>
+                            <h3><?= lang('Home.sections.contact.line') ?></h3>
+                            <p><a href="https://line.me/ti/p/ME2Tsnm9nr" target="_blank">Nat-エイキン</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="info-item">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-medium"></i>
+                        </div>
+                        <div>
+                            <h3><?= lang('Home.sections.contact.medium') ?></h3>
+                            <p><a href="https://medium.com/@ratinanlee" target="_blank">@ratinanlee</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="info-item">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-messenger"></i>
+                        </div>
+                        <div>
+                            <h3><?= lang('Home.sections.contact.facebook') ?></h3>
+                            <p><a href="https://www.messenger.com/t/lee.ratinan/" target="_blank">/lee.ratinan</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="info-item">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-telegram"></i>
+                        </div>
+                        <div>
+                            <h3><?= lang('Home.sections.contact.telegram') ?></h3>
+                            <p><a href="https://t.me/rikikawa_eikin" target="_blank">@rikikawa_eikin</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="info-item">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h3><?= lang('Home.sections.contact.whatsapp') ?></h3>
+                            <p><a href="<?= base_url('whatsapp') ?>" target="_blank">Ratinan “Nat” Lee</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-
     </section><!-- /Contact Section -->
-
 </main>
-
 <footer id="footer" class="footer">
 
     <div class="container footer-top">

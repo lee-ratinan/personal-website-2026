@@ -156,7 +156,6 @@ return [
         ],
         'services'  => [
             'title'         => 'Services',
-            'paragraph'     => 'Learn more about my expertise!',
             'list'          => [
                 '0' => [
                     'item'        => 'Leadership &amp; Management',
@@ -177,10 +176,20 @@ return [
             ],
             'cta'           => 'Hire Me',
             'cta-title'     => 'Transform Your Vision Into Reality',
-            'cta-paragraph' => 'Learn how to bring your ideas to life with innovative solutions tailored to your needs'
+            'cta-paragraph' => 'Learn how to bring your ideas to life with innovative solutions tailored to your needs.'
         ],
         'portfolio' => [
-            'title' => 'Portfolio'
+            'title'   => 'Portfolio',
+            'filters' => [
+                'all'     => 'All Work',
+                'website' => 'Website',
+                'backend' => 'Backend System',
+                'mobile'  => 'Mobile Application',
+                'ai'      => 'AI Application',
+            ],
+            'cta'           => 'Hire Me',
+            'cta-title'     => 'Like What You See?',
+            'cta-paragraph' => 'Talk to me and hire me. Let me do it again for you!'
         ],
         'contact'   => [
             'title'     => 'Contact',

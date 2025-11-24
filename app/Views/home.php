@@ -283,10 +283,10 @@ $experience_years = date('Y') - 2012;
                                         <h4><?= lang('Home.sections.resume.education.records.certificates.title') ?></h4>
                                         <div class="certifications-list">
                                             <?php foreach (lang('Home.sections.resume.education.records.certificates.list') as $line) : ?>
-                                            <div class="cert-item">
-                                                <span class="cert-name"><?= $line[0] ?></span>
-                                                <span class="cert-year"><?= $line[1] ?></span>
-                                            </div>
+                                                <div class="cert-item">
+                                                    <span class="cert-name"><?= $line[0] ?></span>
+                                                    <span class="cert-year"><?= $line[1] ?></span>
+                                                </div>
                                             <?php endforeach ?>
                                         </div>
                                     </div>
@@ -336,29 +336,29 @@ $experience_years = date('Y') - 2012;
         <div class="container section-title" data-aos="fade-up">
             <span class="subtitle"><?= lang('Home.numbers.3') ?></span>
             <h2><?= lang('Home.sections.services.title') ?></h2>
-            <p><?= lang('Home.sections.services.paragraph') ?></p>
         </div><!-- End Section Title -->
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row gy-4">
                 <?php
                 $icons = [
-                    'kanban', // leadership + management
-                    'palette', // system analysis design
-                    'code-slash', // development
-                    'megaphone'  // coaching
+                        'kanban', // leadership + management
+                        'palette', // system analysis design
+                        'code-slash', // development
+                        'megaphone'  // coaching
                 ];
                 ?>
                 <?php for ($i = 0; $i < 4; $i++) : ?>
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="<?= $i+1 ?>00">
-                    <div class="service-item">
-                        <?php if (0 == $i) : ?><div class="featured-tag">Featured</div><?php endif ?>
-                        <div class="icon-wrapper">
-                            <i class="bi bi-<?= $icons[$i] ?>"></i>
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="<?= $i + 1 ?>00">
+                        <div class="service-item">
+                            <?php if (0 == $i) : ?>
+                                <div class="featured-tag">Featured</div><?php endif ?>
+                            <div class="icon-wrapper">
+                                <i class="bi bi-<?= $icons[$i] ?>"></i>
+                            </div>
+                            <h4><?= lang('Home.sections.services.list.' . $i . '.item') ?></h4>
+                            <p><?= lang('Home.sections.services.list.' . $i . '.description') ?></p>
                         </div>
-                        <h4><?= lang('Home.sections.services.list.' . $i . '.item') ?></h4>
-                        <p><?= lang('Home.sections.services.list.' . $i . '.description') ?></p>
                     </div>
-                </div>
                 <?php endfor; ?>
             </div>
             <div class="row mt-5">
@@ -384,212 +384,110 @@ $experience_years = date('Y') - 2012;
         <div class="container section-title" data-aos="fade-up">
             <span class="subtitle"><?= lang('Home.numbers.4') ?></span>
             <h2><?= lang('Home.sections.portfolio.title') ?></h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
         </div><!-- End Section Title -->
-
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-
             <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
                 <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-                    <li data-filter="*" class="filter-active">All Work</li>
-                    <li data-filter=".filter-creative">Creative</li>
-                    <li data-filter=".filter-digital">Digital</li>
-                    <li data-filter=".filter-strategy">Strategy</li>
-                    <li data-filter=".filter-development">Development</li>
+                    <li data-filter="*" class="filter-active"><?= lang('Home.sections.portfolio.filters.all') ?></li>
+                    <li data-filter=".filter-website"><?= lang('Home.sections.portfolio.filters.website') ?></li>
+                    <li data-filter=".filter-backend"><?= lang('Home.sections.portfolio.filters.backend') ?></li>
+                    <li data-filter=".filter-mobile"><?= lang('Home.sections.portfolio.filters.mobile') ?></li>
+                    <li data-filter=".filter-ai"><?= lang('Home.sections.portfolio.filters.ai') ?></li>
                 </ul>
-
                 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image-container">
-                                <img src="<?= base_url('assets/img/portfolio/portfolio-1.webp') ?>" alt="Creative Project" class="img-fluid" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <span class="project-category">Creative Design</span>
-                                        <h4>Visual Identity System</h4>
-                                    </div>
-                                    <div class="portfolio-actions">
-                                        <a href="<?= base_url('assets/img/portfolio/portfolio-1.webp') ?>" class="glightbox portfolio-link">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                        <a href="#" class="portfolio-details">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
+                    <?php
+                    $tag_types = [
+                            'website' => lang('Home.sections.portfolio.filters.website'),
+                            'backend' => lang('Home.sections.portfolio.filters.backend'),
+                            'mobile'  => lang('Home.sections.portfolio.filters.mobile'),
+                            'ai'      => lang('Home.sections.portfolio.filters.ai')
+                    ];
+                    $portfolio_items = [
+                            [
+                                    'title'   => 'Golf School Website',
+                                    'filters' => ['website'],
+                                    'image'   => 'wisdomgolf.jpg',
+                                    'year'    => '2025',
+                                    'tags'    => ['website', 'seo', 'ux design', 'thailand']
+                            ],
+                            [
+                                    'title'   => 'Thai Massage Website',
+                                    'filters' => ['website'],
+                                    'image'   => 'skythai.jpg',
+                                    'year'    => '2025',
+                                    'tags'    => ['website', 'seo', 'ux design', 'new zealand']
+                            ],
+                            [
+                                    'title'   => 'Industrial Website',
+                                    'filters' => ['website'],
+                                    'image'   => 'meirdtech.jpg',
+                                    'year'    => '2025',
+                                    'tags'    => ['website', 'seo', 'thailand']
+                            ],
+                            [
+                                    'title'   => 'Remittance Application',
+                                    'filters' => ['mobile', 'website', 'backend', 'ai'],
+                                    'image'   => 'moolahgo.jpg',
+                                    'year'    => '2021-2024',
+                                    'tags'    => ['fintech', 'website', 'ai']
+                            ],
+                            [
+                                    'title'   => 'Snack Online Stores',
+                                    'filters' => ['website', 'backend'],
+                                    'image'   => 'irvins.jpg',
+                                    'year'    => '2020-2021',
+                                    'tags'    => ['e-commerce', 'seo', 'shopify']
+                            ],
+                            [
+                                    'title'   => 'Furniture Online Stores',
+                                    'filters' => ['website', 'backend'],
+                                    'image'   => 'secretlab.jpg',
+                                    'year'    => '2018-2020',
+                                    'tags'    => ['e-commerce', 'seo', 'shopify']
+                            ],
+                    ];
+                    ?>
+                    <?php foreach ($portfolio_items as $portfolio) : ?>
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item <?php foreach ($portfolio['filters'] as $filter) {echo ' filter-' . $filter;} ?>">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image-container">
+                                    <img src="<?= base_url('assets/img/portfolio/' . $portfolio['image']) ?>" alt="<?= $portfolio['title'] ?>" class="img-fluid" loading="lazy">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-info">
+                                            <?php foreach ($portfolio['filters'] as $filter) : ?>
+                                                <span class="project-category"><?= $tag_types[$filter] ?></span>
+                                            <?php endforeach; ?>
+                                            <h4><?= $portfolio['title'] ?></h4>
+                                        </div>
+                                        <div class="portfolio-actions">
+                                            <a href="<?= base_url('assets/img/portfolio/' . $portfolio['image']) ?>" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="#" class="portfolio-details d-none"><i class="bi bi-arrow-right"></i></a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-meta">
-                                <div class="project-tags">
-                                    <span class="tag">Branding</span>
-                                    <span class="tag">Identity</span>
+                                <div class="portfolio-meta">
+                                    <div class="project-tags">
+                                        <?php foreach ($portfolio['tags'] as $tag) : ?><span class="tag"><?= $tag ?></span><?php endforeach; ?>
+                                    </div>
+                                    <div class="project-year"><?= $portfolio['year'] ?></div>
                                 </div>
-                                <div class="project-year">2024</div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image-container">
-                                <img src="<?= base_url('assets/img/portfolio/portfolio-2.webp') ?>" alt="Digital Project" class="img-fluid" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <span class="project-category">Digital Experience</span>
-                                        <h4>Interactive Web Platform</h4>
-                                    </div>
-                                    <div class="portfolio-actions">
-                                        <a href="<?= base_url('assets/img/portfolio/portfolio-2.webp') ?>" class="glightbox portfolio-link">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                        <a href="#" class="portfolio-details">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-meta">
-                                <div class="project-tags">
-                                    <span class="tag">Web Design</span>
-                                    <span class="tag">Development</span>
-                                </div>
-                                <div class="project-year">2024</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image-container">
-                                <img src="<?= base_url('assets/img/portfolio/portfolio-3.webp') ?>" alt="Strategy Project" class="img-fluid" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <span class="project-category">Brand Strategy</span>
-                                        <h4>Market Positioning</h4>
-                                    </div>
-                                    <div class="portfolio-actions">
-                                        <a href="<?= base_url('assets/img/portfolio/portfolio-3.webp') ?>" class="glightbox portfolio-link">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                        <a href="#" class="portfolio-details">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-meta">
-                                <div class="project-tags">
-                                    <span class="tag">Strategy</span>
-                                    <span class="tag">Consulting</span>
-                                </div>
-                                <div class="project-year">2023</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image-container">
-                                <img src="<?= base_url('assets/img/portfolio/portfolio-4.webp') ?>" alt="Development Project" class="img-fluid" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <span class="project-category">Full Stack</span>
-                                        <h4>Custom Application</h4>
-                                    </div>
-                                    <div class="portfolio-actions">
-                                        <a href="<?= base_url('assets/img/portfolio/portfolio-4.webp') ?>" class="glightbox portfolio-link">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                        <a href="#" class="portfolio-details">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-meta">
-                                <div class="project-tags">
-                                    <span class="tag">React</span>
-                                    <span class="tag">Node.js</span>
-                                </div>
-                                <div class="project-year">2024</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image-container">
-                                <img src="<?= base_url('assets/img/portfolio/portfolio-5.webp') ?>" alt="Creative Project" class="img-fluid" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <span class="project-category">Art Direction</span>
-                                        <h4>Campaign Design</h4>
-                                    </div>
-                                    <div class="portfolio-actions">
-                                        <a href="<?= base_url('assets/img/portfolio/portfolio-5.webp') ?>" class="glightbox portfolio-link">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                        <a href="#" class="portfolio-details">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-meta">
-                                <div class="project-tags">
-                                    <span class="tag">Creative</span>
-                                    <span class="tag">Campaign</span>
-                                </div>
-                                <div class="project-year">2024</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image-container">
-                                <img src="<?= base_url('assets/img/portfolio/portfolio-6.webp') ?>" alt="Digital Project" class="img-fluid" loading="lazy">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <span class="project-category">Digital Product</span>
-                                        <h4>Mobile Experience</h4>
-                                    </div>
-                                    <div class="portfolio-actions">
-                                        <a href="<?= base_url('assets/img/portfolio/portfolio-6.webp') ?>" class="glightbox portfolio-link">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </a>
-                                        <a href="#" class="portfolio-details">
-                                            <i class="bi bi-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-meta">
-                                <div class="project-tags">
-                                    <span class="tag">Mobile</span>
-                                    <span class="tag">UI/UX</span>
-                                </div>
-                                <div class="project-year">2023</div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
-
             </div>
-
             <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
                 <div class="row align-items-center">
                     <div class="col-lg-8">
-                        <h3>Like what you see?</h3>
-                        <p>Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                        <h3><?= lang('Home.sections.portfolio.cta-title') ?></h3>
+                        <p><?= lang('Home.sections.portfolio.cta-paragraph') ?></p>
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a href="#contact" class="btn btn-accent">Let's Work Together</a>
+                        <a href="#contact" class="btn btn-accent"><?= lang('Home.sections.portfolio.cta') ?></a>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </section><!-- /Portfolio Section -->
     <!-- Contact Section -->
     <section id="contact" class="contact section">

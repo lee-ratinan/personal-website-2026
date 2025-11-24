@@ -210,7 +210,7 @@ $experience_years = date('Y') - 2012;
                                 <div class="card-body">
                                     <h3><?= lang('Home.sections.resume.experience.records.1.title') ?></h3>
                                     <p class="company-name"><?= lang('Home.sections.resume.experience.records.1.companies') ?></p>
-                                    <span class="duration"><?= lang('Home.sections.resume.experience.records.1.when') ?></span>
+                                    <span class="duration"><?= calculate_years([2018, 0], $locale, ' - ') ?></span>
                                     <p class="description"><?= lang('Home.sections.resume.experience.records.1.paragraph') ?></p>
                                     <div class="skills-tags">
                                         <span class="skill-tag"><?= lang('Home.sections.resume.experience.records.1.tags.1') ?></span>
@@ -229,7 +229,7 @@ $experience_years = date('Y') - 2012;
                                 <div class="card-body">
                                     <h3><?= lang('Home.sections.resume.experience.records.2.title') ?></h3>
                                     <p class="company-name"><?= lang('Home.sections.resume.experience.records.2.companies') ?></p>
-                                    <span class="duration"><?= lang('Home.sections.resume.experience.records.2.when') ?></span>
+                                    <span class="duration"><?= calculate_years([2024, 0], $locale, ' - ') ?></span>
                                     <p class="description"><?= lang('Home.sections.resume.experience.records.2.paragraph') ?></p>
                                     <div class="skills-tags">
                                         <span class="skill-tag"><?= lang('Home.sections.resume.experience.records.2.tags.1') ?></span>
@@ -248,7 +248,7 @@ $experience_years = date('Y') - 2012;
                                 <div class="card-body">
                                     <h3><?= lang('Home.sections.resume.experience.records.3.title') ?></h3>
                                     <p class="company-name"><?= lang('Home.sections.resume.experience.records.3.companies') ?></p>
-                                    <span class="duration"><?= lang('Home.sections.resume.experience.records.3.when') ?></span>
+                                    <span class="duration"><?= calculate_years([2012, 2017], $locale, ' - ') ?></span>
                                     <p class="description"><?= lang('Home.sections.resume.experience.records.3.paragraph') ?></p>
                                     <div class="skills-tags">
                                         <span class="skill-tag"><?= lang('Home.sections.resume.experience.records.3.tags.1') ?></span>
@@ -277,7 +277,7 @@ $experience_years = date('Y') - 2012;
                                     </div>
                                     <div class="timeline-content">
                                         <div class="education-meta">
-                                            <span class="year-range"><?= lang('Home.sections.resume.education.records.certificates.years') ?></span>
+                                            <span class="year-range"><?= calculate_years([2024, 2025], $locale, ' - ') ?></span>
                                             <span class="degree-level"><?= lang('Home.sections.resume.education.records.certificates.label') ?></span>
                                         </div>
                                         <h4><?= lang('Home.sections.resume.education.records.certificates.title') ?></h4>
@@ -285,7 +285,7 @@ $experience_years = date('Y') - 2012;
                                             <?php foreach (lang('Home.sections.resume.education.records.certificates.list') as $line) : ?>
                                                 <div class="cert-item">
                                                     <span class="cert-name"><?= $line[0] ?></span>
-                                                    <span class="cert-year"><?= $line[1] ?></span>
+                                                    <span class="cert-year"><?= calculate_years($line[1], $locale) ?></span>
                                                 </div>
                                             <?php endforeach ?>
                                         </div>
@@ -297,7 +297,7 @@ $experience_years = date('Y') - 2012;
                                     </div>
                                     <div class="timeline-content">
                                         <div class="education-meta">
-                                            <span class="year-range"><?= lang('Home.sections.resume.education.records.masters.year') ?></span>
+                                            <span class="year-range"><?= calculate_years([2014, 2015], $locale, ' - ') ?></span>
                                             <span class="degree-level"><?= lang('Home.sections.resume.education.records.masters.label') ?></span>
                                         </div>
                                         <h4><?= lang('Home.sections.resume.education.records.masters.title') ?></h4>
@@ -311,7 +311,7 @@ $experience_years = date('Y') - 2012;
                                     </div>
                                     <div class="timeline-content">
                                         <div class="education-meta">
-                                            <span class="year-range"><?= lang('Home.sections.resume.education.records.bachelor.year') ?></span>
+                                            <span class="year-range"><?= calculate_years([2008, 2012], $locale, ' - ') ?></span>
                                             <span class="degree-level"><?= lang('Home.sections.resume.education.records.bachelor.label') ?></span>
                                         </div>
                                         <h4><?= lang('Home.sections.resume.education.records.bachelor.title') ?></h4>
@@ -425,11 +425,18 @@ $experience_years = date('Y') - 2012;
                                     'tags'    => ['website', 'seo', 'thailand']
                             ],
                             [
-                                    'title'   => 'Remittance Application',
-                                    'filters' => ['mobile', 'website', 'backend', 'ai'],
+                                    'title'   => 'Remittance Portal',
+                                    'filters' => ['website', 'backend'],
                                     'image'   => 'moolahgo.jpg',
                                     'year'    => [2021, 2024],
-                                    'tags'    => ['fintech', 'website', 'ai']
+                                    'tags'    => ['fintech', 'data analytics', 'security']
+                            ],
+                            [
+                                    'title'   => 'Remittance Mobile App',
+                                    'filters' => ['mobile', 'backend', 'ai'],
+                                    'image'   => 'moolahpay.jpg',
+                                    'year'    => [2021, 2024],
+                                    'tags'    => ['fintech', 'ux/ui design', 'ai', 'security']
                             ],
                             [
                                     'title'   => 'Snack Online Stores',
@@ -444,6 +451,13 @@ $experience_years = date('Y') - 2012;
                                     'image'   => 'secretlab.jpg',
                                     'year'    => [2018, 2020],
                                     'tags'    => ['e-commerce', 'seo', 'shopify']
+                            ],
+                            [
+                                    'title'   => 'Personal Accounting Application',
+                                    'filters' => ['website', 'backend'],
+                                    'image'   => 'backendku.jpg',
+                                    'year'    => [2018, 0],
+                                    'tags'    => ['backend', 'data analytics']
                             ],
                     ];
                     ?>
@@ -460,7 +474,7 @@ $experience_years = date('Y') - 2012;
                                             <h4><?= $portfolio['title'] ?></h4>
                                         </div>
                                         <div class="portfolio-actions">
-                                            <a href="<?= base_url('assets/img/portfolio/' . $portfolio['image']) ?>" class="glightbox portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="<?= base_url('assets/img/portfolio/' . $portfolio['image']) ?>" class="glightbox portfolio-link d-none"><i class="bi bi-plus-lg"></i></a>
                                             <a href="#" class="portfolio-details d-none"><i class="bi bi-arrow-right"></i></a>
                                         </div>
                                     </div>

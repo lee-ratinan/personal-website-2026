@@ -83,7 +83,6 @@ return [
                         'current'   => '現在',
                         'title'     => '技術團隊領導 / 技術主管、專案經理',
                         'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
-                        'when'      => '107年 - 現在',
                         'paragraph' => '具備電商與金融科技經驗的專案經理兼技術領導者，帶領跨職能團隊、優化交付流程，並從概念到上線推動高品質、可擴展的技術解決方案。',
                         'tags'      => [
                             '1' => '領導力',
@@ -95,7 +94,6 @@ return [
                     '2' => [
                         'title'     => '獨立技術顧問',
                         'companies' => '自由接案者',
-                        'when'      => '113年 - 現在',
                         'paragraph' => '自由接案專案領導者，為多國、多領域客戶提供端到端網站解決方案，負責需求管理、開發與品質控管，交付精緻且高效的數位體驗。',
                         'tags'      => [
                             '1' => '管理',
@@ -107,7 +105,6 @@ return [
                     '3' => [
                         'title'     => '軟體工程師',
                         'companies' => 'Mobads, BuzzCity, DST',
-                        'when'      => '101年 - 106年',
                         'paragraph' => '初階軟體工程師，參與全端開發，學習現代框架，支援功能交付，同時建立良好程式碼、測試與協作工程的扎實基礎。',
                         'tags'      => [
                             '1' => '程式設計',
@@ -124,28 +121,25 @@ return [
                 'records' => [
                     'certificates' => [
                         'label' => '專業證照',
-                        'years' => '113年 - 114年',
                         'title' => '專業證照',
                         'list'  => [
-                            ['Certified Scrum Master', '114年'],
-                            ['Professional Scrum Master I, II', '113年'],
-                            ['Professional Scrum Product Owner I, II', '113年 - 114年'],
-                            ['Google Project Management', '113年'],
-                            ['Google AI Essentials', '113年'],
-                            ['Google Data Analytics', '113年'],
-                            ['Google UX Design', '113年'],
+                            ['Certified Scrum Master', [2025]],
+                            ['Professional Scrum Master I, II', [2024]],
+                            ['Professional Scrum Product Owner I, II', [2024, 2025]],
+                            ['Google Project Management', [2024]],
+                            ['Google AI Essentials', [2024]],
+                            ['Google Data Analytics', [2024]],
+                            ['Google UX Design', [2024]],
                         ]
                     ],
                     'masters'      => [
                         'label'      => '碩士學位',
-                        'year'       => '103年 - 104年',
                         'title'      => '資訊系統理學碩士',
                         'university' => '新加坡南洋理工大學 Wee Kim Wee 傳播與資訊學院',
                         'paragraph'  => '修習高階資訊系統工程與管理。'
                     ],
                     'bachelor'     => [
                         'label'      => '學士學位',
-                        'year'       => '97年 - 101年',
                         'title'      => '資訊工程理學學士',
                         'university' => '泰國塔馬薩特大學 SIIT 工學院',
                         'paragraph'  => '建立扎實的軟體工程與架構基礎。',

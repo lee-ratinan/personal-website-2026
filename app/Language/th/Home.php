@@ -83,7 +83,6 @@ return [
                         'current'   => 'ปัจจุบัน',
                         'title'     => 'ผู้นำทีมเทคนิคอล, ผู้จัดการโครงการ',
                         'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
-                        'when'      => '2561 - ปัจจุบัน',
                         'paragraph' => 'ผู้จัดการโครงการและหัวหน้าด้านเทคนิคที่มีประสบการณ์ในอีคอมเมิร์ซและฟินเทค นำทีมข้ามสายงาน ปรับกระบวนการส่งมอบให้ลื่นไหล และขับเคลื่อนโซลูชันคุณภาพสูงที่สามารถขยายต่อได้ตั้งแต่เริ่มต้นจนเปิดใช้งานจริง',
                         'tags'      => [
                             '1' => 'ความเป็นผู้นำ',
@@ -95,7 +94,6 @@ return [
                     '2' => [
                         'title'     => 'ที่ปรึกษาด้านเทคโนโลยีอิสระ',
                         'companies' => 'ฟรีแลนซ์',
-                        'when'      => '2567 - ปัจจุบัน',
                         'paragraph' => 'ผู้นำโครงการอิสระที่ส่งมอบโซลูชันเว็บไซต์แบบครบวงจรให้ลูกค้าในหลายอุตสาหกรรมและหลายประเทศ ดูแลความต้องการ การพัฒนา และคุณภาพ เพื่อสร้างประสบการณ์ดิจิทัลที่สมบูรณ์และมีประสิทธิภาพสูง',
                         'tags'      => [
                             '1' => 'การจัดการ',
@@ -107,7 +105,6 @@ return [
                     '3' => [
                         'title'     => 'วิศวกรซอฟต์แวร์',
                         'companies' => 'Mobads, BuzzCity, DST',
-                        'when'      => '2555 - 2560',
                         'paragraph' => 'วิศวกรซอฟต์แวร์ระดับจูเนียร์ที่ร่วมพัฒนาฟูลสแต็ก เรียนรู้เฟรมเวิร์กสมัยใหม่ และสนับสนุนการส่งมอบฟีเจอร์ต่าง ๆ พร้อมสร้างพื้นฐานที่มั่นคงด้านโค้ดที่ดี การทดสอบ และการทำงานร่วมกัน',
                         'tags'      => [
                             '1' => 'การเขียนโปรแกรม',
@@ -124,28 +121,25 @@ return [
                 'records' => [
                     'certificates' => [
                         'label' => 'ประกาศนียบัตร',
-                        'years' => '2567 - 2568',
                         'title' => 'ประกาศนียบัตรวิชาชีพ',
                         'list'  => [
-                            ['Certified Scrum Master', '2568'],
-                            ['Professional Scrum Master I, II', '2567'],
-                            ['Professional Scrum Product Owner I, II', '2567 - 2568'],
-                            ['Google Project Management', '2567'],
-                            ['Google AI Essentials', '2567'],
-                            ['Google Data Analytics', '2567'],
-                            ['Google UX Design', '2567'],
+                            ['Certified Scrum Master', [2025]],
+                            ['Professional Scrum Master I, II', [2024]],
+                            ['Professional Scrum Product Owner I, II', [2024, 2025]],
+                            ['Google Project Management', [2024]],
+                            ['Google AI Essentials', [2024]],
+                            ['Google Data Analytics', [2024]],
+                            ['Google UX Design', [2024]],
                         ]
                     ],
                     'masters'      => [
                         'label'      => 'ปริญญาโท',
-                        'year'       => '2557 - 2558',
                         'title'      => 'วิทยาศาสตรมหาบัณฑิต (ระบบสารสนเทศ)',
                         'university' => 'คณะสื่อสารมวลชลและสารสนเทศวีคิมวี มหาวิทยาลัยเทคโนโลยีนันยาง',
                         'paragraph'  => 'Mastered advanced information system engineering and management.'
                     ],
                     'bachelor'     => [
                         'label'      => 'ปริญญาตรี',
-                        'year'       => '2551 - 2555',
                         'title'      => 'วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์)',
                         'university' => 'สถาบันเทคโนโลยีนานาชาติสิรินธร มหาวิทยาลัยธรรมศาสตร์',
                         'paragraph'  => 'Learned a strong foundation in software engineering and architecture.',

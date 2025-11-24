@@ -83,7 +83,6 @@ return [
                         'current'   => '現在',
                         'title'     => 'テクニカルチームリーダー、プロジェクトマネージャー',
                         'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
-                        'when'      => '2018年 - 現在',
                         'paragraph' => 'Eコマースとフィンテック領域で経験を持つプロジェクトマネージャー兼テクニカルリードとして、クロスファンクショナルチームを導き、デリバリーを効率化し、構想からリリースまで高品質でスケーラブルなソリューションを推進しました。',
                         'tags'      => [
                             '1' => 'リーダーシップ',
@@ -95,7 +94,6 @@ return [
                     '2' => [
                         'title'     => '独立系テクノロジーコンサルタント',
                         'companies' => 'フリーランス',
-                        'when'      => '2024年 - 現在',
                         'paragraph' => 'フリーランスとして、複数業界・複数国のクライアント向けにエンドツーエンドのウェブサイト制作を主導。要件管理、開発、品質を統括し、完成度が高くパフォーマンス重視のデジタル体験を提供しました。',
                         'tags'      => [
                             '1' => 'マネジメント',
@@ -107,7 +105,6 @@ return [
                     '3' => [
                         'title'     => 'ソフトウェアエンジニア',
                         'companies' => 'Mobads, BuzzCity, DST',
-                        'when'      => '2012年 - 2017年',
                         'paragraph' => '新人ソフトウェアエンジニアとしてフルスタック開発に携わり、最新フレームワークを学びながら、クリーンコード・テスト・協働開発の確かな基盤を築きつつ機能開発を支援しました。',
                         'tags'      => [
                             '1' => 'プログラミング',
@@ -124,28 +121,25 @@ return [
                 'records' => [
                     'certificates' => [
                         'label' => '専門資格',
-                        'years' => '2024年 - 2025年',
                         'title' => '専門資格',
                         'list'  => [
-                            ['Certified Scrum Master', '2025年'],
-                            ['Professional Scrum Master I, II', '2024年'],
-                            ['Professional Scrum Product Owner I, II', '2024年 - 2025年'],
-                            ['Google Project Management', '2024年'],
-                            ['Google AI Essentials', '2024年'],
-                            ['Google Data Analytics', '2024年'],
-                            ['Google UX Design', '2024年'],
+                            ['Certified Scrum Master', [2025]],
+                            ['Professional Scrum Master I, II', [2024]],
+                            ['Professional Scrum Product Owner I, II', [2024, 2025]],
+                            ['Google Project Management', [2024]],
+                            ['Google AI Essentials', [2024]],
+                            ['Google Data Analytics', [2024]],
+                            ['Google UX Design', [2024]],
                         ]
                     ],
                     'masters'      => [
                         'label'      => '修士号',
-                        'year'       => '2014年 - 2015年',
                         'title'      => '情報システム理学修士',
                         'university' => '南洋理工大学 ウィー・キム・ウィー情報コミュニケーション学部',
                         'paragraph'  => '高度な情報システム工学とマネジメントを習得。'
                     ],
                     'bachelor'     => [
                         'label'      => '学士号',
-                        'year'       => '2008年 - 2012年',
                         'title'      => 'コンピュータサイエンス理学学士',
                         'university' => 'タマサート大学 シリンドーン国際工学部',
                         'paragraph'  => 'ソフトウェア工学とアーキテクチャの確かな基礎を習得。',

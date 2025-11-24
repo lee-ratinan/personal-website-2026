@@ -83,7 +83,6 @@ return [
                         'current'   => 'Current',
                         'title'     => 'Technical Team Leader, Project Manager',
                         'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
-                        'when'      => '2018 - Now',
                         'paragraph' => 'Project manager and technical lead with experience across e-commerce and fintech, guiding cross-functional teams, streamlining delivery, and driving high-quality, scalable solutions from concept to release.',
                         'tags'      => [
                             '1' => 'Leadership',
@@ -95,7 +94,6 @@ return [
                     '2' => [
                         'title'     => 'Independent Technology Consultant',
                         'companies' => 'Freelance',
-                        'when'      => '2024 - Now',
                         'paragraph' => 'Freelance project lead delivering end-to-end website solutions for clients across diverse sectors and countries, managing requirements, development, and quality to ship polished, performance-focused digital experiences.',
                         'tags'      => [
                             '1' => 'Management',
@@ -107,7 +105,6 @@ return [
                     '3' => [
                         'title'     => 'Software Engineer',
                         'companies' => 'Mobads, BuzzCity, DST',
-                        'when'      => '2012 - 2017',
                         'paragraph' => 'Junior software engineer contributing to full-stack development, learning modern frameworks, and supporting feature delivery while building a strong foundation in clean code, testing, and collaborative engineering practices.',
                         'tags'      => [
                             '1' => 'Programming',
@@ -124,28 +121,25 @@ return [
                 'records' => [
                     'certificates' => [
                         'label' => 'Certificates',
-                        'years' => '2024 - 2025',
                         'title' => 'Professional Certificates',
                         'list'  => [
-                            ['Certified Scrum Master', '2025'],
-                            ['Professional Scrum Master I, II', '2024'],
-                            ['Professional Scrum Product Owner I, II', '2024 - 2025'],
-                            ['Google Project Management', '2024'],
-                            ['Google AI Essentials', '2024'],
-                            ['Google Data Analytics', '2024'],
-                            ['Google UX Design', '2024'],
+                            ['Certified Scrum Master', [2025]],
+                            ['Professional Scrum Master I, II', [2024]],
+                            ['Professional Scrum Product Owner I, II', [2024, 2025]],
+                            ['Google Project Management', [2024]],
+                            ['Google AI Essentials', [2024]],
+                            ['Google Data Analytics', [2024]],
+                            ['Google UX Design', [2024]],
                         ]
                     ],
                     'masters'      => [
                         'label'      => 'Masters',
-                        'year'       => '2014 - 2015',
                         'title'      => 'Master of Science (Information Systems)',
                         'university' => 'Wee Kim Wee School of Communication and Information, Nanyang Technological University',
                         'paragraph'  => 'Mastered advanced information system engineering and management.'
                     ],
                     'bachelor'     => [
                         'label'      => 'Bachelors',
-                        'year'       => '2008 - 2012',
                         'title'      => 'Bachelor of Science (Computer Science)',
                         'university' => 'Sirindhorn International Institute of Technology, Thammasat University',
                         'paragraph'  => 'Learned a strong foundation in software engineering and architecture.',

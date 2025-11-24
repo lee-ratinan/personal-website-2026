@@ -24,16 +24,16 @@ return [
     ],
     'sections' => [
         'home'      => [
-            'title'       => 'Home',
-            'greetings'   => 'Hi! I’m Ratinan “Nat” Lee!',
-            'i-am-a'      => 'I am a',
-            'occupations' => 'Scrum Master, Software Developer, Project Manager, Freelancer'
+            'title'       => 'ホーム',
+            'greetings'   => 'こんにちは！僕は力川エイキンです！',
+            'i-am-a'      => 'お仕事は',
+            'occupations' => 'スクラムマスター,ソフトウェアエンジニア,プロジェクトマネージャー,フリーランサー'
         ],
         'about'     => [
             'title'            => 'About',
             'about-me'         => 'About Me',
-            'main-paragraph'   => 'I’m a CSM/PSM-certified technical project manager and scrum master with fintech chops, steering cross-national teams toward smooth, scalable delivery. I keep projects sharp, people aligned, and momentum high—turning complex ideas into clean, future-ready outcomes.',
-            'ratinan-lee'      => 'Ratinan Lee',
+            'main-paragraph'   => '私は CSM/PSM 認定を持つテクニカルプロジェクトマネージャー兼スクラムマスターとして、フィンテック分野で多国籍チームを率い、スムーズで拡張性の高いデリバリーを実現してきました。高度なアイデアを整理し、プロジェクトの軸を整え、未来につながる成果へとつなげます。',
+            'ratinan-lee'      => '力川エイキン',
             'main-occupations' => 'Scrum Master, Project Manager',
             'counts'           => [
                 'products'     => 'Products',
@@ -42,9 +42,9 @@ return [
             ],
             'download-cv'      => 'Download CV',
             'secondary'        => [
-                'title'       => 'I lead a happy team!',
-                'paragraph-1' => 'I lead by keeping my team genuinely happy—because energized people build better products. Empathy and active listening are my default settings, and anyone can come to me with challenges big or small. I don’t swoop in to fix everything; instead, I guide, coach, and let people solve problems their way. That independence builds confidence, sharpens skills, and creates a team that grows stronger with every sprint.',
-                'paragraph-2' => 'I care deeply about quality—real quality. “Verified” software isn’t enough for me; I want solutions that are validated, performant, and actually delightful to use. A feature that technically works but feels sluggish or clunky isn’t a win. When we build, we build with intention, speed, and craftsmanship. If we’re shipping something, it should be something we’re proud of—fast, reliable, and worth every user’s time.'
+                'title'       => '私は幸せなチームを率いています！',
+                'paragraph-1' => '私はチームが本当に幸せであることを大切にしてリードしています。前向きなエネルギーを持つ人ほど、より良いプロダクトを生み出すからです。共感と傾聴は私の基本姿勢で、誰でも大小問わず課題を相談できます。私が何でもすぐに片付けるのではなく、導き、コーチし、各自が自分の方法で問題を解決できるようにします。その自立が自信を育て、スキルを磨き、スプリントごとに強いチームへと成長させます。',
+                'paragraph-2' => '私は品質を強く重視しています—本物の品質を。「確認済み」のソフトウェアだけでは不十分で、私は実証され、高性能で、使って心地よいものを求めます。技術的には動いていても、遅かったり使いづらかったりする機能は成功とは言えません。私たちが作るときは、意図、スピード、職人のこだわりを持って作ります。そして出荷するときには、胸を張って誇れるもの—速く、信頼でき、ユーザーの時間に値するもの—であるべきです。'
             ],
             'boxes'            => [
                 '1' => [
@@ -57,7 +57,7 @@ return [
                 ],
                 '3' => [
                     'label' => 'Based in',
-                    'value' => 'Singapore &amp; Bangkok'
+                    'value' => 'シンガポールとバンコク'
                 ],
                 '4' => [
                     'label' => 'Availability',
@@ -65,11 +65,11 @@ return [
                 ],
                 '5' => [
                     'label' => 'I speak',
-                    'value' => 'English (C2), Thai (native)<br>Japanese (beginner)'
+                    'value' => '英語（C2）、タイ語（）<br>日本語 (beginner)'
                 ],
                 '6' => [
                     'label' => 'Nationality',
-                    'value' => 'Thai'
+                    'value' => 'タイ'
                 ]
             ]
         ],
@@ -84,7 +84,7 @@ return [
                         'title'     => 'Technical Team Leader, Project Manager',
                         'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
                         'when'      => '2018 - Now',
-                        'paragraph' => 'Project manager and technical lead with experience across e-commerce and fintech, guiding cross-functional teams, streamlining delivery, and driving high-quality, scalable solutions from concept to release.',
+                        'paragraph' => 'Eコマースとフィンテック領域で経験を持つプロジェクトマネージャー兼テクニカルリードとして、クロスファンクショナルチームを導き、デリバリーを効率化し、構想からリリースまで高品質でスケーラブルなソリューションを推進しました。',
                         'tags'      => [
                             '1' => 'Leadership',
                             '2' => 'Management',
@@ -96,7 +96,7 @@ return [
                         'title'     => 'Independent Technology Consultant',
                         'companies' => 'Freelance',
                         'when'      => '2024 - Now',
-                        'paragraph' => 'Freelance project lead delivering end-to-end website solutions for clients across diverse sectors and countries, managing requirements, development, and quality to ship polished, performance-focused digital experiences.',
+                        'paragraph' => 'フリーランスとして、複数業界・複数国のクライアント向けにエンドツーエンドのウェブサイト制作を主導。要件管理、開発、品質を統括し、完成度が高くパフォーマンス重視のデジタル体験を提供しました。',
                         'tags'      => [
                             '1' => 'Management',
                             '2' => 'Creativity',
@@ -108,7 +108,7 @@ return [
                         'title'     => 'Software Engineer',
                         'companies' => 'Mobads, BuzzCity, DST',
                         'when'      => '2012 - 2017',
-                        'paragraph' => 'Junior software engineer contributing to full-stack development, learning modern frameworks, and supporting feature delivery while building a strong foundation in clean code, testing, and collaborative engineering practices.',
+                        'paragraph' => '新人ソフトウェアエンジニアとしてフルスタック開発に携わり、最新フレームワークを学びながら、クリーンコード・テスト・協働開発の確かな基盤を築きつつ機能開発を支援しました。',
                         'tags'      => [
                             '1' => 'Programming',
                             '2' => 'Web Development',
@@ -155,28 +155,28 @@ return [
             ]
         ],
         'services'  => [
-            'title'         => 'Services',
+            'title'         => 'サービス',
             'list'          => [
                 '0' => [
-                    'item'        => 'Leadership &amp; Management',
-                    'description' => 'Guiding teams toward clear, confident, happy delivery.'
+                    'item'        => 'チームリーダーシップとマネジメント',
+                    'description' => 'チームを明確で自信ある、幸せなデリバリーへ導く'
                 ],
                 '1' => [
-                    'item'        => 'System Analysis &amp; Design',
-                    'description' => 'Turning needs into clean, scalable technical blueprints.'
+                    'item'        => 'ソフトウェア分析と設計',
+                    'description' => '要件を整理し、拡張可能な技術設計へ落とし込む'
                 ],
                 '2' => [
-                    'item'        => 'Software Development',
-                    'description' => 'Building reliable, high-performance features end to end.'
+                    'item'        => 'ソフトウェア開発',
+                    'description' => '信頼性が高く高性能な機能をエンドツーエンドで構築する'
                 ],
                 '3' => [
-                    'item'        => 'Team Coaching',
-                    'description' => 'Elevating teams with practical, empowering agile habits.'
+                    'item'        => 'スクラムチームコーチング',
+                    'description' => '実践的で力を与えるアジャイル習慣でチームを強化する'
                 ],
             ],
-            'cta'           => 'Hire Me',
-            'cta-title'     => 'Transform Your Vision Into Reality',
-            'cta-paragraph' => 'Learn how to bring your ideas to life with innovative solutions tailored to your needs.'
+            'cta'           => '私を雇ってください！',
+            'cta-title'     => 'あなたのビジョンを現実へと変える',
+            'cta-paragraph' => 'あなたのニーズに合わせた革新的なソリューションで、アイデアを形にする方法を学びましょう。'
         ],
         'portfolio' => [
             'title'   => 'Portfolio',
@@ -187,9 +187,9 @@ return [
                 'mobile'  => 'Mobile Application',
                 'ai'      => 'AI Application',
             ],
-            'cta'           => 'Hire Me',
-            'cta-title'     => 'Like What You See?',
-            'cta-paragraph' => 'Talk to me and hire me. Let me do it again for you!'
+            'cta'           => '私を雇ってください！',
+            'cta-title'     => '気に入りましたか？',
+            'cta-paragraph' => 'まずは話しかけて、そして私を雇ってください。あなたのためにもう一度最高の成果を作ります！'
         ],
         'contact'   => [
             'title'     => 'Contact',

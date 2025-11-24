@@ -174,7 +174,7 @@ return [
                     'description' => 'Elevating teams with practical, empowering agile habits.'
                 ],
             ],
-            'cta'           => 'Hire Me',
+            'cta'           => 'Hire Me!',
             'cta-title'     => 'Transform Your Vision Into Reality',
             'cta-paragraph' => 'Learn how to bring your ideas to life with innovative solutions tailored to your needs.'
         ],
@@ -187,7 +187,7 @@ return [
                 'mobile'  => 'Mobile Application',
                 'ai'      => 'AI Application',
             ],
-            'cta'           => 'Hire Me',
+            'cta'           => 'Hire Me!',
             'cta-title'     => 'Like What You See?',
             'cta-paragraph' => 'Talk to me and hire me. Let me do it again for you!'
         ],

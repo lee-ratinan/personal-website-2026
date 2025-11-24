@@ -1,14 +1,14 @@
 <?php
 return [
     'system'   => [
-        'website-name'    => 'Ratinan Lee Official',
-        'site-name-head'  => 'RATINAN<span style="color:#080">LEE</span>',
+        'website-name'    => 'เว็บไซต์ทางการของรตินันท์ ลี',
+        'site-name-head'  => 'รตินันท์<span style="color:#080">ลี</span>',
         'footer-msg'      => 'This is an official personal website of Ratinan Lee. He is a senior software engineer and technology lead based in Singapore and Bangkok.',
         'useful-links'    => 'Useful Links',
-        'change-language' => 'Change Language',
+        'change-language' => 'เปลี่ยนภาษา',
         'pages'           => [
-            'home'          => 'About Ratinan',
-            'personal-life' => 'Personal Life',
+            'home'          => 'เกี่ยวกับนัท',
+            'personal-life' => 'ชีวิตส่วนตัว',
         ],
         'seo'             => [
             'description' => 'Home page containing information about Ratinan Lee',
@@ -24,182 +24,182 @@ return [
     ],
     'sections' => [
         'home'      => [
-            'title'       => 'Home',
-            'greetings'   => 'Hi! I’m Ratinan “Nat” Lee!',
-            'i-am-a'      => 'I am a',
-            'occupations' => 'Scrum Master, Software Developer, Project Manager, Freelancer'
+            'title'       => 'หน้าแรก',
+            'greetings'   => 'ไง! ผมชื่อรตินันท์ “นัท” ลี',
+            'i-am-a'      => 'ผมเป็น',
+            'occupations' => 'สกรัมมาสเตอร์, วิศวกรซอฟต์แวร์, ผู้จัดการโครงการ, ฟรีแลนเซอร์'
         ],
         'about'     => [
-            'title'            => 'About',
-            'about-me'         => 'About Me',
-            'main-paragraph'   => 'I’m a CSM/PSM-certified technical project manager and scrum master with fintech chops, steering cross-national teams toward smooth, scalable delivery. I keep projects sharp, people aligned, and momentum high—turning complex ideas into clean, future-ready outcomes.',
-            'ratinan-lee'      => 'Ratinan Lee',
-            'main-occupations' => 'Scrum Master, Project Manager',
+            'title'            => 'เกี่ยวกับ',
+            'about-me'         => 'เกี่ยวกับผม',
+            'main-paragraph'   => 'ผมเป็นผู้จัดการโครงการด้านเทคนิคและสแครัมมาสเตอร์ที่ได้รับใบรับรอง CSM/PSM มีประสบการณ์ในด้านฟินเทคและการนำทีมหลากหลายสัญชาติเพื่อส่งมอบงานที่ราบรื่นและขยายต่อได้ ผมทำให้โครงการคมชัด ทีมสอดประสาน และเดินหน้าอย่างมั่นคง เปลี่ยนไอเดียซับซ้อนให้กลายเป็นผลลัพธ์ที่เรียบง่ายและพร้อมต่อยอดในอนาคต',
+            'ratinan-lee'      => 'รตินันท์ ลี',
+            'main-occupations' => 'สกรัมมาสเตอร์, ผู้จัดการโครงการ',
             'counts'           => [
-                'products'     => 'Products',
-                'years'        => 'Years',
-                'certificates' => 'Certificates',
+                'products'     => 'ผลงาน',
+                'years'        => 'ปี',
+                'certificates' => 'ประกาศนียบัตร',
             ],
-            'download-cv'      => 'Download CV',
+            'download-cv'      => 'ดาวน์โหลด CV',
             'secondary'        => [
-                'title'       => 'I lead a happy team!',
-                'paragraph-1' => 'I lead by keeping my team genuinely happy—because energized people build better products. Empathy and active listening are my default settings, and anyone can come to me with challenges big or small. I don’t swoop in to fix everything; instead, I guide, coach, and let people solve problems their way. That independence builds confidence, sharpens skills, and creates a team that grows stronger with every sprint.',
-                'paragraph-2' => 'I care deeply about quality—real quality. “Verified” software isn’t enough for me; I want solutions that are validated, performant, and actually delightful to use. A feature that technically works but feels sluggish or clunky isn’t a win. When we build, we build with intention, speed, and craftsmanship. If we’re shipping something, it should be something we’re proud of—fast, reliable, and worth every user’s time.'
+                'title'       => 'ผมพาทีมทำงานอย่างมีความสุข!',
+                'paragraph-1' => 'ผมเป็นผู้นำที่ให้ความสำคัญกับความสุขของทีม เพราะคนที่มีพลังบวกย่อมสร้างผลงานที่ดีกว่า การเอาใจใส่และการรับฟังอย่างตั้งใจคือพื้นฐานของผม และใครก็ตามสามารถมาหาผมได้ไม่ว่าจะมีปัญหาใหญ่หรือเล็ก ผมไม่รีบเข้าไปแก้แทน แต่จะชี้แนะ โค้ช และเปิดโอกาสให้พวกเขาแก้ปัญหาในแบบของตัวเอง ความเป็นอิสระนั้นทำให้พวกเขามั่นใจขึ้น เก่งขึ้น และทำให้ทีมแข็งแกร่งขึ้นทุกสปรินต์',
+                'paragraph-2' => 'ผมให้ความสำคัญกับคุณภาพ—คุณภาพที่แท้จริง ซอฟต์แวร์ที่แค่ “ผ่านการตรวจสอบ” ยังไม่พอสำหรับผม ผมต้องการโซลูชันที่พิสูจน์ได้ว่าทำงานดี มีประสิทธิภาพ และน่าใช้งานจริง ๆ ฟีเจอร์ที่ทำงานได้แค่ในเชิงเทคนิคแต่มากับความอืดหรือประสบการณ์ที่ไม่ดี ไม่นับว่าเป็นความสำเร็จ เวลาเราสร้าง เราสร้างด้วยความตั้งใจ ความเร็ว และความประณีต และเมื่อเราส่งมอบ เราต้องภูมิใจกับมัน—รวดเร็ว เชื่อถือได้ และคุ้มค่ากับเวลาของผู้ใช้'
             ],
             'boxes'            => [
                 '1' => [
-                    'label' => 'Experiences',
-                    'value' => '{0, number}+ years'
+                    'label' => 'ประสบการณ์',
+                    'value' => '{0, number}+ ปี'
                 ],
                 '2' => [
-                    'label' => 'Education',
-                    'value' => 'Master Degree'
+                    'label' => 'การศึกษา',
+                    'value' => 'ปริญญาโท'
                 ],
                 '3' => [
-                    'label' => 'Based in',
-                    'value' => 'Singapore &amp; Bangkok'
+                    'label' => 'อยู่ที่',
+                    'value' => 'สิงคโปร์ กับ กรุงเทพฯ'
                 ],
                 '4' => [
-                    'label' => 'Availability',
-                    'value' => 'Open to Work'
+                    'label' => 'สถานะ',
+                    'value' => 'พร้อมรับงาน'
                 ],
                 '5' => [
-                    'label' => 'I speak',
-                    'value' => 'English (C2), Thai (native)<br>Japanese (beginner)'
+                    'label' => 'ภาษา',
+                    'value' => 'อังกฤษ (C2), ไทย (ภาษาแม่)<br>ญี่ปุ่น (เริ่มต้น)'
                 ],
                 '6' => [
-                    'label' => 'Nationality',
-                    'value' => 'Thai'
+                    'label' => 'สัญชาติ',
+                    'value' => 'ไทย'
                 ]
             ]
         ],
         'resume'    => [
-            'title'      => 'Resume',
+            'title'      => 'เรซูเม่',
             'experience' => [
-                'label'   => 'Experience',
-                'title'   => 'Professional Experience',
+                'label'   => 'ประสบการณ์',
+                'title'   => 'ประสบการณ์การทำงาน',
                 'records' => [
                     '1' => [
-                        'current'   => 'Current',
-                        'title'     => 'Technical Team Leader, Project Manager',
+                        'current'   => 'ปัจจุบัน',
+                        'title'     => 'ผู้นำทีมเทคนิคอล, ผู้จัดการโครงการ',
                         'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
-                        'when'      => '2018 - Now',
-                        'paragraph' => 'Project manager and technical lead with experience across e-commerce and fintech, guiding cross-functional teams, streamlining delivery, and driving high-quality, scalable solutions from concept to release.',
+                        'when'      => '2561 - ปัจจุบัน',
+                        'paragraph' => 'ผู้จัดการโครงการและหัวหน้าด้านเทคนิคที่มีประสบการณ์ในอีคอมเมิร์ซและฟินเทค นำทีมข้ามสายงาน ปรับกระบวนการส่งมอบให้ลื่นไหล และขับเคลื่อนโซลูชันคุณภาพสูงที่สามารถขยายต่อได้ตั้งแต่เริ่มต้นจนเปิดใช้งานจริง',
                         'tags'      => [
-                            '1' => 'Leadership',
-                            '2' => 'Management',
-                            '3' => 'Scrum',
-                            '4' => 'Innovation'
+                            '1' => 'ความเป็นผู้นำ',
+                            '2' => 'การจัดการ',
+                            '3' => 'สกรัม',
+                            '4' => 'นวัตกรรม'
                         ]
                     ],
                     '2' => [
-                        'title'     => 'Independent Technology Consultant',
-                        'companies' => 'Freelance',
-                        'when'      => '2024 - Now',
-                        'paragraph' => 'Freelance project lead delivering end-to-end website solutions for clients across diverse sectors and countries, managing requirements, development, and quality to ship polished, performance-focused digital experiences.',
+                        'title'     => 'ที่ปรึกษาด้านเทคโนโลยีอิสระ',
+                        'companies' => 'ฟรีแลนซ์',
+                        'when'      => '2567 - ปัจจุบัน',
+                        'paragraph' => 'ผู้นำโครงการอิสระที่ส่งมอบโซลูชันเว็บไซต์แบบครบวงจรให้ลูกค้าในหลายอุตสาหกรรมและหลายประเทศ ดูแลความต้องการ การพัฒนา และคุณภาพ เพื่อสร้างประสบการณ์ดิจิทัลที่สมบูรณ์และมีประสิทธิภาพสูง',
                         'tags'      => [
-                            '1' => 'Management',
-                            '2' => 'Creativity',
+                            '1' => 'การจัดการ',
+                            '2' => 'ความคิดสร้างสรรค์',
                             '3' => 'SEO',
-                            '4' => 'Communication'
+                            '4' => 'การสื่อสาร'
                         ]
                     ],
                     '3' => [
-                        'title'     => 'Software Engineer',
+                        'title'     => 'วิศวกรซอฟต์แวร์',
                         'companies' => 'Mobads, BuzzCity, DST',
-                        'when'      => '2012 - 2017',
-                        'paragraph' => 'Junior software engineer contributing to full-stack development, learning modern frameworks, and supporting feature delivery while building a strong foundation in clean code, testing, and collaborative engineering practices.',
+                        'when'      => '2555 - 2560',
+                        'paragraph' => 'วิศวกรซอฟต์แวร์ระดับจูเนียร์ที่ร่วมพัฒนาฟูลสแต็ก เรียนรู้เฟรมเวิร์กสมัยใหม่ และสนับสนุนการส่งมอบฟีเจอร์ต่าง ๆ พร้อมสร้างพื้นฐานที่มั่นคงด้านโค้ดที่ดี การทดสอบ และการทำงานร่วมกัน',
                         'tags'      => [
-                            '1' => 'Programming',
-                            '2' => 'Web Development',
-                            '3' => 'System Analysis',
-                            '4' => 'UX/UI Design',
+                            '1' => 'การเขียนโปรแกรม',
+                            '2' => 'การพัฒนาเว็บไซต์',
+                            '3' => 'การวิเคราะห์ระบบ',
+                            '4' => 'การออกแบบ UX/UI',
                         ]
                     ]
                 ]
             ],
             'education'  => [
-                'label'   => 'Education',
-                'title'   => 'Academic Background',
+                'label'   => 'การศึกษา',
+                'title'   => 'ประวัติการศึกษา',
                 'records' => [
                     'certificates' => [
-                        'label' => 'Certificates',
-                        'years' => '2024 - 2025',
-                        'title' => 'Professional Certificates',
+                        'label' => 'ประกาศนียบัตร',
+                        'years' => '2567 - 2568',
+                        'title' => 'ประกาศนียบัตรวิชาชีพ',
                         'list'  => [
-                            ['Certified Scrum Master', '2025'],
-                            ['Professional Scrum Master I, II', '2024'],
-                            ['Professional Scrum Product Owner I, II', '2024 - 2025'],
-                            ['Google Project Management', '2024'],
-                            ['Google AI Essentials', '2024'],
-                            ['Google Data Analytics', '2024'],
-                            ['Google UX Design', '2024'],
+                            ['Certified Scrum Master', '2568'],
+                            ['Professional Scrum Master I, II', '2567'],
+                            ['Professional Scrum Product Owner I, II', '2567 - 2568'],
+                            ['Google Project Management', '2567'],
+                            ['Google AI Essentials', '2567'],
+                            ['Google Data Analytics', '2567'],
+                            ['Google UX Design', '2567'],
                         ]
                     ],
                     'masters'      => [
-                        'label'      => 'Masters',
-                        'year'       => '2014 - 2015',
-                        'title'      => 'Master of Science (Information Systems)',
-                        'university' => 'Wee Kim Wee School of Communication and Information, Nanyang Technological University',
+                        'label'      => 'ปริญญาโท',
+                        'year'       => '2557 - 2558',
+                        'title'      => 'วิทยาศาสตรมหาบัณฑิต (ระบบสารสนเทศ)',
+                        'university' => 'คณะสื่อสารมวลชลและสารสนเทศวีคิมวี มหาวิทยาลัยเทคโนโลยีนันยาง',
                         'paragraph'  => 'Mastered advanced information system engineering and management.'
                     ],
                     'bachelor'     => [
-                        'label'      => 'Bachelors',
-                        'year'       => '2008 - 2012',
-                        'title'      => 'Bachelor of Science (Computer Science)',
-                        'university' => 'Sirindhorn International Institute of Technology, Thammasat University',
+                        'label'      => 'ปริญญาตรี',
+                        'year'       => '2551 - 2555',
+                        'title'      => 'วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์)',
+                        'university' => 'สถาบันเทคโนโลยีนานาชาติสิรินธร มหาวิทยาลัยธรรมศาสตร์',
                         'paragraph'  => 'Learned a strong foundation in software engineering and architecture.',
-                        'honors'     => 'First Class Honors'
+                        'honors'     => 'เกียรตินิยมอันดับหนึ่ง'
                     ],
                 ]
             ]
         ],
         'services'  => [
-            'title'         => 'Services',
+            'title'         => 'บริการ',
             'list'          => [
                 '0' => [
-                    'item'        => 'Leadership &amp; Management',
-                    'description' => 'Guiding teams toward clear, confident, happy delivery.'
+                    'item'        => 'การนำทีมและการบริหารจัดการ',
+                    'description' => 'ชี้นำทีมให้ส่งมอบงานอย่างมั่นใจ ชัดเจน และมีความสุข'
                 ],
                 '1' => [
-                    'item'        => 'System Analysis &amp; Design',
-                    'description' => 'Turning needs into clean, scalable technical blueprints.'
+                    'item'        => 'การวิเคราะห์และออกแบบซอฟต์แวร์',
+                    'description' => 'แปลงความต้องการเป็นแบบออกแบบทางเทคนิคที่ชัดเจนและขยายต่อได้'
                 ],
                 '2' => [
-                    'item'        => 'Software Development',
-                    'description' => 'Building reliable, high-performance features end to end.'
+                    'item'        => 'การพัฒนาซอฟต์แวร์',
+                    'description' => 'พัฒนาฟีเจอร์ที่เชื่อถือได้และมีประสิทธิภาพตั้งแต่ต้นจนจบ'
                 ],
                 '3' => [
-                    'item'        => 'Team Coaching',
-                    'description' => 'Elevating teams with practical, empowering agile habits.'
+                    'item'        => 'การโค้ชทีมสกรัม',
+                    'description' => 'เสริมทีมด้วยแนวทางแอจไจล์ที่เป็นจริงและเพิ่มพลังให้การทำงาน'
                 ],
             ],
-            'cta'           => 'Hire Me',
-            'cta-title'     => 'Transform Your Vision Into Reality',
-            'cta-paragraph' => 'Learn how to bring your ideas to life with innovative solutions tailored to your needs.'
+            'cta'           => 'จ้างผมสิ!',
+            'cta-title'     => 'เปลี่ยนวิสัยทัศน์ของคุณให้เป็นจริง',
+            'cta-paragraph' => 'เรียนรู้วิธีทำให้ไอเดียของคุณมีชีวิตด้วยโซลูชันล้ำสมัยที่ออกแบบมาเพื่อคุณโดยเฉพาะ'
         ],
         'portfolio' => [
-            'title'   => 'Portfolio',
+            'title'   => 'แฟ้มผลงาน',
             'filters' => [
-                'all'     => 'All Work',
-                'website' => 'Website',
-                'backend' => 'Backend System',
-                'mobile'  => 'Mobile Application',
-                'ai'      => 'AI Application',
+                'all'     => 'ผลงานทั้งหมด',
+                'website' => 'เว็บไซต์',
+                'backend' => 'ระบบหลังบ้าน',
+                'mobile'  => 'แอ็ปมือถือ',
+                'ai'      => 'ระบบเอไอ',
             ],
-            'cta'           => 'Hire Me',
-            'cta-title'     => 'Like What You See?',
-            'cta-paragraph' => 'Talk to me and hire me. Let me do it again for you!'
+            'cta'           => 'จ้างผมสิ!',
+            'cta-title'     => 'ชอบสิ่งที่คุณเห็นไหม?',
+            'cta-paragraph' => 'คุยกับผมแล้วจ้างผมเลย ผมพร้อมสร้างสิ่งดี ๆ แบบนี้ให้คุณอีกครั้ง!'
         ],
         'contact'   => [
-            'title'     => 'Contact',
-            'linkedin'  => 'LinkedIn',
-            'instagram' => 'Instagram',
+            'title'     => 'ติดต่อ',
+            'linkedin'  => 'ลิงก์อิน',
+            'instagram' => 'ไอจี',
             'github'    => 'Github',
-            'line'      => 'Line',
+            'line'      => 'ไลน์',
             'medium'    => 'Medium',
             'telegram'  => 'Telegram',
-            'facebook'  => 'Facebook',
+            'facebook'  => 'เฟซบุ๊ก',
             'whatsapp'  => 'WhatsApp',
         ],
     ]

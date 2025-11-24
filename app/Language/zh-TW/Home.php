@@ -32,8 +32,8 @@ return [
         'about'     => [
             'title'            => 'About',
             'about-me'         => 'About Me',
-            'main-paragraph'   => 'I’m a CSM/PSM-certified technical project manager and scrum master with fintech chops, steering cross-national teams toward smooth, scalable delivery. I keep projects sharp, people aligned, and momentum high—turning complex ideas into clean, future-ready outcomes.',
-            'ratinan-lee'      => 'Ratinan Lee',
+            'main-paragraph'   => '我是一位具備 CSM/PSM 認證的技術專案經理與 Scrum Master，擁有金融科技經驗，帶領跨國團隊順利且可擴展地完成專案。我讓專案更銳利、團隊更協調、節奏更穩定，將複雜概念轉化為清晰並具未來性的成果。',
+            'ratinan-lee'      => '李榮欽',
             'main-occupations' => 'Scrum Master, Project Manager',
             'counts'           => [
                 'products'     => 'Products',
@@ -42,9 +42,9 @@ return [
             ],
             'download-cv'      => 'Download CV',
             'secondary'        => [
-                'title'       => 'I lead a happy team!',
-                'paragraph-1' => 'I lead by keeping my team genuinely happy—because energized people build better products. Empathy and active listening are my default settings, and anyone can come to me with challenges big or small. I don’t swoop in to fix everything; instead, I guide, coach, and let people solve problems their way. That independence builds confidence, sharpens skills, and creates a team that grows stronger with every sprint.',
-                'paragraph-2' => 'I care deeply about quality—real quality. “Verified” software isn’t enough for me; I want solutions that are validated, performant, and actually delightful to use. A feature that technically works but feels sluggish or clunky isn’t a win. When we build, we build with intention, speed, and craftsmanship. If we’re shipping something, it should be something we’re proud of—fast, reliable, and worth every user’s time.'
+                'title'       => '我帶領著一個快樂的團隊！',
+                'paragraph-1' => '我以讓團隊真正快樂為核心來帶領大家，因為有活力的人才能打造更好的產品。共感與專注傾聽是我的基本態度，無論大小問題，任何人都可以來找我。我不會急著替大家把事情解決，而是引導、協助、並讓他們用自己的方式處理問題。這種自主性會建立自信、精進技能，讓團隊在每個衝刺中變得更強。',
+                'paragraph-2' => '我非常重視品質——真正的品質。對我來說，「驗證通過」的軟體還不夠，我追求經過驗證、效能出色、而且真正好用的解決方案。功能即使能運作，但如果遲鈍、卡頓或使用體驗糟糕，那就不是成功。我們在打造產品時講求意圖、速度與工匠精神；而當我們發布時，那必須是值得自豪的成果——快速、可靠，也真正值得每位使用者的時間。'
             ],
             'boxes'            => [
                 '1' => [
@@ -83,8 +83,8 @@ return [
                         'current'   => 'Current',
                         'title'     => 'Technical Team Leader, Project Manager',
                         'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
-                        'when'      => '2018 - Now',
-                        'paragraph' => 'Project manager and technical lead with experience across e-commerce and fintech, guiding cross-functional teams, streamlining delivery, and driving high-quality, scalable solutions from concept to release.',
+                        'when'      => '107 - Now',
+                        'paragraph' => '具備電商與金融科技經驗的專案經理兼技術領導者，帶領跨職能團隊、優化交付流程，並從概念到上線推動高品質、可擴展的技術解決方案。',
                         'tags'      => [
                             '1' => 'Leadership',
                             '2' => 'Management',
@@ -95,8 +95,8 @@ return [
                     '2' => [
                         'title'     => 'Independent Technology Consultant',
                         'companies' => 'Freelance',
-                        'when'      => '2024 - Now',
-                        'paragraph' => 'Freelance project lead delivering end-to-end website solutions for clients across diverse sectors and countries, managing requirements, development, and quality to ship polished, performance-focused digital experiences.',
+                        'when'      => '113 - Now',
+                        'paragraph' => '自由接案專案領導者，為多國、多領域客戶提供端到端網站解決方案，負責需求管理、開發與品質控管，交付精緻且高效的數位體驗。',
                         'tags'      => [
                             '1' => 'Management',
                             '2' => 'Creativity',
@@ -107,8 +107,8 @@ return [
                     '3' => [
                         'title'     => 'Software Engineer',
                         'companies' => 'Mobads, BuzzCity, DST',
-                        'when'      => '2012 - 2017',
-                        'paragraph' => 'Junior software engineer contributing to full-stack development, learning modern frameworks, and supporting feature delivery while building a strong foundation in clean code, testing, and collaborative engineering practices.',
+                        'when'      => '101 - 106',
+                        'paragraph' => '初階軟體工程師，參與全端開發，學習現代框架，支援功能交付，同時建立良好程式碼、測試與協作工程的扎實基礎。',
                         'tags'      => [
                             '1' => 'Programming',
                             '2' => 'Web Development',
@@ -124,28 +124,28 @@ return [
                 'records' => [
                     'certificates' => [
                         'label' => 'Certificates',
-                        'years' => '2024 - 2025',
+                        'years' => '113 - 114',
                         'title' => 'Professional Certificates',
                         'list'  => [
-                            ['Certified Scrum Master', '2025'],
-                            ['Professional Scrum Master I, II', '2024'],
-                            ['Professional Scrum Product Owner I, II', '2024 - 2025'],
-                            ['Google Project Management', '2024'],
-                            ['Google AI Essentials', '2024'],
-                            ['Google Data Analytics', '2024'],
-                            ['Google UX Design', '2024'],
+                            ['Certified Scrum Master', '114'],
+                            ['Professional Scrum Master I, II', '113'],
+                            ['Professional Scrum Product Owner I, II', '113 - 114'],
+                            ['Google Project Management', '113'],
+                            ['Google AI Essentials', '113'],
+                            ['Google Data Analytics', '113'],
+                            ['Google UX Design', '113'],
                         ]
                     ],
                     'masters'      => [
                         'label'      => 'Masters',
-                        'year'       => '2014 - 2015',
+                        'year'       => '103 - 104',
                         'title'      => 'Master of Science (Information Systems)',
                         'university' => 'Wee Kim Wee School of Communication and Information, Nanyang Technological University',
                         'paragraph'  => 'Mastered advanced information system engineering and management.'
                     ],
                     'bachelor'     => [
                         'label'      => 'Bachelors',
-                        'year'       => '2008 - 2012',
+                        'year'       => '97 - 101',
                         'title'      => 'Bachelor of Science (Computer Science)',
                         'university' => 'Sirindhorn International Institute of Technology, Thammasat University',
                         'paragraph'  => 'Learned a strong foundation in software engineering and architecture.',
@@ -155,28 +155,28 @@ return [
             ]
         ],
         'services'  => [
-            'title'         => 'Services',
+            'title'         => '服務',
             'list'          => [
                 '0' => [
-                    'item'        => 'Leadership &amp; Management',
-                    'description' => 'Guiding teams toward clear, confident, happy delivery.'
+                    'item'        => '團隊領導與管理',
+                    'description' => '引導團隊以清晰、自信、愉快的方式完成交付'
                 ],
                 '1' => [
-                    'item'        => 'System Analysis &amp; Design',
-                    'description' => 'Turning needs into clean, scalable technical blueprints.'
+                    'item'        => '軟體分析與設計',
+                    'description' => '將需求轉化為清晰且可擴展的技術設計藍圖'
                 ],
                 '2' => [
-                    'item'        => 'Software Development',
-                    'description' => 'Building reliable, high-performance features end to end.'
+                    'item'        => '軟體開發',
+                    'description' => '端到端打造可靠、高效能的功能'
                 ],
                 '3' => [
-                    'item'        => 'Team Coaching',
-                    'description' => 'Elevating teams with practical, empowering agile habits.'
+                    'item'        => 'Scrum 團隊教練指導',
+                    'description' => '以實用、賦能的敏捷習慣提升團隊能力'
                 ],
             ],
-            'cta'           => 'Hire Me',
-            'cta-title'     => 'Transform Your Vision Into Reality',
-            'cta-paragraph' => 'Learn how to bring your ideas to life with innovative solutions tailored to your needs.'
+            'cta'           => '雇用我吧！',
+            'cta-title'     => '把你的願景變成現實',
+            'cta-paragraph' => '透過量身打造的創新解決方案，了解如何讓你的想法真正實現。'
         ],
         'portfolio' => [
             'title'   => 'Portfolio',
@@ -187,9 +187,9 @@ return [
                 'mobile'  => 'Mobile Application',
                 'ai'      => 'AI Application',
             ],
-            'cta'           => 'Hire Me',
-            'cta-title'     => 'Like What You See?',
-            'cta-paragraph' => 'Talk to me and hire me. Let me do it again for you!'
+            'cta'           => '雇用我吧！',
+            'cta-title'     => '喜歡你所看到的嗎？',
+            'cta-paragraph' => '來跟我聊聊並雇用我吧！讓我再為你創造一次精彩成果！'
         ],
         'contact'   => [
             'title'     => 'Contact',

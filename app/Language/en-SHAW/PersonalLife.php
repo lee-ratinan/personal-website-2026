@@ -17,8 +17,8 @@ return [
         'about'       => [
             'title'       => 'About My Life',
             'heading'     => 'Know more about me',
-            'paragraph-1' => 'I love exploring the world one culture at a time. From soaking in an onsen to wandering through a nude beach with zero shame, I travel to understand how people live, think, and celebrate life. Every place teaches me something new, and every adventure reshapes how I see humanity.',
-            'paragraph-2' => 'I’m always collecting little pieces of global identity—new foods, new habits, and new languages. Whether it’s saying <em>terima kasih</em>, <em>maraming salamat</em>, or <em>arigatō gozaimasu</em>, I enjoy connecting with people in their own words. Travel keeps me curious, grounded, and constantly learning about the beautiful diversity that exists on this planet.',
+            'paragraph-1' => 'Lorem ipsum',
+            'paragraph-2' => 'Lala lorem ipsum',
             'box-1'       => 'Countries<br><small>I’ve been to</small>',
             'box-2'       => 'Kilometers<br><small>I traveled</small>',
             'box-3'       => 'Vacations<br><small>I made</small>',

@@ -113,12 +113,12 @@
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="image-stack">
-                        <div class="image-main">
-                            <img src="<?= base_url('assets/img/travel/about-1.jpg') ?>" alt="<?= lang('PersonalLife.sections.about.heading') ?>" class="img-fluid">
+                    <div class="image-stack" style="position: relative;">
+                        <div class="image-main" style="position: relative;z-index: 1;">
+                            <img src="<?= base_url('assets/img/travel/about-1.jpg') ?>" alt="<?= lang('PersonalLife.sections.about.heading') ?>" class="img-fluid" style="border-radius: 8px; box-shadow: 0 20px 40px color-mix(in srgb, var(--accent-color), transparent 90%);">
                         </div>
-                        <div class="image-overlay">
-                            <img src="<?= base_url('assets/img/travel/about-2.jpg') ?>" alt="Nat Lee" class="img-fluid">
+                        <div class="image-overlay" style="position: absolute;bottom: -40px;right: -40px;z-index: 2;max-width: 200px;">
+                            <img src="<?= base_url('assets/img/travel/about-2.jpg') ?>" alt="Nat Lee" class="img-fluid" style="border-radius: 8px; border: 4px solid var(--default-color); box-shadow: 0 15px 30px color-mix(in srgb, var(--accent-color), transparent 85%);">
                         </div>
                     </div>
                 </div>

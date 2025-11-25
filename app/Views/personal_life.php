@@ -120,13 +120,14 @@
     <section id="gallery" class="gallery portfolio section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up" data-aos-delay="300">
+            <h5><?= lang('PersonalLife.sections.gallery.title') ?></h5>
             <h2><?= lang('PersonalLife.sections.gallery.heading') ?></h2>
         </div><!-- End Section Title -->
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <div class="isotope-layout" data-default-filter=".filter-southeast-asia" data-layout="masonry" data-sort="original-order">
                 <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-                    <li data-filter="*" class="filter-active"><?= lang('PersonalLife.sections.gallery.filters.all') ?></li>
-                    <li data-filter=".filter-southeast-asia"><?= lang('PersonalLife.sections.gallery.filters.southeast-asia') ?></li>
+                    <li data-filter="*"><?= lang('PersonalLife.sections.gallery.filters.all') ?></li>
+                    <li data-filter=".filter-southeast-asia" class="filter-active"><?= lang('PersonalLife.sections.gallery.filters.southeast-asia') ?></li>
                     <li data-filter=".filter-east-asia"><?= lang('PersonalLife.sections.gallery.filters.east-asia') ?></li>
                     <li data-filter=".filter-oceania"><?= lang('PersonalLife.sections.gallery.filters.oceania') ?></li>
                     <li data-filter=".filter-america"><?= lang('PersonalLife.sections.gallery.filters.america') ?></li>
@@ -140,7 +141,6 @@
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
                                             <h4><?= $gallery['title'] ?></h4>
-
                                         </div>
                                     </div>
                                 </div>
@@ -160,14 +160,46 @@
         </div>
     </section><!-- /Gallery Section -->
     <!-- Bucket List Section -->
-    <section id="bucket-list" class="bucket-list section">
+    <section id="bucket-list" class="bucket-list portfolio section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up" data-aos-delay="300">
-            <h2><?= lang('PersonalLife.sections.bucket-list.title') ?></h2>
+            <h5><?= lang('PersonalLife.sections.bucket-list.title') ?></h5>
+            <h2><?= lang('PersonalLife.sections.bucket-list.heading') ?></h2>
         </div><!-- End Section Title -->
         <div class="container">
-            <div class="row my-3" data-aos="fade-up" data-aos-delay="100">
-                lists
+            <div class="isotope-layout" data-default-filter=".filter-activity" data-layout="masonry" data-sort="original-order">
+                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+                    <li data-filter="*"><?= lang('PersonalLife.sections.bucket-list.filters.all') ?></li>
+                    <li data-filter=".filter-observation"><?= lang('PersonalLife.sections.bucket-list.filters.observation') ?></li>
+                    <li data-filter=".filter-activity" class="filter-active"><?= lang('PersonalLife.sections.bucket-list.filters.activity') ?></li>
+                    <li data-filter=".filter-cultural"><?= lang('PersonalLife.sections.bucket-list.filters.cultural') ?></li>
+                    <li data-filter=".filter-others"><?= lang('PersonalLife.sections.bucket-list.filters.others') ?></li>
+                </ul>
+                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+                    <?php foreach ($bucket_lists as $item) : ?>
+                        <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?php foreach ($item['filters'] as $filter) {echo ' filter-' . $filter;} ?>">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image-container">
+                                    <img src="<?= base_url('assets/img/gallery/' . $item['code'] . '.jpg') ?>" alt="<?= $item['title'] ?>" class="img-fluid" loading="lazy">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-info">
+                                            <h4><?= $item['title'] ?></h4>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <div class="project-tags me-2">
+                                        <?php foreach ($item['locations'] as $location) : ?><span class="tag float-start m-1"><?= lang('PersonalLife.locations.' . $location) ?></span><?php endforeach; ?>
+                                    </div>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <span class="small"><?= format_date($item['dates'], $locale, ' - ') ?></span>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
             </div>
         </div>
     </section><!-- /Bucket List Section -->

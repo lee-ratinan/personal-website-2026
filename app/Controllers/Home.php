@@ -64,6 +64,24 @@ class Home extends BaseController
                     'dates'     => ['2024-10-20', '2024-10-21'],
                     'detail'    => 'lorem ipsum',
                 ]
+            ],
+            'bucket_lists'      => [
+                [
+                    'code'      => 'flowrider',
+                    'filters'   => ['activity'],
+                    'title'     => 'FlowRider',
+                    'details'   => 'Lorem ipsum',
+                    'locations' => [],
+                    'dates'     => []
+                ],
+                [
+                    'code'      => 'petronas-towers',
+                    'filters'   => ['observation'],
+                    'title'     => 'Petronas Towers',
+                    'details'   => 'Lorem ipsum',
+                    'locations' => [],
+                    'dates'     => []
+                ],
             ]
         ];
         return view('personal_life', $data);

@@ -37,7 +37,15 @@ return [
             'view'    => 'View'
         ],
         'bucket-list' => [
-            'title' => 'My Bucket List'
+            'title'   => 'My Bucket List',
+            'heading' => 'Experience the Unforgettable Things on Earth',
+            'filters' => [
+                'all'         => 'All',
+                'observation' => 'Observation',
+                'activity'    => 'Activity',
+                'cultural'    => 'Cultural',
+                'others'      => 'Others',
+            ]
         ]
     ],
     'locations'  => [

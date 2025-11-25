@@ -20,8 +20,8 @@ return [
             'paragraph-1' => 'I love exploring the world one culture at a time. From soaking in an onsen to wandering through a nude beach with zero shame, I travel to understand how people live, think, and celebrate life. Every place teaches me something new, and every adventure reshapes how I see humanity.',
             'paragraph-2' => 'I’m always collecting little pieces of global identity—new foods, new habits, and new languages. Whether it’s saying <em>terima kasih</em>, <em>maraming salamat</em>, or <em>arigatō gozaimasu</em>, I enjoy connecting with people in their own words. Travel keeps me curious, grounded, and constantly learning about the beautiful diversity that exists on this planet.',
             'box-1'       => 'Countries<br><small>I’ve been to</small>',
-            'box-2'       => 'Kilometers<br><small>I traveled</small>',
-            'box-3'       => 'Vacations<br><small>I made</small>',
+            'box-2'       => 'Kilometers<br><small>I’ve traveled</small>',
+            'box-3'       => 'Vacations<br><small>I’ve completed</small>',
             'box-4'       => 'Flights<br><small>I flew</small>'
         ],
         'gallery'     => [
@@ -70,7 +70,7 @@ return [
         // INDONESIA
         'bali'             => 'Bali',
         'batam'            => 'Batam',
-        'bintang'          => 'Bintang',
+        'bintang'          => 'Bintan',
         'jakarta'          => 'Jakarta',
         'karawaci'         => 'Karawaci',
         // TAIWAN

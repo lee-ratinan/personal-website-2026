@@ -70,7 +70,7 @@ return [
         // INDONESIA
         'bali'             => 'Bali',
         'batam'            => 'Batam',
-        'bintang'          => 'Bintang',
+        'bintang'          => 'Bintan',
         'jakarta'          => 'Jakarta',
         'karawaci'         => 'Karawaci',
         // TAIWAN

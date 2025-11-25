@@ -174,7 +174,7 @@ class Home extends BaseController
                     'code'      => 'hkt2022',
                     'filter'    => 'southeast-asia',
                     'title'     => 'ภูเก็ตแซนด์บ๊อก',
-                    'locations' => ['phuket', 'bangkok'],
+                    'locations' => ['phuket', 'phang-nga', 'krabi', 'bangkok'],
                     'dates'     => ['2022-05-15', '2022-05-23'],
                     'detail'    => 'x',
                 ],

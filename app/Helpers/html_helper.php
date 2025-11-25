@@ -72,6 +72,13 @@ function format_date (array $dates, string $locale, string $separator = ', '): s
         'zh-TW' => 'YYYY年m月d日',
         'ja' => 'YYYY年m月d日',
     ];
+    $ym_formats = [
+        'en' => 'MMMM YYYY',
+        'en-SHAW' => 'MMMM YYYY',
+        'th' => 'MMMM YYYY',
+        'zh-TW' => 'YYYY年m月',
+        'ja' => 'YYYY年m月',
+    ];
     // fix separators
     if (', ' == $separator && in_array($locale, ['zh-TW', 'ja'])) {
         $separator = '、';
@@ -85,14 +92,27 @@ function format_date (array $dates, string $locale, string $separator = ', '): s
         $mm      = intval($explode[1]);
         $mm_ind  = $mm-1;
         $dd      = intval($explode[2]);
+        if (0 == $dd) {
+            $dd  = ''; // allow the situation when date is not set
+        }
         if (in_array($locale, ['zh-TW', 'ja'])) {
-            $dt = str_replace('YYYY', $yyyy, $formats[$locale]);
-            $dt = str_replace('m', $mm, $dt);
-            $outputs[] = str_replace('d', $mm, $dt);
+            if (0 < $dd) {
+                $dt = str_replace('YYYY', $yyyy, $formats[$locale]);
+                $dt = str_replace('m', $mm, $dt);
+                $outputs[] = str_replace('d', $dd, $dt);
+            } else {
+                $dt = str_replace('YYYY', $yyyy, $ym_formats[$locale]);
+                $outputs[] = str_replace('m', $mm, $dt);
+            }
         } else {
-            $dt = str_replace('YYYY', $yyyy, $formats[$locale]);
-            $dt = str_replace('MMMM', $months[$locale][$mm_ind], $dt);
-            $outputs[] = str_replace('d', $dd, $dt);
+            if (0 < $dd) {
+                $dt = str_replace('YYYY', $yyyy, $formats[$locale]);
+                $dt = str_replace('MMMM', $months[$locale][$mm_ind], $dt);
+                $outputs[] = str_replace('d', $dd, $dt);
+            } else {
+                $dt = str_replace('YYYY', $yyyy, $ym_formats[$locale]);
+                $outputs[] = str_replace('MMMM', $months[$locale][$mm_ind], $dt);
+            }
         }
     }
     return implode($separator, $outputs);

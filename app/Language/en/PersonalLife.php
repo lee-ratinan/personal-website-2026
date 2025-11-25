@@ -51,16 +51,20 @@ return [
     'locations'  => [
         // THAILAND
         'bangkok'          => 'Bangkok',
+        'cha-am'           => 'Cha-Am',
+        'hua-hin'          => 'Hua Hin',
         'krabi'            => 'Krabi',
         'pattaya'          => 'Pattaya',
         'phang-nga'        => 'Phang Nga',
         'phuket'           => 'Phuket',
         // MALAYSIA
         'bandar-utama'     => 'Bandar Utama',
+        'desaru'           => 'Desaru',
+        'george-town'      => 'George Town (Penang)',
         'ipoh'             => 'Ipoh',
         'johor-bahru'      => 'Johor Bahru',
         'kuala-lumpur'     => 'Kuala Lumpur',
-        'george-town'      => 'George Town (Penang)',
+        'langkawi'         => 'Langkawi',
         // INDONESIA
         'bali'             => 'Bali',
         'batam'            => 'Batam',
@@ -68,32 +72,43 @@ return [
         'jakarta'          => 'Jakarta',
         'karawaci'         => 'Karawaci',
         // TAIWAN
-        'taipei'           => 'Taipei',
         'hualien'          => 'Hualien',
         'taichung'         => 'Taichung',
+        'taipei'           => 'Taipei',
         // JAPAN
-        'tokyo'            => 'Tokyo',
-        'osaka'            => 'Osaka',
-        'nara'             => 'Nara',
-        'kobe'             => 'Kobe',
-        'himeji'           => 'Himeji',
-        'kyoto'            => 'Kyoto',
-        'uji'              => 'Uji',
-        'tottori'          => 'Tottori',
-        'hokuei'           => 'Hokuei',
-        'fujisan'          => 'Fujisan',
-        'kinosakionsen'    => 'Kinosakionsen',
         'arimaonsen'       => 'Arimaonsen',
+        'fujisan'          => 'Fujisan',
         'fujisawa'         => 'Fujisawa',
+        'himeji'           => 'Himeji',
+        'hokuei'           => 'Hokuei',
         'kamakura'         => 'Kamakura',
+        'kinosakionsen'    => 'Kinosakionsen',
+        'kobe'             => 'Kobe',
+        'kyoto'            => 'Kyoto',
+        'nara'             => 'Nara',
+        'osaka'            => 'Osaka',
+        'tokyo'            => 'Tokyo',
+        'tottori'          => 'Tottori',
+        'uji'              => 'Uji',
         'yokohama'         => 'Yokohama',
         // AUSTRALIA
-        'sydney'           => 'Sydney, NSW',
         'melbourne'        => 'Melbourne, VIC',
+        'sydney'           => 'Sydney, NSW',
         // PHILIPPINES
+        'alegria'          => 'Alegria',
         'cebu'             => 'Cebu',
+        'mactan'           => 'Mactan',
+        'oslob'            => 'Oslob',
         // VIETNAM
         'ho-chi-minh-city' => 'Ho Chi Minh City',
+        // USA
+        'chicago'          => 'Chicago, IL',
+        'cincinnati'       => 'Cincinnati, OH',
+        'covington'        => 'Covington, KY',
+        'newport'          => 'Newport, KY',
+        'new-york-city'    => 'New York City, NY',
+        // SG
+        'singapore'        => 'Singapore',
     ],
     'activities' => []
 ];

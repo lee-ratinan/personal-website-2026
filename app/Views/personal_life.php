@@ -90,7 +90,8 @@
                             </div>
                             <div class="col-6">
                                 <div class="stat-item text-center">
-                                    <div class="stat-number fw-bold"><?= number_format($vacations) ?>+</div>
+                                    <?php $vacations = count($galleries); ?>
+                                    <div class="stat-number fw-bold"><?= number_format($vacations) ?></div>
                                     <div class="stat-label"><?= lang('PersonalLife.sections.about.box-3') ?></div>
                                 </div>
                             </div>
@@ -124,17 +125,17 @@
             <h2><?= lang('PersonalLife.sections.gallery.heading') ?></h2>
         </div><!-- End Section Title -->
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="isotope-layout" data-default-filter=".filter-southeast-asia" data-layout="masonry" data-sort="original-order">
+            <div class="isotope-layout" data-default-filter=".filter-first-ten" data-layout="masonry" data-sort="original-order">
                 <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-                    <li data-filter="*"><?= lang('PersonalLife.sections.gallery.filters.all') ?></li>
-                    <li data-filter=".filter-southeast-asia" class="filter-active"><?= lang('PersonalLife.sections.gallery.filters.southeast-asia') ?></li>
+                    <li data-filter="*" class="filter-active"><?= lang('PersonalLife.sections.gallery.filters.all') ?></li>
+                    <li data-filter=".filter-southeast-asia"><?= lang('PersonalLife.sections.gallery.filters.southeast-asia') ?></li>
                     <li data-filter=".filter-east-asia"><?= lang('PersonalLife.sections.gallery.filters.east-asia') ?></li>
                     <li data-filter=".filter-oceania"><?= lang('PersonalLife.sections.gallery.filters.oceania') ?></li>
                     <li data-filter=".filter-america"><?= lang('PersonalLife.sections.gallery.filters.america') ?></li>
                 </ul>
                 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-                    <?php foreach ($galleries as $gallery) : ?>
-                        <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?php foreach ($gallery['filters'] as $filter) {echo ' filter-' . $filter;} ?>">
+                    <?php foreach ($galleries as $i => $gallery) : ?>
+                        <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?= ($i < 10 ? 'filter-first-ten' : '') ?> <?php foreach ($gallery['filters'] as $filter) {echo ' filter-' . $filter;} ?>">
                             <div class="portfolio-card">
                                 <div class="portfolio-image-container">
                                     <img src="<?= base_url('assets/img/gallery/' . $gallery['code'] . '.jpg') ?>" alt="<?= $gallery['title'] ?>" class="img-fluid" loading="lazy">
@@ -167,17 +168,17 @@
             <h2><?= lang('PersonalLife.sections.bucket-list.heading') ?></h2>
         </div><!-- End Section Title -->
         <div class="container">
-            <div class="isotope-layout" data-default-filter=".filter-activity" data-layout="masonry" data-sort="original-order">
+            <div class="isotope-layout" data-default-filter=".filter-first-ten" data-layout="masonry" data-sort="original-order">
                 <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
                     <li data-filter="*"><?= lang('PersonalLife.sections.bucket-list.filters.all') ?></li>
                     <li data-filter=".filter-observation"><?= lang('PersonalLife.sections.bucket-list.filters.observation') ?></li>
-                    <li data-filter=".filter-activity" class="filter-active"><?= lang('PersonalLife.sections.bucket-list.filters.activity') ?></li>
+                    <li data-filter=".filter-activity"><?= lang('PersonalLife.sections.bucket-list.filters.activity') ?></li>
                     <li data-filter=".filter-cultural"><?= lang('PersonalLife.sections.bucket-list.filters.cultural') ?></li>
                     <li data-filter=".filter-others"><?= lang('PersonalLife.sections.bucket-list.filters.others') ?></li>
                 </ul>
                 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-                    <?php foreach ($bucket_lists as $item) : ?>
-                        <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?php foreach ($item['filters'] as $filter) {echo ' filter-' . $filter;} ?>">
+                    <?php foreach ($bucket_lists as $i => $item) : ?>
+                        <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?= ($i < 10 ? 'filter-first-ten' : '') ?> <?php foreach ($item['filters'] as $filter) {echo ' filter-' . $filter;} ?>">
                             <div class="portfolio-card">
                                 <div class="portfolio-image-container">
                                     <img src="<?= base_url('assets/img/bucket-list/' . $item['code'] . '.jpg') ?>" alt="<?= $item['title'] ?>" class="img-fluid" loading="lazy">
@@ -253,22 +254,6 @@
 <script src="<?= base_url('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') ?>"></script>
 <script src="<?= base_url('assets/vendor/isotope-layout/isotope.pkgd.min.js') ?>"></script>
 <script src="<?= base_url('assets/vendor/swiper/swiper-bundle.min.js') ?>"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const vacation_buttons = document.querySelectorAll('.btn-filter-vacations');
-        const vacation_items = document.querySelectorAll('.details-grid .detail-item');
-        vacation_buttons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const target = btn.dataset.target?.trim() || "";
-                vacation_items.forEach(item => {
-                    const keyword = item.dataset.keyword || "";
-                    const shouldShow = target === "" || keyword === target;
-                    item.style.display = shouldShow ? '' : 'none';
-                });
-            });
-        });
-    });
-</script>
 <!-- Main JS File -->
 <script src="<?= base_url('assets/js/main.js') ?>"></script>
 </body>

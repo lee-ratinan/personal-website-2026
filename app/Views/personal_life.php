@@ -145,7 +145,7 @@
                                     </div>
                                 </div>
                                 <div class="portfolio-meta">
-                                    <div class="project-tags me-2">
+                                    <div class="project-tags me-2 d-block">
                                         <?php foreach ($gallery['locations'] as $location) : ?><span class="tag float-start m-1"><?= lang('PersonalLife.locations.' . $location) ?></span><?php endforeach; ?>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@
                         <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?php foreach ($item['filters'] as $filter) {echo ' filter-' . $filter;} ?>">
                             <div class="portfolio-card">
                                 <div class="portfolio-image-container">
-                                    <img src="<?= base_url('assets/img/gallery/' . $item['code'] . '.jpg') ?>" alt="<?= $item['title'] ?>" class="img-fluid" loading="lazy">
+                                    <img src="<?= base_url('assets/img/bucket-list/' . $item['code'] . '.jpg') ?>" alt="<?= $item['title'] ?>" class="img-fluid" loading="lazy">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
                                             <h4><?= $item['title'] ?></h4>

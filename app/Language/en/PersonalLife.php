@@ -52,6 +52,7 @@ return [
         // THAILAND
         'bangkok'          => 'Bangkok',
         'krabi'            => 'Krabi',
+        'pattaya'          => 'Pattaya',
         'phang-nga'        => 'Phang Nga',
         'phuket'           => 'Phuket',
         // MALAYSIA
@@ -81,12 +82,16 @@ return [
         'tottori'          => 'Tottori',
         'hokuei'           => 'Hokuei',
         'fujisan'          => 'Fujisan',
+        'kinosakionsen'    => 'Kinosakionsen',
+        'arimaonsen'       => 'Arimaonsen',
+        'fujisawa'         => 'Fujisawa',
+        'kamakura'         => 'Kamakura',
+        'yokohama'         => 'Yokohama',
         // AUSTRALIA
         'sydney'           => 'Sydney, NSW',
         'melbourne'        => 'Melbourne, VIC',
         // PHILIPPINES
         'cebu'             => 'Cebu',
-        'mactan'           => 'Mactan',
         // VIETNAM
         'ho-chi-minh-city' => 'Ho Chi Minh City',
     ],

@@ -7,3 +7,6 @@ writable/session/*
 writable/uploads/*
 
 .env
+
+public/assets/img/gallery/*
+public/assets/img/bucket-lists/*

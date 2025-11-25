@@ -20,6 +20,18 @@ class Home extends BaseController
     }
 
     /**
+     * Personal Life page
+     * @return string
+     */
+    public function personal_life(): string
+    {
+        $data = [
+            'locale' => $this->request->getLocale()
+        ];
+        return view('personal_life', $data);
+    }
+
+    /**
      * Redirect to WhatsApp
      * @return RedirectResponse
      */

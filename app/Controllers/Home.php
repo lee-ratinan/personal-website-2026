@@ -26,38 +26,39 @@ class Home extends BaseController
     public function personal_life(): string
     {
         $data = [
-            'locale'    => $this->request->getLocale(),
-            'galleries' => [
+            'locale'            => $this->request->getLocale(),
+            'countries_visited' => 10,
+            'distant_traveled'  => 192000,
+            'flights'           => 102,
+            'vacations'         => 15,
+            'galleries'         => [
                 [
                     'code'      => 'hkt2025',
-                    'region'    => 'southeast-asia',
+                    'filters'   => ['southeast-asia'],
                     'title'     => 'Phuket Trip 2025',
                     'locations' => ['phuket', 'phang-nga', 'krabi'],
                     'dates'     => ['2025-11-14', '2025-11-17'],
                     'detail'    => 'lorem ipsum',
-                    //                    'link'      => '#'
                 ],
                 [
                     'code'      => 'kul2025',
-                    'region'    => 'southeast-asia',
+                    'filters'   => ['southeast-asia'],
                     'title'     => 'Kuala Lumpur Trip 2025',
                     'locations' => ['bandar-utama', 'kuala-lumpur'],
                     'dates'     => ['2025-04-14', '2025-04-17'],
                     'detail'    => 'lorem ipsum',
-                    //                    'link'      => '#'
                 ],
                 [
                     'code'      => 'bkk2025',
-                    'region'    => 'southeast-asia',
+                    'filters'   => ['southeast-asia'],
                     'title'     => 'Bangkok Trip 2025',
                     'locations' => ['bangkok'],
                     'dates'     => ['2025-11-14', '2025-11-17'],
                     'detail'    => 'lorem ipsum',
-                    //                    'link'      => '#'
                 ],
                 [
                     'code'      => 'tpe2024',
-                    'region'    => 'east-asia',
+                    'filters'   => ['east-asia'],
                     'title'     => 'Taipei-Hualien 2024',
                     'locations' => ['taipei', 'hualien'],
                     'dates'     => ['2024-10-20', '2024-10-21'],

@@ -21,7 +21,8 @@ return [
             'paragraph-2' => 'Lala lorem ipsum',
             'box-1'       => 'Countries<br><small>I’ve been to</small>',
             'box-2'       => 'Kilometers<br><small>I traveled</small>',
-            'box-3'       => 'Vacations<br><small>I made</small>'
+            'box-3'       => 'Vacations<br><small>I made</small>',
+            'box-4'       => 'Flights<br><small>I flew</small>'
         ],
         'gallery'     => [
             'title'   => 'Travel Gallery',

@@ -66,7 +66,6 @@
             </div>
         </div>
     </section><!-- /Hero Section -->
-
     <!-- About Section -->
     <section id="about" class="about section">
         <div class="container">
@@ -77,22 +76,28 @@
                         <p class="lead mb-4"><?= lang('PersonalLife.sections.about.paragraph-1') ?></p>
                         <p class="mb-5"><?= lang('PersonalLife.sections.about.paragraph-2') ?></p>
                         <div class="row g-4 mb-5">
-                            <div class="col-4">
+                            <div class="col-6">
                                 <div class="stat-item text-center">
-                                    <div class="stat-number">350+</div>
+                                    <div class="stat-number fw-bold"><?= number_format($countries_visited) ?></div>
                                     <div class="stat-label"><?= lang('PersonalLife.sections.about.box-1') ?></div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6">
                                 <div class="stat-item text-center">
-                                    <div class="stat-number">25+</div>
+                                    <div class="stat-number fw-bold">~<?= number_format($distant_traveled) ?></div>
                                     <div class="stat-label"><?= lang('PersonalLife.sections.about.box-2') ?></div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6">
                                 <div class="stat-item text-center">
-                                    <div class="stat-number">8</div>
+                                    <div class="stat-number fw-bold"><?= number_format($vacations) ?>+</div>
                                     <div class="stat-label"><?= lang('PersonalLife.sections.about.box-3') ?></div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-item text-center">
+                                    <div class="stat-number fw-bold"><?= number_format($flights) ?>+</div>
+                                    <div class="stat-label"><?= lang('PersonalLife.sections.about.box-4') ?></div>
                                 </div>
                             </div>
                         </div>
@@ -111,57 +116,61 @@
             </div>
         </div>
     </section><!-- /About Section -->
-
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
+    <section id="gallery" class="gallery portfolio section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up" data-aos-delay="300">
-            <span class="subtitle"><?= lang('Home.numbers.2') ?></span>
             <h2><?= lang('PersonalLife.sections.gallery.heading') ?></h2>
         </div><!-- End Section Title -->
-        <div class="container">
-            <div class="row my-3" data-aos="fade-up" data-aos-delay="100">
-                <div class="col text-center">
-                    <button class="btn btn-sm btn-outline-success btn-filter-vacations m-1" data-target=""><?= lang('PersonalLife.sections.gallery.filters.all') ?></button>
-                    <button class="btn btn-sm btn-outline-success btn-filter-vacations m-1" data-target="southeast-asia"><?= lang('PersonalLife.sections.gallery.filters.southeast-asia') ?></button>
-                    <button class="btn btn-sm btn-outline-success btn-filter-vacations m-1" data-target="east-asia"><?= lang('PersonalLife.sections.gallery.filters.east-asia') ?></button>
-                    <button class="btn btn-sm btn-outline-success btn-filter-vacations m-1" data-target="oceania"><?= lang('PersonalLife.sections.gallery.filters.oceania') ?></button>
-                    <button class="btn btn-sm btn-outline-success btn-filter-vacations m-1" data-target="america"><?= lang('PersonalLife.sections.gallery.filters.america') ?></button>
-                </div>
-            </div>
-            <div class="row details-grid" data-aos="fade-in" data-aos-delay="400">
-                <?php $count = 0; ?>
-                <?php foreach ($galleries as $row) : ?>
-                    <?php $count++; ?>
-                    <div class="col-4 detail-item aos-init aos-animate g-3 vacation-item <?= (11 > $count ? 'first-ten' : '') ?>" data-keyword="<?= $row['region']; ?>">
-                        <div class="card">
-                            <img src="<?= base_url('assets/img/travel/vacations/' . $row['code'] . '.jpg') ?>" class="card-img-top" alt="<?= $row['title'] ?>">
-                            <div class="card-body">
-                                <h5 class="card-title"><?= $row['title'] ?></h5>
-                                <p class="small text-success">
-                                    <i class="bi bi-pin"></i> <?php foreach($row['locations'] as $location) { echo lang('PersonalLife.locations.' . $location) . ' '; } ?>
-                                    <i class="bi bi-clock"></i> <?= format_date($row['dates'], $locale, ' - ') ?>
-                                </p>
-                                <p class="card-text"><?= $row['detail'] ?></p>
-                                <?php if (isset($row['link'])) : ?>
-                                    <a href="<?= $row['link'] ?>" class="btn btn-outline-success btn-sm"><?= lang('PersonalLife.sections.gallery.view') ?></a>
-                                <?php endif; ?>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+                    <li data-filter="*" class="filter-active"><?= lang('PersonalLife.sections.gallery.filters.all') ?></li>
+                    <li data-filter=".filter-southeast-asia"><?= lang('PersonalLife.sections.gallery.filters.southeast-asia') ?></li>
+                    <li data-filter=".filter-east-asia"><?= lang('PersonalLife.sections.gallery.filters.east-asia') ?></li>
+                    <li data-filter=".filter-oceania"><?= lang('PersonalLife.sections.gallery.filters.oceania') ?></li>
+                    <li data-filter=".filter-america"><?= lang('PersonalLife.sections.gallery.filters.america') ?></li>
+                </ul>
+                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+                    <?php foreach ($galleries as $gallery) : ?>
+                        <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?php foreach ($gallery['filters'] as $filter) {echo ' filter-' . $filter;} ?>">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image-container">
+                                    <img src="<?= base_url('assets/img/gallery/' . $gallery['code'] . '.jpg') ?>" alt="<?= $gallery['title'] ?>" class="img-fluid" loading="lazy">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-info">
+                                            <h4><?= $gallery['title'] ?></h4>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <div class="project-tags me-2">
+                                        <?php foreach ($gallery['locations'] as $location) : ?><span class="tag float-start m-1"><?= lang('PersonalLife.locations.' . $location) ?></span><?php endforeach; ?>
+                                    </div>
+                                </div>
+                                <div class="portfolio-meta">
+                                    <span class="small"><?= format_date($gallery['dates'], $locale, ' - ') ?></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
             </div>
         </div>
     </section><!-- /Gallery Section -->
-
-
-
-
-
-
-
-
-
+    <!-- Bucket List Section -->
+    <section id="bucket-list" class="bucket-list section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up" data-aos-delay="300">
+            <h2><?= lang('PersonalLife.sections.bucket-list.title') ?></h2>
+        </div><!-- End Section Title -->
+        <div class="container">
+            <div class="row my-3" data-aos="fade-up" data-aos-delay="100">
+                lists
+            </div>
+        </div>
+    </section><!-- /Bucket List Section -->
 </main>
 <footer id="footer" class="footer">
     <div class="container footer-top">

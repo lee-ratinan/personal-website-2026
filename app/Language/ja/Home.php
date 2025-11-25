@@ -173,13 +173,27 @@ return [
             'cta-paragraph' => 'あなたのニーズに合わせた革新的なソリューションで、アイデアを形にする方法を学びましょう。'
         ],
         'portfolio' => [
-            'title'   => 'ポートフォリオ',
-            'filters' => [
+            'title'         => 'ポートフォリオ',
+            'filters'       => [
                 'all'     => 'すべての作品',
                 'website' => 'ウェブサイト',
                 'backend' => 'バックエンドシステム',
                 'mobile'  => 'モバイルアプリ',
                 'ai'      => 'AIアプリ',
+            ],
+            'tags'          => [
+                'ai'             => 'AI',
+                'website'        => 'ウェブサイト',
+                'backend'        => 'バックエンドシステム',
+                'seo'            => 'SEO',
+                'e-commerce'     => 'Eコマース',
+                'ux-ui-design'   => 'UX/UI デザイン',
+                'fintech'        => 'フィンテック',
+                'data-analytics' => 'データ分析',
+                'security'       => 'セキュリティ',
+                'shopify'        => 'Shopify',
+                'thailand'       => 'タイ',
+                'new-zealand'    => 'ニュージーランド',
             ],
             'cta'           => '私を雇ってください！',
             'cta-title'     => '気に入りましたか？',

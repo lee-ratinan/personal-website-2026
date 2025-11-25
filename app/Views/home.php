@@ -408,14 +408,14 @@ $experience_years = date('Y') - 2012;
                                     'filters' => ['website'],
                                     'image'   => 'wisdomgolf.jpg',
                                     'year'    => [2025],
-                                    'tags'    => ['website', 'seo', 'ux design', 'thailand']
+                                    'tags'    => ['website', 'seo', 'ux-ui-design', 'thailand']
                             ],
                             [
                                     'title'   => 'Thai Massage Website',
                                     'filters' => ['website'],
                                     'image'   => 'skythai.jpg',
                                     'year'    => [2025],
-                                    'tags'    => ['website', 'seo', 'ux design', 'new zealand']
+                                    'tags'    => ['website', 'seo', 'ux-ui-design', 'new-zealand']
                             ],
                             [
                                     'title'   => 'Industrial Website',
@@ -429,14 +429,14 @@ $experience_years = date('Y') - 2012;
                                     'filters' => ['website', 'backend'],
                                     'image'   => 'moolahgo.jpg',
                                     'year'    => [2021, 2024],
-                                    'tags'    => ['fintech', 'data analytics', 'security']
+                                    'tags'    => ['fintech', 'data-analytics', 'security']
                             ],
                             [
                                     'title'   => 'Remittance Mobile App',
                                     'filters' => ['mobile', 'backend', 'ai'],
                                     'image'   => 'moolahpay.jpg',
                                     'year'    => [2021, 2024],
-                                    'tags'    => ['fintech', 'ux/ui design', 'ai', 'security']
+                                    'tags'    => ['fintech', 'ux-ui-design', 'ai', 'security']
                             ],
                             [
                                     'title'   => 'Snack Online Stores',
@@ -457,12 +457,12 @@ $experience_years = date('Y') - 2012;
                                     'filters' => ['website', 'backend'],
                                     'image'   => 'backendku.jpg',
                                     'year'    => [2018, 0],
-                                    'tags'    => ['backend', 'data analytics']
+                                    'tags'    => ['backend', 'data-analytics']
                             ],
                     ];
                     ?>
                     <?php foreach ($portfolio_items as $portfolio) : ?>
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item <?php foreach ($portfolio['filters'] as $filter) {echo ' filter-' . $filter;} ?>">
+                        <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?php foreach ($portfolio['filters'] as $filter) {echo ' filter-' . $filter;} ?>">
                             <div class="portfolio-card">
                                 <div class="portfolio-image-container">
                                     <img src="<?= base_url('assets/img/portfolio/' . $portfolio['image']) ?>" alt="<?= $portfolio['title'] ?>" class="img-fluid" loading="lazy">
@@ -480,8 +480,8 @@ $experience_years = date('Y') - 2012;
                                     </div>
                                 </div>
                                 <div class="portfolio-meta">
-                                    <div class="project-tags">
-                                        <?php foreach ($portfolio['tags'] as $tag) : ?><span class="tag"><?= $tag ?></span><?php endforeach; ?>
+                                    <div class="project-tags me-2 d-block">
+                                        <?php foreach ($portfolio['tags'] as $tag) : ?><span class="tag float-start m-1"><?= lang('Home.sections.portfolio.tags.' . $tag) ?></span><?php endforeach; ?>
                                     </div>
                                     <div class="project-year"><?= calculate_years($portfolio['year'], $locale, ' - ') ?></div>
                                 </div>

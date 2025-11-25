@@ -173,13 +173,27 @@ return [
             'cta-paragraph' => 'Learn how to bring your ideas to life with innovative solutions tailored to your needs.'
         ],
         'portfolio' => [
-            'title'   => 'Portfolio',
-            'filters' => [
+            'title'         => 'Portfolio',
+            'filters'       => [
                 'all'     => 'All Work',
                 'website' => 'Website',
                 'backend' => 'Backend System',
                 'mobile'  => 'Mobile Application',
                 'ai'      => 'AI Application',
+            ],
+            'tags'          => [
+                'ai'             => 'AI',
+                'website'        => 'Website',
+                'backend'        => 'Backend System',
+                'seo'            => 'SEO',
+                'e-commerce'     => 'E-Commerce',
+                'ux-ui-design'   => 'UX/UI Design',
+                'fintech'        => 'Fintech',
+                'data-analytics' => 'Data Analytics',
+                'security'       => 'Security',
+                'shopify'        => 'Shopify',
+                'thailand'       => 'Thailand',
+                'new-zealand'    => 'New Zealand',
             ],
             'cta'           => 'Hire Me!',
             'cta-title'     => 'Like What You See?',

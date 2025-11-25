@@ -173,13 +173,27 @@ return [
             'cta-paragraph' => '透過量身打造的創新解決方案，了解如何讓你的想法真正實現。'
         ],
         'portfolio' => [
-            'title'   => '作品集',
-            'filters' => [
+            'title'         => '作品集',
+            'filters'       => [
                 'all'     => '全部作品',
                 'website' => '網站',
                 'backend' => '後端系統',
                 'mobile'  => '手機 APP',
                 'ai'      => 'AI APP',
+            ],
+            'tags'          => [
+                'ai'             => 'AI',
+                'website'        => '網站',
+                'backend'        => '後端系統',
+                'seo'            => 'SEO',
+                'e-commerce'     => '電子商務',
+                'ux-ui-design'   => 'UX/UI 設計',
+                'fintech'        => '金融科技',
+                'data-analytics' => '資料分析',
+                'security'       => '資安',
+                'shopify'        => 'Shopify',
+                'thailand'       => '泰國',
+                'new-zealand'    => '紐西蘭',
             ],
             'cta'           => '雇用我吧！',
             'cta-title'     => '喜歡你所看到的嗎？',

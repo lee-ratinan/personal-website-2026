@@ -527,7 +527,7 @@ class Home extends BaseController
                 [
                     'code'      => 'taiwan-hsr',
                     'filter'    => 'others',
-                    'title'     => 'Taiwan HSR',
+                    'title'     => 'Taiwan HSR 台灣高鐵',
                     'locations' => ['taipei', 'taichung'],
                     'dates'     => ['2018-11-14'],
                 ],
@@ -564,7 +564,7 @@ class Home extends BaseController
                 [
                     'code'      => 'yukata',
                     'filter'    => 'cultural',
-                    'title'     => 'Yukata',
+                    'title'     => 'Yukata 浴衣',
                     'locations' => [],
                     'dates'     => [],
                     'since'     => 2016

@@ -1,0 +1,116 @@
+<?php
+return [
+    'system'     => [
+        'title'     => 'ชีวิตส่วนตัว',
+        'back-home' => 'หน้าหลัก',
+        'seo'       => [
+            'description' => 'ชีวิตส่วนตัว',
+            'keywords'    => 'ชีวิตส่วนตัว',
+        ]
+    ],
+    'sections'   => [
+        'home'        => [
+            'greetings'   => 'ไง! กูเอง, นัท, และนี่คือชีวิตกู!',
+            'i-am-a'      => 'กูเป็น',
+            'occupations' => 'นักเดินทาง, พวกชอบเปิดโลกกว้าง, พวกขี้สงสัย อยากลอง',
+        ],
+        'about'       => [
+            'title'       => 'เกี่ยวกับชีวิตกู',
+            'heading'     => 'รู้จักกูให้มากขึ้น',
+            'paragraph-1' => 'Lorem ipsum',
+            'paragraph-2' => 'Lala lorem ipsum',
+            'box-1'       => 'ประเทศ<br><small>ที่กูไปมาแล้ว</small>',
+            'box-2'       => 'กิโลเมตร<br><small>ที่กูเดินทางมา</small>',
+            'box-3'       => 'ทริปท่องเที่ยว<br><small>ที่กูสนุกกับมันมา</small>',
+            'box-4'       => 'เที่ยวบิน<br><small>ที่กูบินมาแล้ว</small>'
+        ],
+        'gallery'     => [
+            'title'   => 'แกลเลอรี่การเดินทาง',
+            'heading' => 'ร่วมสำรวจโลกกับกูผ่านแกลเลอรี่',
+            'filters' => [
+                'all'            => 'ทั้งหมด',
+                'southeast-asia' => 'เอเชียตะวันออกเฉียงใต้',
+                'east-asia'      => 'เอเชียตะวันออก',
+                'oceania'        => 'โอเชียเนีย',
+                'america'        => 'อเมริกา',
+            ],
+            'view'    => 'เปิดดู'
+        ],
+        'bucket-list' => [
+            'title'   => 'บักเก็ตลิสต์',
+            'heading' => 'สำผัสประสบการณ์ที่ลืมไม่ลงบนโลกนี้',
+            'filters' => [
+                'all'         => 'ทั้งหมด',
+                'observatory' => 'ชั้นชมวิว',
+                'adventure'   => 'ผจญภัย',
+                'cultural'    => 'วัฒนธรรม',
+                'pilgrimage'  => 'ตามรอย',
+                'others'      => 'อื่นๆ',
+            ]
+        ]
+    ],
+    'locations'  => [
+        // THAILAND
+        'bangkok'          => 'กรุงเทพฯ',
+        'cha-am'           => 'ชะอำ',
+        'hua-hin'          => 'หัวหิน',
+        'kanchanaburi'     => 'กาญจนบุรี',
+        'krabi'            => 'กระบี่',
+        'pattaya'          => 'พัทยา',
+        'phang-nga'        => 'พังงา',
+        'phuket'           => 'ภูเก็ต',
+        // MALAYSIA
+        'bandar-utama'     => 'บันดาร์ อุตามะ',
+        'desaru'           => 'ดีซารู',
+        'george-town'      => 'จอร์จทาวน์ (ปีนัง)',
+        'ipoh'             => 'อีโปห์',
+        'johor-bahru'      => 'โจโอร์ บาห์รู',
+        'kuala-lumpur'     => 'กัวลาลัมเปอร์',
+        'langkawi'         => 'ลังกาวี',
+        // INDONESIA
+        'bali'             => 'บาหลี',
+        'batam'            => 'บาตัม',
+        'bintang'          => 'บินตัน',
+        'jakarta'          => 'จาการ์ตา',
+        'karawaci'         => 'การาวาจี',
+        // TAIWAN
+        'hualien'          => 'ฮัวเหลียน',
+        'taichung'         => 'ไถจง',
+        'taipei'           => 'ไทเป',
+        // JAPAN
+        'arimaonsen'       => 'อะริมะออนเซ็น',
+        'fujisan'          => 'ฟุจิซัน',
+        'fujisawa'         => 'ฟุจิซะวะ',
+        'himeji'           => 'ฮิเมจิ',
+        'hokuei'           => 'โฮคุเอ',
+        'kamakura'         => 'คะมะคุระ',
+        'kinosakionsen'    => 'คิโนะซะคิออนเซ็น',
+        'kobe'             => 'โคเบะ',
+        'kyoto'            => 'เกียวโต',
+        'nara'             => 'นาระ',
+        'osaka'            => 'โอซะกะ',
+        'tokyo'            => 'โตเกียว',
+        'tottori'          => 'ทตโตริ',
+        'uji'              => 'อุจิ',
+        'yokohama'         => 'โยโกฮามะ',
+        // AUSTRALIA
+        'melbourne'        => 'เมลเบิร์น',
+        'sydney'           => 'ซิดนีย์',
+        // PHILIPPINES
+        'alegria'          => 'อาลีเกรีย',
+        'cebu'             => 'ซีบู',
+        'mactan'           => 'มัคตัน',
+        'oslob'            => 'ออสล็อบ',
+        // VIETNAM
+        'ho-chi-minh-city' => 'โฮจิมินห์',
+        // USA
+        'chicago'          => 'ชิคาโก',
+        'cincinnati'       => 'ซินซินเนตี',
+        'covington'        => 'โควิงตัน',
+        'newport'          => 'นิวพอร์ท',
+        'new-york-city'    => 'นิวยอร์ค',
+        // SG
+        'singapore'        => 'สิงคโปร์',
+    ],
+    'since' => 'ตั้งแต่ {0}'
+];

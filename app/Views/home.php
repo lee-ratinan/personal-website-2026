@@ -483,7 +483,7 @@ $experience_years = date('Y') - 2012;
                                     <div class="project-tags me-2 d-block">
                                         <?php foreach ($portfolio['tags'] as $tag) : ?><span class="tag float-start m-1"><?= lang('Home.sections.portfolio.tags.' . $tag) ?></span><?php endforeach; ?>
                                     </div>
-                                    <div class="project-year"><?= calculate_years($portfolio['year'], $locale, ' - ') ?></div>
+                                    <div class="project-year d-none"><?= calculate_years($portfolio['year'], $locale, ' - ') ?></div>
                                 </div>
                             </div>
                         </div>

@@ -43,3 +43,57 @@ function calculate_years (array $input_years, string $locale, string $separator 
     }
     return implode($separator, $output_years);
 }
+
+/**
+ * Format dates
+ * @param string[] $dates array of dates in YYYY-MM-DD format
+ * @param string $locale accept all acceptable locales in this system
+ * @param string $separator mainly accept ', ' and ' - ', the rest will not get fixed by the locale
+ * @return string
+ */
+function format_date (array $dates, string $locale, string $separator = ', '): string
+{
+    $months = [
+        'en' => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        'en-SHAW' => ['𐑡𐑨𐑯', '𐑓𐑧𐑚', '𐑥𐑸𐑗', '𐑱𐑐𐑮', '𐑥𐑱', '𐑡𐑵𐑯', '𐑡𐑩𐑤', '𐑷𐑜𐑩', '𐑕𐑧𐑐', '𐑪𐑒𐑑', '𐑯𐑴𐑝', '𐑛𐑦𐑕'],
+        'th' => ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.']
+    ];
+    $year_adj = [
+        'en' => 0,
+        'ja' => 0,
+        'th' => 543,
+        'zh-TW' => -1911,
+        'en-SHAW' => 0
+    ];
+    $formats = [
+        'en' => 'MMMM d, YYYY',
+        'en-SHAW' => 'd MMMM YYYY',
+        'th' => 'd MMMM YYYY',
+        'zh-TW' => 'YYYY年m月d日',
+        'ja' => 'YYYY年m月d日',
+    ];
+    // fix separators
+    if (', ' == $separator && in_array($locale, ['zh-TW', 'ja'])) {
+        $separator = '、';
+    } else if (' - ' == $separator && 'ja' == $locale) {
+        $separator = ' 〜 ';
+    }
+    $outputs = [];
+    foreach ($dates as $date) {
+        $explode = explode('-', $date);
+        $yyyy    = intval($explode[0]) + $year_adj[$locale];
+        $mm      = intval($explode[1]);
+        $mm_ind  = $mm-1;
+        $dd      = intval($explode[2]);
+        if (in_array($locale, ['zh-TW', 'ja'])) {
+            $dt = str_replace('YYYY', $yyyy, $formats[$locale]);
+            $dt = str_replace('m', $mm, $dt);
+            $outputs[] = str_replace('d', $mm, $dt);
+        } else {
+            $dt = str_replace('YYYY', $yyyy, $formats[$locale]);
+            $dt = str_replace('MMMM', $months[$locale][$mm_ind], $dt);
+            $outputs[] = str_replace('d', $dd, $dt);
+        }
+    }
+    return implode($separator, $outputs);
+}

@@ -39,13 +39,11 @@
         </a>
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="#hero" class="active"><?= lang('Home.sections.home.title') ?></a></li>
-                <li><a href="#about"><?= lang('Home.sections.about.title') ?></a></li>
-                <li><a href="#resume"><?= lang('Home.sections.resume.title') ?></a></li>
-                <li><a href="#services"><?= lang('Home.sections.services.title') ?></a></li>
-                <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
-                <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>
-                <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
+                <li><a href="#hero" class="active"><?= lang('PersonalLife.system.title') ?></a></li>
+                <li><a href="#about"><?= lang('PersonalLife.sections.about.title') ?></a></li>
+                <li><a href="#gallery"><?= lang('PersonalLife.sections.gallery.title') ?></a></li>
+                <li><a href="#bucket-list"><?= lang('PersonalLife.sections.bucket-list.title') ?></a></li>
+                <li><a href="<?= base_url($locale) ?>"><?= lang('PersonalLife.system.back-home') ?></a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -58,17 +56,112 @@
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2><?= lang('Home.sections.home.greetings') ?></h2>
-                    <p><?= lang('Home.sections.home.i-am-a') ?> <span class="typed" data-typed-items="<?= lang('Home.sections.home.occupations') ?>"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+                    <h2><?= lang('PersonalLife.sections.home.greetings') ?></h2>
+                    <p><?= lang('PersonalLife.sections.home.i-am-a') ?> <span class="typed" data-typed-items="<?= lang('PersonalLife.sections.home.occupations') ?>"></span><span class="typed-cursor" aria-hidden="true"></span></p>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/ratinanlee" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/lee-ratinan" target="_blank"><i class="bi bi-github"></i></a>
                         <a href="https://www.instagram.com/ratinanlee/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/lee.ratinan" target="_blank"><i class="bi bi-facebook"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="content" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="mb-4"><?= lang('PersonalLife.sections.about.heading') ?></h2>
+                        <p class="lead mb-4"><?= lang('PersonalLife.sections.about.paragraph-1') ?></p>
+                        <p class="mb-5"><?= lang('PersonalLife.sections.about.paragraph-2') ?></p>
+                        <div class="row g-4 mb-5">
+                            <div class="col-4">
+                                <div class="stat-item text-center">
+                                    <div class="stat-number">350+</div>
+                                    <div class="stat-label"><?= lang('PersonalLife.sections.about.box-1') ?></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item text-center">
+                                    <div class="stat-number">25+</div>
+                                    <div class="stat-label"><?= lang('PersonalLife.sections.about.box-2') ?></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item text-center">
+                                    <div class="stat-number">8</div>
+                                    <div class="stat-label"><?= lang('PersonalLife.sections.about.box-3') ?></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="image-stack">
+                        <div class="image-main">
+                            <img src="<?= base_url('assets/img/travel/about-1.jpg') ?>" alt="<?= lang('PersonalLife.sections.about.heading') ?>" class="img-fluid">
+                        </div>
+                        <div class="image-overlay">
+                            <img src="<?= base_url('assets/img/travel/about-2.jpg') ?>" alt="Nat Lee" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /About Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up" data-aos-delay="300">
+            <span class="subtitle"><?= lang('Home.numbers.2') ?></span>
+            <h2><?= lang('PersonalLife.sections.gallery.heading') ?></h2>
+        </div><!-- End Section Title -->
+        <div class="container">
+            <div class="row my-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="col text-center">
+                    <button class="btn btn-sm btn-outline-success btn-filter-vacations m-1" data-target=""><?= lang('PersonalLife.sections.gallery.filters.all') ?></button>
+                    <button class="btn btn-sm btn-outline-success btn-filter-vacations m-1" data-target="southeast-asia"><?= lang('PersonalLife.sections.gallery.filters.southeast-asia') ?></button>
+                    <button class="btn btn-sm btn-outline-success btn-filter-vacations m-1" data-target="east-asia"><?= lang('PersonalLife.sections.gallery.filters.east-asia') ?></button>
+                    <button class="btn btn-sm btn-outline-success btn-filter-vacations m-1" data-target="oceania"><?= lang('PersonalLife.sections.gallery.filters.oceania') ?></button>
+                    <button class="btn btn-sm btn-outline-success btn-filter-vacations m-1" data-target="america"><?= lang('PersonalLife.sections.gallery.filters.america') ?></button>
+                </div>
+            </div>
+            <div class="row details-grid" data-aos="fade-in" data-aos-delay="400">
+                <?php $count = 0; ?>
+                <?php foreach ($galleries as $row) : ?>
+                    <?php $count++; ?>
+                    <div class="col-4 detail-item aos-init aos-animate g-3 vacation-item <?= (11 > $count ? 'first-ten' : '') ?>" data-keyword="<?= $row['region']; ?>">
+                        <div class="card">
+                            <img src="<?= base_url('assets/img/travel/vacations/' . $row['code'] . '.jpg') ?>" class="card-img-top" alt="<?= $row['title'] ?>">
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $row['title'] ?></h5>
+                                <p class="small text-success">
+                                    <i class="bi bi-pin"></i> <?php foreach($row['locations'] as $location) { echo lang('PersonalLife.locations.' . $location) . ' '; } ?>
+                                    <i class="bi bi-clock"></i> <?= format_date($row['dates'], $locale, ' - ') ?>
+                                </p>
+                                <p class="card-text"><?= $row['detail'] ?></p>
+                                <?php if (isset($row['link'])) : ?>
+                                    <a href="<?= $row['link'] ?>" class="btn btn-outline-success btn-sm"><?= lang('PersonalLife.sections.gallery.view') ?></a>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section><!-- /Gallery Section -->
+
+
+
+
+
+
+
+
+
 </main>
 <footer id="footer" class="footer">
     <div class="container footer-top">
@@ -82,23 +175,21 @@
             <div class="col-lg-3 col-6 footer-links">
                 <h4><?= lang('Home.system.useful-links') ?></h4>
                 <ul>
-                    <li><a href="#hero"><?= lang('Home.sections.home.title') ?></a></li>
-                    <li><a href="#about"><?= lang('Home.sections.about.title') ?></a></li>
-                    <li><a href="#resume"><?= lang('Home.sections.resume.title') ?></a></li>
-                    <li><a href="#services"><?= lang('Home.sections.services.title') ?></a></li>
-                    <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
-                    <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>
-                    <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
+                    <li><a href="#hero" class="active"><?= lang('PersonalLife.system.title') ?></a></li>
+                    <li><a href="#about"><?= lang('PersonalLife.sections.about.title') ?></a></li>
+                    <li><a href="#gallery"><?= lang('PersonalLife.sections.gallery.title') ?></a></li>
+                    <li><a href="#bucket-list"><?= lang('PersonalLife.sections.bucket-list.title') ?></a></li>
+                    <li><a href="<?= base_url($locale) ?>"><?= lang('PersonalLife.system.back-home') ?></a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-6 footer-links">
                 <h4><?= lang('Home.system.change-language') ?></h4>
                 <ul>
-                    <li><a href="<?= base_url('en') ?>">English (US)</a></li>
-                    <li><a href="<?= base_url('th') ?>">ภาษาไทย</a></li>
-                    <li><a href="<?= base_url('ja') ?>">日本語</a></li>
-                    <li><a href="<?= base_url('zh-TW') ?>">中文（台灣）</a></li>
-                    <li><a href="<?= base_url('en-SHAW') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
+                    <li><a href="<?= base_url('en/personal-life') ?>">English (US)</a></li>
+                    <li><a href="<?= base_url('th/personal-life') ?>">ภาษาไทย</a></li>
+                    <li><a href="<?= base_url('ja/personal-life') ?>">日本語</a></li>
+                    <li><a href="<?= base_url('zh-TW/personal-life') ?>">中文（台灣）</a></li>
+                    <li><a href="<?= base_url('en-SHAW/personal-life') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
                 </ul>
             </div>
         </div>
@@ -121,6 +212,22 @@
 <script src="<?= base_url('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') ?>"></script>
 <script src="<?= base_url('assets/vendor/isotope-layout/isotope.pkgd.min.js') ?>"></script>
 <script src="<?= base_url('assets/vendor/swiper/swiper-bundle.min.js') ?>"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const vacation_buttons = document.querySelectorAll('.btn-filter-vacations');
+        const vacation_items = document.querySelectorAll('.details-grid .detail-item');
+        vacation_buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.target?.trim() || "";
+                vacation_items.forEach(item => {
+                    const keyword = item.dataset.keyword || "";
+                    const shouldShow = target === "" || keyword === target;
+                    item.style.display = shouldShow ? '' : 'none';
+                });
+            });
+        });
+    });
+</script>
 <!-- Main JS File -->
 <script src="<?= base_url('assets/js/main.js') ?>"></script>
 </body>

@@ -12,7 +12,8 @@ return [
         ],
         'seo'             => [
             'description' => '具備 CSM/PSM 認證的技術專案經理與 Scrum Master，擁有電商與金融科技經驗，帶領跨國團隊交付高品質、可擴展的數位解決方案。',
-            'keywords'    => '專案經理, Scrum Master, CSM, PSM, 金融科技, 電子商務, 軟體開發, 敏捷教練, 技術主管, 跨國團隊, 履歷, 個人作品集'
+            'keywords'    => '專案經理, Scrum Master, CSM, PSM, 金融科技, 電子商務, 軟體開發, 敏捷教練, 技術主管, 跨國團隊, 履歷, 個人作品集',
+            'author'      => '李榮欽',
         ]
     ],
     'numbers'  => [

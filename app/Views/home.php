@@ -6,6 +6,7 @@
     <title><?= lang('Home.system.pages.home') ?> - <?= lang('Home.system.website-name') ?></title>
     <meta name="description" content="<?= lang('Home.system.seo.description') ?>">
     <meta name="keywords" content="<?= lang('Home.system.seo.keywords') ?>">
+    <meta name="author" content="<?= lang('Home.system.seo.author') ?>">
     <!-- Favicons -->
     <link href="<?= base_url('assets/img/favicon.png') ?>" rel="icon">
     <link href="<?= base_url('assets/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
@@ -21,6 +22,13 @@
     <link href="<?= base_url('assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet') ?>">
     <!-- Main CSS File -->
     <link href="<?= base_url('assets/css/main.css') ?>" rel="stylesheet">
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="en" href="<?= base_url('en') ?>"/>
+    <link rel="alternate" hreflang="th" href="<?= base_url('th') ?>"/>
+    <link rel="alternate" hreflang="ja" href="<?= base_url('ja') ?>"/>
+    <link rel="alternate" hreflang="zh-TW" href="<?= base_url('zh-TW') ?>"/>
+    <link rel="alternate" hreflang="x-default" href="<?= base_url() ?>"/>
+    <link rel="canonical" href="<?= current_url() ?>">
     <!-- =======================================================
     * Template Name: Craftivo
     * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/

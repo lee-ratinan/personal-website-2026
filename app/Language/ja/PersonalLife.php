@@ -1,14 +1,14 @@
 <?php
 return [
-    'system'     => [
+    'system'    => [
         'title'     => 'プライベート',
         'back-home' => 'ホーム',
         'seo'       => [
-            'description' => 'プライベート',
-            'keywords'    => 'プライベート',
+            'description' => 'エイキンのパーソナルライフを紹介。世界を旅し、文化に触れ、新しい言語を学び続ける彼の人生と、旅先での忘れられない体験をお楽しみください。',
+            'keywords'    => 'エイキン旅行, 個人生活, 世界の旅人, 文化体験, 多言語, トラベルギャラリー, バケットリスト, 冒険',
         ]
     ],
-    'sections'   => [
+    'sections'  => [
         'home'        => [
             'greetings'   => 'こんにちは！エイキンです。これが俺の人生です！',
             'i-am-a'      => '俺は',
@@ -49,7 +49,7 @@ return [
             ]
         ]
     ],
-    'locations'  => [
+    'locations' => [
         // THAILAND
         'bangkok'          => 'バンコク',
         'cha-am'           => 'チャアム',
@@ -112,5 +112,5 @@ return [
         // SG
         'singapore'        => 'シンガポール',
     ],
-    'since' => '{0}から'
+    'since'     => '{0}から'
 ];

@@ -1,14 +1,14 @@
 <?php
 return [
-    'system'     => [
+    'system'    => [
         'title'     => 'Personal Life',
         'back-home' => 'Main Page',
         'seo'       => [
-            'description' => 'Personal Life',
-            'keywords'    => 'Personal Life',
+            'description' => 'Explore the personal life of Nat Lee—traveler, culture lover, and lifelong learner. Discover his journeys across countries, new languages, diverse experiences, and the unforgettable moments that shape his worldview.',
+            'keywords'    => 'Nat Lee travel, personal life, world traveler, cultural experiences, multilingual, travel gallery, bucket list, global adventures',
         ]
     ],
-    'sections'   => [
+    'sections'  => [
         'home'        => [
             'greetings'   => 'Hi! It’s me, Nat Lee, and it’s my life!',
             'i-am-a'      => 'I’m',
@@ -17,11 +17,11 @@ return [
         'about'       => [
             'title'       => 'About My Life',
             'heading'     => 'Know more about me',
-            'paragraph-1' => 'Lorem ipsum',
-            'paragraph-2' => 'Lala lorem ipsum',
+            'paragraph-1' => 'I love exploring the world one culture at a time. From soaking in an onsen to wandering through a nude beach with zero shame, I travel to understand how people live, think, and celebrate life. Every place teaches me something new, and every adventure reshapes how I see humanity.',
+            'paragraph-2' => 'I’m always collecting little pieces of global identity—new foods, new habits, and new languages. Whether it’s saying <em>terima kasih</em>, <em>maraming salamat</em>, or <em>arigatō gozaimasu</em>, I enjoy connecting with people in their own words. Travel keeps me curious, grounded, and constantly learning about the beautiful diversity that exists on this planet.',
             'box-1'       => 'Countries<br><small>I’ve been to</small>',
-            'box-2'       => 'Kilometers<br><small>I traveled</small>',
-            'box-3'       => 'Vacations<br><small>I made</small>',
+            'box-2'       => 'Kilometers<br><small>I’ve traveled</small>',
+            'box-3'       => 'Vacations<br><small>I’ve completed</small>',
             'box-4'       => 'Flights<br><small>I flew</small>'
         ],
         'gallery'     => [
@@ -49,7 +49,7 @@ return [
             ]
         ]
     ],
-    'locations'  => [
+    'locations' => [
         // THAILAND
         'bangkok'          => 'Bangkok',
         'cha-am'           => 'Cha-Am',
@@ -112,5 +112,5 @@ return [
         // SG
         'singapore'        => 'Singapore',
     ],
-    'since' => 'Since {0}'
+    'since'     => 'Since {0}'
 ];

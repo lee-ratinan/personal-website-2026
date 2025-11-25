@@ -1,14 +1,14 @@
 <?php
 return [
-    'system'     => [
+    'system'    => [
         'title'     => 'Personal Life',
         'back-home' => 'Main Page',
         'seo'       => [
-            'description' => 'Personal Life',
-            'keywords'    => 'Personal Life',
+            'description' => 'Explore the personal life of Nat Lee—traveler, culture lover, and lifelong learner. Discover his journeys across countries, new languages, diverse experiences, and the unforgettable moments that shape his worldview.',
+            'keywords'    => 'Nat Lee travel, personal life, world traveler, cultural experiences, multilingual, travel gallery, bucket list, global adventures',
         ]
     ],
-    'sections'   => [
+    'sections'  => [
         'home'        => [
             'greetings'   => 'Hi! It’s me, Nat Lee, and it’s my life!',
             'i-am-a'      => 'I’m',
@@ -49,7 +49,7 @@ return [
             ]
         ]
     ],
-    'locations'  => [
+    'locations' => [
         // THAILAND
         'bangkok'          => 'Bangkok',
         'cha-am'           => 'Cha-Am',
@@ -112,5 +112,5 @@ return [
         // SG
         'singapore'        => 'Singapore',
     ],
-    'since' => 'Since {0}'
+    'since'     => 'Since {0}'
 ];

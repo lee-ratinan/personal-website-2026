@@ -41,9 +41,10 @@ return [
             'heading' => 'Experience the Unforgettable Things on Earth',
             'filters' => [
                 'all'         => 'All',
-                'observation' => 'Observation',
-                'activity'    => 'Activity',
+                'observatory' => 'Observatory',
+                'adventure'   => 'Adventure',
                 'cultural'    => 'Cultural',
+                'pilgrimage'  => 'Pilgrimage',
                 'others'      => 'Others',
             ]
         ]
@@ -53,6 +54,7 @@ return [
         'bangkok'          => 'Bangkok',
         'cha-am'           => 'Cha-Am',
         'hua-hin'          => 'Hua Hin',
+        'kanchanaburi'     => 'Kanchanaburi',
         'krabi'            => 'Krabi',
         'pattaya'          => 'Pattaya',
         'phang-nga'        => 'Phang Nga',
@@ -110,5 +112,5 @@ return [
         // SG
         'singapore'        => 'Singapore',
     ],
-    'activities' => []
+    'since' => 'Since {0}'
 ];

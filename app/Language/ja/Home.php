@@ -169,6 +169,7 @@ return [
                     'description' => '実践的で力を与えるアジャイル習慣でチームを強化する'
                 ],
             ],
+            'featured'      => '特集',
             'cta'           => '僕を雇ってください！',
             'cta-title'     => 'あなたのビジョンを現実へと変える',
             'cta-paragraph' => 'あなたのニーズに合わせた革新的なソリューションで、アイデアを形にする方法を学びましょう。'
@@ -205,7 +206,7 @@ return [
             'linkedin'  => 'LinkedIn',
             'instagram' => 'Instagram',
             'github'    => 'Github',
-            'line'      => 'LINE（ライン）',
+            'line'      => 'LINE',
             'medium'    => 'Medium',
             'telegram'  => 'Telegram',
             'facebook'  => 'Facebook',

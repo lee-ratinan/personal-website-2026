@@ -169,6 +169,7 @@ return [
                     'description' => 'Elevating teams with practical, empowering agile habits.'
                 ],
             ],
+            'featured'      => 'Featured',
             'cta'           => 'Hire Me!',
             'cta-title'     => 'Transform Your Vision Into Reality',
             'cta-paragraph' => 'Learn how to bring your ideas to life with innovative solutions tailored to your needs.'
@@ -205,7 +206,7 @@ return [
             'linkedin'  => 'LinkedIn',
             'instagram' => 'Instagram',
             'github'    => 'Github',
-            'line'      => 'Line',
+            'line'      => 'LINE',
             'medium'    => 'Medium',
             'telegram'  => 'Telegram',
             'facebook'  => 'Facebook',

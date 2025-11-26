@@ -179,7 +179,7 @@ class Home extends BaseController
                     'detail'    => 'x',
                 ],
                 [
-                    'code'      => 'IPH2020',
+                    'code'      => 'iph2020',
                     'filter'    => 'southeast-asia',
                     'title'     => 'Ipoh 2020',
                     'locations' => ['ipoh'],

@@ -359,7 +359,7 @@ $experience_years = date('Y') - 2012;
                     <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="<?= $i + 1 ?>00">
                         <div class="service-item">
                             <?php if (0 == $i) : ?>
-                                <div class="featured-tag">Featured</div><?php endif ?>
+                                <div class="featured-tag"><?= lang('Home.sections.services.featured') ?></div><?php endif ?>
                             <div class="icon-wrapper">
                                 <i class="bi bi-<?= $icons[$i] ?>"></i>
                             </div>

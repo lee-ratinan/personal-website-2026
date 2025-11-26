@@ -295,11 +295,32 @@ class Home extends BaseController
                 ],
                 // 2024
                 [
+                    'code'      => 'yangmingshan',
+                    'filter'    => 'others',
+                    'title'     => 'Hike at Yangmingshan',
+                    'locations' => ['taipei'],
+                    'dates'     => ['2024-10-27'],
+                ],
+                [
+                    'code'      => 'xiangshan',
+                    'filter'    => 'others',
+                    'title'     => 'Hike at Xiangshan',
+                    'locations' => ['taipei'],
+                    'dates'     => ['2024-10-26'],
+                ],
+                [
                     'code'      => 'the-only-one',
                     'filter'    => 'pilgrimage',
                     'title'     => 'The On1y One 某某',
                     'locations' => ['taipei'],
                     'dates'     => ['2024-10-25'],
+                ],
+                [
+                    'code'      => 'capybara',
+                    'filter'    => 'others',
+                    'title'     => 'Meet Capybara',
+                    'locations' => ['hualien'],
+                    'dates'     => ['2024-10-24'],
                 ],
                 [
                     'code'      => 'taiwanese-aboriginal-clothes',
@@ -320,7 +341,7 @@ class Home extends BaseController
                     'filter'    => 'adventure',
                     'title'     => 'Archery',
                     'locations' => ['osaka', 'hualien'],
-                    'dates'     => ['2024-05-01', '2024-10-23']
+                    'dates'     => ['2024-04-25', '2024-10-23']
                 ],
                 [
                     'code'      => 'tsutenkaku-tower',
@@ -408,7 +429,7 @@ class Home extends BaseController
                     'dates'     => ['2023-10-18']
                 ],
                 [
-                    'code'      => 'Balinese-clothes',
+                    'code'      => 'balinese-clothes',
                     'filter'    => 'cultural',
                     'title'     => 'Balinese Clothes',
                     'locations' => ['bali'],
@@ -444,7 +465,7 @@ class Home extends BaseController
                     'dates'     => ['2022-05-23', '2025-03-06']
                 ],
                 [
-                    'code'      => 'naturist-resort ',
+                    'code'      => 'naturist-resort',
                     'filter'    => 'cultural',
                     'title'     => 'Naturist Resort',
                     'locations' => ['phuket', 'pattaya'],
@@ -489,6 +510,13 @@ class Home extends BaseController
                 ],
                 // 2019
                 [
+                    'code'      => 'penguin',
+                    'filter'    => 'others',
+                    'title'     => 'See Penguin in natural habitat',
+                    'locations' => ['melbourne'],
+                    'dates'     => ['2019-10-25']
+                ],
+                [
                     'code'      => 'eureka-tower',
                     'filter'    => 'observatory',
                     'title'     => 'Eureka Tower',
@@ -503,9 +531,23 @@ class Home extends BaseController
                     'dates'     => ['2019-10-20']
                 ],
                 [
+                    'code'      => 'blue-mountains',
+                    'filter'    => 'others',
+                    'title'     => 'Hike at Blue Mountains',
+                    'locations' => ['sydney'],
+                    'dates'     => ['2019-10-18']
+                ],
+                [
                     'code'      => 'sydney-tower',
                     'filter'    => 'observatory',
                     'title'     => 'Sydney Tower',
+                    'locations' => ['sydney'],
+                    'dates'     => ['2019-10-17']
+                ],
+                [
+                    'code'      => 'sydney-opera-house',
+                    'filter'    => 'others',
+                    'title'     => 'Visit Sydney Opera House',
                     'locations' => ['sydney'],
                     'dates'     => ['2019-10-17']
                 ],
@@ -578,7 +620,7 @@ class Home extends BaseController
                     'since'     => 2016
                 ],
                 [
-                    'code'      => 'onsen-sento',
+                    'code'      => 'onsen',
                     'filter'    => 'cultural',
                     'title'     => 'Onsen, Sento　温泉と銭湯',
                     'locations' => [],
@@ -586,6 +628,13 @@ class Home extends BaseController
                     'since'     => 2016
                 ],
                 // 2015
+                [
+                    'code'      => 'get-msc',
+                    'filter'    => 'others',
+                    'title'     => 'Get Masters Degree',
+                    'locations' => ['singapore'],
+                    'dates'     => ['2015-07-XX']
+                ],
                 // 2014
                 [
                     'code'      => 'petronas-towers',
@@ -657,12 +706,16 @@ class Home extends BaseController
                     'One-Eyed Flashback',
                     'The Million-dollar Pentagram',
                     'First Note of Love',
-                    'Ghostbusters’ Firehouse',
                     'Harry Potter',
-                    'Sherlock Holmes'
+                    'Sherlock Holmes',
+                    'Conan',
+                    'LOTR'
                 ],
                 'others'      => [
-                    'KTX Train'
+                    'KTX Train',
+                    'Yosemite National Park',
+                    'join naturist trip',
+                    'Get MBA',
                 ]
             ],
         ];

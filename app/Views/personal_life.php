@@ -133,7 +133,7 @@
             <h2><?= lang('PersonalLife.sections.gallery.heading') ?></h2>
         </div><!-- End Section Title -->
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="isotope-layout" data-default-filter=".filter-first-ten" data-layout="masonry" data-sort="original-order">
+            <div class="isotope-layout" data-default-filter=".filter-first-twelve" data-layout="masonry" data-sort="original-order">
                 <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
                     <li data-filter="*" class="filter-active"><?= lang('PersonalLife.sections.gallery.filters.all') ?> <span id="count-gallery-all"></span></li>
                     <li data-filter=".filter-southeast-asia"><?= lang('PersonalLife.sections.gallery.filters.southeast-asia') ?> <span id="count-gallery-southeast-asia"></span></li>
@@ -152,7 +152,7 @@
                     ?>
                     <?php foreach ($galleries as $i => $gallery) : ?>
                         <?php $regions[$gallery['filter']] += 1; ?>
-                        <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?= ($i < 10 ? 'filter-first-ten' : '') ?> <?= 'filter-' . $gallery['filter'] ?>">
+                        <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?= ($i < 12 ? 'filter-first-twelve' : '') ?> <?= 'filter-' . $gallery['filter'] ?>">
                             <div class="portfolio-card">
                                 <div class="portfolio-image-container">
                                     <img src="<?= base_url('assets/img/gallery/' . $gallery['code'] . '.jpg') ?>" alt="<?= $gallery['title'] ?>" class="img-fluid" loading="lazy">
@@ -192,7 +192,7 @@
             <h2><?= lang('PersonalLife.sections.bucket-list.heading') ?></h2>
         </div><!-- End Section Title -->
         <div class="container">
-            <div class="isotope-layout" data-default-filter=".filter-first-ten" data-layout="masonry" data-sort="original-order">
+            <div class="isotope-layout" data-default-filter=".filter-first-twelve" data-layout="masonry" data-sort="original-order">
                 <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
                     <li data-filter="*" class="filter-active"><?= lang('PersonalLife.sections.bucket-list.filters.all') ?> <span id="count-bucket-all"></span></li>
                     <li data-filter=".filter-observatory"><?= lang('PersonalLife.sections.bucket-list.filters.observatory') ?> <span id="count-bucket-observatory"></span></li>
@@ -213,13 +213,16 @@
                     ?>
                     <?php foreach ($bucket_lists as $i => $item) : ?>
                         <?php $stats[$item['filter']] += 1; ?>
-                        <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?= ($i < 10 ? 'filter-first-ten' : '') ?> <?= 'filter-' . $item['filter'] ?>">
+                        <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?= ($i < 12 ? 'filter-first-twelve' : '') ?> <?= 'filter-' . $item['filter'] ?>">
                             <div class="portfolio-card">
                                 <div class="portfolio-image-container">
-                                    <img src="<?= base_url('assets/img/bucket-list/' . $item['code'] . '.jpg') ?>" alt="<?= $item['title'] ?>" class="img-fluid" loading="lazy">
+                                    <img src="<?= base_url('assets/img/bucket-lists/' . $item['code'] . '.jpg') ?>" alt="<?= $item['title'] ?>" class="img-fluid" loading="lazy">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-info">
                                             <h4><?= $item['title'] ?></h4>
+                                        </div>
+                                        <div class="portfolio-actions">
+                                            <a href="<?= base_url('assets/img/bucket-lists/' . $item['code'] . '.jpg') ?>" class="glightbox portfolio-link" data-glightbox="title:<?= lang('PersonalLife.sections.bucket-list.filters.' . $item['filter']) ?> / <?= $item['title'] ?>; description: <?php if (isset($item['dates']) && !empty($item['dates'])) { echo format_date($item['dates'], $locale); } else if (isset($item['since'])) { $year = calculate_years([$item['since']], $locale); echo lang('PersonalLife.since', [$year]); } ?>"><i class="bi bi-plus-lg"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -240,13 +243,23 @@
             </div>
         </div>
     </section><!-- /Bucket List Section -->
+    <?php
+    $totals = [
+            'observatory' => ($stats['observatory']+count($bucket_lists_to_fill['observatory'])),
+            'adventure'   => ($stats['adventure']+count($bucket_lists_to_fill['adventure'])),
+            'cultural'    => ($stats['cultural']+count($bucket_lists_to_fill['cultural'])),
+            'pilgrimage'  => ($stats['pilgrimage']+count($bucket_lists_to_fill['pilgrimage'])),
+            'others'      => ($stats['others']+count($bucket_lists_to_fill['others']))
+    ];
+    $grand_total = array_sum($totals);
+    ?>
     <script>
-        document.getElementById('count-bucket-all').innerHTML = '(<?= count($bucket_lists) ?>)';
-        document.getElementById('count-bucket-observatory').innerHTML = '(<?= $stats['observatory'] ?>/<?= ($stats['observatory']+count($bucket_lists_to_fill['observatory'])) ?>)';
-        document.getElementById('count-bucket-adventure').innerHTML = '(<?= $stats['adventure'] ?>/<?= ($stats['adventure']+count($bucket_lists_to_fill['adventure'])) ?>)';
-        document.getElementById('count-bucket-cultural').innerHTML = '(<?= $stats['cultural'] ?>/<?= ($stats['cultural']+count($bucket_lists_to_fill['cultural'])) ?>)';
-        document.getElementById('count-bucket-pilgrimage').innerHTML = '(<?= $stats['pilgrimage'] ?>/<?= ($stats['pilgrimage']+count($bucket_lists_to_fill['pilgrimage'])) ?>)';
-        document.getElementById('count-bucket-others').innerHTML = '(<?= $stats['others'] ?>/<?= ($stats['others']+count($bucket_lists_to_fill['others'])) ?>)';
+        document.getElementById('count-bucket-all').innerHTML = '(<?= count($bucket_lists) ?>/<?= $grand_total ?>)';
+        document.getElementById('count-bucket-observatory').innerHTML = '(<?= $stats['observatory'] ?>/<?= $totals['observatory'] ?>)';
+        document.getElementById('count-bucket-adventure').innerHTML = '(<?= $stats['adventure'] ?>/<?= $totals['adventure'] ?>)';
+        document.getElementById('count-bucket-cultural').innerHTML = '(<?= $stats['cultural'] ?>/<?= $totals['cultural'] ?>)';
+        document.getElementById('count-bucket-pilgrimage').innerHTML = '(<?= $stats['pilgrimage'] ?>/<?= $totals['pilgrimage'] ?>)';
+        document.getElementById('count-bucket-others').innerHTML = '(<?= $stats['others'] ?>/<?= $totals['others'] ?>)';
     </script>
 </main>
 <footer id="footer" class="footer">

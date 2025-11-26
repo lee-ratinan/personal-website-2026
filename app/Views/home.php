@@ -57,6 +57,7 @@ $experience_years = date('Y') - 2012;
                 <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
                 <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>
                 <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
+                <li><a href="#footer"><i class="bi bi-translate"></i></a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -638,8 +639,8 @@ $experience_years = date('Y') - 2012;
                 <ul>
                     <li><a href="<?= base_url('en') ?>">English (US)</a></li>
                     <li><a href="<?= base_url('th') ?>">ภาษาไทย</a></li>
-                    <li><a href="<?= base_url('ja') ?>">日本語</a></li>
-                    <li><a href="<?= base_url('zh-TW') ?>">中文（台灣）</a></li>
+                    <li><a href="<?= base_url('ja') ?>">日本語 <sup>AI 翻訳</sup></a></li>
+                    <li><a href="<?= base_url('zh-TW') ?>">中文（台灣） <sup>AI 翻譯</sup></a></li>
                     <li><a href="<?= base_url('en-SHAW') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
                 </ul>
             </div>

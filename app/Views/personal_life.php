@@ -52,6 +52,7 @@
                 <li><a href="#gallery"><?= lang('PersonalLife.sections.gallery.title') ?></a></li>
                 <li><a href="#bucket-list"><?= lang('PersonalLife.sections.bucket-list.title') ?></a></li>
                 <li><a href="<?= base_url($locale) ?>"><?= lang('PersonalLife.system.back-home') ?></a></li>
+                <li><a href="#footer"><i class="bi bi-translate"></i></a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -286,8 +287,8 @@
                 <ul>
                     <li><a href="<?= base_url('en/personal-life') ?>">English (US)</a></li>
                     <li><a href="<?= base_url('th/personal-life') ?>">ภาษาไทย</a></li>
-                    <li><a href="<?= base_url('ja/personal-life') ?>">日本語</a></li>
-                    <li><a href="<?= base_url('zh-TW/personal-life') ?>">中文（台灣）</a></li>
+                    <li><a href="<?= base_url('ja/personal-life') ?>">日本語 <sup>AI 翻訳 </sup></a></li>
+                    <li><a href="<?= base_url('zh-TW/personal-life') ?>">中文（台灣） <sup>AI 翻譯</sup></a></li>
                     <li><a href="<?= base_url('en-SHAW/personal-life') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
                 </ul>
             </div>

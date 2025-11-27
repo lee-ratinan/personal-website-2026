@@ -173,7 +173,7 @@ class Home extends BaseController
                 [
                     'code'      => 'hkt2022',
                     'filter'    => 'southeast-asia',
-                    'title'     => 'ภูเก็ตแซนด์บ๊อก',
+                    'title'     => 'ภูเก็ตแซนด์บ๊อก 2565',
                     'locations' => ['phuket', 'phang-nga', 'krabi', 'bangkok'],
                     'dates'     => ['2022-05-15', '2022-05-23'],
                     'detail'    => 'x',
@@ -197,7 +197,7 @@ class Home extends BaseController
                 [
                     'code'      => 'tpe2018',
                     'filter'    => 'east-asia',
-                    'title'     => '台北+台中 107年',
+                    'title'     => '台北&amp;台中 107年',
                     'locations' => ['taipei', 'taichung'],
                     'dates'     => ['2018-11-11', '2018-11-17'],
                     'detail'    => 'x',
@@ -205,7 +205,7 @@ class Home extends BaseController
                 [
                     'code'      => 'utp2018',
                     'filter'    => 'southeast-asia',
-                    'title'     => 'เที่ยวพัทยา กับ　GrapeVine',
+                    'title'     => 'เที่ยวพัทยา กับ　GrapeVine 2018',
                     'locations' => ['pattaya'],
                     'dates'     => ['2018-03-XX'],
                     'detail'    => 'x',
@@ -213,7 +213,7 @@ class Home extends BaseController
                 [
                     'code'      => 'hhq2017',
                     'filter'    => 'southeast-asia',
-                    'title'     => 'ทริปกาญจน์ กับ GrapeVine',
+                    'title'     => 'ทริปกาญจน์ กับ GrapeVine 2017',
                     'locations' => ['kanchanaburi'],
                     'dates'     => ['2017-10-11'],
                     'detail'    => 'x',
@@ -229,7 +229,7 @@ class Home extends BaseController
                 [
                     'code'      => 'nrt2016',
                     'filter'    => 'east-asia',
-                    'title'     => '日本の関東 2016',
+                    'title'     => '日本関東 2016',
                     'locations' => ['tokyo', 'yokohama', 'kamakura'],
                     'dates'     => ['2016-06-11', '2016-06-16'],
                     'detail'    => 'x',
@@ -237,7 +237,7 @@ class Home extends BaseController
                 [
                     'code'      => 'kul2014',
                     'filter'    => 'southeast-asia',
-                    'title'     => 'Kuala Lumpur dan Pulau Langkawi',
+                    'title'     => 'Kuala Lumpur dan Pulau Langkawi 2014',
                     'locations' => ['kuala-lumpur', 'langkawi'],
                     'dates'     => ['2014-05-12', '2014-05-16'],
                     'detail'    => 'x',
@@ -245,7 +245,7 @@ class Home extends BaseController
                 [
                     'code'      => 'hhq2013',
                     'filter'    => 'southeast-asia',
-                    'title'     => 'ชะอำ/หัวหิน',
+                    'title'     => 'ชะอำ/หัวหิน Retreat with GrapeVine 2013',
                     'locations' => ['hua-hin', 'cha-am'],
                     'dates'     => ['2013-03-XX'],
                     'detail'    => 'x',

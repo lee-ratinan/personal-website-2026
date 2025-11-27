@@ -4331,3 +4331,7 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.portfolio-info h4 {
+    background-color: rgba(136, 136, 136, 0.5);
+}

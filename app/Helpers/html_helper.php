@@ -117,3 +117,16 @@ function format_date (array $dates, string $locale, string $separator = ', '): s
     }
     return implode($separator, $outputs);
 }
+
+/**
+ * Get comma by locale
+ * @param string $locale
+ * @return string
+ */
+function get_comma (string $locale): string
+{
+    if (in_array($locale, ['zh-TW', 'ja'])) {
+        return '、';
+    }
+    return ', ';
+}

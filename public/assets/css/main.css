@@ -14,9 +14,18 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Mulish",  sans-serif;
-  --nav-font: "Raleway",  sans-serif;
+  --default-font-en: "Ubuntu",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font-th: "Noto Sans Thai", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font-zh: "Noto Sans TC", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font-ja: "Noto Serif JP", system-ui, -apple-system, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font-en: "Rampart One",  sans-serif;
+  --heading-font-th: "Sriracha", cursive;
+  --heading-font-zh: "Stick",  sans-serif;
+  --heading-font-ja: "Rampart One",  sans-serif;
+  --nav-font-en: "Rampart One",  sans-serif;
+  --nav-font-th: "Sriracha", cursive;
+  --nav-font-zh: "Stick",  sans-serif;
+  --nav-font-ja: "Rampart One",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -65,7 +74,19 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
+  font-family: var(--default-font-en), sans-serif;
+}
+
+body.th {
+  font-family: var(--default-font-th), sans-serif !important;
+}
+
+body.zh {
+  font-family: var(--default-font-zh), sans-serif !important;
+}
+
+body.ja {
+    font-family: var(--default-font-ja), serif !important;
 }
 
 a {
@@ -86,7 +107,34 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: var(--heading-font-en), sans-serif !important;
+}
+
+.th h1,
+.th h2,
+.th h3,
+.th h4,
+.th h5,
+.th h6 {
+    font-family: var(--heading-font-th), cursive !important;
+}
+
+.zh-TW h1,
+.zh-TW h2,
+.zh-TW h3,
+.zh-TW h4,
+.zh-TW h5,
+.zh-TW h6 {
+    font-family: var(--heading-font-zh), sans-serif !important;
+}
+
+.ja h1,
+.ja h2,
+.ja h3,
+.ja h4,
+.ja h5,
+.ja h6 {
+    font-family: var(--heading-font-ja), sans-serif !important;
 }
 
 /* PHP Email Form Messages
@@ -250,7 +298,7 @@ h6 {
     color: var(--nav-color);
     padding: 18px 15px;
     font-size: 16px;
-    font-family: var(--nav-font);
+    font-family: var(--nav-font-en), sans-serif;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -258,6 +306,16 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
   }
+
+    .th .navmenu a, .th .navmenu a:focus {
+        font-family: var(--nav-font-th), cursive !important;
+    }
+    .zh-TW .navmenu a, .zh-TW .navmenu a:focus {
+        font-family: var(--nav-font-zh), sans-serif !important;
+    }
+    .ja .navmenu a, .ja .navmenu a:focus {
+        font-family: var(--nav-font-ja), sans-serif !important;
+    }
 
   .navmenu a i,
   .navmenu a:focus i {
@@ -369,7 +427,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
-    font-family: var(--nav-font);
+    font-family: var(--nav-font-en), sans-serif;
     font-size: 17px;
     font-weight: 500;
     display: flex;
@@ -378,6 +436,16 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
   }
+
+    .th .navmenu a, .th .navmenu a:focus {
+        font-family: var(--nav-font-th), cursive !important;
+    }
+    .zh-TW .navmenu a, .zh-TW .navmenu a:focus {
+        font-family: var(--nav-font-zh), sans-serif !important;
+    }
+    .ja .navmenu a, .ja .navmenu a:focus {
+        font-family: var(--nav-font-ja), sans-serif !important;
+    }
 
   .navmenu a i,
   .navmenu a:focus i {
@@ -492,12 +560,36 @@ h6 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: var(--heading-font);
+  font-family: var(--heading-font-en), sans-serif;
+}
+
+.th .footer .footer-about .logo span {
+    font-family: var(--heading-font-th), cursive !important;
+}
+
+.zh-TW .footer .footer-about .logo span {
+    font-family: var(--heading-font-zh), sans-serif !important;
+}
+
+.ja .footer .footer-about .logo span {
+    font-family: var(--heading-font-ja), sans-serif !important;
 }
 
 .footer .footer-about p {
   font-size: 14px;
-  font-family: var(--heading-font);
+  font-family: var(--heading-font-en), sans-serif;
+}
+
+.th .footer .footer-about p {
+    font-family: var(--heading-font-th), cursive !important;
+}
+
+.zh-TW .footer .footer-about p {
+    font-family: var(--heading-font-zh), sans-serif !important;
+}
+
+.ja .footer .footer-about p {
+    font-family: var(--heading-font-ja), sans-serif !important;
 }
 
 .footer .social-links a {

@@ -11,9 +11,17 @@
     <link href="<?= base_url('assets/img/favicon.png') ?>" rel="icon">
     <link href="<?= base_url('assets/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <?php if ('th' == $locale) : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Sriracha&display=swap" rel="stylesheet">
+    <?php elseif ('zh-TW' == $locale) : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Stick&display=swap" rel="stylesheet">
+    <?php elseif ('ja' == $locale) : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Rampart+One&display=swap" rel="stylesheet">
+    <?php else : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <?php endif; ?>
     <!-- Vendor CSS Files -->
     <link href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/vendor/bootstrap-icons/bootstrap-icons.css') ?>" rel="stylesheet">
@@ -21,7 +29,7 @@
     <link href="<?= base_url('assets/vendor/glightbox/css/glightbox.min.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet') ?>">
     <!-- Main CSS File -->
-    <link href="<?= base_url('assets/css/main.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/main.min.css') ?>" rel="stylesheet">
     <!-- hreflang -->
     <link rel="alternate" hreflang="en" href="<?= base_url('en') ?>"/>
     <link rel="alternate" hreflang="th" href="<?= base_url('th') ?>"/>
@@ -37,7 +45,7 @@
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
 </head>
-<body class="index-page">
+<body class="index-page <?= $locale ?>">
 <?php
 $experience_years = date('Y') - 2012;
 ?>
@@ -665,6 +673,6 @@ $experience_years = date('Y') - 2012;
 <script src="<?= base_url('assets/vendor/isotope-layout/isotope.pkgd.min.js') ?>"></script>
 <script src="<?= base_url('assets/vendor/swiper/swiper-bundle.min.js') ?>"></script>
 <!-- Main JS File -->
-<script src="<?= base_url('assets/js/main.js') ?>"></script>
+<script src="<?= base_url('assets/js/main.min.js') ?>"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@ return [
     'locations' => [
         // THAILAND
         'bangkok'          => '曼谷',
-        'cha-am'           => '七岩',
+        'cha-am'           => 'Cha-Am',
         'hua-hin'          => '華欣',
         'kanchanaburi'     => '北碧府',
         'krabi'            => '甲米',
@@ -61,16 +61,16 @@ return [
         'phuket'           => '普吉島',
         // MALAYSIA
         'bandar-utama'     => '萬達鎮',
-        'desaru'           => '迪沙魯',
+        'desaru'           => 'Desaru',
         'george-town'      => '喬治市（檳城）',
         'ipoh'             => '怡保',
         'johor-bahru'      => '新山',
         'kuala-lumpur'     => '吉隆坡',
-        'langkawi'         => '浮羅交怡',
+        'langkawi'         => '蘭卡威',
         // INDONESIA
         'bali'             => '峇里省',
         'batam'            => '巴淡',
-        'bintang'          => '民丹',
+        'bintan'           => '民丹島',
         'jakarta'          => '雅加達',
         'karawaci'         => '卡拉瓦奇',
         // TAIWAN
@@ -82,7 +82,7 @@ return [
         'fujisan'          => '富士山',
         'fujisawa'         => '藤澤',
         'himeji'           => '姬路',
-        'hokuei'           => '北榮',
+        'hokuei'           => '北榮町',
         'kamakura'         => '鎌倉',
         'kinosakionsen'    => '城崎溫泉',
         'kobe'             => '神戶',
@@ -91,13 +91,13 @@ return [
         'osaka'            => '大阪',
         'tokyo'            => '東京',
         'tottori'          => '鳥取',
-        'uji'              => '宇治',
+        'uji'              => '宇治市',
         'yokohama'         => '橫濱',
         // AUSTRALIA
         'melbourne'        => '墨爾本',
         'sydney'           => '雪梨',
         // PHILIPPINES
-        'alegria'          => '阿萊格里亞',
+        'alegria'          => '阿莱格利亚',
         'cebu'             => '宿霧',
         'mactan'           => '麥克坦',
         'oslob'            => '奧斯洛布',

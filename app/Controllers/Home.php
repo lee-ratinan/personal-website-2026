@@ -512,7 +512,7 @@ class Home extends BaseController
                 [
                     'code'      => 'penguin',
                     'filter'    => 'others',
-                    'title'     => 'See Penguin in natural habitat',
+                    'title'     => 'See Penguins in natural habitat',
                     'locations' => ['melbourne'],
                     'dates'     => ['2019-10-25']
                 ],

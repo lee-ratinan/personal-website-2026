@@ -13,7 +13,15 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <?php if ('th' == $locale) : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Sriracha&display=swap" rel="stylesheet">
+    <?php elseif ('zh-TW' == $locale) : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Stick&display=swap" rel="stylesheet">
+    <?php elseif ('ja' == $locale) : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Rampart+One&display=swap" rel="stylesheet">
+    <?php else : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <?php endif; ?>
     <!-- Vendor CSS Files -->
     <link href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/vendor/bootstrap-icons/bootstrap-icons.css') ?>" rel="stylesheet">
@@ -21,7 +29,7 @@
     <link href="<?= base_url('assets/vendor/glightbox/css/glightbox.min.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet') ?>">
     <!-- Main CSS File -->
-    <link href="<?= base_url('assets/css/main.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/main.min.css') ?>" rel="stylesheet">
     <!-- hreflang -->
     <link rel="alternate" hreflang="en" href="<?= base_url('en/personal-life') ?>"/>
     <link rel="alternate" hreflang="th" href="<?= base_url('th/personal-life') ?>"/>
@@ -37,7 +45,7 @@
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
 </head>
-<body class="index-page">
+<body class="index-page <?= $locale ?>">
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
         <a href="<?= base_url($locale) ?>" class="logo d-flex align-items-center me-auto">
@@ -152,7 +160,14 @@
                     ];
                     ?>
                     <?php foreach ($galleries as $i => $gallery) : ?>
-                        <?php $regions[$gallery['filter']] += 1; ?>
+                        <?php
+                        $regions[$gallery['filter']] += 1;
+                        $locations = [];
+                        $date_str  = format_date($gallery['dates'], $locale, ' - ');
+                        foreach ($gallery['locations'] as $location) {
+                            $locations[] = lang('PersonalLife.locations.' . $location);
+                        }
+                        ?>
                         <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?= ($i < 12 ? 'filter-first-twelve' : '') ?> <?= 'filter-' . $gallery['filter'] ?>">
                             <div class="portfolio-card">
                                 <div class="portfolio-image-container">
@@ -161,15 +176,20 @@
                                         <div class="portfolio-info">
                                             <h4><?= $gallery['title'] ?></h4>
                                         </div>
+                                        <div class="portfolio-actions">
+                                            <a href="<?= base_url('assets/img/gallery/' . $gallery['code'] . '.jpg') ?>" class="glightbox portfolio-link" data-glightbox="title:<?= $gallery['title'] ?>;description: <i class='bi bi-geo-alt'></i> <?= implode(get_comma($locale), $locations) ?> <i class='bi bi-calendar-heart'></i> <?= $date_str ?>"><i class="bi bi-plus-lg"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="portfolio-meta">
                                     <div class="project-tags me-2 d-block">
-                                        <?php foreach ($gallery['locations'] as $location) : ?><span class="tag float-start m-1"><?= lang('PersonalLife.locations.' . $location) ?></span><?php endforeach; ?>
+                                        <span class="tag float-start m-1">
+                                            <?= implode('</span><span class="tag float-start m-1">', $locations) ?>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="portfolio-meta">
-                                    <span class="small"><?= format_date($gallery['dates'], $locale, ' - ') ?></span>
+                                    <span class="small"><i class="bi bi-calendar-heart"></i> <?= $date_str ?></span>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +233,20 @@
                     ];
                     ?>
                     <?php foreach ($bucket_lists as $i => $item) : ?>
-                        <?php $stats[$item['filter']] += 1; ?>
+                        <?php
+                        $stats[$item['filter']] += 1;
+                        $date_str = '';
+                        if (!empty($item['dates'])) {
+                            $date_str = format_date($item['dates'], $locale);
+                        } else if (isset($item['since'])) {
+                            $year     = calculate_years([$item['since']], $locale);
+                            $date_str = lang('PersonalLife.since', [$year]);
+                        }
+                        $locations = [];
+                        foreach ($item['locations'] as $location) {
+                            $locations[] = lang('PersonalLife.locations.' . $location);
+                        }
+                        ?>
                         <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?= ($i < 12 ? 'filter-first-twelve' : '') ?> <?= 'filter-' . $item['filter'] ?>">
                             <div class="portfolio-card">
                                 <div class="portfolio-image-container">
@@ -223,18 +256,18 @@
                                             <h4><?= $item['title'] ?></h4>
                                         </div>
                                         <div class="portfolio-actions">
-                                            <a href="<?= base_url('assets/img/bucket-lists/' . $item['code'] . '.jpg') ?>" class="glightbox portfolio-link" data-glightbox="title:<?= lang('PersonalLife.sections.bucket-list.filters.' . $item['filter']) ?> / <?= $item['title'] ?>; description: <?php if (isset($item['dates']) && !empty($item['dates'])) { echo format_date($item['dates'], $locale); } else if (isset($item['since'])) { $year = calculate_years([$item['since']], $locale); echo lang('PersonalLife.since', [$year]); } ?>"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="<?= base_url('assets/img/bucket-lists/' . $item['code'] . '.jpg') ?>" class="glightbox portfolio-link" data-glightbox="title:<?= lang('PersonalLife.sections.bucket-list.filters.' . $item['filter']) ?> / <?= $item['title'] ?>; description: <i class='bi bi-geo-alt'></i> <?= implode(get_comma($locale), $locations) ?> <i class='bi bi-calendar-heart'></i> <?= $date_str ?>"><i class="bi bi-plus-lg"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="portfolio-meta">
                                     <div class="project-tags">
-                                        <?php foreach ($item['locations'] as $location) : ?><span class="tag float-start m-1"><?= lang('PersonalLife.locations.' . $location) ?></span><?php endforeach; ?>
+                                        <span class="tag float-start"><?= implode('</span><span class="tag float-start">', $locations) ?></span>
                                     </div>
                                 </div>
                                 <div class="portfolio-meta">
                                     <span class="small">
-                                        <?php if (isset($item['dates']) && !empty($item['dates'])) { echo format_date($item['dates'], $locale); } else if (isset($item['since'])) { $year = calculate_years([$item['since']], $locale); echo lang('PersonalLife.since', [$year]); } ?>
+                                        <i class="bi bi-calendar-heart"></i> <?= $date_str ?>
                                     </span>
                                 </div>
                             </div>
@@ -313,6 +346,6 @@
 <script src="<?= base_url('assets/vendor/isotope-layout/isotope.pkgd.min.js') ?>"></script>
 <script src="<?= base_url('assets/vendor/swiper/swiper-bundle.min.js') ?>"></script>
 <!-- Main JS File -->
-<script src="<?= base_url('assets/js/main.js') ?>"></script>
+<script src="<?= base_url('assets/js/main.min.js') ?>"></script>
 </body>
 </html>

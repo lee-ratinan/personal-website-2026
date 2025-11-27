@@ -74,9 +74,14 @@ return [
         'jakarta'          => '雅加達',
         'karawaci'         => '卡拉瓦奇',
         // TAIWAN
+        'beitou'           => '北投',
         'hualien'          => '花蓮',
+        'jiufen'           => '九份',
         'taichung'         => '台中',
         'taipei'           => '台北',
+        'tamsui'           => '淡水',
+        'wulai'            => '烏來',
+        'yangmingshan'     => '陽明山',
         // JAPAN
         'arimaonsen'       => '有馬溫泉',
         'fujisan'          => '富士山',

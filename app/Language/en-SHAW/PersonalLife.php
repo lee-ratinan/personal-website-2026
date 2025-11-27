@@ -74,9 +74,14 @@ return [
         'jakarta'          => 'Jakarta',
         'karawaci'         => 'Karawaci',
         // TAIWAN
+        'beitou'           => 'Beitou',
         'hualien'          => 'Hualien',
+        'jiufen'           => 'Jiufen',
         'taichung'         => 'Taichung',
         'taipei'           => 'Taipei',
+        'tamsui'           => 'Tamsui',
+        'wulai'            => 'Wulai',
+        'yangmingshan'     => 'Yangmingshan',
         // JAPAN
         'arimaonsen'       => 'Arimaonsen',
         'fujisan'          => 'Fujisan',

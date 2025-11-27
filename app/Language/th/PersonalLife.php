@@ -74,9 +74,14 @@ return [
         'jakarta'          => 'จาการ์ตา',
         'karawaci'         => 'การาวาจี',
         // TAIWAN
+        'beitou'           => 'เป่ยโถว',
         'hualien'          => 'ฮัวเหลียน',
+        'jiufen'           => 'จิ่วเฟิ่น',
         'taichung'         => 'ไถจง',
         'taipei'           => 'ไทเป',
+        'tamsui'           => 'ต้านฉุ่ย',
+        'wulai'            => 'อูหลาย',
+        'yangmingshan'     => 'หยางหมิงชาน',
         // JAPAN
         'arimaonsen'       => 'อะริมะออนเซ็น',
         'fujisan'          => 'ฟุจิซัน',

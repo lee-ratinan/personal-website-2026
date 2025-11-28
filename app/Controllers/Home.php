@@ -7,6 +7,38 @@ use CodeIgniter\HTTP\RedirectResponse;
 class Home extends BaseController
 {
 
+    private array $business_card_languages = ['en', 'th', 'ja', 'zh-TW', 'en-Shaw', 'ko', 'id', 'vi', 'es'];
+
+    /**
+     * Get locale
+     */
+    private function getLocale(): string
+    {
+        $supported = $this->business_card_languages;
+        $header    = $this->request->getServer('HTTP_ACCEPT_LANGUAGE');
+        $override  = $this->request->getGet('hl');
+        // Use override language first, from ?hl=XX
+        if (!empty($override) && in_array($override, $supported)) {
+            return $override;
+        }
+        // If it's not there, use the languages from the header
+        if (!empty($header)) {
+            $parts = explode(',', $header);
+            foreach ($parts as $part) {
+                $sub_parts    = explode(';q=', trim($part));
+                $language_tag = trim($sub_parts[0]);
+                $lang_code    = strtolower(explode('-', $language_tag)[0]);
+                if (in_array($lang_code, $supported)) {
+                    // This will never work with zh-TW and en-Shaw, but we don't care en-Shaw
+                    return $lang_code;
+                } else if ($lang_code == 'zh') {
+                    return 'zh-TW';
+                }
+            }
+        }
+        return $supported[0];
+    }
+
     /**
      * Home page
      * @return string
@@ -729,5 +761,206 @@ class Home extends BaseController
     public function whatsapp(): RedirectResponse
     {
         return redirect()->to('https://api.whatsapp.com/send/?phone=6597754577&text=Hi+Nat%2C+I+clicked+this+link+from+your+personal+website.+Can+we+chat%3F&type=phone_number&app_absent=0');
+    }
+
+    /**
+     * Business Card page
+     * @return string
+     */
+    public function business_card(): string
+    {
+        $locale       = $this->getLocale();
+        $translations = [
+            'en'      => [
+                'business-card'  => 'Business Card',
+                'name'           => 'RATINAN “NAT” LEE',
+                'tagline'        => 'MSc, PSM™ I-II, PSPO™ I-II',
+                'education'      => 'Education',
+                'educations'     => [
+                    'Master of Science in Information Systems<br>Wee Kim Wee School of Communication and Information, Nanyang Technological University',
+                    'Bachelor of Science in Computer Science (First Class Honors)<br>Sirindhorn International Institute of Technology, Thammasat University'
+                ],
+                'certification'  => 'Certifications',
+                'certifications' => [
+                    'PSM I, II (Professional Scrum Master™)',
+                    'PSPO I, II (Professional Scrum product Owner™)',
+                    'CSM (Certified Scrum Master)',
+                    'Google AI Essentials'
+                ]
+            ],
+            'th'      => [
+                'business-card'  => 'นามบัตร',
+                'name'           => 'รตินันท์ “นัท” ลีลางามวงศา',
+                'tagline'        => 'วท.ม., PSM™ I-II, PSPO™ I-II',
+                'education'      => 'การศึกษา',
+                'educations'     => [
+                    'วิทยาศาสตรมหาบัณฑิต สาขาระบบสารสนเทศ<br>วิทยาลัยการสื่อสารและสารสนเทศวีคิมวี มหาวิทยาลัยเทคโนโลยีนันยาง',
+                    'วิทยาศาสตรบัณฑิต สาขาวิทยาการคอมพิวเตอร์ (เกียรตินิยมอันดับหนึ่ง)<br>สถาบันเทคโนโลยีนานาชาติสิรินธร มหาวิทยาลัยธรรมศาสตร์',
+                ],
+                'certification'  => 'ประกาศนียบัตรวิชาชีพ',
+                'certifications' => [
+                    'PSM I, II (Professional Scrum Master™)',
+                    'PSPO I, II (Professional Scrum product Owner™)',
+                    'CSM (Certified Scrum Master)',
+                    'Google AI Essentials'
+                ]
+            ],
+            'ja'      => [
+                'business-card'  => '名刺',
+                'name'           => '力川エイキン（ラティナン・リー）',
+                'tagline'        => '理学修士（MSc）、PSM™ I-II、PSPO™ I-II',
+                'education'      => '学歴',
+                'educations'     => [
+                    '情報システム理学修士<br>南洋理工大学 ウィー・キム・ウィー情報コミュニケーション学部',
+                    'コンピュータサイエンス理学学士（第一級優等学位）<br>タマサート大学・シリンドーン国際工学部'
+                ],
+                'certification'  => '認定資格',
+                'certifications' => [
+                    'PSM I、II（プロフェッショナルスクラムマスター）',
+                    'PSPO I、II（プロフェッショナルスクラムプロダクトオーナー）',
+                    'CSM（認定スクラムマスター）',
+                    'グーグル AI エッセンシャル'
+                ]
+            ],
+            'zh-TW'   => [
+                'business-card'  => '名片',
+                'name'           => '李榮欽',
+                'tagline'        => '理學碩士、PSM™ I–II、PSPO™ I–II',
+                'education'      => '學歷',
+                'educations'     => [
+                    '資訊系統理學碩士<br>南洋理工大學・黃金輝傳播與信息學院',
+                    '電腦科學理學學士（一等榮譽）<br>泰國法政大學・席琳通國際科技學院'
+                ],
+                'certification'  => '認證',
+                'certifications' => [
+                    'PSM I, II (Professional Scrum Master™)',
+                    'PSPO I, II (Professional Scrum product Owner™)',
+                    'CSM (Certified Scrum Master)',
+                    'Google AI Essentials'
+                ]
+            ],
+            'en-Shaw' => [
+                'business-card'  => '𐑚𐑦𐑟𐑯𐑩𐑕 𐑒𐑸𐑛',
+                'name'           => '·𐑮𐑳𐑑𐑦𐑯𐑳𐑯 “𐑯𐑨𐑑” 𐑤𐑰',
+                'tagline'        => 'MSc, PSM™ I-II, PSPO™ I-II',
+                'education'      => '𐑧𐑡𐑩𐑒𐑱𐑖𐑩𐑯',
+                'educations'     => [
+                    '𐑥𐑭𐑕𐑑𐑼 𐑝 𐑕𐑲𐑩𐑯𐑕 𐑦𐑯 𐑦𐑯𐑓𐑼𐑥𐑱𐑖𐑩𐑯 𐑕𐑦𐑕𐑑𐑩𐑥𐑟<br>𐑢𐑰 𐑒𐑦𐑥 𐑢𐑰 𐑕𐑒𐑵𐑤 𐑝 𐑒𐑩𐑥𐑿𐑯𐑦𐑒𐑱𐑖𐑩𐑯 𐑯 𐑦𐑯𐑓𐑼𐑥𐑱𐑖𐑩𐑯, 𐑯𐑳𐑯𐑘𐑭𐑙 𐑑𐑧𐑒𐑯𐑩𐑤𐑪𐑡𐑦𐑒𐑩𐑤 𐑿𐑯𐑦𐑝𐑻𐑕𐑦𐑑𐑦',
+                    '𐑚𐑨𐑗𐑩𐑤𐑼 𐑝 𐑕𐑲𐑩𐑯𐑕 𐑦𐑯 𐑒𐑩𐑥𐑐𐑿𐑑𐑼 𐑕𐑲𐑩𐑯𐑕 (𐑓𐑻𐑕𐑑 𐑒𐑤𐑭𐑕 𐑪𐑯𐑼𐑟)<br>𐑕𐑦𐑮𐑦𐑯𐑑𐑷𐑯 𐑦𐑯𐑑𐑼𐑯𐑨𐑖𐑩𐑯𐑩𐑤 𐑦𐑯𐑕𐑑𐑦𐑑𐑿𐑑 𐑝 𐑑𐑧𐑒𐑯𐑪𐑤𐑩𐑡𐑦, 𐑑𐑳𐑥𐑳𐑕𐑭𐑑 𐑿𐑯𐑦𐑝𐑻𐑕𐑦𐑑𐑦'
+                ],
+                'certification'  => '𐑕𐑻𐑑𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯𐑟',
+                'certifications' => [
+                    'PSM I, II (𐑐𐑮𐑩𐑓𐑧𐑖𐑩𐑯𐑩𐑤 𐑕𐑒𐑮𐑳𐑥 𐑥𐑭𐑕𐑑𐑼)',
+                    'PSPO I, II (𐑐𐑮𐑩𐑓𐑧𐑖𐑩𐑯𐑩𐑤 𐑕𐑒𐑮𐑳𐑥 𐑐𐑮𐑪𐑛𐑳𐑒𐑑 𐑴𐑯𐑼)',
+                    'CSM (𐑕𐑻𐑑𐑦𐑓𐑲𐑛 𐑕𐑒𐑮𐑳𐑥 𐑥𐑭𐑕𐑑𐑼)',
+                    '𐑜𐑵𐑜𐑩𐑤 AI 𐑦𐑕𐑧𐑯𐑖𐑩𐑤𐑟'
+                ]
+            ],
+            'ko'      => [
+                'business-card'  => '명함',
+                'name'           => '이영흠',
+                'tagline'        => '이학석사(M.Sc.), PSM™ I–II, PSPO™ I–II',
+                'education'      => '학력',
+                'educations'     => [
+                    '정보시스템 이학석사<br>난양공과대학교 위 킴 위 커뮤니케이션·정보대학',
+                    '컴퓨터과학 이학사 (일등급 우등 졸업)<br>탐마삿 대학교 시린돈 국제기술학부'
+                ],
+                'certification'  => '자격증',
+                'certifications' => [
+                    'PSM I, II (Professional Scrum Master™)',
+                    'PSPO I, II (Professional Scrum product Owner™)',
+                    'CSM (Certified Scrum Master)',
+                    '구글 AI Essentials'
+                ]
+            ],
+            'id'      => [
+                'business-card'  => 'Kartu name',
+                'name'           => 'RATINAN “NAT” LEE',
+                'tagline'        => 'M.Sc., PSM™ I–II, PSPO™ I–II',
+                'education'      => 'Pendidikan',
+                'educations'     => [
+                    'Magister Sains dalam Sistem Informasi<br>Sekolah Komunikasi dan Informasi Wee Kim Wee, Universitas Teknologi Nanyang',
+                    'Sarjana Sains dalam Ilmu Komputer (First Class Honours)<br>Institut Teknologi Internasional Sirindhorn, Universitas Thammasat'
+                ],
+                'certification'  => 'Sertifikasi',
+                'certifications' => [
+                    'PSM I, II (Professional Scrum Master™)',
+                    'PSPO I, II (Professional Scrum product Owner™)',
+                    'CSM (Certified Scrum Master)',
+                    'Google AI Essentials'
+                ]
+            ],
+            'vi'      => [
+                'business-card'  => 'Danh thiếp',
+                'name'           => 'LÝ VINH KHÂM',
+                'tagline'        => 'Thạc sĩ Khoa học (MSc), PSM™ I–II, PSPO™ I–II',
+                'education'      => 'Học vấn',
+                'educations'     => [
+                    'Thạc sĩ Khoa học ngành Hệ thống Thông tin<br>Trường Truyền thông và Thông tin Wee Kim Wee, Đại học Công nghệ Nanyang',
+                    'Cử nhân Khoa học ngành Khoa học Máy tính (Hạng Nhất Danh Dự)<br>Viện Công nghệ Quốc tế Sirindhorn, Đại học Thammasat'
+                ],
+                'certification'  => 'Chứng chỉ',
+                'certifications' => [
+                    'PSM I, II (Professional Scrum Master™)',
+                    'PSPO I, II (Professional Scrum product Owner™)',
+                    'CSM (Certified Scrum Master)',
+                    'Google AI Essentials'
+                ]
+            ],
+            'es'      => [
+                'business-card'  => 'Tarjeta de visita',
+                'name'           => 'RATINAN “NAT” LEE',
+                'tagline'        => 'M.Sc., PSM™ I–II, PSPO™ I–II',
+                'education'      => 'Formación Académica',
+                'educations'     => [
+                    'Maestría en Ciencias en Sistemas de Información<br>Escuela Wee Kim Wee de Comunicación e Información, Universidad Tecnológica de Nanyang',
+                    'Licenciatura en Ciencias en Informática (Primera Clase con Honores)<br>Instituto Internacional de Tecnología Sirindhorn, Universidad de Thammasat'
+                ],
+                'certification'  => 'Certificaciones',
+                'certifications' => [
+                    'PSM I, II (Professional Scrum Master™)',
+                    'PSPO I, II (Professional Scrum product Owner™)',
+                    'CSM (Certified Scrum Master)',
+                    'Google AI Essentials'
+                ]
+            ],
+        ];
+        $data         = [
+            'locale'              => $locale,
+            'hl'                  => $this->request->getGet('hl'),
+            'supported_languages' => [
+                'en'      => 'English',
+                'th'      => 'ภาษาไทย',
+                'ja'      => '日本語',
+                'zh-TW'   => '中文（台灣）',
+                'en-Shaw' => '𐑖𐑱𐑝𐑾𐑯',
+                'ko'      => '한국어',
+                'id'      => 'Bahasa Indonesia',
+                'vi'      => 'Tiếng Việt',
+                'es'      => 'Español'
+            ],
+            'data'                => $translations[$locale],
+            'links'               => [
+                'whatsapp'  => base_url('whatsapp'),
+                'line'      => 'https://line.me/ti/p/ME2Tsnm9nr',
+                'globe'     => base_url(),
+                'envelope'  => 'mailto:nat@ratinan.com',
+                'linkedin'  => 'https://www.linkedin.com/in/ratinanlee',
+                'medium'    => 'https://medium.com/@ratinanlee',
+                'instagram' => 'https://www.instagram.com/ratinanlee/',
+                'github'    => 'https://github.com/lee-ratinan',
+                'messenger' => 'https://www.messenger.com/t/lee.ratinan/',
+                'facebook'  => 'https://www.facebook.com/lee.ratinan',
+                'threads'   => 'https://www.threads.com/@ratinanlee'
+            ],
+            'profiles'            => [
+                'Scrum.org'      => 'https://www.scrum.org/user/1457291',
+                'Credly'         => 'https://www.credly.com/users/ratinanlee',
+                'Scrum Alliance' => 'https://www.scrumalliance.org/members/1729850',
+                'Fastwork'       => 'https://fastwork.co/user/ratinanlee',
+                'Upwork'         => 'https://www.upwork.com/freelancers/~01b5886610b13a2bb1',
+            ]
+        ];
+        return view('business_card', $data);
     }
 }

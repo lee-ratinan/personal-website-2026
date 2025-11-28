@@ -136,13 +136,13 @@ return [
                     'masters'      => [
                         'label'      => '碩士學位',
                         'title'      => '資訊系統理學碩士',
-                        'university' => '新加坡南洋理工大學 Wee Kim Wee 傳播與資訊學院',
+                        'university' => '新加坡南洋理工大學・黃金輝傳播與信息學院',
                         'paragraph'  => '修習高階資訊系統工程與管理。'
                     ],
                     'bachelor'     => [
                         'label'      => '學士學位',
-                        'title'      => '資訊工程理學學士',
-                        'university' => '泰國塔馬薩特大學 SIIT 工學院',
+                        'title'      => '電腦科學理學學士 (一等榮譽)',
+                        'university' => '泰國塔馬薩特大學・席琳通國際科技學院',
                         'paragraph'  => '建立扎實的軟體工程與架構基礎。',
                         'honors'     => '一等榮譽'
                     ],

@@ -23,7 +23,7 @@ function calculate_years (array $input_years, string $locale, string $separator 
     } else if ('ja' == $locale) {
         $format     = "X年";
         $now        = '現在';
-    } else if ('en-SHAW' == $locale) {
+    } else if ('en-Shaw' == $locale) {
         $now        = '𐑐𐑮𐑧𐑟𐑩𐑯𐑑';
     }
     // fix separators
@@ -54,30 +54,30 @@ function calculate_years (array $input_years, string $locale, string $separator 
 function format_date (array $dates, string $locale, string $separator = ', '): string
 {
     $months = [
-        'en' => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        'en-SHAW' => ['𐑡𐑨𐑯', '𐑓𐑧𐑚', '𐑥𐑸𐑗', '𐑱𐑐𐑮', '𐑥𐑱', '𐑡𐑵𐑯', '𐑡𐑩𐑤', '𐑷𐑜𐑩', '𐑕𐑧𐑐', '𐑪𐑒𐑑', '𐑯𐑴𐑝', '𐑛𐑦𐑕'],
-        'th' => ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.']
+        'en'      => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        'en-Shaw' => ['𐑡𐑨𐑯', '𐑓𐑧𐑚', '𐑥𐑸𐑗', '𐑱𐑐𐑮', '𐑥𐑱', '𐑡𐑵𐑯', '𐑡𐑩𐑤', '𐑷𐑜𐑩', '𐑕𐑧𐑐', '𐑪𐑒𐑑', '𐑯𐑴𐑝', '𐑛𐑦𐑕'],
+        'th'      => ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.']
     ];
     $year_adj = [
-        'en' => 0,
-        'ja' => 0,
-        'th' => 543,
-        'zh-TW' => -1911,
-        'en-SHAW' => 0
+        'en'      => 0,
+        'ja'      => 0,
+        'th'      => 543,
+        'zh-TW'   => -1911,
+        'en-Shaw' => 0
     ];
     $formats = [
-        'en' => 'MMMM d, YYYY',
-        'en-SHAW' => 'd MMMM YYYY',
-        'th' => 'd MMMM YYYY',
-        'zh-TW' => 'YYYY年m月d日',
-        'ja' => 'YYYY年m月d日',
+        'en'      => 'MMMM d, YYYY',
+        'en-Shaw' => 'd MMMM YYYY',
+        'th'      => 'd MMMM YYYY',
+        'zh-TW'   => 'YYYY年m月d日',
+        'ja'      => 'YYYY年m月d日',
     ];
     $ym_formats = [
-        'en' => 'MMMM YYYY',
-        'en-SHAW' => 'MMMM YYYY',
-        'th' => 'MMMM YYYY',
-        'zh-TW' => 'YYYY年m月',
-        'ja' => 'YYYY年m月',
+        'en'      => 'MMMM YYYY',
+        'en-Shaw' => 'MMMM YYYY',
+        'th'      => 'MMMM YYYY',
+        'zh-TW'   => 'YYYY年m月',
+        'ja'      => 'YYYY年m月',
     ];
     // fix separators
     if (', ' == $separator && in_array($locale, ['zh-TW', 'ja'])) {

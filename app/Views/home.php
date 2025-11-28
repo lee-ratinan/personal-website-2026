@@ -651,7 +651,7 @@ $experience_years = date('Y') - 2012;
                     <li><a href="<?= base_url('th') ?>">ภาษาไทย</a></li>
                     <li><a href="<?= base_url('ja') ?>">日本語 <sup>AI 翻訳</sup></a></li>
                     <li><a href="<?= base_url('zh-TW') ?>">中文（台灣） <sup>AI 翻譯</sup></a></li>
-                    <li><a href="<?= base_url('en-SHAW') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
+                    <li><a href="<?= base_url('en-Shaw') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
                 </ul>
             </div>
         </div>

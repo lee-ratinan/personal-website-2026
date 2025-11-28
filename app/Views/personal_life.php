@@ -324,7 +324,7 @@
                     <li><a href="<?= base_url('th/personal-life') ?>">ภาษาไทย</a></li>
                     <li><a href="<?= base_url('ja/personal-life') ?>">日本語 <sup>AI 翻訳 </sup></a></li>
                     <li><a href="<?= base_url('zh-TW/personal-life') ?>">中文（台灣） <sup>AI 翻譯</sup></a></li>
-                    <li><a href="<?= base_url('en-SHAW/personal-life') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
+                    <li><a href="<?= base_url('en-Shaw/personal-life') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
                 </ul>
             </div>
         </div>

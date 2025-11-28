@@ -92,7 +92,7 @@ body.ja {
     font-family: var(--default-font-ja), serif !important;
 }
 
-body.en-SHAW {
+body.en-Shaw {
     font-family: var(--default-font-shaw), serif !important;
 }
 
@@ -144,12 +144,12 @@ h6 {
     font-family: var(--heading-font-ja), sans-serif !important;
 }
 
-.en-SHAW h1,
-.en-SHAW h2,
-.en-SHAW h3,
-.en-SHAW h4,
-.en-SHAW h5,
-.en-SHAW h6 {
+.en-Shaw h1,
+.en-Shaw h2,
+.en-Shaw h3,
+.en-Shaw h4,
+.en-Shaw h5,
+.en-Shaw h6 {
     font-family: var(--heading-font-shaw), sans-serif !important;
 }
 
@@ -333,7 +333,7 @@ h6 {
         font-family: var(--nav-font-ja), sans-serif !important;
     }
 
-    .en-SHAW .navmenu a, .en-SHAW .navmenu a:focus {
+    .en-Shaw .navmenu a, .en-Shaw .navmenu a:focus {
         font-family: var(--nav-font-shaw), sans-serif !important;
     }
 
@@ -467,7 +467,7 @@ h6 {
         font-family: var(--nav-font-ja), sans-serif !important;
     }
 
-    .en-SHAW .navmenu a, .en-SHAW .navmenu a:focus {
+    .en-Shaw .navmenu a, .en-Shaw .navmenu a:focus {
         font-family: var(--nav-font-shaw), sans-serif !important;
     }
 
@@ -599,7 +599,7 @@ h6 {
     font-family: var(--heading-font-ja), sans-serif !important;
 }
 
-.en-SHAW .footer .footer-about .logo span {
+.en-Shaw .footer .footer-about .logo span {
     font-family: var(--heading-font-shaw), sans-serif !important;
 }
 
@@ -620,7 +620,7 @@ h6 {
     font-family: var(--heading-font-ja), sans-serif !important;
 }
 
-.en-SHAW .footer .footer-about p {
+.en-Shaw .footer .footer-about p {
     font-family: var(--heading-font-shaw), sans-serif !important;
 }
 

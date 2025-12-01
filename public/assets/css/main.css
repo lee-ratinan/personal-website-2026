@@ -19,15 +19,15 @@
   --default-font-zh: "Noto Sans TC", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --default-font-ja: "Noto Serif JP", system-ui, -apple-system, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --default-font-shaw: "Noto Sans Shavian", system-ui, -apple-system, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font-en: "Rampart One",  sans-serif;
+  --heading-font-en: "Story Script",  sans-serif;
   --heading-font-th: "Sriracha", cursive;
   --heading-font-zh: "Stick",  sans-serif;
-  --heading-font-ja: "Rampart One",  sans-serif;
+  --heading-font-ja: "Yusei Magic",  sans-serif;
   --heading-font-shaw: "Noto Sans Shavian",  sans-serif;
-  --nav-font-en: "Rampart One",  sans-serif;
+  --nav-font-en: "Story Script",  sans-serif;
   --nav-font-th: "Sriracha", cursive;
   --nav-font-zh: "Stick",  sans-serif;
-  --nav-font-ja: "Rampart One",  sans-serif;
+  --nav-font-ja: "Yusei Magic",  sans-serif;
   --nav-font-shaw: "Noto Sans Shavian",  sans-serif;
 }
 
@@ -605,7 +605,6 @@ h6 {
 
 .footer .footer-about p {
   font-size: 14px;
-  font-family: var(--heading-font-en), sans-serif;
 }
 
 .th .footer .footer-about p {

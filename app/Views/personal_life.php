@@ -62,6 +62,7 @@
                 <li><a href="#gallery"><?= lang('PersonalLife.sections.gallery.title') ?></a></li>
                 <li><a href="#bucket-list"><?= lang('PersonalLife.sections.bucket-list.title') ?></a></li>
                 <li><a href="<?= base_url($locale) ?>"><?= lang('PersonalLife.system.back-home') ?></a></li>
+                <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
                 <li><a href="#footer"><i class="bi bi-translate"></i></a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -315,6 +316,7 @@
                     <li><a href="#gallery"><?= lang('PersonalLife.sections.gallery.title') ?></a></li>
                     <li><a href="#bucket-list"><?= lang('PersonalLife.sections.bucket-list.title') ?></a></li>
                     <li><a href="<?= base_url($locale) ?>"><?= lang('PersonalLife.system.back-home') ?></a></li>
+                    <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-6 footer-links">

@@ -67,6 +67,7 @@ $experience_years = date('Y') - 2012;
                 <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
                 <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>
                 <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
+                <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
                 <li><a href="#footer"><i class="bi bi-translate"></i></a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -642,6 +643,7 @@ $experience_years = date('Y') - 2012;
                     <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
                     <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>
                     <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
+                    <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-6 footer-links">

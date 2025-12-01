@@ -9,6 +9,7 @@ return [
         'pages'           => [
             'home'          => '關於榮欽',
             'personal-life' => '個人生活',
+            'blog'          => '部落格',
         ],
         'seo'             => [
             'description' => '具備 CSM/PSM 認證的技術專案經理與 Scrum Master，擁有電商與金融科技經驗，帶領跨國團隊交付高品質、可擴展的數位解決方案。',

@@ -9,6 +9,7 @@ return [
         'pages'           => [
             'home'          => 'About Ratinan',
             'personal-life' => 'Personal Life',
+            'blog'          => 'Blog',
         ],
         'seo'             => [
             'description' => 'CSM/PSM-certified technical project manager and scrum master with fintech and e-commerce experience, leading multicultural teams and delivering high-quality, scalable digital solutions.',

@@ -81,6 +81,7 @@ class Home extends BaseController
                     'locations' => ['phuket', 'phang-nga', 'krabi'],
                     'dates'     => ['2025-11-14', '2025-11-17'],
                     'detail'    => 'Celebrating birthday in the sea~~',
+                    'link'      => 'https://blog.ratinan.com/hkt2025/'
                 ],
                 [
                     'code'      => 'kul2025',
@@ -89,6 +90,7 @@ class Home extends BaseController
                     'locations' => ['bandar-utama', 'kuala-lumpur'],
                     'dates'     => ['2025-04-22', '2025-04-30'],
                     'detail'    => 'A strange work trip with lots of free time to enjoy.',
+                    'link'      => 'https://blog.ratinan.com/kul2025/'
                 ],
                 [
                     'code'      => 'bkk2025',
@@ -97,6 +99,7 @@ class Home extends BaseController
                     'locations' => ['bangkok'],
                     'dates'     => ['2025-03-06', '2025-03-10'],
                     'detail'    => 'Cool trip',
+                    'link'      => 'https://blog.ratinan.com/bkk2025/'
                 ],
                 [
                     'code'      => 'tpe2024',
@@ -152,7 +155,7 @@ class Home extends BaseController
                     'title'     => 'พัทยา-กรุงเทพ 2567',
                     'locations' => ['pattaya', 'bangkok'],
                     'dates'     => ['2024-02-05', '2024-02-15'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'jhb2023',
@@ -168,7 +171,7 @@ class Home extends BaseController
                     'title'     => '台北 112年',
                     'locations' => ['taipei', 'beitou', 'jiufen'],
                     'dates'     => ['2023-10-26', '2023-10-30'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'dps2023',
@@ -176,7 +179,7 @@ class Home extends BaseController
                     'title'     => 'Jakarta-Bali 2023',
                     'locations' => ['jakarta', 'bali'],
                     'dates'     => ['2023-10-14', '2023-10-20'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'ceb2023',
@@ -184,7 +187,7 @@ class Home extends BaseController
                     'title'     => 'Cebu 2023',
                     'locations' => ['cebu', 'mactan', 'oslob', 'alegria'],
                     'dates'     => ['2023-06-29', '2023-07-06'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'jhb2022',
@@ -192,7 +195,7 @@ class Home extends BaseController
                     'title'     => 'Desaru 2022',
                     'locations' => ['johor-bahru', 'desaru'],
                     'dates'     => ['2022-11-12', '2022-11-13'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'sgn2022',
@@ -200,7 +203,7 @@ class Home extends BaseController
                     'title'     => 'Sài Gòn 2022',
                     'locations' => ['ho-chi-minh-city'],
                     'dates'     => ['2022-10-28', '2022-10-31'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'hkt2022',
@@ -208,7 +211,7 @@ class Home extends BaseController
                     'title'     => 'ภูเก็ตแซนด์บ๊อก 2565',
                     'locations' => ['phuket', 'phang-nga', 'krabi', 'bangkok'],
                     'dates'     => ['2022-05-15', '2022-05-23'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'iph2020',
@@ -216,7 +219,7 @@ class Home extends BaseController
                     'title'     => 'Ipoh 2020',
                     'locations' => ['ipoh'],
                     'dates'     => ['2020-01-06', '2020-01-10'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'syd2019',
@@ -224,7 +227,7 @@ class Home extends BaseController
                     'title'     => 'Sydney &amp; Melbourne 2019',
                     'locations' => ['sydney', 'melbourne'],
                     'dates'     => ['2019-10-17', '2019-10-26'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'tpe2018',
@@ -232,7 +235,7 @@ class Home extends BaseController
                     'title'     => '台北&amp;台中 107年',
                     'locations' => ['taipei', 'taichung', 'beitou', 'wulai'],
                     'dates'     => ['2018-11-11', '2018-11-17'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'utp2018',
@@ -240,7 +243,7 @@ class Home extends BaseController
                     'title'     => 'เที่ยวพัทยา กับ　GrapeVine 2018',
                     'locations' => ['pattaya'],
                     'dates'     => ['2018-03-XX'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'hhq2017',
@@ -248,7 +251,7 @@ class Home extends BaseController
                     'title'     => 'ทริปกาญจน์ กับ GrapeVine 2017',
                     'locations' => ['kanchanaburi'],
                     'dates'     => ['2017-10-11'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'bth2016',
@@ -256,7 +259,7 @@ class Home extends BaseController
                     'title'     => 'Pulau Batam 2016',
                     'locations' => ['batam'],
                     'dates'     => ['2016-09-11'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'nrt2016',
@@ -264,7 +267,7 @@ class Home extends BaseController
                     'title'     => '日本関東 2016',
                     'locations' => ['tokyo', 'yokohama', 'kamakura'],
                     'dates'     => ['2016-06-11', '2016-06-16'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'kul2014',
@@ -272,7 +275,7 @@ class Home extends BaseController
                     'title'     => 'Kuala Lumpur dan Pulau Langkawi 2014',
                     'locations' => ['kuala-lumpur', 'langkawi'],
                     'dates'     => ['2014-05-12', '2014-05-16'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'hhq2013',
@@ -280,7 +283,7 @@ class Home extends BaseController
                     'title'     => 'ชะอำ/หัวหิน Retreat with GrapeVine 2013',
                     'locations' => ['hua-hin', 'cha-am'],
                     'dates'     => ['2013-03-XX'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'sin2012b',
@@ -288,7 +291,7 @@ class Home extends BaseController
                     'title'     => 'Singapore 2012 Again!',
                     'locations' => ['singapore'],
                     'dates'     => ['2012-08-11', '2012-08-13'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'sin2012a',
@@ -296,7 +299,7 @@ class Home extends BaseController
                     'title'     => 'Singapore 2012',
                     'locations' => ['singapore'],
                     'dates'     => ['2012-04-27', '2012-05-01'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'cvg2010',
@@ -304,7 +307,7 @@ class Home extends BaseController
                     'title'     => 'Work-Travel Trip @ Cincinnati!',
                     'locations' => ['cincinnati', 'covington', 'newport', 'chicago', 'new-york-city'],
                     'dates'     => ['2010-03-16', '2010-06-07'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ],
                 [
                     'code'      => 'sin2006',
@@ -312,7 +315,7 @@ class Home extends BaseController
                     'title'     => 'Singapore School Trip 2006',
                     'locations' => ['singapore'],
                     'dates'     => ['2006-04-09', '2006-04-18'],
-                    'detail'    => 'x',
+                    'detail'    => '',
                 ]
             ],
             'bucket_lists'         => [

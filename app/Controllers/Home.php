@@ -73,6 +73,7 @@ class Home extends BaseController
                     ],
                     'dates'     => ['2026-01-06', '2026-01-15'],
                     'detail'    => 'It’s my first Japan solo trip in the winter!',
+                    'link'      => 'https://blog.ratinan.com/kix2026/'
                 ],
                 [
                     'code'      => 'hkt2025',

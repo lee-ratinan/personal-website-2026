@@ -53,7 +53,12 @@
         }
         h3 { font-size:1.1em; }
         h2 { font-size:1.2em; }
-        h1 { font-size:1.3em; }
+        h1 { font-size:1.5em; }
+        .btn-xs {
+            padding: 0.15rem 0.5rem;
+            font-size: 0.75rem;
+            border-radius: 0.175rem;
+        }
     </style>
 </head>
 <body>
@@ -61,7 +66,7 @@
     <div class="row">
         <div class="col px-3 py-5" style="width:100%;max-width:800px;margin:0 auto;">
             <h1><?= $data['name'] ?></h1>
-            <h2><?= $data['tagline'] ?></h2>
+            <h2 class="mb-5"><?= $data['tagline'] ?></h2>
             <a href="<?= base_url() ?>" class="btn btn-outline-success btn-sm me-2 mb-2">
                 <i class="fa-solid fa-globe-asia"></i> lee.ratinan.com
             </a>
@@ -69,20 +74,21 @@
                 <i class="fa-solid fa-envelope"></i> lee@ratinan.com
             </a>
             <div class="row">
-                <div class="col col-md-10 col-lg-8">
+                <div class="col-12 col-md-10 col-lg-8">
                     <?php foreach ($links as $class => $link) : ?>
-                        <a href="<?= $link ?>" class="btn btn-outline-success btn-sm me-2 mb-2">
+                        <a href="<?= $link ?>" target="_blank" class="btn btn-outline-success btn-sm me-2 mb-2">
                             <i class="fa-brands fa-<?= $class ?>"></i>
                             <?= $translations[$locale][$class] ?? $translations['en'][$class] ?>
                         </a>
                     <?php endforeach; ?>
                 </div>
+                <div class="col-12 col-md-10 col-lg-8">
+                    <?php foreach ($professional_profiles as $name => $link) : ?>
+                        <a href="<?= $link ?>" target="_blank" class="btn btn-outline-success btn-xs me-2 mb-2"><?= $name ?></a>
+                    <?php endforeach; ?>
+                </div>
             </div>
-            <p>
-                <?php foreach ($professional_profiles as $name => $link) : ?>
-                    [ <a href="<?= $link ?>" target="_blank"><?= $name ?></a> ]
-                <?php endforeach; ?>
-            </p>
+            <hr>
             <h3><?= $data['education'] ?></h3>
             <ul>
                 <?php foreach ($data['educations'] as $row) : ?>
@@ -96,9 +102,10 @@
                     <li><?= $row ?></li>
                 <?php endforeach; ?>
             </ul>
+            <hr>
             <i class="fa-solid fa-language"></i>
             <?php foreach ($supported_languages as $lang_code => $lang_name) : ?>
-                <a class="btn btn-<?= ($lang_code == $locale ? '' : 'outline-') ?>success btn-sm me-1 mb-1" href="?hl=<?= $lang_code ?>"><?= $lang_name ?></a>
+                <a class="btn btn-<?= ($lang_code == $locale ? '' : 'outline-') ?>success btn-xs me-1 mb-1" href="?hl=<?= $lang_code ?>"><?= $lang_name ?></a>
             <?php endforeach; ?>
         </div>
     </div>

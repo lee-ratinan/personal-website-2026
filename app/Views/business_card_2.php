@@ -98,7 +98,7 @@
             </ul>
             <i class="fa-solid fa-language"></i>
             <?php foreach ($supported_languages as $lang_code => $lang_name) : ?>
-                <a class="btn btn-<?= ($lang_code == $locale ? '' : 'outline-') ?>success btn-sm" href="?hl=<?= $lang_code ?>"><?= $lang_name ?></a>
+                <a class="btn btn-<?= ($lang_code == $locale ? '' : 'outline-') ?>success btn-sm me-1 mb-1" href="?hl=<?= $lang_code ?>"><?= $lang_name ?></a>
             <?php endforeach; ?>
         </div>
     </div>

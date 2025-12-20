@@ -933,30 +933,46 @@ class Home extends BaseController
             'hl'                  => $this->request->getGet('hl'),
             'supported_languages' => [
                 'en'      => 'English',
-                'th'      => 'ภาษาไทย',
+                'th'      => 'ไทย',
                 'ja'      => '日本語',
-                'zh-TW'   => '中文（台灣）',
+                'zh-TW'   => '中文',
                 'en-Shaw' => '𐑖𐑱𐑝𐑾𐑯',
                 'ko'      => '한국어',
-                'id'      => 'Bahasa Indonesia',
+                'id'      => 'Indonesian',
                 'vi'      => 'Tiếng Việt',
                 'es'      => 'Español'
             ],
             'data'                => $translations[$locale],
             'links'               => [
-                'whatsapp'  => base_url('whatsapp'),
-                'line'      => 'https://line.me/ti/p/ME2Tsnm9nr',
-                'globe'     => base_url(),
-                'envelope'  => 'mailto:nat@ratinan.com',
-                'linkedin'  => 'https://www.linkedin.com/in/ratinanlee',
-                'medium'    => 'https://medium.com/@ratinanlee',
-                'instagram' => 'https://www.instagram.com/ratinanlee/',
-                'github'    => 'https://github.com/lee-ratinan',
-                'messenger' => 'https://www.messenger.com/t/lee.ratinan/',
-                'facebook'  => 'https://www.facebook.com/lee.ratinan',
-                'threads'   => 'https://www.threads.com/@ratinanlee'
+                'whatsapp'           => base_url('whatsapp'),
+                'line'               => 'https://line.me/ti/p/ME2Tsnm9nr',
+                'linkedin'           => 'https://www.linkedin.com/in/ratinanlee',
+                'medium'             => 'https://medium.com/@ratinanlee',
+                'instagram'          => 'https://www.instagram.com/ratinanlee/',
+                'github'             => 'https://github.com/lee-ratinan',
+                'facebook-messenger' => 'https://www.messenger.com/t/lee.ratinan/',
+                'facebook'           => 'https://www.facebook.com/lee.ratinan',
+                'threads'            => 'https://www.threads.com/@ratinanlee'
             ],
-            'profiles'            => [
+            'translations' => [
+                'en' => [
+                    'whatsapp'           => 'WhatsApp',
+                    'line'               => 'LINE',
+                    'linkedin'           => 'LinkedIn',
+                    'medium'             => 'Medium',
+                    'instagram'          => 'Instagram',
+                    'github'             => 'GitHub',
+                    'facebook-messenger' => 'Messenger',
+                    'facebook'           => 'Facebook',
+                    'threads'            => 'Threads',
+                ],
+                'th' => [
+                    'line'      => 'ไลน์',
+                    'instagram' => 'ไอจี',
+                    'facebook'  => 'เฟซบุ๊ก',
+                ]
+            ],
+            'professional_profiles' => [
                 'Scrum.org'      => 'https://www.scrum.org/user/1457291',
                 'Credly'         => 'https://www.credly.com/users/ratinanlee',
                 'Scrum Alliance' => 'https://www.scrumalliance.org/members/1729850',
@@ -964,6 +980,6 @@ class Home extends BaseController
                 'Upwork'         => 'https://www.upwork.com/freelancers/~01b5886610b13a2bb1',
             ]
         ];
-        return view('business_card', $data);
+        return view('business_card_2', $data);
     }
 }

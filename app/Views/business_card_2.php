@@ -73,7 +73,7 @@
                     <?php foreach ($links as $class => $link) : ?>
                         <a href="<?= $link ?>" class="btn btn-outline-success btn-sm me-2 mb-2">
                             <i class="fa-brands fa-<?= $class ?>"></i>
-                            <?= $translations[$hl][$class] ?? $translations['en'][$class] ?>
+                            <?= $translations[$locale][$class] ?? $translations['en'][$class] ?>
                         </a>
                     <?php endforeach; ?>
                 </div>
@@ -96,16 +96,10 @@
                     <li><?= $row ?></li>
                 <?php endforeach; ?>
             </ul>
-            <div class="btn-toolbar" role="toolbar" aria-label="Languages">
-                <div class="input-group input-group-sm me-1">
-                    <div class="input-group-text" id="icon"><i class="fa-solid fa-language"></i></div>
-                </div>
-                <div class="btn-group btn-group-sm" role="group" aria-label="Change Language">
-                    <?php foreach ($supported_languages as $lang_code => $lang_name) : ?>
-                        <a class="btn btn-<?= ($lang_code == $hl ? '' : 'outline-') ?>success" href="?hl=<?= $lang_code ?>"><?= $lang_name ?></a>
-                    <?php endforeach; ?>
-                </div>
-            </div>
+            <i class="fa-solid fa-language"></i>
+            <?php foreach ($supported_languages as $lang_code => $lang_name) : ?>
+                <a class="btn btn-<?= ($lang_code == $locale ? '' : 'outline-') ?>success btn-sm" href="?hl=<?= $lang_code ?>"><?= $lang_name ?></a>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>

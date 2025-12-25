@@ -7,7 +7,7 @@ use CodeIgniter\HTTP\RedirectResponse;
 class Home extends BaseController
 {
 
-    private array $business_card_languages = ['en', 'th', 'ja', 'zh-TW', 'en-Shaw', 'ko', 'id', 'vi', 'es'];
+    private array $business_card_languages = ['en', 'th', 'ja', 'zh-TW', 'en-Shaw', 'ko', 'id', 'vi', 'lo', 'es'];
 
     /**
      * Get locale
@@ -790,6 +790,13 @@ class Home extends BaseController
                     'PSPO I, II (Professional Scrum product Owner™)',
                     'CSM (Certified Scrum Master)',
                     'Google AI Essentials'
+                ],
+                'language'      => 'Language Proficiency Level',
+                'languages'     => [
+                    'English: CEFR C2 Level (Proficient)',
+                    'Thai: Native',
+                    'Japanese: Beginner (expected to get JLPT N5 by December 2026)',
+                    'Taiwanese Mandarin: Beginner (approx. CEFR A1 Level)'
                 ]
             ],
             'th'      => [
@@ -807,6 +814,13 @@ class Home extends BaseController
                     'PSPO I, II (Professional Scrum product Owner™)',
                     'CSM (Certified Scrum Master)',
                     'Google AI Essentials'
+                ],
+                'language'      => 'ความสามารถทางภาษา',
+                'languages'     => [
+                    'ภาษาอังกฤษ: CEFR ระดับ C2 (เชี่ยวชาญ)',
+                    'ภาษาไทย: เจ้าของภาษา',
+                    'ภาษาญี่ปุ่น: ระดับต้น (คาดว่าจะได้ระดับ JLPT N5 ภายใน ธ.ค. 2569)',
+                    'ภาษาจีนไต้หวัน: ระดับต้น (ประมาณ CEFR ระดับ A1)'
                 ]
             ],
             'ja'      => [
@@ -824,6 +838,13 @@ class Home extends BaseController
                     'PSPO I、II（プロフェッショナルスクラムプロダクトオーナー）',
                     'CSM（認定スクラムマスター）',
                     'グーグル AI エッセンシャル'
+                ],
+                'language'      => '語学能力',
+                'languages'     => [
+                    '英語：CEFR C2 レベル（熟達）',
+                    'タイ語：母語',
+                    '日本語：初級（2026年12月に JLPT N5 取得予定）',
+                    '台湾華語：初級（CEFR A1 相当）'
                 ]
             ],
             'zh-TW'   => [
@@ -841,6 +862,13 @@ class Home extends BaseController
                     'PSPO I, II (Professional Scrum product Owner™)',
                     'CSM (Certified Scrum Master)',
                     'Google AI Essentials'
+                ],
+                'language'      => '語言能力',
+                'languages'     => [
+                    '英語：CEFR C2 等級（精通）',
+                    '泰語：母語',
+                    '日語：初級（預計於 2026年12月取得 JLPT N5）',
+                    '國語：初級（約 CEFR A1 等級）'
                 ]
             ],
             'en-Shaw' => [
@@ -858,6 +886,13 @@ class Home extends BaseController
                     'PSPO I, II (𐑐𐑮𐑩𐑓𐑧𐑖𐑩𐑯𐑩𐑤 𐑕𐑒𐑮𐑳𐑥 𐑐𐑮𐑪𐑛𐑳𐑒𐑑 𐑴𐑯𐑼)',
                     'CSM (𐑕𐑻𐑑𐑦𐑓𐑲𐑛 𐑕𐑒𐑮𐑳𐑥 𐑥𐑭𐑕𐑑𐑼)',
                     '𐑜𐑵𐑜𐑩𐑤 AI 𐑦𐑕𐑧𐑯𐑖𐑩𐑤𐑟'
+                ],
+                'language'      => '𐑤𐑨𐑙𐑜𐑢𐑦𐑡𐑩𐑟',
+                'languages'     => [
+                    '𐑦𐑙𐑜𐑤𐑦𐑖:: CEFR C2 𐑤𐑧𐑝𐑩𐑤 (𐑐𐑮𐑩𐑓𐑦𐑖𐑩𐑯𐑑)',
+                    '𐑑𐑲: 𐑯𐑱𐑑𐑦𐑝',
+                    '𐑡𐑨𐑐𐑩𐑯𐑰𐑟: 𐑚𐑦𐑜𐑦𐑯𐑼 (𐑦𐑒𐑕𐑐𐑧𐑒𐑑𐑩𐑛 𐑑 𐑜𐑧𐑑 JLPT N5 𐑚𐑲 𐑛𐑦𐑕𐑧𐑥𐑚𐑼 2026)',
+                    '𐑑𐑲𐑢𐑩𐑯𐑰𐑟 𐑥𐑨𐑯𐑛𐑼𐑦𐑯: 𐑚𐑦𐑜𐑦𐑯𐑼 (𐑩𐑐𐑮𐑪𐑒𐑕𐑦𐑥𐑩𐑑𐑤𐑦 CEFR A1 𐑤𐑧𐑝𐑩𐑤)'
                 ]
             ],
             'ko'      => [
@@ -875,6 +910,13 @@ class Home extends BaseController
                     'PSPO I, II (Professional Scrum product Owner™)',
                     'CSM (Certified Scrum Master)',
                     '구글 AI Essentials'
+                ],
+                'language'      => '언어능력수준',
+                'languages'     => [
+                    '영어: CEFR C2 레벨 (능숙)',
+                    '태국어: 원어민 수준',
+                    '일본어: 초급 (2026년12월까지 JLPT N5 취득 예정)',
+                    '대만어: 초급 (CEFR A1 레벨 정도)'
                 ]
             ],
             'id'      => [
@@ -892,6 +934,13 @@ class Home extends BaseController
                     'PSPO I, II (Professional Scrum product Owner™)',
                     'CSM (Certified Scrum Master)',
                     'Google AI Essentials'
+                ],
+                'language'      => 'Tingkat Kemahiran Bahasa',
+                'languages'     => [
+                    'Bahasa Inggris: Tingkat CEFR C2 (mahir)',
+                    'Bahasa Thailand: Tingkat penutur asli',
+                    'Bahasa Jepang: Pemula (diharapkan mencapai JLPT N5 pada Desember 2026)',
+                    'Bahasa Taiwan: Pemula (kira-kira tingkat CEFR A1)'
                 ]
             ],
             'vi'      => [
@@ -909,6 +958,37 @@ class Home extends BaseController
                     'PSPO I, II (Professional Scrum product Owner™)',
                     'CSM (Certified Scrum Master)',
                     'Google AI Essentials'
+                ],
+                'language'      => 'Trình độ ngoại ngữ',
+                'languages'     => [
+                    'Tiếng Anh: Trình độ CEFR C2 (Thành thạo)',
+                    'Tiếng Thái: Tiếng mẹ đẻ',
+                    'Tiếng Nhật: Trình độ sơ cấp (dự kiến ​​đạt JLPT N5 vào tháng 12 năm 2026)',
+                    'Tiếng Đài Loan (tiếng Quan thoại): Trình độ sơ cấp (khoảng trình độ CEFR A1)'
+                ]
+            ],
+            'lo'      => [
+                'business-card'  => 'ນາມບັດ',
+                'name'           => 'RATINAN “NAT” LEE',
+                'tagline'        => 'ປະລິນຍາໂທວິທະຍາສາດ, PSM™ I-II, PSPO™ I-II',
+                'education'      => 'ການສຶກສາ',
+                'educations'     => [
+                    'ປະລິນຍາໂທວິທະຍາສາດສາຂາລະບົບຂໍ້ມູນຂ່າວສານ<br>ຄະນະການສື່ສານແລະຂໍ້ມູນຂ່າວສານ ວີກິມວີ, ມະຫາວິທະຍາໄລເຕັກໂນໂລຢີນັນຢາງ',
+                    'ປະລິນຍາຕີວິທະຍາສາດສາຂາວິທະຍາສາດຄອມພິວເຕີ (ກຽດນິຍົມອັນດັບໜຶ່ງ)<br>ສະຖາບັນເຕັກໂນໂລຊີສາກົນສິຣິນທອນ, ມະຫາວິທະຍາໄລທຳມະສາດ'
+                ],
+                'certification'  => 'ໃບຢັ້ງຢືນວິຊາຊີບ',
+                'certifications' => [
+                    'PSM I, II (Professional Scrum Master™)',
+                    'PSPO I, II (Professional Scrum product Owner™)',
+                    'CSM (Certified Scrum Master)',
+                    'Google AI Essentials'
+                ],
+                'language'      => 'ຄວາມສາມາດດ້ານພາສາ',
+                'languages'     => [
+                    'ພາສາອັງກິດ: CEFR ລະດັບ C2 (ຜູ້ຊ່ຽວຊານ)',
+                    'ພາສາໄທ: ຜູ້ເວົ້າພາສາພື້ນເມືອງ',
+                    'ພາສາຍີ່ປຸ່ນ: ຜູ້ເລີ່ມຕົ້ນ (ຄາດວ່າຈະບັນລຸ JLPT N5 ພາຍໃນເດືອນທັນວາ 2026)',
+                    'ພາສາຈີນໄຕ້ຫວັນ: ຜູ້ເລີ່ມຕົ້ນ (ປະມານ CEFR ລະດັບ A1)'
                 ]
             ],
             'es'      => [
@@ -926,6 +1006,13 @@ class Home extends BaseController
                     'PSPO I, II (Professional Scrum product Owner™)',
                     'CSM (Certified Scrum Master)',
                     'Google AI Essentials'
+                ],
+                'language'      => 'Nivel de competencia lingüística',
+                'languages'     => [
+                    'Inglés: Nivel C2 del MCER (Competente)',
+                    'Tailandés: Nativo',
+                    'Japonés: Principiante (se espera obtener el JLPT N5 para diciembre de 2026)',
+                    'Mandarín taiwanés: Principiante (aprox. Nivel A1 del MCER)'
                 ]
             ],
         ];
@@ -936,16 +1023,18 @@ class Home extends BaseController
                 'en'      => 'English',
                 'th'      => 'ไทย',
                 'ja'      => '日本語',
-                'zh-TW'   => '中文',
+                'zh-TW'   => '國語',
                 'en-Shaw' => '𐑖𐑱𐑝𐑾𐑯',
                 'ko'      => '한국어',
                 'id'      => 'Indonesian',
                 'vi'      => 'Tiếng Việt',
+                'lo'      => 'ລາວ',
                 'es'      => 'Español'
             ],
             'data'                => $translations[$locale],
             'links'               => [
                 'whatsapp'           => base_url('whatsapp'),
+                'telegram'           => 'https://t.me/rikikawa_eikin',
                 'line'               => 'https://line.me/ti/p/ME2Tsnm9nr',
                 'linkedin'           => 'https://www.linkedin.com/in/ratinanlee',
                 'medium'             => 'https://medium.com/@ratinanlee',
@@ -966,6 +1055,7 @@ class Home extends BaseController
                     'facebook-messenger' => 'Messenger',
                     'facebook'           => 'Facebook',
                     'threads'            => 'Threads',
+                    'telegram'           => 'Telegram',
                 ],
                 'th' => [
                     'line'      => 'ไลน์',

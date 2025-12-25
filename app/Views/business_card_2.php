@@ -103,6 +103,13 @@
                 <?php endforeach; ?>
             </ul>
             <hr>
+            <h3><?= $data['language'] ?></h3>
+            <ul>
+                <?php foreach ($data['languages'] as $row) : ?>
+                    <li><?= $row ?></li>
+                <?php endforeach; ?>
+            </ul>
+            <hr>
             <i class="fa-solid fa-language"></i>
             <?php foreach ($supported_languages as $lang_code => $lang_name) : ?>
                 <a class="btn btn-<?= ($lang_code == $locale ? '' : 'outline-') ?>success btn-xs me-1 mb-1" href="?hl=<?= $lang_code ?>"><?= $lang_name ?></a>

@@ -976,7 +976,7 @@ class Home extends BaseController
                     'ປະລິນຍາໂທວິທະຍາສາດສາຂາລະບົບຂໍ້ມູນຂ່າວສານ<br>ຄະນະການສື່ສານແລະຂໍ້ມູນຂ່າວສານ ວີກິມວີ, ມະຫາວິທະຍາໄລເຕັກໂນໂລຢີນັນຢາງ',
                     'ປະລິນຍາຕີວິທະຍາສາດສາຂາວິທະຍາສາດຄອມພິວເຕີ (ກຽດນິຍົມອັນດັບໜຶ່ງ)<br>ສະຖາບັນເຕັກໂນໂລຊີສາກົນສິຣິນທອນ, ມະຫາວິທະຍາໄລທຳມະສາດ'
                 ],
-                'certification'  => 'ໃບຢັ້ງຢືນວິຊາຊີບ',
+                'certification'  => 'ໃບຮັບຮອງວິຊາຊີບ',
                 'certifications' => [
                     'PSM I, II (Professional Scrum Master™)',
                     'PSPO I, II (Professional Scrum product Owner™)',

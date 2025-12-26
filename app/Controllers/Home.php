@@ -969,7 +969,7 @@ class Home extends BaseController
             ],
             'lo'      => [
                 'business-card'  => 'ນາມບັດ',
-                'name'           => 'RATINAN “NAT” LEE',
+                'name'           => 'ຣະຕິນັນ “ນັດ” ລີລາງາມວົງສາ',
                 'tagline'        => 'ປະລິນຍາໂທວິທະຍາສາດ, PSM™ I-II, PSPO™ I-II',
                 'education'      => 'ການສຶກສາ',
                 'educations'     => [

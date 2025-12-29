@@ -13,7 +13,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <?php if (in_array($locale, ['en', 'vi', 'id', 'es'])) : ?>
+    <?php if (in_array($locale, ['en', 'vi', 'id', 'es', 'art-x-navi'])) : ?>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <?php elseif ('th' == $locale) : ?>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@100..900&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@
     <link rel="canonical" href="<?= current_url() . (empty($hl) ? '' : '?hl=' . $hl) ?>">
     <style>
         body {
-        <?php if (in_array($locale, ['en', 'vi', 'id', 'es'])) : ?> font-family: "Noto Serif", serif;
+        <?php if (in_array($locale, ['en', 'vi', 'id', 'es', 'art-x-navi'])) : ?> font-family: "Noto Serif", serif;
         <?php elseif ('th' == $locale) : ?> font-family: "Noto Serif Thai", serif;
         <?php elseif ('zh-TW' == $locale) : ?> font-family: "Noto Serif TC", serif;
         <?php elseif ('ja' == $locale) : ?> font-family: "Noto Serif JP", serif;

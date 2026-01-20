@@ -321,6 +321,43 @@ class Home extends BaseController
             ],
             'bucket_lists'         => [
                 // 2026
+                [
+                    'code'      => 'tokyo-city-view',
+                    'filter'    => 'observatory',
+                    'title'     => 'Tokyo City View',
+                    'locations' => ['tokyo'],
+                    'dates'     => ['2026-01-12']
+                ],
+                [
+                    'code'      => 'kobe-port-tower',
+                    'filter'    => 'observatory',
+                    'title'     => 'Kobe Port Tower 神戸ポートタワー',
+                    'locations' => ['kobe'],
+                    'dates'     => ['2026-01-09']
+                ],
+                [
+                    'code'      => 'conan-town',
+                    'filter'    => 'pilgrimage',
+                    'title'     => 'Conan Town コナンタウン',
+                    'locations' => ['hokuei'],
+                    'dates'     => ['2026-01-07'],
+                    'link'      => 'https://blog.ratinan.com/conan-town-pilgrimage/'
+                ],
+                [
+                    'code'      => 'lost-ship-in-the-sky',
+                    'filter'    => 'pilgrimage',
+                    'title'     => 'Lost Ship in the Sky 天空の難破船',
+                    'locations' => ['nara', 'osaka'],
+                    'dates'     => ['2026-01-06'],
+                    'link'      => 'https://blog.ratinan.com/lost-ship-in-the-sky-pilgrimage/'
+                ],
+                [
+                    'code'      => 'fuji-sighting',
+                    'filter'    => 'cultural',
+                    'title'     => 'Fuji Sighting　富士山',
+                    'locations' => ['tokyo'],
+                    'dates'     => ['2026-01-13']
+                ],
                 // 2025
                 [
                     'code'      => 'indoor-skydiving',
@@ -350,6 +387,7 @@ class Home extends BaseController
                     'title'     => 'The On1y One 某某',
                     'locations' => ['taipei'],
                     'dates'     => ['2024-10-25'],
+                    'link'      => 'https://blog.ratinan.com/the-on1y-one-pilgrimage/'
                 ],
                 [
                     'code'      => 'capybara',
@@ -399,20 +437,22 @@ class Home extends BaseController
                     'title'     => 'Your Name 君の名は',
                     'locations' => ['tokyo'],
                     'dates'     => ['2024-04-29'],
+                    'link'      => 'https://blog.ratinan.com/kimi-no-na-wa-pilgrimage/'
                 ],
                 [
                     'code'      => 'shinkansen',
                     'filter'    => 'others',
                     'title'     => 'Shinkansen 新幹線',
                     'locations' => ['kyoto', 'tokyo'],
-                    'dates'     => ['2024-04-27', '2024-05-01'],
+                    'dates'     => ['2024-04-27', '2024-05-01', '2026-01-12'],
                 ],
                 [
                     'code'      => 'crossroad-in-the-ancient-capital',
                     'filter'    => 'pilgrimage',
                     'title'     => 'Crossroad In the Ancient Capital 迷宮の十字路',
                     'locations' => ['kyoto'],
-                    'dates'     => ['2024-04-26'],
+                    'dates'     => ['2024-04-26', '2026-01-10'],
+                    'link'      => 'https://blog.ratinan.com/crossroad-in-the-ancient-capital-pilgrimage/'
                 ],
                 [
                     'code'      => 'abeno-harukas',
@@ -558,6 +598,14 @@ class Home extends BaseController
                     'title'     => 'Eureka Tower',
                     'locations' => ['melbourne'],
                     'dates'     => ['2019-10-22']
+                ],
+                [
+                    'code'      => 'harry-potter',
+                    'filter'    => 'pilgrimage',
+                    'title'     => 'Harry Potter',
+                    'locations' => ['melbourne', 'osaka', 'tokyo'],
+                    'dates'     => ['2019-10-23', '2024-04-23', '2024-04-27', '2026-01-12'],
+                    'link'      => 'https://blog.ratinan.com/harry-potter-pilgrimage/'
                 ],
                 [
                     'code'      => 'nude-beach',
@@ -708,7 +756,6 @@ class Home extends BaseController
             'bucket_lists_to_fill' => [
                 'observatory' => [
                     'Lotte World Tower',
-                    'Roppongi Hills Mori Tower',
                     'Merdeka 118',
                     'Tokyo Metropolitan Government Building',
                     'Burj Khalifa',
@@ -731,8 +778,7 @@ class Home extends BaseController
                     'Aurora borealis sighting',
                     'Ice Hotel (Jukkasjärvi)',
                     'Jjimjibang',
-                    'Ryokan',
-                    'Fujisan Sighting'
+                    'Ryokan'
                 ],
                 'pilgrimage'  => [
                     'Angels and Demons',
@@ -744,7 +790,6 @@ class Home extends BaseController
                     'First Note of Love',
                     'Harry Potter',
                     'Sherlock Holmes',
-                    'Conan',
                     'LOTR'
                 ],
                 'others'      => [

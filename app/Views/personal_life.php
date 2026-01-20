@@ -263,6 +263,9 @@
                                         </div>
                                         <div class="portfolio-actions">
                                             <a href="<?= base_url('assets/img/bucket-lists/' . $item['code'] . '.jpg') ?>" class="glightbox portfolio-link" data-glightbox="title:<?= lang('PersonalLife.sections.bucket-list.filters.' . $item['filter']) ?> / <?= $item['title'] ?>; description: <i class='bi bi-geo-alt'></i> <?= implode(get_comma($locale), $locations) ?> <i class='bi bi-calendar-heart'></i> <?= $date_str ?>"><i class="bi bi-plus-lg"></i></a>
+                                            <?php if (!empty($item['link'])) : ?>
+                                                <a href="<?= $item['link'] ?>" class="portfolio-details" target="_blank"><i class="bi bi-arrow-right"></i></a>
+                                            <?php endif ?>
                                         </div>
                                     </div>
                                 </div>

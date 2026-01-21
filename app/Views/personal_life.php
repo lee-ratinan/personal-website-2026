@@ -105,7 +105,15 @@
                             <div class="col-6">
                                 <div class="stat-item text-center">
                                     <div class="stat-number fw-bold">~<?= number_format($distant_traveled) ?></div>
-                                    <div class="stat-label"><?= lang('PersonalLife.sections.about.box-2') ?></div>
+                                    <div class="stat-label">
+                                        <?= lang('PersonalLife.sections.about.box-2') ?>
+                                        <?php if ('en' == $locale) : ?>
+                                            <br><span style="font-size:0.7em">(~<?php
+                                                $miles = intval(($distant_traveled*0.621371)/1000)*1000;
+                                                echo number_format($miles)
+                                                ?> miles)</span>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -117,7 +125,7 @@
                             </div>
                             <div class="col-6">
                                 <div class="stat-item text-center">
-                                    <div class="stat-number fw-bold"><?= number_format($flights) ?>+</div>
+                                    <div class="stat-number fw-bold"><?= number_format($flights) ?></div>
                                     <div class="stat-label"><?= lang('PersonalLife.sections.about.box-4') ?></div>
                                 </div>
                             </div>

@@ -60,8 +60,8 @@ class Home extends BaseController
         $data = [
             'locale'               => $this->request->getLocale(),
             'countries_visited'    => 10,
-            'distant_traveled'     => 192000,
-            'flights'              => 102,
+            'distant_traveled'     => 198000,
+            'flights'              => 104,
             'galleries'            => [
                 [
                     'code'      => 'kix2026',
@@ -322,6 +322,13 @@ class Home extends BaseController
             'bucket_lists'         => [
                 // 2026
                 [
+                    'code'      => 'fuji-sighting',
+                    'filter'    => 'cultural',
+                    'title'     => 'Fuji Sighting　富士山',
+                    'locations' => ['tokyo'],
+                    'dates'     => ['2026-01-XX']
+                ],
+                [
                     'code'      => 'tokyo-city-view',
                     'filter'    => 'observatory',
                     'title'     => 'Tokyo City View',
@@ -350,13 +357,6 @@ class Home extends BaseController
                     'locations' => ['nara', 'osaka'],
                     'dates'     => ['2026-01-06'],
                     'link'      => 'https://blog.ratinan.com/lost-ship-in-the-sky-pilgrimage/'
-                ],
-                [
-                    'code'      => 'fuji-sighting',
-                    'filter'    => 'cultural',
-                    'title'     => 'Fuji Sighting　富士山',
-                    'locations' => ['tokyo'],
-                    'dates'     => ['2026-01-13']
                 ],
                 // 2025
                 [

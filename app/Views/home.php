@@ -287,6 +287,7 @@ $experience_years = date('Y') - 2012;
                             <div class="header-content">
                                 <span class="section-badge"><?= lang('Home.sections.resume.education.label') ?></span>
                                 <h2><?= lang('Home.sections.resume.education.title') ?></h2>
+                                <a class="btn btn-outline-success rounded-pill" href="<?= base_url($locale . '/certifications') ?>"><?= lang('Certifications.title') ?> <i class="bi bi-arrow-right-circle"></i></a>
                             </div>
                         </div>
                         <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">

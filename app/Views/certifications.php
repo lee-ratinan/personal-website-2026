@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="<?= $locale ?>">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title><?= lang('Home.system.pages.home') ?> - <?= lang('Home.system.website-name') ?></title>
+    <meta name="description" content="<?= lang('Home.system.seo.description') ?>">
+    <meta name="keywords" content="<?= lang('Home.system.seo.keywords') ?>">
+    <meta name="author" content="<?= lang('Home.system.seo.author') ?>">
+    <!-- Favicons -->
+    <link href="<?= base_url('assets/img/favicon.png') ?>" rel="icon">
+    <link href="<?= base_url('assets/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <?php if ('en' == $locale) : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Story+Script&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <?php elseif ('th' == $locale) : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Sriracha&display=swap" rel="stylesheet">
+    <?php elseif ('zh-TW' == $locale) : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Stick&display=swap" rel="stylesheet">
+    <?php elseif ('ja' == $locale) : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <?php else : ?>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Shavian&display=swap" rel="stylesheet">
+    <?php endif; ?>
+    <!-- Vendor CSS Files -->
+    <link href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/vendor/bootstrap-icons/bootstrap-icons.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/vendor/aos/aos.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/vendor/glightbox/css/glightbox.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet') ?>">
+    <!-- Main CSS File -->
+    <link href="<?= base_url('assets/css/main.min.css') ?>" rel="stylesheet">
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="en" href="<?= base_url('en') ?>"/>
+    <link rel="alternate" hreflang="th" href="<?= base_url('th') ?>"/>
+    <link rel="alternate" hreflang="ja" href="<?= base_url('ja') ?>"/>
+    <link rel="alternate" hreflang="zh-TW" href="<?= base_url('zh-TW') ?>"/>
+    <link rel="alternate" hreflang="x-default" href="<?= base_url() ?>"/>
+    <link rel="canonical" href="<?= current_url() ?>">
+    <!-- =======================================================
+    * Template Name: Craftivo
+    * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/
+    * Updated: Oct 04 2025 with Bootstrap v5.3.8
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+<body class="index-page <?= $locale ?>">
+<?php
+$experience_years = date('Y') - 2012;
+?>
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+        <a href="<?= base_url($locale) ?>" class="logo d-flex align-items-center me-auto">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="<?= base_url('assets/img/logo.webp') ?>" alt=""> -->
+            <h1 class="sitename fw-bold"><?= lang('Home.system.site-name-head') ?></h1>
+        </a>
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="<?= base_url($locale) ?>"><?= lang('Home.sections.home.title') ?></a></li>
+                <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
+                <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
+                <li><a href="#footer"><i class="bi bi-translate"></i></a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+        <img src="<?= base_url('assets/img/profile/profile-hero.jpg') ?>" alt="" data-aos="fade-in">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2><?= lang('Home.sections.home.greetings') ?></h2>
+                    <p><?= lang('Home.sections.home.i-am-a') ?> <span class="typed" data-typed-items="<?= lang('Home.sections.home.occupations') ?>"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ratinanlee" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/lee-ratinan" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.instagram.com/ratinanlee/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /Hero Section -->
+    <!-- Certifications Section -->
+    <section id="about" class="about section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2><?= lang('Certifications.title') ?></h2>
+        </div><!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-5">
+                <div class="col" data-aos="zoom-in" data-aos-delay="150">
+                    <h3><?= lang('Certifications.academic') ?></h3>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-sm">
+                            <thead>
+                            <tr>
+                                <th colspan="2"><?= lang('Certifications.table.title') ?></th>
+                                <th><?= lang('Certifications.table.certifying-body') ?></th>
+                                <th><?= lang('Certifications.table.date') ?></th>
+                                <th><?= lang('Certifications.table.link') ?></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php foreach ($academic as $row) : ?>
+                                <tr>
+                                    <td><?= $row[0] ?></td>
+                                    <td><?= $row[1] ?></td>
+                                    <td><?= $row[2] ?></td>
+                                    <td><?= (empty($row[3]) ? '-' : format_date([$row[3]], $locale)) ?></td>
+                                    <td><?= (empty($row[4]) ? '-' : '<a href="' . $row[4] . '" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a>') ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h3><?= lang('Certifications.professional') ?></h3>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-sm">
+                            <thead>
+                            <tr>
+                                <th colspan="2"><?= lang('Certifications.table.title') ?></th>
+                                <th><?= lang('Certifications.table.certifying-body') ?></th>
+                                <th><?= lang('Certifications.table.date') ?></th>
+                                <th><?= lang('Certifications.table.link') ?></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php foreach ($professional as $row) : ?>
+                            <tr>
+                                <td><?= $row[0] ?></td>
+                                <td><?= $row[1] ?></td>
+                                <td><?= $row[2] ?></td>
+                                <td><?= (empty($row[3]) ? '-' : format_date([$row[3]], $locale)) ?></td>
+                                <td><?= (empty($row[4]) ? '-' : '<a href="' . $row[4] . '" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a>') ?></td>
+                            </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h3><?= lang('Certifications.others') ?></h3>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-sm">
+                            <thead>
+                            <tr>
+                                <th colspan="2"><?= lang('Certifications.table.title') ?></th>
+                                <th><?= lang('Certifications.table.certifying-body') ?></th>
+                                <th><?= lang('Certifications.table.date') ?></th>
+                                <th><?= lang('Certifications.table.link') ?></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php foreach ($others as $row) : ?>
+                                <tr>
+                                    <td><?= $row[0] ?></td>
+                                    <td><?= $row[1] ?></td>
+                                    <td><?= $row[2] ?></td>
+                                    <td><?= (empty($row[3]) ? '-' : format_date([$row[3]], $locale)) ?></td>
+                                    <td><?= (empty($row[4]) ? '-' : '<a href="' . $row[4] . '" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a>') ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /About Section -->
+</main>
+<footer id="footer" class="footer">
+    <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-about">
+                <a href="<?= base_url($locale) ?>" class="logo d-flex align-items-center">
+                    <span class="sitename"><?= lang('Home.system.site-name-head') ?></span>
+                </a>
+                <p><?= lang('Home.system.footer-msg') ?></p>
+            </div>
+            <div class="col-lg-3 col-6 footer-links">
+                <h4><?= lang('Home.system.useful-links') ?></h4>
+                <ul>
+                    <li><a href="<?= base_url($locale) ?>"><?= lang('Home.sections.home.title') ?></a></li>
+                    <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
+                    <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6 footer-links">
+                <h4><?= lang('Home.system.change-language') ?></h4>
+                <ul>
+                    <li><a href="<?= base_url('en/certifications') ?>">English (US)</a></li>
+                    <li><a href="<?= base_url('th/certifications') ?>">ภาษาไทย</a></li>
+                    <li><a href="<?= base_url('ja/certifications') ?>">日本語 <sup>AI 翻訳</sup></a></li>
+                    <li><a href="<?= base_url('zh-TW/certifications') ?>">中文（台灣） <sup>AI 翻譯</sup></a></li>
+                    <li><a href="<?= base_url('en-Shaw/certifications') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">RatinanLee</strong> <span>All Rights Reserved</span></p>
+    </div>
+</footer>
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Preloader -->
+<div id="preloader"></div>
+<!-- Vendor JS Files -->
+<script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/php-email-form/validate.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/aos/aos.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/typed.js/typed.umd.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/waypoints/noframework.waypoints.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/glightbox/js/glightbox.min.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/isotope-layout/isotope.pkgd.min.js') ?>"></script>
+<script src="<?= base_url('assets/vendor/swiper/swiper-bundle.min.js') ?>"></script>
+<!-- Main JS File -->
+<script src="<?= base_url('assets/js/main.min.js') ?>"></script>
+</body>
+</html>

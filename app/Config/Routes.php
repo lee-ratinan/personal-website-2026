@@ -7,7 +7,9 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('whatsapp', 'Home::whatsapp');
 $routes->get('personal-life', 'Home::personal_life');
+$routes->get('certifications', 'Home::certifications');
 $routes->get('business-card', 'Home::business_card');
 $routes->get('{locale}/personal-life', 'Home::personal_life');
+$routes->get('{locale}/certifications', 'Home::certifications');
 $routes->get('{locale}/', 'Home::index');
 $routes->get('/', 'Home::index');

@@ -23,10 +23,13 @@ return [
         'thammasat-university'             => '泰國法政大學',
         'nanyang-technological-university' => '南洋理工大學',
         'australia'                        => '澳洲（目標是新南威爾斯大學）',
-        'jlpt-body'                        => 'The Japan Foundation, Japan Educational Exchanges and Services', // 国際交流基金、日本国際教育支援協会
+        'jlpt-body'                        => 'The Japan Foundation, Japan Educational Exchanges and Services',
+        'tocfl-body'                       => 'The Steering Committee for the Test Of Proficiency-Huayu (SC-TOP)',
         'english'                          => '英語',
         'japanese'                         => '日語',
-        'jlpt'                             => 'Japanese-Language Proficiency Test (JLPT)', // 日本語能力試験
+        'taiwanese'                        => '國語',
+        'jlpt'                             => '日本語能力試驗 (JLPT)',
+        'tocfl'                            => '華語文能力測驗 (TOCFL)',
         'future'                           => [
             'by-2026' => '未來 (至115年底)',
             'by-2027' => '未來 (至116年底)',
@@ -35,5 +38,11 @@ return [
             'by-2030' => '未來 (至119年底)',
             '2030s'   => '未來 (120年代)',
         ]
+    ],
+    'cefr'         => [
+        'title'         => 'CEFR 等級',
+        'language'      => '語言',
+        'test'          => '能力測驗',
+        'mother-tongue' => '母語'
     ]
 ];

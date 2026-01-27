@@ -24,9 +24,12 @@ return [
         'nanyang-technological-university' => 'มหาวิทยาลัยเทคโนโลยีนันยาง',
         'australia'                        => 'ออสเตรเลีย (เป้าหมาย: มหาวิทยาลัยนิวเซาท์เวลส์',
         'jlpt-body'                        => 'The Japan Foundation, Japan Educational Exchanges and Services',
+        'tocfl-body'                       => 'The Steering Committee for the Test Of Proficiency-Huayu (SC-TOP)',
         'english'                          => 'ภาษาอังกฤษ',
         'japanese'                         => 'ภาษาญี่ปุ่น',
+        'taiwanese'                        => 'ภาษาจีนไต้หวัน',
         'jlpt'                             => 'สอบวัดระดับภาษาญี่ปุ่น (JLPT)',
+        'tocfl'                            => 'สอบวัดระดับภาษาจีนไต้หวัน (TOCFL)',
         'future'                           => [
             'by-2026' => 'อนาคต (ภายใน 2569)',
             'by-2027' => 'อนาคต (ภายใน 2570)',
@@ -35,5 +38,11 @@ return [
             'by-2030' => 'อนาคต (ภายใน 2573)',
             '2030s'   => 'อนาคต (หลัง 2574)',
         ]
+    ],
+    'cefr'         => [
+        'title'         => 'ระดับ CEFR',
+        'language'      => 'ภาษา',
+        'test'          => 'การสอบวัดระดับภาษา',
+        'mother-tongue' => 'ภาษาแม่'
     ]
 ];

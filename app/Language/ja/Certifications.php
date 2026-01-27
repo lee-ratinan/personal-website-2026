@@ -24,9 +24,12 @@ return [
         'nanyang-technological-university' => '南洋理工大学',
         'australia'                        => 'オーストラリア (ニューサウスウェールズ大学を目指す)',
         'jlpt-body'                        => '国際交流基金、日本国際教育支援協会',
+        'tocfl-body'                       => 'The Steering Committee for the Test Of Proficiency-Huayu (SC-TOP)',
         'english'                          => '英語',
         'japanese'                         => '日本語',
+        'taiwanese'                        => '国語',
         'jlpt'                             => '日本語能力試験 (JLPT)',
+        'tocfl'                            => '華語文能力測験 (TOCFL)',
         'future'                           => [
             'by-2026' => '将来（2026年まで）',
             'by-2027' => '将来（2027年まで）',
@@ -35,5 +38,11 @@ return [
             'by-2030' => '将来（2030年まで）',
             '2030s'   => '将来（2030年代に）',
         ]
+    ],
+    'cefr'         => [
+        'title'         => 'CEFRレベル',
+        'language'      => '言語',
+        'test'          => '能力試験',
+        'mother-tongue' => '母語'
     ]
 ];

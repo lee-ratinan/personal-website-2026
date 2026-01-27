@@ -974,6 +974,14 @@ class Home extends BaseController
                                 lang('Certifications.data.future.by-2027'),
                                 ''
                             ]
+                        ],
+                        'taiwanese' => [
+                            [
+                                lang('certifications.data.tocfl'),
+                                lang('Certifications.data.tocfl-body'),// Steering Committee for the Test Of Proficiency-Huayu
+                                lang('Certifications.data.future.by-2030'),
+                                ''
+                            ]
                         ]
                     ]
                 ]

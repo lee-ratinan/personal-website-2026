@@ -809,175 +809,175 @@ class Home extends BaseController
      */
     public function certifications(): string
     {
-        $data = [
-            'locale'               => $this->request->getLocale(),
-            'academic' => [
-                [
-                    'โรงเรียนพระหฤทัย ดอนเมือง',
-                    'ประถมศึกษา',
-                    'กระทรวงศึกษาธิการ',
-                    '2002-03-29',
-                    'https://drive.google.com/file/d/10ViQHpZiz-kUiVnKbYXcPtvavwh3xyPo/view?usp=sharing'
+        $locale = $this->request->getLocale();
+        $data   = [
+            'locale'       => $locale,
+            'certificates' => [
+                'academic' => [
+                    'primary'   => [
+                        [
+                            lang('Certifications.data.primary'),
+                            lang('Certifications.data.ptd'),
+                            format_date(['2002-03-29'], $locale),
+                            'https://drive.google.com/file/d/10ViQHpZiz-kUiVnKbYXcPtvavwh3xyPo/view?usp=sharing'
+                        ],
+                    ],
+                    'secondary' => [
+                        [
+                            lang('Certifications.data.junior-high'),
+                            lang('Certifications.data.hwn'),
+                            format_date(['2005-03-31'], $locale),
+                            'https://drive.google.com/file/d/10QZRJ9KK4KeKAlpMDHA7BpYICmh3zRDt/view?usp=sharing',
+                        ],
+                        [
+                            lang('Certifications.data.senior-high'),
+                            lang('Certifications.data.hwn'),
+                            format_date(['2008-03-31'], $locale),
+                            'https://drive.google.com/file/d/10MLhTM_ojBrlIdXQH4PpFkZ9lE_i4-iF/view?usp=sharing'
+                        ],
+                    ],
+                    'tertiary'  => [
+                        [
+                            lang('Certifications.data.bsc'),
+                            lang('Certifications.data.thammasat-university'),
+                            format_date(['2012-03-31'], $locale),
+                            'https://drive.google.com/file/d/1roWRsOGKt-LQhI26jbHAhe037hIqBP0X/view?usp=sharing'
+                        ],
+                        [
+                            lang('Certifications.data.msc'),
+                            lang('Certifications.data.nanyang-technological-university'),
+                            format_date(['2015-07-01'], $locale),
+                            'https://drive.google.com/file/d/1oxnmnAjZW2qXWWwZNaObFYOf1zTdTOWg/view?usp=sharing'
+                        ],
+                        [
+                            lang('Certifications.data.mba'),
+                            lang('Certifications.data.australia'),
+                            lang('Certifications.data.future.by-2029'),
+                            ''
+                        ]
+                    ],
                 ],
-                [
-                    'โรงเรียนนวมินทราชินูทิศ หอวัง นนทบุรี',
-                    'มัธยมศึกษาตอนต้น',
-                    'กระทรวงศึกษาธิการ',
-                    '2005-03-31',
-                    'https://drive.google.com/file/d/10QZRJ9KK4KeKAlpMDHA7BpYICmh3zRDt/view?usp=sharing',
+                'professional' => [
+                    'AWS' => [
+                        [
+                            'AWS Fundamentals',
+                            'Coursera / AWS',
+                            format_date(['2024-08-18'], $locale),
+                            'https://drive.google.com/file/d/10rcXIhelLxR69IzRz9S7Xgy8esqtRO8-/view?usp=sharing'
+                        ],
+                        [
+                            'AWS Cloud Practitioner Essentials',
+                            'Coursera / AWS',
+                            format_date(['2024-09-09'], $locale),
+                            'https://drive.google.com/file/d/10xufFvuFwHpsnfkcH95oDEhpQpqi1ULs/view?usp=sharing'
+                        ],
+                    ],
+                    'Google' => [
+                        [
+                            'Google ProjectManagement',
+                            'Coursera / Google',
+                            format_date(['2024-09-06'], $locale),
+                            'https://drive.google.com/file/d/10awMV64SaHAWuO0upOjSokFS06CcOLn6/view?usp=sharing'
+                        ],
+                        [
+                            'Google AI Essentials',
+                            'Coursera / Google',
+                            format_date(['2024-09-12'], $locale),
+                            'https://drive.google.com/file/d/10jpbZByUaNmu0_s3WfM_zgr1Fb27zCLz/view?usp=sharing'
+                        ],
+                        [
+                            'Google UX Design',
+                            'Coursera / Google',
+                            format_date(['2024-09-24'], $locale),
+                            'https://drive.google.com/file/d/10ouk8JgocsF2Ja2-1rYETea8xWnhzccx/view?usp=sharing'
+                        ],
+                        [
+                            'Google Data Analytics',
+                            'Coursera / Google',
+                            format_date(['2024-10-10'], $locale),
+                            'https://drive.google.com/file/d/10lrFQfwTKMfPK3p3YzQHInBL7FQ3bLSd/view?usp=sharing'
+                        ],
+                    ],
+                    'Scrum Alliance' => [
+                        [
+                            'CSM (Certified ScrumMaster)',
+                            'Scrum Alliance',
+                            format_date(['2025-02-09'], $locale),
+                            'https://drive.google.com/file/d/1UX9LUM3Zub8dcc8AFOxrDhXmc20IDti5/view?usp=sharing'
+                        ],
+                    ],
+                    'Scrum.org'      => [
+                        [
+                            'PSM I (Professional Scrum Master)',
+                            'Scrum.org',
+                            format_date(['2024-10-02'], $locale),
+                            'https://drive.google.com/file/d/1-oclvFtaaWkdJh7IuQ5C7f5u1FW3vX7v/view?usp=sharing'
+                        ],
+                        [
+                            'PSM II (Professional Scrum Master)',
+                            'Scrum.org',
+                            format_date(['2024-11-17'], $locale),
+                            'https://drive.google.com/file/d/1-pHldM2W9NPDHUZPofa-KlFke5XHUaZx/view?usp=sharing'
+                        ],
+                        [
+                            'PSM III (Professional Scrum Master)',
+                            'Scrum.org',
+                            lang('Certifications.data.future.by-2030'),
+                            ''
+                        ],
+                        [
+                            'PSPO I (Professional Scrum Product Owner)',
+                            'Scrum.org',
+                            format_date(['2024-10-16'], $locale),
+                            'https://drive.google.com/file/d/1-pwoQ_ZiirRcddUA66Q4tv5YT_5Re-Nw/view?usp=sharing'
+                        ],
+                        [
+                            'PSPO II (Professional Scrum Product Owner)',
+                            'Scrum.org',
+                            format_date(['2025-02-05'], $locale),
+                            'https://drive.google.com/file/d/16RU0OgvyPdeLw8anCE8khn9z8UCKKhRu/view?usp=sharing'
+                        ],
+                        [
+                            'PSM III (Professional Scrum Master)',
+                            'Scrum.org',
+                            lang('Certifications.data.future.by-2030'),
+                            ''
+                        ],
+                    ],
                 ],
-                [
-                    'โรงเรียนนวมินทราชินูทิศ หอวัง นนทบุรี',
-                    'มัธยมศึกษาตอนปลาย',
-                    'กระทรวงศึกษาธิการ',
-                    '2008-03-31',
-                    'https://drive.google.com/file/d/10MLhTM_ojBrlIdXQH4PpFkZ9lE_i4-iF/view?usp=sharing'
-                ],
-                [
-                    'Bachelors Degree',
-                    'Bachelor of Science (Computer Science) First Class Honours',
-                    'Thammasat University',
-                    '2012-03-31',
-                    'https://drive.google.com/file/d/1roWRsOGKt-LQhI26jbHAhe037hIqBP0X/view?usp=sharing'
-                ],
-                [
-                    'Masters Degree',
-                    'Master of Science (Information Systems)',
-                    'Nanyang Technological University',
-                    '2015-07-01',
-                    'https://drive.google.com/file/d/1oxnmnAjZW2qXWWwZNaObFYOf1zTdTOWg/view?usp=sharing'
+                'others'       => [
+                    'languages' => [
+                        'english'  => [
+                            [
+                                'EF SET Certificate: C2 Proficient',
+                                'Education First (EF)',
+                                format_date(['2025-08-08'], $locale),
+                                'https://drive.google.com/file/d/18piWVwM1u3UT2zCmABG8uasEyYcuMHdv/view?usp=sharing',
+                            ],
+                        ],
+                        'japanese' => [
+                            [
+                                '日本語ビギナーコース',
+                                'Tomo Japanese Language School',
+                                format_date(['2025-09-22'], $locale),
+                                'https://drive.google.com/file/d/1lD7jXK5PMW8M7DS0BmxXCS-aqq_X0GTA/view?usp=sharing'
+                            ],
+                            [
+                                lang('certifications.data.jlpt') . ' N5',
+                                lang('Certifications.data.jlpt-body'),
+                                lang('Certifications.data.future.by-2026'),
+                                ''
+                            ],
+                            [
+                                lang('certifications.data.jlpt') . ' N4',
+                                lang('Certifications.data.jlpt-body'),
+                                lang('Certifications.data.future.by-2027'),
+                                ''
+                            ]
+                        ]
+                    ]
                 ]
-            ],
-            'professional' => [
-                [
-                    'AWS Fundamentals',
-                    '',
-                    'Coursera / AWS',
-                    '2024-08-18',
-                    'https://drive.google.com/file/d/10rcXIhelLxR69IzRz9S7Xgy8esqtRO8-/view?usp=sharing'
-                ],
-                [
-                    'AWS Cloud Practitioner Essentials',
-                    '',
-                    'Coursera / AWS',
-                    '2024-09-09',
-                    'https://drive.google.com/file/d/10xufFvuFwHpsnfkcH95oDEhpQpqi1ULs/view?usp=sharing'
-                ],
-                [
-                    'Google ProjectManagement',
-                    '',
-                    'Coursera / Google',
-                    '2024-09-06',
-                    'https://drive.google.com/file/d/10awMV64SaHAWuO0upOjSokFS06CcOLn6/view?usp=sharing'
-                ],
-                [
-                    'Google AI Essentials',
-                    '',
-                    'Coursera / Google',
-                    '2024-09-12',
-                    'https://drive.google.com/file/d/10jpbZByUaNmu0_s3WfM_zgr1Fb27zCLz/view?usp=sharing'
-                ],
-                [
-                    'Google UX Design',
-                    '',
-                    'Coursera / Google',
-                    '2024-09-24',
-                    'https://drive.google.com/file/d/10ouk8JgocsF2Ja2-1rYETea8xWnhzccx/view?usp=sharing'
-                ],
-                [
-                    'Google Data Analytics',
-                    '',
-                    'Coursera / Google',
-                    '2024-10-10',
-                    'https://drive.google.com/file/d/10lrFQfwTKMfPK3p3YzQHInBL7FQ3bLSd/view?usp=sharing'
-                ],
-                [
-                    'Scrum Master',
-                    'CSM (Certified ScrumMaster)',
-                    'Scrum Alliance',
-                    '2025-02-09',
-                    'https://drive.google.com/file/d/1UX9LUM3Zub8dcc8AFOxrDhXmc20IDti5/view?usp=sharing'
-                ],
-                [
-                    'Scrum Master',
-                    'PSM I (Professional Scrum Master)',
-                    'Scrum.org',
-                    '2024-10-02',
-                    'https://drive.google.com/file/d/1-oclvFtaaWkdJh7IuQ5C7f5u1FW3vX7v/view?usp=sharing'
-                ],
-                [
-                    'Scrum Master',
-                    'PSM II (Professional Scrum Master)',
-                    'Scrum.org',
-                    '2024-11-17',
-                    'https://drive.google.com/file/d/1-pHldM2W9NPDHUZPofa-KlFke5XHUaZx/view?usp=sharing'
-                ],
-                [
-                    'Product Owner',
-                    'PSPO I (Professional Scrum Product Owner)',
-                    'Scrum.org',
-                    '2024-10-16',
-                    'https://drive.google.com/file/d/1-pwoQ_ZiirRcddUA66Q4tv5YT_5Re-Nw/view?usp=sharing'
-                ],
-                [
-                    'Product Owner',
-                    'PSPO II (Professional Scrum Product Owner)',
-                    'Scrum.org',
-                    '2025-02-05',
-                    'https://drive.google.com/file/d/16RU0OgvyPdeLw8anCE8khn9z8UCKKhRu/view?usp=sharing'
-                ],
-            ],
-            'others' => [
-                [
-                    'EF SET Certificate',
-                    'C2 Proficient',
-                    'Education First',
-                    '2025-08-08',
-                    'https://drive.google.com/file/d/18piWVwM1u3UT2zCmABG8uasEyYcuMHdv/view?usp=sharing',
-                ],
-                [
-                    '日本語ビギナーコース',
-                    '',
-                    'Tomo Japanese Language School',
-                    '2025-09-22',
-                    'https://drive.google.com/file/d/1lD7jXK5PMW8M7DS0BmxXCS-aqq_X0GTA/view?usp=sharing'
-                ],
-                [
-                    'JLPT',
-                    'N5 (CEFR: A1 [80~180])',
-                    '国際交流基金、日本国際教育支援協会',
-                    '',
-                    ''
-                ],
-                [
-                    'JLPT',
-                    'N4 (CEFR: A2 [90~180])',
-                    '国際交流基金、日本国際教育支援協会',
-                    '',
-                    ''
-                ],
-                [
-                    'JLPT',
-                    'N3 (CEFR: A2 [95~103], B1 [104~180])',
-                    '国際交流基金、日本国際教育支援協会',
-                    '',
-                    ''
-                ],
-                [
-                    'JLPT',
-                    'N2 (CEFR: B1 [90~111], B2 [112~180])',
-                    '国際交流基金、日本国際教育支援協会',
-                    '',
-                    ''
-                ],
-                [
-                    'JLPT',
-                    'N1 (CEFR: B2 [100~141], C1 [142~180])',
-                    '国際交流基金、日本国際教育支援協会',
-                    '',
-                    ''
-                ]
-            ],
+            ]
         ];
         return view('certifications', $data);
     }

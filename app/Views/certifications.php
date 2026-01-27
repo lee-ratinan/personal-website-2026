@@ -95,76 +95,92 @@ $experience_years = date('Y') - 2012;
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row gy-5">
                 <div class="col" data-aos="zoom-in" data-aos-delay="150">
-                    <h3><?= lang('Certifications.academic') ?></h3>
-                    <div class="table-responsive">
-                        <table class="table table-hover table-sm">
+                    <div class="table-responsive mb-5">
+                        <table class="table table-dark table-striped table-hover table-sm">
                             <thead>
                             <tr>
-                                <th colspan="2"><?= lang('Certifications.table.title') ?></th>
-                                <th><?= lang('Certifications.table.certifying-body') ?></th>
-                                <th><?= lang('Certifications.table.date') ?></th>
-                                <th><?= lang('Certifications.table.link') ?></th>
+                                <th style="min-width:400px" colspan="3"><?= lang('Certifications.table.title') ?></th>
+                                <th style="min-width:150px"><?= lang('Certifications.table.date') ?></th>
+                                <th style="min-width:350px"><?= lang('Certifications.table.certifying-body') ?></th>
                             </tr>
                             </thead>
                             <tbody>
-                            <?php foreach ($academic as $row) : ?>
                                 <tr>
-                                    <td><?= $row[0] ?></td>
-                                    <td><?= $row[1] ?></td>
-                                    <td><?= $row[2] ?></td>
-                                    <td><?= (empty($row[3]) ? '-' : format_date([$row[3]], $locale)) ?></td>
-                                    <td><?= (empty($row[4]) ? '-' : '<a href="' . $row[4] . '" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a>') ?></td>
+                                    <td colspan="5"><b><?= lang('Certifications.academic') ?></b></td>
                                 </tr>
-                            <?php endforeach; ?>
-                            </tbody>
-                        </table>
-                    </div>
-                    <h3><?= lang('Certifications.professional') ?></h3>
-                    <div class="table-responsive">
-                        <table class="table table-hover table-sm">
-                            <thead>
-                            <tr>
-                                <th colspan="2"><?= lang('Certifications.table.title') ?></th>
-                                <th><?= lang('Certifications.table.certifying-body') ?></th>
-                                <th><?= lang('Certifications.table.date') ?></th>
-                                <th><?= lang('Certifications.table.link') ?></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <?php foreach ($professional as $row) : ?>
-                            <tr>
-                                <td><?= $row[0] ?></td>
-                                <td><?= $row[1] ?></td>
-                                <td><?= $row[2] ?></td>
-                                <td><?= (empty($row[3]) ? '-' : format_date([$row[3]], $locale)) ?></td>
-                                <td><?= (empty($row[4]) ? '-' : '<a href="' . $row[4] . '" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a>') ?></td>
-                            </tr>
-                            <?php endforeach; ?>
-                            </tbody>
-                        </table>
-                    </div>
-                    <h3><?= lang('Certifications.others') ?></h3>
-                    <div class="table-responsive">
-                        <table class="table table-hover table-sm">
-                            <thead>
-                            <tr>
-                                <th colspan="2"><?= lang('Certifications.table.title') ?></th>
-                                <th><?= lang('Certifications.table.certifying-body') ?></th>
-                                <th><?= lang('Certifications.table.date') ?></th>
-                                <th><?= lang('Certifications.table.link') ?></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <?php foreach ($others as $row) : ?>
+                                <?php foreach ($certificates['academic'] as $level => $records) : ?>
+                                    <?php foreach ($records as $i => $row) : ?>
+                                        <tr>
+                                            <?php if (0 == $i) : ?>
+                                            <td rowspan="<?= count($records) ?>"><?= lang('Certifications.data.' . $level) ?></td>
+                                            <?php endif; ?>
+                                            <td><?= (empty($row[3]) ? '-' : '<a class="btn btn-sm btn-warning" href="' . $row[3] . '" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a>') ?></td>
+                                            <td>
+                                                <?= (empty($row[3]) ? '<i class="bi bi-x-circle text-danger"></i>' : '<i class="bi bi-check2-circle text-success"></i>') ?>
+                                                <?= $row[0] ?>
+                                            </td>
+                                            <td><?= $row[2] ?></td>
+                                            <td><?= $row[1] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                <?php endforeach; ?>
                                 <tr>
-                                    <td><?= $row[0] ?></td>
-                                    <td><?= $row[1] ?></td>
-                                    <td><?= $row[2] ?></td>
-                                    <td><?= (empty($row[3]) ? '-' : format_date([$row[3]], $locale)) ?></td>
-                                    <td><?= (empty($row[4]) ? '-' : '<a href="' . $row[4] . '" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a>') ?></td>
+                                    <td colspan="5"><b><?= lang('Certifications.professional') ?></b></td>
                                 </tr>
-                            <?php endforeach; ?>
-                            </tbody>
+                                <?php foreach ($certificates['professional'] as $group => $records) : ?>
+                                    <?php foreach ($records as $i => $row) : ?>
+                                        <tr>
+                                            <?php if (0 == $i) : ?>
+                                                <td rowspan="<?= count($records) ?>"><?= $group ?></td>
+                                            <?php endif; ?>
+                                            <td><?= (empty($row[3]) ? '-' : '<a class="btn btn-sm btn-primary" href="' . $row[3] . '" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a>') ?></td>
+                                            <td>
+                                                <?= (empty($row[3]) ? '<i class="bi bi-x-circle text-danger"></i>' : '<i class="bi bi-check2-circle text-success"></i>') ?>
+                                                <?= $row[0] ?>
+                                            </td>
+                                            <td><?= $row[2] ?></td>
+                                            <td><?= $row[1] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                <?php endforeach; ?>
+                                <tr>
+                                    <td colspan="5"><b><?= lang('Certifications.others') ?></b></td>
+                                </tr>
+                                <?php foreach ($certificates['others']['languages'] as $lang => $records) : ?>
+                                    <?php foreach ($records as $i => $row) : ?>
+                                        <tr>
+                                            <?php if (0 == $i) : ?>
+                                                <td rowspan="<?= count($records) ?>"><?= lang('Certifications.data.' . $lang) ?></td>
+                                            <?php endif; ?>
+                                            <td><?= (empty($row[3]) ? '-' : '<a class="btn btn-sm btn-info" href="' . $row[3] . '" target="_blank"><i class="bi bi-file-earmark-pdf"></i></a>') ?></td>
+                                            <td>
+                                                <?= (empty($row[3]) ? '<i class="bi bi-x-circle text-danger"></i>' : '<i class="bi bi-check2-circle text-success"></i>') ?>
+                                                <?= $row[0] ?>
+                                            </td>
+                                            <td><?= $row[2] ?></td>
+                                            <td><?= $row[1] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                <?php endforeach; ?>
+
+
+
+
+
+
+<!--                            --><?php //foreach ($certificates as $key => $records) : ?>
+<!--
+<!--                                --><?php //foreach ($records as $row) : ?>
+<!--                                    <tr>-->
+
+<!--                                        <td>--><?php //= $row[0] ?><!--</td>-->
+<!--                                        <td>--><?php //= $row[1] ?><!--</td>-->
+<!--                                        <td>--><?php //= $row[2] ?><!--</td>-->
+<!--                                        <td>--><?php //= $row[3] ?><!--</td>-->
+<!--                                    </tr>-->
+<!--                                --><?php //endforeach; ?>
+<!--                            --><?php //endforeach; ?>
+<!--                            </tbody>-->
                         </table>
                     </div>
                 </div>

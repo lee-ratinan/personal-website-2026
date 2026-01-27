@@ -22,7 +22,7 @@ return [
         'hwn'                              => 'โรงเรียนนวมินทราชินูทิศ หอวัง นนทบุรี',
         'thammasat-university'             => 'มหาวิทยาลัยธรรมศาสตร์',
         'nanyang-technological-university' => 'มหาวิทยาลัยเทคโนโลยีนันยาง',
-        'australia'                        => 'ออสเตรเลีย (เป้าหมาย: มหาวิทยาลัยนิวเซาท์เวลส์',
+        'australia'                        => 'ออสเตรเลีย (เป้าหมาย: มหาวิทยาลัยนิวเซาท์เวลส์)',
         'jlpt-body'                        => 'The Japan Foundation, Japan Educational Exchanges and Services',
         'tocfl-body'                       => 'The Steering Committee for the Test Of Proficiency-Huayu (SC-TOP)',
         'english'                          => 'ภาษาอังกฤษ',

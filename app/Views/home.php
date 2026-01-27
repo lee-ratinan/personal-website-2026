@@ -63,6 +63,7 @@ $experience_years = date('Y') - 2012;
                 <li><a href="#hero" class="active"><?= lang('Home.sections.home.title') ?></a></li>
                 <li><a href="#about"><?= lang('Home.sections.about.title') ?></a></li>
                 <li><a href="#resume"><?= lang('Home.sections.resume.title') ?></a></li>
+                <li><a href="<?= base_url($locale . '/certifications') ?>"><?= lang('Certifications.title') ?></a></li>
                 <li><a href="#services"><?= lang('Home.sections.services.title') ?></a></li>
                 <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
                 <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>
@@ -640,6 +641,7 @@ $experience_years = date('Y') - 2012;
                     <li><a href="#hero"><?= lang('Home.sections.home.title') ?></a></li>
                     <li><a href="#about"><?= lang('Home.sections.about.title') ?></a></li>
                     <li><a href="#resume"><?= lang('Home.sections.resume.title') ?></a></li>
+                    <li><a href="<?= base_url($locale . '/certifications') ?>"><?= lang('Certifications.title') ?></a></li>
                     <li><a href="#services"><?= lang('Home.sections.services.title') ?></a></li>
                     <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
                     <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>

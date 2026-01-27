@@ -963,13 +963,13 @@ class Home extends BaseController
                                 'https://drive.google.com/file/d/1lD7jXK5PMW8M7DS0BmxXCS-aqq_X0GTA/view?usp=sharing'
                             ],
                             [
-                                lang('certifications.data.jlpt') . ' N5',
+                                lang('Certifications.data.jlpt') . ' N5',
                                 lang('Certifications.data.jlpt-body'),
                                 lang('Certifications.data.future.by-2026'),
                                 ''
                             ],
                             [
-                                lang('certifications.data.jlpt') . ' N4',
+                                lang('Certifications.data.jlpt') . ' N4',
                                 lang('Certifications.data.jlpt-body'),
                                 lang('Certifications.data.future.by-2027'),
                                 ''
@@ -977,7 +977,7 @@ class Home extends BaseController
                         ],
                         'taiwanese' => [
                             [
-                                lang('certifications.data.tocfl'),
+                                lang('Certifications.data.tocfl'),
                                 lang('Certifications.data.tocfl-body'),// Steering Committee for the Test Of Proficiency-Huayu
                                 lang('Certifications.data.future.by-2030'),
                                 ''

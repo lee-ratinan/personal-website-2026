@@ -2,7 +2,7 @@
 return [
     'system'   => [
         'website-name'    => 'เว็บไซต์ทางการของรตินันท์ ลี',
-        'site-name-head'  => 'รตินันท์<span style="color:#080">ลี</span>',
+        'site-name-head'  => 'รตินันท์<span style="color:#ff6a00">ลี</span> <sup style="color:#ff6a00;font-size:0.5em">เลือกพรรคประชาชน</sup>',
         'footer-msg'      => 'เว็บนี้เป็นเว็บส่วนตัวของ นัท รตินันท์ วิศวกรซอฟต์แวร์มืออาชีพและหัวหน้าทีมเทคโนโลยีในสิงคโปร์และกรุงเทพฯ',
         'useful-links'    => 'ลิงก์สำคัญ',
         'change-language' => 'เปลี่ยนภาษา',

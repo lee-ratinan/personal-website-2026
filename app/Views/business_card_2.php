@@ -45,8 +45,8 @@
         body {
         <?php if (in_array($locale, ['en', 'vi', 'id', 'es', 'art-x-navi'])) : ?> font-family: "Noto Serif", serif;
         <?php elseif ('th' == $locale) : ?> font-family: "Noto Serif Thai", serif;
-        <?php elseif ('zh-TW' == $locale) : ?> font-family: "Noto Serif TC", serif;
-        <?php elseif ('ja' == $locale) : ?> font-family: "Noto Serif JP", serif;
+        <?php elseif ('zh-TW' == $locale) : ?> font-family: "Noto Serif TC", serif; writing-mode: vertical-rl; text-orientation: mixed;
+        <?php elseif ('ja' == $locale) : ?> font-family: "Noto Serif JP", serif; writing-mode: vertical-rl; text-orientation: mixed;
         <?php elseif ('en-Shaw' == $locale) : ?> font-family: "Noto Sans Shavian", serif;
         <?php elseif ('ko' == $locale) : ?> font-family: "Noto Serif KR", serif;
         <?php endif; ?>
@@ -59,24 +59,44 @@
             font-size: 0.75rem;
             border-radius: 0.175rem;
         }
+        .ja .upright, .zh-TW .upright {text-orientation: upright !important;}
+        .btn-outline-mediator {color: #30a474;border: #30a474 1px solid;}
+        .btn-outline-mediator:hover {background-color: #30a474;border: #30a474 1px solid;color: #fff;}
+        .btn-outline-ravenclaw {color: #265ca9;border: #265ca9 1px solid;}
+        .btn-outline-ravenclaw:hover {background-color: #265ca9;border: #265ca9 1px solid;color: #fff;}
+        .btn-outline-athena {color: #f8900b;border: #f8900b 1px solid;}
+        .btn-outline-athena:hover {background-color: #f8900b;border: #f8900b 1px solid;color: #fff;}
+        <?php if (in_array($locale, ['ja', 'zh-TW'])) : ?>
+        a.btn {margin-bottom: .5rem; margin-left: .5rem;}
+        a.btn-xs {padding: 0.5rem 0.15rem;}
+        a.btn-sm {padding: 0.5rem 0.25rem;}
+        <?php else: ?>
+        a.btn {margin-right: .5rem; margin-bottom: .5rem;}
+        <?php endif; ?>
     </style>
 </head>
-<body>
+<body class="<?= $locale ?>">
 <div class="container-fluid">
     <div class="row">
         <div class="col px-3 py-5" style="width:100%;max-width:800px;margin:0 auto;">
             <h1><?= $data['name'] ?></h1>
-            <h2 class="mb-5"><?= $data['tagline'] ?></h2>
-            <a href="<?= base_url() ?>" class="btn btn-outline-success btn-sm me-2 mb-2">
+            <h2 class="mb-0"><?= $data['tagline'] ?></h2>
+            <div class="mb-5">
+                <a class="btn btn-xs btn-outline-mediator rounded-pill" href="https://www.16personalities.com/profiles/fb036647ead1f" target="_blank">❤️ MBTI: INFP-T (Mediator)</a>
+                <a class="btn btn-xs btn-outline-ravenclaw rounded-pill" href="https://www.harrypotter.com/profile/0757090d-e2ff-430f-a1d3-37b6eb6006d0" target="_blank">🪄 Hogwarts House: Ravenclaw</a>
+                <a class="btn btn-xs btn-outline-athena rounded-pill" href="#">🦉 Camp Half-Blood: Athena</a>
+                <a class="btn btn-xs btn-outline-danger rounded-pill" href="#">🧙‍♂️Middle Earth: Wizard</a>
+            </div>
+            <a href="<?= base_url() ?>" class="btn btn-outline-success btn-sm">
                 <i class="fa-solid fa-globe-asia"></i> lee.ratinan.com
             </a>
-            <a href="mailto:lee@ratinan.com" class="btn btn-outline-success btn-sm me-2 mb-2">
+            <a href="mailto:lee@ratinan.com" class="btn btn-outline-success btn-sm">
                 <i class="fa-solid fa-envelope"></i> lee@ratinan.com
             </a>
             <div class="row">
                 <div class="col-12 col-md-10 col-lg-8">
                     <?php foreach ($links as $class => $link) : ?>
-                        <a href="<?= $link ?>" target="_blank" class="btn btn-outline-success btn-sm me-2 mb-2">
+                        <a href="<?= $link ?>" target="_blank" class="btn btn-outline-success btn-sm">
                             <i class="fa-brands fa-<?= $class ?>"></i>
                             <?= $translations[$locale][$class] ?? $translations['en'][$class] ?>
                         </a>
@@ -84,7 +104,7 @@
                 </div>
                 <div class="col-12 col-md-10 col-lg-8">
                     <?php foreach ($professional_profiles as $name => $link) : ?>
-                        <a href="<?= $link ?>" target="_blank" class="btn btn-outline-success btn-xs me-2 mb-2"><?= $name ?></a>
+                        <a href="<?= $link ?>" target="_blank" class="btn btn-outline-success btn-xs"><?= $name ?></a>
                     <?php endforeach; ?>
                 </div>
             </div>

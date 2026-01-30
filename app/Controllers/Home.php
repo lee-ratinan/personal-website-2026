@@ -1058,7 +1058,7 @@ class Home extends BaseController
             'ja'         => [
                 'business-card'  => '名刺',
                 'name'           => '力川エイキン（ラティナン・リー）',
-                'tagline'        => '理学修士（MSc）、PSM™ I-II、PSPO™ I-II',
+                'tagline'        => '<span class="upright">理学修士（MSc）、PSM 1〜2、PSPO 1〜2</span>',
                 'education'      => '学歴',
                 'educations'     => [
                     '情報システム理学修士<br>南洋理工大学 ウィー・キム・ウィー情報コミュニケーション学部',
@@ -1066,23 +1066,23 @@ class Home extends BaseController
                 ],
                 'certification'  => '認定資格',
                 'certifications' => [
-                    'PSM I、II（プロフェッショナルスクラムマスター）',
-                    'PSPO I、II（プロフェッショナルスクラムプロダクトオーナー）',
-                    'CSM（認定スクラムマスター）',
-                    'グーグル AI エッセンシャル'
+                    '<span class="upright">PSM 1〜2</span>（プロフェッショナルスクラムマスター）',
+                    '<span class="upright">PSPO 1〜2</span>（プロフェッショナルスクラムプロダクトオーナー）',
+                    '<span class="upright">CSM</span>（認定スクラムマスター）',
+                    'グーグル <span class="upright">AI</span> エッセンシャル'
                 ],
                 'language'       => '語学能力',
                 'languages'      => [
-                    '英語：CEFR C2 レベル（熟達）',
+                    '英語：<span class="upright">CEFR C2</span> レベル（熟達）',
                     'タイ語：母語',
-                    '日本語：初級（2026年12月に JLPT N5 取得予定）',
-                    '台湾華語：初級（CEFR A1 相当）'
+                    '日本語：初級（<span class="upright">2026年12月に JLPT N5</span> 取得予定）',
+                    '台湾華語：初級（<span class="upright">CEFR A1</span> 相当）'
                 ]
             ],
             'zh-TW'      => [
                 'business-card'  => '名片',
                 'name'           => '李榮欽',
-                'tagline'        => '理學碩士、PSM™ I–II、PSPO™ I–II',
+                'tagline'        => '<span class="upright">理學碩士、PSM 1，2、PSPO 1，2</span>',
                 'education'      => '學歷',
                 'educations'     => [
                     '資訊系統理學碩士<br>南洋理工大學・黃金輝傳播與信息學院',
@@ -1090,17 +1090,17 @@ class Home extends BaseController
                 ],
                 'certification'  => '認證',
                 'certifications' => [
-                    'PSM I, II (Professional Scrum Master™)',
-                    'PSPO I, II (Professional Scrum product Owner™)',
-                    'CSM (Certified Scrum Master)',
+                    '<span class="upright">PSM 1，2</span> (Professional Scrum Master)',
+                    '<span class="upright">PSPO 1，2</span> (Professional Scrum product Owner)',
+                    '<span class="upright">CSM</span> (Certified Scrum Master)',
                     'Google AI Essentials'
                 ],
                 'language'       => '語言能力',
                 'languages'      => [
-                    '英語：CEFR C2 等級（精通）',
+                    '英語：<span class="upright">CEFR C2</span> 等級（精通）',
                     '泰語：母語',
-                    '日語：初級（預計於 2026年12月取得 JLPT N5）',
-                    '國語：初級（約 CEFR A1 等級）'
+                    '日語：初級（預計於 <span class="upright">2026年12月</span>取得 <span class="upright">JLPT N5</span>）',
+                    '國語：初級（約 <span class="upright">CEFR A1</span> 等級）'
                 ]
             ],
             'en-Shaw'    => [
@@ -1325,7 +1325,7 @@ class Home extends BaseController
                 'Credly'         => 'https://www.credly.com/users/ratinanlee',
                 'Scrum Alliance' => 'https://www.scrumalliance.org/members/1729850',
                 'Fastwork'       => 'https://fastwork.co/user/ratinanlee',
-                'Upwork'         => 'https://www.upwork.com/freelancers/~01b5886610b13a2bb1',
+//                'Upwork'         => 'https://www.upwork.com/freelancers/~01b5886610b13a2bb1',
             ]
         ];
         return view('business_card_2', $data);

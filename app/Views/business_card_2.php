@@ -45,8 +45,8 @@
         body {
         <?php if (in_array($locale, ['en', 'vi', 'id', 'es', 'art-x-navi'])) : ?> font-family: "Noto Serif", serif;
         <?php elseif ('th' == $locale) : ?> font-family: "Noto Serif Thai", serif;
-        <?php elseif ('zh-TW' == $locale) : ?> font-family: "Noto Serif TC", serif; writing-mode: vertical-rl; text-orientation: mixed;
-        <?php elseif ('ja' == $locale) : ?> font-family: "Noto Serif JP", serif; writing-mode: vertical-rl; text-orientation: mixed;
+        <?php elseif ('zh-TW' == $locale) : ?> font-family: "Noto Serif TC", serif;
+        <?php elseif ('ja' == $locale) : ?> font-family: "Noto Serif JP", serif;
         <?php elseif ('en-Shaw' == $locale) : ?> font-family: "Noto Sans Shavian", serif;
         <?php elseif ('ko' == $locale) : ?> font-family: "Noto Serif KR", serif;
         <?php endif; ?>
@@ -66,13 +66,7 @@
         .btn-outline-ravenclaw:hover {background-color: #265ca9;border: #265ca9 1px solid;color: #fff;}
         .btn-outline-athena {color: #f8900b;border: #f8900b 1px solid;}
         .btn-outline-athena:hover {background-color: #f8900b;border: #f8900b 1px solid;color: #fff;}
-        <?php if (in_array($locale, ['ja', 'zh-TW'])) : ?>
-        a.btn {margin-bottom: .5rem; margin-left: .5rem;}
-        a.btn-xs {padding: 0.5rem 0.15rem;}
-        a.btn-sm {padding: 0.5rem 0.25rem;}
-        <?php else: ?>
         a.btn {margin-right: .5rem; margin-bottom: .5rem;}
-        <?php endif; ?>
     </style>
 </head>
 <body class="<?= $locale ?>">

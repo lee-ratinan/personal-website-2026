@@ -1010,7 +1010,7 @@ class Home extends BaseController
             'en'         => [
                 'business-card'  => 'Business Card',
                 'name'           => 'RATINAN “NAT” LEE',
-                'tagline'        => 'MSc, PSM™ I-II, PSPO™ I-II',
+                'tagline'        => 'MSc, PSM™ I-II, PSPO™ I-II<br/><small>Singapore Permanent Residence (PR)</small>',
                 'education'      => 'Education',
                 'educations'     => [
                     'Master of Science in Information Systems<br>Wee Kim Wee School of Communication and Information, Nanyang Technological University',
@@ -1040,15 +1040,15 @@ class Home extends BaseController
                         'value' => '🔵 Ravenclaw'
                     ],
                     'half-blood' => [
-                        'label' => 'Camp Half-Blood',
-                        'value' => 'son of Athena'
+                        'label' => 'Camp Half-Blood Cabin',
+                        'value' => 'Athena'
                     ]
                 ]
             ],
             'th'         => [
                 'business-card'  => 'นามบัตร',
                 'name'           => 'รตินันท์ “นัท” ลีลางามวงศา',
-                'tagline'        => 'วท.ม., PSM™ I-II, PSPO™ I-II',
+                'tagline'        => 'วท.ม., PSM™ I-II, PSPO™ I-II<br/><small>ผู้อาศัยถาวรในสิงคโปร์ (Singapore PR)</small>',
                 'education'      => 'การศึกษา',
                 'educations'     => [
                     'วิทยาศาสตรมหาบัณฑิต สาขาระบบสารสนเทศ<br>วิทยาลัยการสื่อสารและสารสนเทศวีคิมวี มหาวิทยาลัยเทคโนโลยีนันยาง',
@@ -1192,7 +1192,7 @@ class Home extends BaseController
                         'value' => '🔵 𐑮𐑱𐑝𐑩𐑯𐑒𐑤𐑷'
                     ],
                     'half-blood' => [
-                        'label' => '𐑒𐑨𐑥𐑐 𐑣𐑨𐑓-𐑚𐑤𐑳𐑛',
+                        'label' => '𐑒𐑨𐑥𐑐 𐑣𐑨𐑓-𐑚𐑤𐑳𐑛 𐑒𐑨𐑚𐑦𐑯',
                         'value' => '𐑩𐑔𐑰𐑯𐑩'
                     ]
                 ]
@@ -1264,11 +1264,11 @@ class Home extends BaseController
                         'value' => 'INFP-T (Mediator)'
                     ],
                     'hogwarts'   => [
-                        'label' => '🪄 Hogwarts',
+                        'label' => '🪄 Asrama Hogwarts',
                         'value' => '🔵 Ravenclaw'
                     ],
                     'half-blood' => [
-                        'label' => 'Camp Half-Blood',
+                        'label' => 'Kabin Camp Half-Blood',
                         'value' => 'Athena'
                     ]
                 ]
@@ -1293,7 +1293,7 @@ class Home extends BaseController
                 'languages'      => [
                     'Tiếng Anh: Trình độ CEFR C2 (Thành thạo)',
                     'Tiếng Thái: Tiếng mẹ đẻ',
-                    'Tiếng Nhật: Trình độ sơ cấp (dự kiến ​​đạt JLPT N5 vào tháng 12 năm 2026)',
+                    'Tiếng Nhật: Trình độ sơ cấp (dự kiến đạt JLPT N5 vào tháng 12 năm 2026)',
                     'Tiếng Đài Loan (tiếng Quan thoại): Trình độ sơ cấp (khoảng trình độ CEFR A1)'
                 ],
                 'badges'         => [
@@ -1302,11 +1302,11 @@ class Home extends BaseController
                         'value' => 'INFP-T (Mediator)'
                     ],
                     'hogwarts'   => [
-                        'label' => '🪄 Hogwarts',
+                        'label' => '🪄 Nhà Hogwarts',
                         'value' => '🔵 Ravenclaw'
                     ],
                     'half-blood' => [
-                        'label' => 'Camp Half-Blood',
+                        'label' => 'Trại Half-Blood',
                         'value' => 'Athena'
                     ]
                 ]
@@ -1337,15 +1337,15 @@ class Home extends BaseController
                 'badges'         => [
                     'mbti'       => [
                         'label' => '❤️ MBTI',
-                        'value' => 'INFP-T (Mediator)'
+                        'value' => 'INFP-T (ຜູ້ໄກ່ເກ່ຍ)'
                     ],
                     'hogwarts'   => [
-                        'label' => '🪄 Hogwarts',
-                        'value' => '🔵 Ravenclaw'
+                        'label' => '🪄 ເຮືອນຮອກວອດສ໌',
+                        'value' => '🔵 ເຣເວນຄລໍ'
                     ],
                     'half-blood' => [
-                        'label' => 'Camp Half-Blood',
-                        'value' => 'Athena'
+                        'label' => 'ເຮືອນພັກເຄິ່ງເລືອດ',
+                        'value' => 'ອາທີນາ'
                     ]
                 ]
             ],
@@ -1375,15 +1375,15 @@ class Home extends BaseController
                 'badges'         => [
                     'mbti'       => [
                         'label' => '❤️ MBTI',
-                        'value' => 'INFP-T (Mediator)'
+                        'value' => 'INFP-T (Mediador)'
                     ],
                     'hogwarts'   => [
-                        'label' => '🪄 Hogwarts',
+                        'label' => '🪄 Casa de Hogwarts',
                         'value' => '🔵 Ravenclaw'
                     ],
                     'half-blood' => [
-                        'label' => 'Camp Half-Blood',
-                        'value' => 'Athena'
+                        'label' => 'Cabaña del Campamento Mestizo',
+                        'value' => 'Atenea'
                     ]
                 ]
             ],

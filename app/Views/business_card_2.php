@@ -74,7 +74,7 @@
     <div class="row">
         <div class="col px-3 py-5" style="width:100%;max-width:800px;margin:0 auto;">
             <h1><?= $data['name'] ?></h1>
-            <h2 class="mb-0"><?= $data['tagline'] ?></h2>
+            <h2 class="mb-2"><?= $data['tagline'] ?></h2>
             <div class="mb-5">
                 <?php foreach ($data['badges'] as $badge) : ?>
                     <a class="btn btn-xs btn-outline-athena rounded-pill" href="#"><?= $badge['label'] ?>: <?= $badge['value'] ?></a>

@@ -1043,6 +1043,12 @@ class Home extends BaseController
                         'label' => 'Camp Half-Blood Cabin',
                         'value' => 'Athena'
                     ]
+                ],
+                'resume' => [
+                    'title'           => 'Resume',
+                    'tech-lead'       => 'Technical Lead',
+                    'project-manager' => 'Project Manager',
+                    'scrum-master'    => 'Scrum Master',
                 ]
             ],
             'th'         => [
@@ -1081,6 +1087,12 @@ class Home extends BaseController
                         'label' => 'บ้านพักค่ายฮาล์ฟบลัด',
                         'value' => 'อาธีน่า'
                     ]
+                ],
+                'resume' => [
+                    'title'           => 'เรซูเม่',
+                    'tech-lead'       => 'หัวหน้าทีมเทคนิค',
+                    'project-manager' => 'ผู้จัดการโครงการ',
+                    'scrum-master'    => 'สกรัมมาสเตอร์',
                 ]
             ],
             'ja'         => [
@@ -1119,6 +1131,12 @@ class Home extends BaseController
                         'label' => 'ハーフ訓練所のキャビン',
                         'value' => 'アテナ'
                     ]
+                ],
+                'resume' => [
+                    'title'           => '履歴書',
+                    'tech-lead'       => 'テクニカルリード',
+                    'project-manager' => 'プロジェクトマネージャー',
+                    'scrum-master'    => 'スクラムマスター',
                 ]
             ],
             'zh-TW'      => [
@@ -1157,6 +1175,12 @@ class Home extends BaseController
                         'label' => '混血營小屋',
                         'value' => '雅典娜'
                     ]
+                ],
+                'resume' => [
+                    'title'           => '履歷',
+                    'tech-lead'       => '技術主管',
+                    'project-manager' => '專案經理',
+                    'scrum-master'    => 'Scrum Master',
                 ]
             ],
             'en-Shaw'    => [
@@ -1195,6 +1219,12 @@ class Home extends BaseController
                         'label' => '𐑒𐑨𐑥𐑐 𐑣𐑨𐑓-𐑚𐑤𐑳𐑛 𐑒𐑨𐑚𐑦𐑯',
                         'value' => '𐑩𐑔𐑰𐑯𐑩'
                     ]
+                ],
+                'resume' => [
+                    'title'           => '𐑮𐑧𐑟𐑿𐑥𐑱',
+                    'tech-lead'       => '𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑤𐑰𐑛',
+                    'project-manager' => '𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑥𐑨𐑯𐑦𐑡𐑼',
+                    'scrum-master'    => '𐑕𐑒𐑮𐑳𐑥 𐑥𐑭𐑕𐑑𐑼',
                 ]
             ],
             'ko'         => [
@@ -1233,6 +1263,12 @@ class Home extends BaseController
                         'label' => '카사 하프 블러드 캐빈',
                         'value' => '아테나'
                     ]
+                ],
+                'resume' => [
+                    'title'           => '이력서',
+                    'tech-lead'       => '기술 리더',
+                    'project-manager' => '프로젝트 매니저',
+                    'scrum-master'    => '스크럼 마스터',
                 ]
             ],
             'id'         => [
@@ -1271,6 +1307,12 @@ class Home extends BaseController
                         'label' => 'Kabin Camp Half-Blood',
                         'value' => 'Athena'
                     ]
+                ],
+                'resume' => [
+                    'title'           => 'Resume',
+                    'tech-lead'       => 'Pemimpin Teknis',
+                    'project-manager' => 'Manajer Proyek',
+                    'scrum-master'    => 'Scrum Master',
                 ]
             ],
             'vi'         => [
@@ -1309,6 +1351,12 @@ class Home extends BaseController
                         'label' => 'Trại Half-Blood',
                         'value' => 'Athena'
                     ]
+                ],
+                'resume' => [
+                    'title'           => 'Sơ yếu lý lịch',
+                    'tech-lead'       => 'Trưởng nhóm kỹ thuật',
+                    'project-manager' => 'Quản lý dự án',
+                    'scrum-master'    => 'Scrum Master',
                 ]
             ],
             'lo'         => [
@@ -1347,6 +1395,12 @@ class Home extends BaseController
                         'label' => 'ເຮືອນພັກເຄິ່ງເລືອດ',
                         'value' => 'ອາທີນາ'
                     ]
+                ],
+                'resume' => [
+                    'title'           => 'ຊີວະປະຫວັດຫຍໍ້',
+                    'tech-lead'       => 'ຫົວໜ້າດ້ານວິຊາການ',
+                    'project-manager' => 'ຜູ້ຈັດການໂຄງການ',
+                    'scrum-master'    => 'Scrum Master',
                 ]
             ],
             'es'         => [
@@ -1385,6 +1439,12 @@ class Home extends BaseController
                         'label' => 'Cabaña del Campamento Mestizo',
                         'value' => 'Atenea'
                     ]
+                ],
+                'resume' => [
+                    'title'           => 'Currículum',
+                    'tech-lead'       => 'Líder técnico',
+                    'project-manager' => 'Gerente de proyecto',
+                    'scrum-master'    => 'Scrum Master',
                 ]
             ],
             'art-x-navi' => [
@@ -1423,6 +1483,12 @@ class Home extends BaseController
                         'label' => 'Camp Half-Blood',
                         'value' => 'Athena'
                     ]
+                ],
+                'resume' => [
+                    'title'           => 'Resume',
+                    'tech-lead'       => 'Technical Lead',
+                    'project-manager' => 'Project Manager',
+                    'scrum-master'    => 'Scrum Master',
                 ]
             ],
         ];

@@ -102,11 +102,16 @@
                 </div>
             </div>
             <hr>
-            <h3><?= $data['resume']['title'] ?></h3>
-            <a href="https://drive.google.com/file/d/1ZXCc5VxgpqIqSaFZNoSk2Q7DcmBRVyGw/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-xs"><?= $data['resume']['tech-lead'] ?></a>
-            <a href="https://drive.google.com/file/d/1UiABlqiWRvJgoELj6B6W9UHa53GvL8e4/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-xs"><?= $data['resume']['project-manager'] ?></a>
-            <a href="https://drive.google.com/file/d/1I-sQ5vYCoolkz3vqLnyC8XI7xzE0M84C/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-xs"><?= $data['resume']['scrum-master'] ?></a>
-            <a href="https://drive.google.com/file/d/1-WetbRph_7YxDwlwXZZGazX_-rGFJc4Z/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-xs">Portfolio</a>
+            <h3>
+                <?= $data['resume']['title'] ?>
+                <a href="#" id="open-resume"><i class="fa-solid fa-angle-down"></i></a>
+            </h3>
+            <div id="resume-section" style="display: none">
+                <a href="https://drive.google.com/file/d/1ZXCc5VxgpqIqSaFZNoSk2Q7DcmBRVyGw/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-xs"><?= $data['resume']['tech-lead'] ?></a>
+                <a href="https://drive.google.com/file/d/1UiABlqiWRvJgoELj6B6W9UHa53GvL8e4/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-xs"><?= $data['resume']['project-manager'] ?></a>
+                <a href="https://drive.google.com/file/d/1I-sQ5vYCoolkz3vqLnyC8XI7xzE0M84C/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-xs"><?= $data['resume']['scrum-master'] ?></a>
+                <a href="https://drive.google.com/file/d/1-WetbRph_7YxDwlwXZZGazX_-rGFJc4Z/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-xs">Portfolio</a>
+            </div>
             <hr>
             <h3><?= $data['education'] ?></h3>
             <ul>
@@ -139,6 +144,11 @@
 </body>
 <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
 <script>
-
+    $(function () {
+        $('#open-resume').click(function () {
+            $('#resume-section').slideDown();
+            $(this).hide();
+        });
+    });
 </script>
 </html>

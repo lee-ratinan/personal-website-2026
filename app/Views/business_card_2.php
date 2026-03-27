@@ -76,10 +76,9 @@
             <h1><?= $data['name'] ?></h1>
             <h2 class="mb-0"><?= $data['tagline'] ?></h2>
             <div class="mb-5">
-                <a class="btn btn-xs btn-outline-mediator rounded-pill" href="https://www.16personalities.com/profiles/fb036647ead1f" target="_blank">❤️ MBTI: INFP-T (Mediator)</a>
-                <a class="btn btn-xs btn-outline-ravenclaw rounded-pill" href="https://www.harrypotter.com/profile/0757090d-e2ff-430f-a1d3-37b6eb6006d0" target="_blank">🪄 Hogwarts House: Ravenclaw</a>
-                <a class="btn btn-xs btn-outline-athena rounded-pill" href="#">🦉 Camp Half-Blood: Athena</a>
-                <a class="btn btn-xs btn-outline-danger rounded-pill" href="#">🧙‍♂️Middle Earth: Wizard</a>
+                <?php foreach ($data['badges'] as $badge) : ?>
+                    <a class="btn btn-xs btn-outline-athena rounded-pill" href="#"><?= $badge['label'] ?>: <?= $badge['value'] ?></a>
+                <?php endforeach; ?>
             </div>
             <a href="<?= base_url() ?>" class="btn btn-outline-success btn-sm">
                 <i class="fa-solid fa-globe-asia"></i> lee.ratinan.com

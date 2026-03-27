@@ -1029,6 +1029,20 @@ class Home extends BaseController
                     'Thai: Native',
                     'Japanese: Beginner (expected to get JLPT N5 by December 2026)',
                     'Taiwanese Mandarin: Beginner (approx. CEFR A1 Level)'
+                ],
+                'badges'         => [
+                    'mbti'       => [
+                        'label' => '❤️ MBTI',
+                        'value' => 'INFP-T (Mediator)'
+                    ],
+                    'hogwarts'   => [
+                        'label' => '🪄 Hogwarts House',
+                        'value' => '🔵 Ravenclaw'
+                    ],
+                    'half-blood' => [
+                        'label' => 'Camp Half-Blood',
+                        'value' => 'son of Athena'
+                    ]
                 ]
             ],
             'th'         => [
@@ -1053,6 +1067,20 @@ class Home extends BaseController
                     'ภาษาไทย: เจ้าของภาษา',
                     'ภาษาญี่ปุ่น: ระดับต้น (คาดว่าจะได้ระดับ JLPT N5 ภายใน ธ.ค. 2569)',
                     'ภาษาจีนไต้หวัน: ระดับต้น (ประมาณ CEFR ระดับ A1)'
+                ],
+                'badges'         => [
+                    'mbti'       => [
+                        'label' => '❤️ บุคลิกภาพ MBTI',
+                        'value' => 'INFP-T (ผู้ไกล่เกลี่ย)'
+                    ],
+                    'hogwarts'   => [
+                        'label' => '🪄 ฮอกวอตส์',
+                        'value' => '🔵 บ้านเรเวนคลอ'
+                    ],
+                    'half-blood' => [
+                        'label' => 'บ้านพักค่ายฮาล์ฟบลัด',
+                        'value' => 'อาธีน่า'
+                    ]
                 ]
             ],
             'ja'         => [
@@ -1077,6 +1105,20 @@ class Home extends BaseController
                     'タイ語：母語',
                     '日本語：初級（<span class="upright">2026年12月に JLPT N5</span> 取得予定）',
                     '台湾華語：初級（<span class="upright">CEFR A1</span> 相当）'
+                ],
+                'badges'         => [
+                    'mbti'       => [
+                        'label' => '❤️ MBTI診断',
+                        'value' => 'INFP-T (仲介者)'
+                    ],
+                    'hogwarts'   => [
+                        'label' => '🪄 ホグワーツの寮',
+                        'value' => '🔵 レイブンクロー'
+                    ],
+                    'half-blood' => [
+                        'label' => 'ハーフ訓練所のキャビン',
+                        'value' => 'アテナ'
+                    ]
                 ]
             ],
             'zh-TW'      => [
@@ -1101,6 +1143,20 @@ class Home extends BaseController
                     '泰語：母語',
                     '日語：初級（預計於 <span class="upright">2026年12月</span>取得 <span class="upright">JLPT N5</span>）',
                     '國語：初級（約 <span class="upright">CEFR A1</span> 等級）'
+                ],
+                'badges'         => [
+                    'mbti'       => [
+                        'label' => '❤️ MBTI 人格類型',
+                        'value' => 'INFP-T (調停者)'
+                    ],
+                    'hogwarts'   => [
+                        'label' => '🪄 霍格華茲學院',
+                        'value' => '🔵 雷文克勞'
+                    ],
+                    'half-blood' => [
+                        'label' => '混血營小屋',
+                        'value' => '雅典娜'
+                    ]
                 ]
             ],
             'en-Shaw'    => [
@@ -1125,6 +1181,20 @@ class Home extends BaseController
                     '𐑑𐑲: 𐑯𐑱𐑑𐑦𐑝',
                     '𐑡𐑨𐑐𐑩𐑯𐑰𐑟: 𐑚𐑦𐑜𐑦𐑯𐑼 (𐑦𐑒𐑕𐑐𐑧𐑒𐑑𐑩𐑛 𐑑 𐑜𐑧𐑑 JLPT N5 𐑚𐑲 𐑛𐑦𐑕𐑧𐑥𐑚𐑼 2026)',
                     '𐑑𐑲𐑢𐑩𐑯𐑰𐑟 𐑥𐑨𐑯𐑛𐑼𐑦𐑯: 𐑚𐑦𐑜𐑦𐑯𐑼 (𐑩𐑐𐑮𐑪𐑒𐑕𐑦𐑥𐑩𐑑𐑤𐑦 CEFR A1 𐑤𐑧𐑝𐑩𐑤)'
+                ],
+                'badges'         => [
+                    'mbti'       => [
+                        'label' => '❤️ MBTI',
+                        'value' => 'INFP-T (𐑥𐑰𐑛𐑦𐑱𐑑𐑼)'
+                    ],
+                    'hogwarts'   => [
+                        'label' => '🪄 𐑣𐑪𐑜𐑢𐑹𐑑𐑕',
+                        'value' => '🔵 𐑮𐑱𐑝𐑩𐑯𐑒𐑤𐑷'
+                    ],
+                    'half-blood' => [
+                        'label' => '𐑒𐑨𐑥𐑐 𐑣𐑨𐑓-𐑚𐑤𐑳𐑛',
+                        'value' => '𐑩𐑔𐑰𐑯𐑩'
+                    ]
                 ]
             ],
             'ko'         => [
@@ -1149,6 +1219,20 @@ class Home extends BaseController
                     '태국어: 원어민 수준',
                     '일본어: 초급 (2026년12월까지 JLPT N5 취득 예정)',
                     '대만어: 초급 (CEFR A1 레벨 정도)'
+                ],
+                'badges'         => [
+                    'mbti'       => [
+                        'label' => '❤️ MBTI 성격 유형',
+                        'value' => 'INFP-T (중재자)'
+                    ],
+                    'hogwarts'   => [
+                        'label' => '🪄 호그와트 기숙사',
+                        'value' => '🔵 래번클로'
+                    ],
+                    'half-blood' => [
+                        'label' => '카사 하프 블러드 캐빈',
+                        'value' => '아테나'
+                    ]
                 ]
             ],
             'id'         => [
@@ -1173,6 +1257,20 @@ class Home extends BaseController
                     'Bahasa Thailand: Tingkat penutur asli',
                     'Bahasa Jepang: Pemula (diharapkan mencapai JLPT N5 pada Desember 2026)',
                     'Bahasa Taiwan: Pemula (kira-kira tingkat CEFR A1)'
+                ],
+                'badges'         => [
+                    'mbti'       => [
+                        'label' => '❤️ MBTI',
+                        'value' => 'INFP-T (Mediator)'
+                    ],
+                    'hogwarts'   => [
+                        'label' => '🪄 Hogwarts',
+                        'value' => '🔵 Ravenclaw'
+                    ],
+                    'half-blood' => [
+                        'label' => 'Camp Half-Blood',
+                        'value' => 'Athena'
+                    ]
                 ]
             ],
             'vi'         => [
@@ -1197,6 +1295,20 @@ class Home extends BaseController
                     'Tiếng Thái: Tiếng mẹ đẻ',
                     'Tiếng Nhật: Trình độ sơ cấp (dự kiến ​​đạt JLPT N5 vào tháng 12 năm 2026)',
                     'Tiếng Đài Loan (tiếng Quan thoại): Trình độ sơ cấp (khoảng trình độ CEFR A1)'
+                ],
+                'badges'         => [
+                    'mbti'       => [
+                        'label' => '❤️ MBTI',
+                        'value' => 'INFP-T (Mediator)'
+                    ],
+                    'hogwarts'   => [
+                        'label' => '🪄 Hogwarts',
+                        'value' => '🔵 Ravenclaw'
+                    ],
+                    'half-blood' => [
+                        'label' => 'Camp Half-Blood',
+                        'value' => 'Athena'
+                    ]
                 ]
             ],
             'lo'         => [
@@ -1221,6 +1333,20 @@ class Home extends BaseController
                     'ພາສາໄທ: ຜູ້ເວົ້າພາສາພື້ນເມືອງ',
                     'ພາສາຍີ່ປຸ່ນ: ຜູ້ເລີ່ມຕົ້ນ (ຄາດວ່າຈະບັນລຸ JLPT N5 ພາຍໃນເດືອນທັນວາ 2026)',
                     'ພາສາຈີນໄຕ້ຫວັນ: ຜູ້ເລີ່ມຕົ້ນ (ປະມານ CEFR ລະດັບ A1)'
+                ],
+                'badges'         => [
+                    'mbti'       => [
+                        'label' => '❤️ MBTI',
+                        'value' => 'INFP-T (Mediator)'
+                    ],
+                    'hogwarts'   => [
+                        'label' => '🪄 Hogwarts',
+                        'value' => '🔵 Ravenclaw'
+                    ],
+                    'half-blood' => [
+                        'label' => 'Camp Half-Blood',
+                        'value' => 'Athena'
+                    ]
                 ]
             ],
             'es'         => [
@@ -1245,6 +1371,20 @@ class Home extends BaseController
                     'Tailandés: Nativo',
                     'Japonés: Principiante (se espera obtener el JLPT N5 para diciembre de 2026)',
                     'Mandarín taiwanés: Principiante (aprox. Nivel A1 del MCER)'
+                ],
+                'badges'         => [
+                    'mbti'       => [
+                        'label' => '❤️ MBTI',
+                        'value' => 'INFP-T (Mediator)'
+                    ],
+                    'hogwarts'   => [
+                        'label' => '🪄 Hogwarts',
+                        'value' => '🔵 Ravenclaw'
+                    ],
+                    'half-blood' => [
+                        'label' => 'Camp Half-Blood',
+                        'value' => 'Athena'
+                    ]
                 ]
             ],
             'art-x-navi' => [
@@ -1269,6 +1409,20 @@ class Home extends BaseController
                     'thai: fnan',
                     'japanese: sngä’iyu',
                     'taiwanese mandarin: sngä’iyu'
+                ],
+                'badges'         => [
+                    'mbti'       => [
+                        'label' => '❤️ MBTI',
+                        'value' => 'INFP-T (Mediator)'
+                    ],
+                    'hogwarts'   => [
+                        'label' => '🪄 Hogwarts',
+                        'value' => '🔵 Ravenclaw'
+                    ],
+                    'half-blood' => [
+                        'label' => 'Camp Half-Blood',
+                        'value' => 'Athena'
+                    ]
                 ]
             ],
         ];

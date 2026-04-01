@@ -990,6 +990,14 @@ class Home extends BaseController
         return view('certifications', $data);
     }
 
+    public function writing(): string
+    {
+        $locale = $this->request->getLocale();
+        $data   = [
+            'locale'       => $locale
+        ];
+        return view('writing', $data);
+    }
     /**
      * Redirect to WhatsApp
      * @return RedirectResponse

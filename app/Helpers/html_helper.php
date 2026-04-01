@@ -46,7 +46,7 @@ function calculate_years (array $input_years, string $locale, string $separator 
 
 /**
  * Format dates
- * @param string[] $dates array of dates in YYYY-MM-DD format
+ * @param string[] $dates array of dates in YYYY-MM-DD or YYYY-MM-00 format
  * @param string $locale accept all acceptable locales in this system
  * @param string $separator mainly accept ', ' and ' - ', the rest will not get fixed by the locale
  * @return string

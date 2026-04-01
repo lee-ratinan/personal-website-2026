@@ -2,7 +2,7 @@
 return [
     'system'   => [
         'website-name'    => 'Ratinan Lee Official',
-        'site-name-head'  => 'RATINAN<span style="color:#080">LEE</span>',
+        'site-name-head'  => 'RATINAN<span style="color:#0c0">LEE <sup><small>Anti-Authoritarian</small></sup></span>',
         'footer-msg'      => 'This is an official personal website of Ratinan Lee. He is a senior software engineer and technology lead based in Singapore and Bangkok.',
         'useful-links'    => 'Useful Links',
         'change-language' => 'Change Language',

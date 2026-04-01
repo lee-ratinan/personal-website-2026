@@ -60,13 +60,9 @@ $experience_years = date('Y') - 2012;
         </a>
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="#hero" class="active"><?= lang('Home.sections.home.title') ?></a></li>
-                <li><a href="#about"><?= lang('Home.sections.about.title') ?></a></li>
-                <li><a href="#resume"><?= lang('Home.sections.resume.title') ?></a></li>
+                <li><a href="#" class="active"><?= lang('Home.sections.home.title') ?></a></li>
                 <li><a href="<?= base_url($locale . '/certifications') ?>"><?= lang('Certifications.title') ?></a></li>
-                <li><a href="#services"><?= lang('Home.sections.services.title') ?></a></li>
-                <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
-                <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>
+                <li><a href="<?= base_url($locale . '/writing') ?>"><?= lang('Writing.title') ?></a></li>
                 <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
                 <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
                 <li><a href="#footer"><i class="bi bi-translate"></i></a></li>
@@ -638,13 +634,9 @@ $experience_years = date('Y') - 2012;
             <div class="col-lg-3 col-6 footer-links">
                 <h4><?= lang('Home.system.useful-links') ?></h4>
                 <ul>
-                    <li><a href="#hero"><?= lang('Home.sections.home.title') ?></a></li>
-                    <li><a href="#about"><?= lang('Home.sections.about.title') ?></a></li>
-                    <li><a href="#resume"><?= lang('Home.sections.resume.title') ?></a></li>
+                    <li><a href="<?= base_url($locale) ?>"><?= lang('Home.sections.home.title') ?></a></li>
                     <li><a href="<?= base_url($locale . '/certifications') ?>"><?= lang('Certifications.title') ?></a></li>
-                    <li><a href="#services"><?= lang('Home.sections.services.title') ?></a></li>
-                    <li><a href="#portfolio"><?= lang('Home.sections.portfolio.title') ?></a></li>
-                    <li><a href="#contact"><?= lang('Home.sections.contact.title') ?></a></li>
+                    <li><a href="<?= base_url($locale . '/writing') ?>"><?= lang('Writing.title') ?></a></li>
                     <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
                     <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
                 </ul>

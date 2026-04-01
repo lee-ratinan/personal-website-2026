@@ -57,11 +57,10 @@
         </a>
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="#hero" class="active"><?= lang('PersonalLife.system.title') ?></a></li>
-                <li><a href="#about"><?= lang('PersonalLife.sections.about.title') ?></a></li>
-                <li><a href="#gallery"><?= lang('PersonalLife.sections.gallery.title') ?></a></li>
-                <li><a href="#bucket-list"><?= lang('PersonalLife.sections.bucket-list.title') ?></a></li>
-                <li><a href="<?= base_url($locale) ?>"><?= lang('PersonalLife.system.back-home') ?></a></li>
+                <li><a href="<?= base_url($locale) ?>"><?= lang('Home.sections.home.title') ?></a></li>
+                <li><a href="<?= base_url($locale . '/certifications') ?>"><?= lang('Certifications.title') ?></a></li>
+                <li><a href="<?= base_url($locale . '/writing') ?>"><?= lang('Writing.title') ?></a></li>
+                <li><a href="#"><?= lang('Home.system.pages.personal-life') ?></a></li>
                 <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
                 <li><a href="#footer"><i class="bi bi-translate"></i></a></li>
             </ul>
@@ -325,11 +324,10 @@
             <div class="col-lg-3 col-6 footer-links">
                 <h4><?= lang('Home.system.useful-links') ?></h4>
                 <ul>
-                    <li><a href="#hero" class="active"><?= lang('PersonalLife.system.title') ?></a></li>
-                    <li><a href="#about"><?= lang('PersonalLife.sections.about.title') ?></a></li>
-                    <li><a href="#gallery"><?= lang('PersonalLife.sections.gallery.title') ?></a></li>
-                    <li><a href="#bucket-list"><?= lang('PersonalLife.sections.bucket-list.title') ?></a></li>
-                    <li><a href="<?= base_url($locale) ?>"><?= lang('PersonalLife.system.back-home') ?></a></li>
+                    <li><a href="<?= base_url($locale) ?>"><?= lang('Home.sections.home.title') ?></a></li>
+                    <li><a href="<?= base_url($locale . '/certifications') ?>"><?= lang('Certifications.title') ?></a></li>
+                    <li><a href="<?= base_url($locale . '/writing') ?>"><?= lang('Writing.title') ?></a></li>
+                    <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
                     <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
                 </ul>
             </div>

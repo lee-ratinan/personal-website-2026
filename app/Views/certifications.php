@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title><?= lang('Home.system.pages.home') ?> - <?= lang('Home.system.website-name') ?></title>
+    <title><?= lang('Certifications.title') ?> - <?= lang('Home.system.website-name') ?></title>
     <meta name="description" content="<?= lang('Home.system.seo.description') ?>">
     <meta name="keywords" content="<?= lang('Home.system.seo.keywords') ?>">
     <meta name="author" content="<?= lang('Home.system.seo.author') ?>">
@@ -33,12 +33,12 @@
     <!-- Main CSS File -->
     <link href="<?= base_url('assets/css/main.min.css') ?>" rel="stylesheet">
     <!-- hreflang -->
-    <link rel="alternate" hreflang="en" href="<?= base_url('en') ?>"/>
-    <link rel="alternate" hreflang="th" href="<?= base_url('th') ?>"/>
-    <link rel="alternate" hreflang="ja" href="<?= base_url('ja') ?>"/>
-    <link rel="alternate" hreflang="zh-TW" href="<?= base_url('zh-TW') ?>"/>
-    <link rel="alternate" hreflang="x-default" href="<?= base_url() ?>"/>
-    <link rel="canonical" href="<?= current_url() ?>">
+    <link rel="alternate" hreflang="en" href="<?= base_url('en/certifications') ?>"/>
+    <link rel="alternate" hreflang="th" href="<?= base_url('th/certifications') ?>"/>
+    <link rel="alternate" hreflang="ja" href="<?= base_url('ja/certifications') ?>"/>
+    <link rel="alternate" hreflang="zh-TW" href="<?= base_url('zh-TW/certifications') ?>"/>
+    <link rel="alternate" hreflang="x-default" href="<?= base_url('certifications') ?>"/>
+    <link rel="canonical" href="<?= current_url($locale . '/certifications') ?>">
     <!-- =======================================================
     * Template Name: Craftivo
     * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/
@@ -48,9 +48,6 @@
     ======================================================== -->
 </head>
 <body class="index-page <?= $locale ?>">
-<?php
-$experience_years = date('Y') - 2012;
-?>
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
         <a href="<?= base_url($locale) ?>" class="logo d-flex align-items-center me-auto">
@@ -61,6 +58,8 @@ $experience_years = date('Y') - 2012;
         <nav id="navmenu" class="navmenu">
             <ul>
                 <li><a href="<?= base_url($locale) ?>"><?= lang('Home.sections.home.title') ?></a></li>
+                <li><a href="#"><?= lang('Certifications.title') ?></a></li>
+                <li><a href="<?= base_url($locale . '/writing') ?>"><?= lang('Writing.title') ?></a></li>
                 <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
                 <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
                 <li><a href="#footer"><i class="bi bi-translate"></i></a></li>
@@ -258,6 +257,8 @@ $experience_years = date('Y') - 2012;
                 <h4><?= lang('Home.system.useful-links') ?></h4>
                 <ul>
                     <li><a href="<?= base_url($locale) ?>"><?= lang('Home.sections.home.title') ?></a></li>
+                    <li><a href="<?= base_url($locale . '/certifications') ?>"><?= lang('Certifications.title') ?></a></li>
+                    <li><a href="<?= base_url($locale . '/writing') ?>"><?= lang('Writing.title') ?></a></li>
                     <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
                     <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
                 </ul>

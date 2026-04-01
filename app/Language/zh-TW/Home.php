@@ -2,7 +2,7 @@
 return [
     'system'   => [
         'website-name'    => '李榮欽的網站',
-        'site-name-head'  => '李<span style="color:#00f">榮欽</span>',
+        'site-name-head'  => '李<span style="color:#1B9431">榮欽<sup>台灣是國家</sup></span>',
         'footer-msg'      => '這是李榮欽的官方個人網站。他是一位常駐新加坡與曼谷的資深軟體工程師與技術領導者。',
         'useful-links'    => '實用連結',
         'change-language' => '切換語言',

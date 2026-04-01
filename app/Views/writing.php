@@ -117,7 +117,7 @@
                         'author'    => 'Rikikawa Eikin',
                         'languages' => ['th'],
                         'genre'     => ['social-realism', 'boy-love', 'coming-of-age', 'depression'],
-                        'released'  => '2026-03-00',
+                        'released'  => ['2026-03-00', '2026-04-00'],
                         'link'      => 'https://www.readawrite.com/a/9fff8655b2eed3cad369303c7344cbfb?r=user_page',
                         'platform'  => 'ReadAWrite',
                     ],
@@ -126,7 +126,7 @@
                         'author'    => 'Rikikawa Eikin',
                         'languages' => ['th', 'en'],
                         'genre'     => ['diary', 'social-realism', 'depression'],
-                        'released'  => '2026-04-01',
+                        'released'  => ['2026-04-01'],
                         'link'      => 'https://www.readawrite.com/a/bc64ac1014d31fb2343a09f530caabbb?r=user_page',
                         'platform'  => 'ReadAWrite',
                     ],
@@ -135,7 +135,7 @@
                         'author'    => 'Rikikawa Eikin',
                         'languages' => ['th', 'en'],
                         'genre'     => ['diary', 'social-realism', 'depression'],
-                        'released'  => '2026-03-30',
+                        'released'  => ['2026-03-30'],
                         'link'      => 'https://www.readawrite.com/a/75c86100cc52079d471a7ea704eefc7c?r=user_page',
                         'platform'  => 'ReadAWrite',
                     ]
@@ -149,7 +149,7 @@
                                 <br class="d-inline-block d-lg-none" />
                                 <?= (isset($fiction['title']) ? '<b>' . $fiction['title'] . '</b><br>' : '') ?>
                                 <?= (isset($fiction['author']) ? '<b>' . lang('Writing.label.author') . '</b>: ' . $fiction['author'] . '<br>' : '') ?>
-                                <?= (isset($fiction['released']) ? '<b>' . lang('Writing.label.released') . '</b>: ' . format_date([$fiction['released']], $locale) . '<br>' : '') ?>
+                                <?= (isset($fiction['released']) ? '<b>' . lang('Writing.label.released') . '</b>: ' . format_date($fiction['released'], $locale, ' - ') . '<br>' : '') ?>
                                 <?php
                                 if (isset($fiction['languages'])) {
                                     echo '<b>' . lang('Writing.label.languages') . '</b>: ';

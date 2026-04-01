@@ -1522,7 +1522,6 @@ class Home extends BaseController
                 'telegram'           => 'https://t.me/rikikawa_eikin',
                 'line'               => 'https://line.me/ti/p/ME2Tsnm9nr',
                 'linkedin'           => 'https://www.linkedin.com/in/ratinanlee',
-                'medium'             => 'https://medium.com/@ratinanlee',
                 'instagram'          => 'https://www.instagram.com/ratinanlee/',
                 'github'             => 'https://github.com/lee-ratinan',
                 'facebook-messenger' => 'https://www.messenger.com/t/lee.ratinan/',

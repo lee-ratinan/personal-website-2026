@@ -76,6 +76,7 @@
             <h1><?= $data['name'] ?></h1>
             <h2 class="mb-2"><?= $data['tagline'] ?></h2>
             <div class="mb-5">
+                <a class="btn btn-xs btn-outline-athena rounded-pill" href="#">IQ: 135</a>
                 <?php foreach ($data['badges'] as $badge) : ?>
                     <a class="btn btn-xs btn-outline-athena rounded-pill" href="#"><?= $badge['label'] ?>: <?= $badge['value'] ?></a>
                 <?php endforeach; ?>
@@ -94,6 +95,10 @@
                             <?= $translations[$locale][$class] ?? $translations['en'][$class] ?>
                         </a>
                     <?php endforeach; ?>
+                </div>
+                <div class="col-12 col-md-10 col-lg-8">
+                    <a href="https://medium.com/@ratinanlee" target="_blank" class="btn btn-outline-success btn-sm"><i class="fa-brands fa-medium"></i> Medium</a>
+                    <a href="https://www.readawrite.com/?action=user_page&user_id_publisher=8793437&tab=articleList" target="_blank" class="btn btn-outline-success btn-sm"><i class="fa-solid fa-pen-square"></i> ReadAWrite</a>
                 </div>
                 <div class="col-12 col-md-10 col-lg-8">
                     <?php foreach ($professional_profiles as $name => $link) : ?>

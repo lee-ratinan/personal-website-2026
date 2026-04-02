@@ -147,7 +147,7 @@
                             <div class="card-body text-white">
                                 <img class="me-3 mb-3 float-lg-end" src="<?= base_url('assets/img/fiction/' . $key . '.jpg') ?>" alt="<?= $key ?>" style="border-radius:5px;width:200px" />
                                 <br class="d-inline-block d-lg-none" />
-                                <?= (isset($fiction['title']) ? '<b>' . $fiction['title'] . '</b><br>' : '') ?>
+                                <?= (isset($fiction['title']) ? '<h4>' . $fiction['title'] . '</h4>' : '') ?>
                                 <?= (isset($fiction['author']) ? '<b>' . lang('Writing.label.author') . '</b>: ' . $fiction['author'] . '<br>' : '') ?>
                                 <?= (isset($fiction['released']) ? '<b>' . lang('Writing.label.released') . '</b>: ' . format_date($fiction['released'], $locale, ' - ') . '<br>' : '') ?>
                                 <?php

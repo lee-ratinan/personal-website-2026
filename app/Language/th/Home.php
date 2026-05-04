@@ -213,5 +213,6 @@ return [
             'facebook'  => 'เฟซบุ๊ก',
             'whatsapp'  => 'WhatsApp',
         ],
-    ]
+    ],
+    'calendar' => 'ปฏิทิน'
 ];

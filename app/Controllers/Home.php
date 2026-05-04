@@ -998,6 +998,15 @@ class Home extends BaseController
         ];
         return view('writing', $data);
     }
+
+    public function calendar(): string
+    {
+        $data = [
+            'locale' => $this->request->getLocale()
+        ];
+        return view('calendar', $data);
+    }
+
     /**
      * Redirect to WhatsApp
      * @return RedirectResponse

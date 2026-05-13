@@ -58,9 +58,9 @@
                     <?php if ('posts' != $mode) { echo '<h2>' . ucfirst($mode) . ': ' . $ms . '</h2><p><a href="?">View All</a></p>'; } ?>
                     <div id="wordpress-posts"></div>
                     <nav class="wp-pagination text-center">
-                        <button id="wp-prev" class="btn btn-primary">← Previous</button>
+                        <button id="wp-prev" class="btn btn-success">← Previous</button>
                         <span id="wp-page-info"></span>
-                        <button id="wp-next" class="btn btn-primary">Next →</button>
+                        <button id="wp-next" class="btn btn-success">Next →</button>
                     </nav>
                 </div>
             </div>

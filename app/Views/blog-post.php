@@ -40,7 +40,7 @@
     <link rel="alternate" hreflang="x-default" href="<?= base_url('blog') ?>"/>
     <link rel="canonical" href="<?= current_url() ?>">
     <style>
-
+        .wp-block-columns{box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns{align-items:normal!important}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
     </style>
     <!-- =======================================================
     * Template Name: Craftivo
@@ -57,9 +57,8 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col">
-                    <h2><?= lang('Home.system.pages.blog') ?></h2>
+                    <p><a href="<?= base_url($locale . '/blog') ?>"><?= lang('Home.system.pages.blog') ?></a> /</p>
                     <h1 id="post-title">[POST-TITLE]</h1>
-                    <p><a href="<?= base_url($locale . '/blog') ?>">View All</a></p>
                     <div id="wordpress-post"></div>
                 </div>
             </div>
@@ -281,6 +280,9 @@
             $('.wp-block-gallery img').each(function () {
                 $(this).addClass('img-fluid');
             });
+            $('.wp-block-image img').each(function () {
+                $(this).addClass('img-fluid');
+            });
         }
         // ─── Renderer ────────────────────────────────────────────────────────────
 
@@ -304,26 +306,15 @@
             const imgSrc  = post.mediaObj?.source_url || '';
             const imgAlt  = post.mediaObj?.alt_text   || title;
             const imgHtml = imgSrc
-                ? `<img class="wp-post__hero" src="${imgSrc}" alt="${_esc(imgAlt)}">`
+                ? `<div class="text-center"><img class="img-fluid mb-3" style="width:600px;max-width:100%;max-height:400px;" src="${imgSrc}" alt="${_esc(imgAlt)}"></div>`
                 : '';
 
             // Author — with avatar if available
-            const authorName   = post.authorObj?.name || '';
-            const authorLink   = post.authorObj?.link || '#';
-            const avatarUrl    = post.authorObj?.avatar_urls?.['48'] || '';
-            const avatarHtml   = avatarUrl
-                ? `<img class="wp-post__avatar" src="${_esc(avatarUrl)}" alt="${_esc(authorName)}" width="48" height="48">`
-                : '';
-            const authorHtml   = authorName
-                ? `<div class="wp-post__author-block">
-           ${avatarHtml}
-           <a class="wp-post__author" href="${_esc(authorLink)}" target="_blank" rel="noopener">${_esc(authorName)}</a>
-         </div>`
-                : '';
+            const authorName   = '<i class="bi bi-person-circle"></i>  ' + post.authorObj?.name + ' &nbsp; ' || '';
 
             // Tags
             const tagsHtml = (post.tagObjs || [])
-                .map((t) => `<a class="wp-post__tag" href="${_esc(t.link || '#')}" target="_blank" rel="noopener">${_esc(t.name)}</a>`)
+                .map((t) => `<a class="btn btn-sm btn-outline-success m-1" href="<?= base_url($locale . '/blog') ?>?m=tags&ms=${_esc(t.name)}&id=${_esc(t.id)}" target="_blank" rel="noopener">${_esc(t.name)}</a>`)
                 .join('');
             $('#post-title').html(title);
             $container.html(`
@@ -331,8 +322,8 @@
         ${imgHtml}
         <div class="wp-post__body">
           <div class="wp-post__meta">
-            ${authorHtml}
-            <time class="wp-post__date" datetime="${post.date_gmt}">${date}</time>
+            ${authorName}
+            <time class="wp-post__date" datetime="${post.date_gmt}"><i class="bi bi-calendar-plus"></i>  ${date}</time>
           </div>
           ${tagsHtml ? `<div class="wp-post__tags">${tagsHtml}</div>` : ''}
           <div class="wp-post__content">${content}</div>

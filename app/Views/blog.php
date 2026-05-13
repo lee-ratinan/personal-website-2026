@@ -49,27 +49,13 @@
 </head>
 <body class="calendar-page <?= $locale ?>">
 <?php include "_header.php"; ?>
-<main class="main">
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-        <img src="<?= base_url('assets/img/profile/profile-hero.jpg') ?>" alt="" data-aos="fade-in">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2><?= lang('PersonalLife.sections.home.greetings') ?></h2>
-                    <p><?= lang('PersonalLife.sections.home.i-am-a') ?> <span class="typed" data-typed-items="<?= lang('PersonalLife.sections.home.occupations') ?>"></span><span class="typed-cursor" aria-hidden="true"></span></p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/ratinanlee/" target="_blank"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.facebook.com/lee.ratinan" target="_blank"><i class="bi bi-facebook"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- /Hero Section -->
+<main class="main mt-5 pt-5">
     <section id="about" class="about section">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col">
+                    <h1><?= lang('Home.system.pages.blog') ?></h1>
+                    <?php if ('posts' != $mode) { echo '<h2>' . ucfirst($mode) . ': ' . $ms . '</h2><p><a href="?">View All</a></p>'; } ?>
                     <div id="wordpress-posts"></div>
                     <nav class="wp-pagination text-center">
                         <button id="wp-prev" class="btn btn-primary">← Previous</button>
@@ -160,6 +146,7 @@
                     data: {
                         _fields: 'id,date_gmt,excerpt,title,featured_media,slug,tags,author',
                         per_page: CONFIG.perPage,
+                        <?= 'posts' != $mode ? $mode .': ' . $id . ',' : '' ?>
                         page,
                     },
                     complete(xhr) {
@@ -210,7 +197,7 @@
                     data: {
                         include:  ids.join(','),
                         per_page: ids.length,
-                        _fields:  'id,name,slug,avatar_urls,link',
+                        _fields:  'id,name,slug,link',
                     },
                 });
                 return _toMap(results);
@@ -274,14 +261,17 @@
                     : '';
 
                 const tagsHtml = (post.tagObjs || [])
-                    .map((t) => `<a class="wp-post__tag" href="${_esc(t.link || '#')}" target="_blank" rel="noopener">${_esc(t.name)}</a>`)
+                    .map((t) => `<a class="wp-post__tag btn btn-sm btn-outline-success m-1" href="?m=tags&ms=${_esc(t.name)}&id=${_esc(t.id)}">${_esc(t.name)}</a>`)
                     .join('');
+                const postLink = `<?= base_url($locale . '/blog-post') ?>/${_esc(post.id)}/${_esc(post.slug)}`;
 
                 const $card = $(`
         <article class="wp-post row" data-id="${post.id}" data-slug="${_esc(post.slug)}">
           <div class="col-12 col-md-4 col-lg-3 col-xl-2 mb-3 wp-post__img">${imgHtml}</div>
           <div class="col-12 col-md-8 col-lg-9 col-xl-10 mb-3 wp-post__body">
-            <h2 class="wp-post__title">${title}</h2>
+            <h2 class="wp-post__title">
+              <a href="${postLink}">${title}</a>
+            </h2>
             <div class="wp-post__meta">
               ${authorHtml}
               <time class="wp-post__date" datetime="${post.date_gmt}">${date}</time>
@@ -289,6 +279,7 @@
             <div class="wp-post__excerpt">${excerpt}</div>
             ${tagsHtml ? `<div class="wp-post__tags">${tagsHtml}</div>` : ''}
           </div>
+          <hr />
         </article>
       `);
 

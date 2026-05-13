@@ -1014,11 +1014,31 @@ class Home extends BaseController
 
     public function blog(): string
     {
+        $mode = $this->request->getGet('m') ?? '';
+        if (!in_array($mode, ['tags', 'categories'])) {
+            $mode = 'posts';
+        }
+        $id   = $this->request->getGet('id') ?? 0;
+        $ms   = $this->request->getGet('ms') ?? '';
         $data = [
             'slug'   => 'blog',
+            'mode'   => $mode,
+            'id'     => $id,
+            'ms'     => $ms,
             'locale' => $this->request->getLocale()
         ];
         return view('blog', $data);
+    }
+
+    public function blog_post(int $id, string $slug): string
+    {
+        $data = [
+            'slug'      => 'blog-post',
+            'post_id'   => $id,
+            'post_slug' => $slug,
+            'locale'    => $this->request->getLocale()
+        ];
+        return view('blog-post', $data);
     }
 
     /**

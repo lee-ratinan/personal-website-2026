@@ -15,7 +15,7 @@
                     <li><a href="<?= 'writing' != $slug ? base_url($locale . '/writing') : '#' ?>"><?= lang('Writing.title') ?></a></li>
                     <li><a href="<?= 'personal-life' != $slug ? base_url($locale . '/personal-life') : '#' ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
                     <li><a href="<?= 'personal-life' != $slug ? base_url($locale . '/personal-life') : '#' ?>"><?= lang('Home.calendar') ?></a></li>
-                    <li><a href="<?= 'blog' != $slug ? base_url($locale . '/blog') : '#' ?>"><?= lang('Home.system.pages.blog') ?></a></li>
+                    <li><a href="<?= 'blog' != $slug ? base_url($locale . '/blog') : '?' ?>"><?= lang('Home.system.pages.blog') ?></a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-6 footer-links">

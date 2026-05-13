@@ -46,6 +46,7 @@ class Home extends BaseController
     public function index(): string
     {
         $data = [
+            'slug'   => 'home',
             'locale' => $this->request->getLocale()
         ];
         return view('home', $data);
@@ -58,6 +59,7 @@ class Home extends BaseController
     public function personal_life(): string
     {
         $data = [
+            'slug'                 => 'personal-life',
             'locale'               => $this->request->getLocale(),
             'countries_visited'    => 10,
             'distant_traveled'     => 198000,
@@ -810,10 +812,11 @@ class Home extends BaseController
     public function certifications(): string
     {
         $locale = $this->request->getLocale();
-        $data   = [
+        $data = [
+            'slug'         => 'certifications',
             'locale'       => $locale,
             'certificates' => [
-                'academic' => [
+                'academic'     => [
                     'primary'   => [
                         [
                             lang('Certifications.data.primary'),
@@ -858,7 +861,7 @@ class Home extends BaseController
                     ],
                 ],
                 'professional' => [
-                    'AWS' => [
+                    'AWS'            => [
                         [
                             'AWS Fundamentals',
                             'Coursera / AWS',
@@ -872,7 +875,7 @@ class Home extends BaseController
                             'https://drive.google.com/file/d/10xufFvuFwHpsnfkcH95oDEhpQpqi1ULs/view?usp=sharing'
                         ],
                     ],
-                    'Google' => [
+                    'Google'         => [
                         [
                             'Google ProjectManagement',
                             'Coursera / Google',
@@ -947,7 +950,7 @@ class Home extends BaseController
                 ],
                 'others'       => [
                     'languages' => [
-                        'english'  => [
+                        'english'   => [
                             [
                                 'EF SET Certificate: C2 Proficient',
                                 'Education First (EF)',
@@ -955,7 +958,7 @@ class Home extends BaseController
                                 'https://drive.google.com/file/d/18piWVwM1u3UT2zCmABG8uasEyYcuMHdv/view?usp=sharing',
                             ],
                         ],
-                        'japanese' => [
+                        'japanese'  => [
                             [
                                 '日本語ビギナーコース',
                                 'Tomo Japanese Language School',
@@ -978,7 +981,7 @@ class Home extends BaseController
                         'taiwanese' => [
                             [
                                 lang('Certifications.data.tocfl'),
-                                lang('Certifications.data.tocfl-body'),// Steering Committee for the Test Of Proficiency-Huayu
+                                lang('Certifications.data.tocfl-body'), // Steering Committee for the Test Of Proficiency-Huayu
                                 lang('Certifications.data.future.by-2030'),
                                 ''
                             ]
@@ -994,7 +997,8 @@ class Home extends BaseController
     {
         $locale = $this->request->getLocale();
         $data   = [
-            'locale'       => $locale
+            'slug'   => 'writing',
+            'locale' => $locale
         ];
         return view('writing', $data);
     }
@@ -1002,9 +1006,19 @@ class Home extends BaseController
     public function calendar(): string
     {
         $data = [
+            'slug'   => 'calendar',
             'locale' => $this->request->getLocale()
         ];
         return view('calendar', $data);
+    }
+
+    public function blog(): string
+    {
+        $data = [
+            'slug'   => 'blog',
+            'locale' => $this->request->getLocale()
+        ];
+        return view('blog', $data);
     }
 
     /**

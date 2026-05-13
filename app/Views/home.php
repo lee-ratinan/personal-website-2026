@@ -50,27 +50,8 @@
 <body class="index-page <?= $locale ?>">
 <?php
 $experience_years = date('Y') - 2012;
+include "_header.php";
 ?>
-<header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-        <a href="<?= base_url($locale) ?>" class="logo d-flex align-items-center me-auto">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="<?= base_url('assets/img/logo.webp') ?>" alt=""> -->
-            <h1 class="sitename fw-bold"><?= lang('Home.system.site-name-head') ?></h1>
-        </a>
-        <nav id="navmenu" class="navmenu">
-            <ul>
-                <li><a href="#" class="active"><?= lang('Home.sections.home.title') ?></a></li>
-                <li><a href="<?= base_url($locale . '/certifications') ?>"><?= lang('Certifications.title') ?></a></li>
-                <li><a href="<?= base_url($locale . '/writing') ?>"><?= lang('Writing.title') ?></a></li>
-                <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
-                <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
-                <li><a href="#footer"><i class="bi bi-translate"></i></a></li>
-            </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-    </div>
-</header>
 <main class="main">
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
@@ -622,57 +603,6 @@ $experience_years = date('Y') - 2012;
         </div>
     </section><!-- /Contact Section -->
 </main>
-<footer id="footer" class="footer">
-    <div class="container footer-top">
-        <div class="row gy-4">
-            <div class="col-lg-5 col-md-12 footer-about">
-                <a href="<?= base_url($locale) ?>" class="logo d-flex align-items-center">
-                    <span class="sitename"><?= lang('Home.system.site-name-head') ?></span>
-                </a>
-                <p><?= lang('Home.system.footer-msg') ?></p>
-            </div>
-            <div class="col-lg-3 col-6 footer-links">
-                <h4><?= lang('Home.system.useful-links') ?></h4>
-                <ul>
-                    <li><a href="<?= base_url($locale) ?>"><?= lang('Home.sections.home.title') ?></a></li>
-                    <li><a href="<?= base_url($locale . '/certifications') ?>"><?= lang('Certifications.title') ?></a></li>
-                    <li><a href="<?= base_url($locale . '/writing') ?>"><?= lang('Writing.title') ?></a></li>
-                    <li><a href="<?= base_url($locale . '/personal-life') ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
-                    <li><a href="<?= base_url($locale . '/calendar') ?>"><?= lang('Home.calendar') ?></a></li>
-                    <li><a href="https://blog.ratinan.com"><?= lang('Home.system.pages.blog') ?></a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-6 footer-links">
-                <h4><?= lang('Home.system.change-language') ?></h4>
-                <ul>
-                    <li><a href="<?= base_url('en') ?>">English (US)</a></li>
-                    <li><a href="<?= base_url('th') ?>">ภาษาไทย</a></li>
-                    <li><a href="<?= base_url('ja') ?>">日本語 <sup>AI 翻訳</sup></a></li>
-                    <li><a href="<?= base_url('zh-TW') ?>">中文（台灣） <sup>AI 翻譯</sup></a></li>
-                    <li><a href="<?= base_url('en-Shaw') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">RatinanLee</strong> <span>All Rights Reserved</span></p>
-    </div>
-</footer>
-<!-- Scroll Top -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-<!-- Preloader -->
-<div id="preloader"></div>
-<!-- Vendor JS Files -->
-<script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-<script src="<?= base_url('assets/vendor/php-email-form/validate.js') ?>"></script>
-<script src="<?= base_url('assets/vendor/aos/aos.js') ?>"></script>
-<script src="<?= base_url('assets/vendor/typed.js/typed.umd.js') ?>"></script>
-<script src="<?= base_url('assets/vendor/waypoints/noframework.waypoints.js') ?>"></script>
-<script src="<?= base_url('assets/vendor/glightbox/js/glightbox.min.js') ?>"></script>
-<script src="<?= base_url('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') ?>"></script>
-<script src="<?= base_url('assets/vendor/isotope-layout/isotope.pkgd.min.js') ?>"></script>
-<script src="<?= base_url('assets/vendor/swiper/swiper-bundle.min.js') ?>"></script>
-<!-- Main JS File -->
-<script src="<?= base_url('assets/js/main.min.js') ?>"></script>
+<?php include "_footer.php"; ?>
 </body>
 </html>

@@ -58,9 +58,10 @@ class Home extends BaseController
      */
     public function personal_life(): string
     {
-        $data = [
+        $locale = $this->request->getLocale();
+        $data   = [
             'slug'                 => 'personal-life',
-            'locale'               => $this->request->getLocale(),
+            'locale'               => $locale,
             'countries_visited'    => 10,
             'distant_traveled'     => 198000,
             'flights'              => 104,
@@ -75,7 +76,7 @@ class Home extends BaseController
                     ],
                     'dates'     => ['2026-01-06', '2026-01-15'],
                     'detail'    => 'It’s my first Japan solo trip in the winter!',
-                    'link'      => 'https://blog.ratinan.com/kix2026/'
+                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/141/kix2026'
                 ],
                 [
                     'code'      => 'hkt2025',
@@ -84,7 +85,7 @@ class Home extends BaseController
                     'locations' => ['phuket', 'phang-nga', 'krabi'],
                     'dates'     => ['2025-11-14', '2025-11-17'],
                     'detail'    => 'Celebrating birthday in the sea~~',
-                    'link'      => 'https://blog.ratinan.com/hkt2025/'
+                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/37/hkt2025'
                 ],
                 [
                     'code'      => 'kul2025',
@@ -93,7 +94,7 @@ class Home extends BaseController
                     'locations' => ['bandar-utama', 'kuala-lumpur'],
                     'dates'     => ['2025-04-22', '2025-04-30'],
                     'detail'    => 'A strange work trip with lots of free time to enjoy.',
-                    'link'      => 'https://blog.ratinan.com/kul2025/'
+                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/9/kul2025'
                 ],
                 [
                     'code'      => 'bkk2025',
@@ -102,7 +103,7 @@ class Home extends BaseController
                     'locations' => ['bangkok'],
                     'dates'     => ['2025-03-06', '2025-03-10'],
                     'detail'    => 'Cool trip',
-                    'link'      => 'https://blog.ratinan.com/bkk2025/'
+                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/39/bkk2025'
                 ],
                 [
                     'code'      => 'tpe2024',
@@ -350,7 +351,7 @@ class Home extends BaseController
                     'title'     => 'Conan Town コナンタウン',
                     'locations' => ['hokuei'],
                     'dates'     => ['2026-01-07'],
-                    'link'      => 'https://blog.ratinan.com/conan-town-pilgrimage/'
+                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/285/conan-town-pilgrimage'
                 ],
                 [
                     'code'      => 'lost-ship-in-the-sky',
@@ -358,7 +359,7 @@ class Home extends BaseController
                     'title'     => 'Lost Ship in the Sky 天空の難破船',
                     'locations' => ['nara', 'osaka'],
                     'dates'     => ['2026-01-06'],
-                    'link'      => 'https://blog.ratinan.com/lost-ship-in-the-sky-pilgrimage/'
+                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/281/lost-ship-in-the-sky-pilgrimage'
                 ],
                 // 2025
                 [
@@ -389,7 +390,7 @@ class Home extends BaseController
                     'title'     => 'The On1y One 某某',
                     'locations' => ['taipei'],
                     'dates'     => ['2024-10-25'],
-                    'link'      => 'https://blog.ratinan.com/the-on1y-one-pilgrimage/'
+                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/202/the-on1y-one-pilgrimage'
                 ],
                 [
                     'code'      => 'capybara',
@@ -439,7 +440,7 @@ class Home extends BaseController
                     'title'     => 'Your Name 君の名は',
                     'locations' => ['tokyo'],
                     'dates'     => ['2024-04-29'],
-                    'link'      => 'https://blog.ratinan.com/kimi-no-na-wa-pilgrimage/'
+                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/184/kimi-no-na-wa-pilgrimage'
                 ],
                 [
                     'code'      => 'shinkansen',
@@ -454,7 +455,7 @@ class Home extends BaseController
                     'title'     => 'Crossroad In the Ancient Capital 迷宮の十字路',
                     'locations' => ['kyoto'],
                     'dates'     => ['2024-04-26', '2026-01-10'],
-                    'link'      => 'https://blog.ratinan.com/crossroad-in-the-ancient-capital-pilgrimage/'
+                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/186/crossroad-in-the-ancient-capital-pilgrimage'
                 ],
                 [
                     'code'      => 'abeno-harukas',
@@ -607,7 +608,7 @@ class Home extends BaseController
                     'title'     => 'Harry Potter',
                     'locations' => ['melbourne', 'osaka', 'tokyo'],
                     'dates'     => ['2019-10-23', '2024-04-23', '2024-04-27', '2026-01-12'],
-                    'link'      => 'https://blog.ratinan.com/harry-potter-pilgrimage/'
+                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/188/harry-potter-pilgrimage'
                 ],
                 [
                     'code'      => 'nude-beach',

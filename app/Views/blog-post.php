@@ -278,10 +278,10 @@
                 $(this).addClass('col-6 col-md-4 col-xl-3');
             });
             $('.wp-block-gallery img').each(function () {
-                $(this).addClass('img-fluid');
+                $(this).addClass('img-fluid mx-auto');
             });
             $('.wp-block-image img').each(function () {
-                $(this).addClass('img-fluid');
+                $(this).addClass('img-fluid mx-auto');
             });
         }
         // ─── Renderer ────────────────────────────────────────────────────────────

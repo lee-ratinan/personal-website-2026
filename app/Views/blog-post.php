@@ -56,7 +56,7 @@
     <section id="about" class="about section">
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col">
+                <div class="col-12 col-md-10 col-xl-9">
                     <p><a href="<?= base_url($locale . '/blog') ?>"><?= lang('Home.system.pages.blog') ?></a> /</p>
                     <h1 id="post-title">[POST-TITLE]</h1>
                     <div id="wordpress-post"></div>
@@ -281,7 +281,10 @@
                 $(this).addClass('img-fluid mx-auto');
             });
             $('.wp-block-image img').each(function () {
-                $(this).addClass('img-fluid mx-auto');
+                $(this).addClass('img-fluid');
+            });
+            $('.wp-block-image').each(function () {
+                $(this).addClass('text-center');
             });
         }
         // ─── Renderer ────────────────────────────────────────────────────────────

@@ -296,17 +296,19 @@
 
             const $prev = $('#wp-prev');
             if (currentPage <= 1) {
-                $prev.addClass('is-disabled').attr({ 'aria-disabled': 'true', tabindex: '-1' });
+                $prev.addClass('is-disabled btn-outline-secondary').removeClass('btn-success').attr({ 'aria-disabled': 'true', tabindex: '-1' });
             } else {
-                $prev.removeClass('is-disabled').removeAttr('aria-disabled').attr('tabindex', '0');
+                $prev.addClass('btn-success').removeClass('is-disabled btn-outline-secondary').removeAttr('aria-disabled').attr('tabindex', '0');
             }
+            $prev.addClass('btn-sm me-3');
 
             const $next = $('#wp-next');
             if (currentPage >= totalPages) {
-                $next.addClass('is-disabled').attr({ 'aria-disabled': 'true', tabindex: '-1' });
+                $next.addClass('is-disabled btn-outline-secondary').removeClass('btn-success').attr({ 'aria-disabled': 'true', tabindex: '-1' });
             } else {
-                $next.removeClass('is-disabled').removeAttr('aria-disabled').attr('tabindex', '0');
+                $next.addClass('btn-success').removeClass('is-disabled btn-outline-secondary').removeAttr('aria-disabled').attr('tabindex', '0');
             }
+            $next.addClass('btn-sm ms-3');
         }
 
         function _bindControls() {

@@ -252,7 +252,7 @@
                 const imgSrc  = post.mediaObj?.source_url || '';
                 const imgAlt  = post.mediaObj?.alt_text   || title;
                 const imgHtml = imgSrc
-                    ? `<img class="img img-thumbnail" src="${imgSrc}" alt="${_esc(imgAlt)}">`
+                    ? `<a href="<?= base_url($locale . '/blog-post') ?>/${_esc(post.id)}/${_esc(post.slug)}"><img class="img img-thumbnail" src="${imgSrc}" alt="${_esc(imgAlt)}"></a>`
                     : '';
 
                 const authorName = post.authorObj?.name || '';

@@ -21,11 +21,11 @@
             <div class="col-lg-3 col-6 footer-links">
                 <h4><?= lang('Home.system.change-language') ?></h4>
                 <ul>
-                    <li><a href="<?= base_url('en/' . $slug) ?>">English (US)</a></li>
-                    <li><a href="<?= base_url('th/' . $slug) ?>">ภาษาไทย</a></li>
-                    <li><a href="<?= base_url('ja/' . $slug) ?>">日本語 <sup>AI 翻訳</sup></a></li>
-                    <li><a href="<?= base_url('zh-TW/' . $slug) ?>">中文（台灣） <sup>AI 翻譯</sup></a></li>
-                    <li><a href="<?= base_url('en-Shaw/' . $slug) ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
+                    <li><a href="<?= base_url('en/' . $slug . @$post_slug) ?>">English (US)</a></li>
+                    <li><a href="<?= base_url('th/' . $slug . @$post_slug) ?>">ภาษาไทย</a></li>
+                    <li><a href="<?= base_url('ja/' . $slug . @$post_slug) ?>">日本語 <sup>AI 翻訳</sup></a></li>
+                    <li><a href="<?= base_url('zh-TW/' . $slug . @$post_slug) ?>">中文（台灣） <sup>AI 翻譯</sup></a></li>
+                    <li><a href="<?= base_url('en-Shaw/' . $slug . @$post_slug) ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
                 </ul>
             </div>
         </div>

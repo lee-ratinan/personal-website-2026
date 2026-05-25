@@ -1036,7 +1036,7 @@ class Home extends BaseController
         $data = [
             'slug'      => 'blog-post',
             'post_id'   => $id,
-            'post_slug' => $slug,
+            'post_slug' => '/' . $id . '/' . $slug,
             'locale'    => $this->request->getLocale()
         ];
         return view('blog-post', $data);

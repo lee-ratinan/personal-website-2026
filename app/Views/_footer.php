@@ -14,18 +14,18 @@
                     <li><a href="<?= 'certifications' != $slug ? base_url($locale . '/certifications') : '#' ?>"><?= lang('Certifications.title') ?></a></li>
                     <li><a href="<?= 'writing' != $slug ? base_url($locale . '/writing') : '#' ?>"><?= lang('Writing.title') ?></a></li>
                     <li><a href="<?= 'personal-life' != $slug ? base_url($locale . '/personal-life') : '#' ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
-                    <li><a href="<?= 'personal-life' != $slug ? base_url($locale . '/personal-life') : '#' ?>"><?= lang('Home.calendar') ?></a></li>
+                    <li><a href="<?= 'calendar' != $slug ? base_url($locale . '/calendar') : '#' ?>"><?= lang('Home.calendar') ?></a></li>
                     <li><a href="<?= 'blog' != $slug ? base_url($locale . '/blog') : '?' ?>"><?= lang('Home.system.pages.blog') ?></a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-6 footer-links">
                 <h4><?= lang('Home.system.change-language') ?></h4>
                 <ul>
-                    <li><a href="<?= base_url('en/calendar') ?>">English (US)</a></li>
-                    <li><a href="<?= base_url('th/calendar') ?>">ภาษาไทย</a></li>
-                    <li><a href="<?= base_url('ja/calendar') ?>">日本語 <sup>AI 翻訳</sup></a></li>
-                    <li><a href="<?= base_url('zh-TW/calendar') ?>">中文（台灣） <sup>AI 翻譯</sup></a></li>
-                    <li><a href="<?= base_url('en-Shaw/calendar') ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
+                    <li><a href="<?= base_url('en/' . $slug) ?>">English (US)</a></li>
+                    <li><a href="<?= base_url('th/' . $slug) ?>">ภาษาไทย</a></li>
+                    <li><a href="<?= base_url('ja/' . $slug) ?>">日本語 <sup>AI 翻訳</sup></a></li>
+                    <li><a href="<?= base_url('zh-TW/' . $slug) ?>">中文（台灣） <sup>AI 翻譯</sup></a></li>
+                    <li><a href="<?= base_url('en-Shaw/' . $slug) ?>">𐑖𐑱𐑝𐑾𐑯</a></li>
                 </ul>
             </div>
         </div>

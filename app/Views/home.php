@@ -55,7 +55,10 @@ include "_header.php";
 <main class="main">
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-        <img src="<?= base_url('assets/img/profile/profile-hero.jpg') ?>" alt="" data-aos="fade-in">
+        <picture data-aos="fade-in">
+            <source media="(min-width: 768px)" srcset="<?= base_url('assets/img/profile/profile-hero.jpg') ?>">
+            <img src="<?= base_url('assets/img/profile/profile-hero-mobile.jpg') ?>" alt="Hero Image" />
+        </picture>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">

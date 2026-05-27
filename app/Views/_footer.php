@@ -11,9 +11,9 @@
                 <h4><?= lang('Home.system.useful-links') ?></h4>
                 <ul>
                     <li><a href="<?= 'home' != $slug ? base_url($locale) : '#' ?>"><?= lang('Home.sections.home.title') ?></a></li>
+                    <li><a href="<?= 'personal-life' != $slug ? base_url($locale . '/personal-life') : '#' ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
                     <li><a href="<?= 'certifications' != $slug ? base_url($locale . '/certifications') : '#' ?>"><?= lang('Certifications.title') ?></a></li>
                     <li><a href="<?= 'writing' != $slug ? base_url($locale . '/writing') : '#' ?>"><?= lang('Writing.title') ?></a></li>
-                    <li><a href="<?= 'personal-life' != $slug ? base_url($locale . '/personal-life') : '#' ?>"><?= lang('Home.system.pages.personal-life') ?></a></li>
                     <li><a href="<?= 'calendar' != $slug ? base_url($locale . '/calendar') : '#' ?>"><?= lang('Home.calendar') ?></a></li>
                     <li><a href="<?= 'blog' != $slug ? base_url($locale . '/blog') : '?' ?>"><?= lang('Home.system.pages.blog') ?></a></li>
                 </ul>

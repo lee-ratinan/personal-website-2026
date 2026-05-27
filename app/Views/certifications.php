@@ -50,25 +50,8 @@
 <body class="index-page <?= $locale ?>">
 <?php include "_header.php"; ?>
 <main class="main">
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-        <img src="<?= base_url('assets/img/profile/profile-hero.jpg') ?>" alt="" data-aos="fade-in">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2><?= lang('Home.sections.home.greetings') ?></h2>
-                    <p><?= lang('Home.sections.home.i-am-a') ?> <span class="typed" data-typed-items="<?= lang('Home.sections.home.occupations') ?>"></span><span class="typed-cursor" aria-hidden="true"></span></p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/ratinanlee" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/lee-ratinan" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://www.instagram.com/ratinanlee/" target="_blank"><i class="bi bi-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- /Hero Section -->
     <!-- Certifications Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section mt-5">
         <div class="container section-title" data-aos="fade-up">
             <h2><?= lang('Certifications.title') ?></h2>
         </div><!-- End Section Title -->

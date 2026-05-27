@@ -84,7 +84,7 @@ return [
                     '1' => [
                         'current'   => '現在',
                         'title'     => 'テクニカルチームリーダー、プロジェクトマネージャー',
-                        'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
+                        'companies' => 'Moolahgo, Irvins, Secretlab',
                         'paragraph' => 'Eコマースとフィンテック領域で経験を持つプロジェクトマネージャー兼テクニカルリードとして、クロスファンクショナルチームを導き、デリバリーを効率化し、構想からリリースまで高品質でスケーラブルなソリューションを推進しました。',
                         'tags'      => [
                             '1' => 'リーダーシップ',

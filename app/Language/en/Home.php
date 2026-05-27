@@ -84,7 +84,7 @@ return [
                     '1' => [
                         'current'   => 'Current',
                         'title'     => 'Technical Team Leader, Project Manager',
-                        'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
+                        'companies' => 'Moolahgo, Irvins, Secretlab',
                         'paragraph' => 'Project manager and technical lead with experience across e-commerce and fintech, guiding cross-functional teams, streamlining delivery, and driving high-quality, scalable solutions from concept to release.',
                         'tags'      => [
                             '1' => 'Leadership',

@@ -84,7 +84,7 @@ return [
                     '1' => [
                         'current'   => '現在',
                         'title'     => '技術團隊領導 / 技術主管、專案經理',
-                        'companies' => 'Silverlake, Moolahgo, Irvins, Secretlab',
+                        'companies' => 'Moolahgo, Irvins, Secretlab',
                         'paragraph' => '具備電商與金融科技經驗的專案經理兼技術領導者，帶領跨職能團隊、優化交付流程，並從概念到上線推動高品質、可擴展的技術解決方案。',
                         'tags'      => [
                             '1' => '領導力',

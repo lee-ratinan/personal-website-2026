@@ -38,7 +38,7 @@
     <link rel="alternate" hreflang="ja" href="<?= base_url('ja/writing') ?>"/>
     <link rel="alternate" hreflang="zh-TW" href="<?= base_url('zh-TW/writing') ?>"/>
     <link rel="alternate" hreflang="x-default" href="<?= base_url('writing') ?>"/>
-    <link rel="canonical" href="<?= current_url($locale . '/writing') ?>">
+    <link rel="canonical" href="<?= current_url() ?>">
     <!-- =======================================================
     * Template Name: Craftivo
     * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/

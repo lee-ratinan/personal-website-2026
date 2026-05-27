@@ -38,7 +38,7 @@
     <link rel="alternate" hreflang="ja" href="<?= base_url('ja/certifications') ?>"/>
     <link rel="alternate" hreflang="zh-TW" href="<?= base_url('zh-TW/certifications') ?>"/>
     <link rel="alternate" hreflang="x-default" href="<?= base_url('certifications') ?>"/>
-    <link rel="canonical" href="<?= current_url($locale . '/certifications') ?>">
+    <link rel="canonical" href="<?= current_url() ?>">
     <!-- =======================================================
     * Template Name: Craftivo
     * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/

@@ -237,34 +237,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- 4 -->
-                                        <div class="exp-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
-                                            <div class="card-header">
-                                                <div class="company-logo">
-                                                    &nbsp; 4 &nbsp;
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4>Case Study: Navigating Regulatory Compliance – De-risking Cross-Border FinTech Partnerships</h4>
-                                                <h5>The Challenge</h5>
-                                                <p>A strategic initiative to secure Bank Indonesia (BI) approval for QRIS service provision was rejected, threatening a critical partnership with the Indonesian partner bank. The breakdown stemmed from a complex misalignment between technical delivery capabilities and stringent central bank regulatory frameworks. Without a unified strategy between internal business, technical, and partner teams, the project faced indefinite regulatory stagnation, potential compliance violations, and significant financial risk.</p>
-                                                <h5>The Solution</h5>
-                                                <ul>
-                                                    <li>Mediated Strategic Cross-Border Alignment: Facilitated high-stakes alignment sessions between stakeholders from both the company and the Indonesian partner bank to systematically diagnose regulatory objections and identify compliant operational models.</li>
-                                                    <li>Architected a Dual-Entity Compliance Strategy: Leveraged combined technical and product governance expertise to propose a compliant structural pivot: retaining the Indonesian partner bank as the licensed QRIS provider while dedicating the company strictly to cross-border remittance clearing.</li>
-                                                    <li>Translated Legal Frameworks into Engineering Roadmaps: Decoupled the operational architecture to satisfy BI regulations, ensuring that data flows and financial settlements fully conformed to regulatory boundaries without sacrificing product viability.</li>
-                                                </ul>
-                                                <h5>The Impact</h5>
-                                                <ul>
-                                                    <li>Resolved Regulatory Roadblocks: Successfully aligned cross-border stakeholders, transforming a rejected licensing attempt into a legally sound, actionable integration roadmap.</li>
-                                                    <li>Initiated Low-Risk Technical Execution: Kicked off the engineered integration smoothly, entirely bypassing further regulatory friction and protecting both organizations from legal exposure.</li>
-                                                    <li>Validated Technical-Business Advisory: Proven the critical value of embedding senior technical leadership into high-stakes regulatory negotiations to rapidly untangle complex operational and legal impasses.</li>
-                                                </ul>
-                                                <div class="text-center my-3">
-                                                    <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/decoration-05.jpg') ?>" alt="Jakarta, Indonesia" />
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -60,7 +60,7 @@
                     <p>PORTFOLIO</p>
                     <h1>Ratinan “Nat” Lee</h1>
                     <h2>Scrum in Action | My Journey as a Scrum Master, Tech Lead, Project Manager</h2>
-                    <img class="img-fluid max-400 my-3" src="<?= base_url('assets/img/portfolio-page/cover-1.jpg') ?>" alt="Portfolio Cover - Tokyo 2026" />
+                    <img class="img-fluid max-400 rounded my-3" src="<?= base_url('assets/img/portfolio-page/cover-1.jpg') ?>" alt="Portfolio Cover - Tokyo 2026" />
                 </div>
                 <div class="col-12">
                     <p>
@@ -94,43 +94,55 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-10 col-lg-8">
-                            <div class="text-start">
-                                <h3>Education</h3>
-                                <p>
-                                    <b>M.Sc. (Information Systems)</b><br>
-                                    Wee Kim Wee School of Communication and Information<br>
-                                    Nanyang Technological University<br>
-                                    Singapore<br>
-                                    Class of 2015
-                                </p>
-                                <p>
-                                    <b>B.Sc. (Computer Science) - First Class Honors</b><br>
-                                    Sirindhorn International Institute of Technology<br>
-                                    Thammasat University<br>
-                                    Pathum Thani, Thailand<br>
-                                    Class of 2012
-                                </p>
+                            <!-- education -->
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mb-3">
+                                    <h3>Education</h3>
+                                    <p>
+                                        <b>M.Sc. (Information Systems)</b><br>
+                                        Wee Kim Wee School of Communication and Information<br>
+                                        Nanyang Technological University<br>
+                                        Singapore<br>
+                                        Class of 2015
+                                    </p>
+                                    <p>
+                                        <b>B.Sc. (Computer Science) - First Class Honors</b><br>
+                                        Sirindhorn International Institute of Technology<br>
+                                        Thammasat University<br>
+                                        Pathum Thani, Thailand<br>
+                                        Class of 2012
+                                    </p>
+                                </div>
+                                <div class="col-12 col-lg-6 text-center text-lg-end mb-3">
+                                    <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/education-msc-graduation.jpg') ?>" alt="MSc Graduation" />
+                                </div>
                             </div>
-                            <div class="text-end">
-                                <h3>Experience</h3>
-                                <p>
-                                    <b>Technical Team Leader, Project Manager</b><br>
-                                    Moolahgo, Irvins, Secretlab<br>
-                                    Singapore<br>
-                                    2018 - Present
-                                </p>
-                                <p>
-                                    <b>Independent Technology Consultant</b><br>
-                                    Freelance<br>
-                                    Singapore<br>
-                                    2024 - Present
-                                </p>
-                                <p>
-                                    <b>Software Engineer</b><br>
-                                    Mobads, BuzzCity, DST<br>
-                                    Singapore, Bangkok<br>
-                                    2012 - 2017
-                                </p>
+                            <!-- experience -->
+                            <div class="row">
+                                <div class="col-12 col-lg-6 text-lg-end order-lg-2 mb-3">
+                                    <h3>Experience</h3>
+                                    <p>
+                                        <b>Technical Team Leader, Project Manager</b><br>
+                                        Moolahgo, Irvins, Secretlab<br>
+                                        Singapore<br>
+                                        2018 - Present
+                                    </p>
+                                    <p>
+                                        <b>Independent Technology Consultant</b><br>
+                                        Freelance<br>
+                                        Singapore<br>
+                                        2024 - Present
+                                    </p>
+                                    <p>
+                                        <b>Software Engineer</b><br>
+                                        Mobads, BuzzCity, DST<br>
+                                        Singapore, Bangkok<br>
+                                        2012 - 2017
+                                    </p>
+                                </div>
+                                <div class="col-12 col-lg-6 text-center text-lg-start order-lg-1 mb-3">
+                                    <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/experience-buzzcity.jpg') ?>" alt="BuzzCity Team" />
+                                </div>
                             </div>
                             <div class="text-center my-5">* * *</div>
                             <p>As a <b>Scrum Master</b>, I focus on optimizing team dynamics, removing systemic impediments, and expanding cross-functional capabilities. As a <b>Product Owner</b>, I ensure we maximize product value with every sprint. Wearing the <b>Project Manager</b> hat, I balance the project management triangle—aligning scope, time, and cost to deliver predictable outcomes for stakeholders, engineers, and customers alike. I firmly believe that high performance shouldn’t come at the cost of sustainability; I actively manage boundaries to prevent scope creep and eliminate artificial urgency. My ultimate goal is to foster an environment where a team can deliver high-impact products consistently — without burnout.</p>
@@ -162,6 +174,9 @@
                                                     <li>Stabilized the Delivery Pipeline: Transformed scope creep from a disruptive risk into a manageable, transparent negotiation process, protecting the integrity of the release cycle.</li>
                                                     <li>Achieved Predictable Velocity: By protecting Sprint Goals from external volatility, the team consistently met its deliverables and stabilized project timelines.</li>
                                                 </ul>
+                                                <div class="text-center my-3">
+                                                    <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/decoration-04.jpg') ?>" alt="Agile Board" />
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- 2 -->
@@ -188,6 +203,9 @@
                                                     <li>Halved Infrastructure Overhead: Reduced server operational costs by 50%, delivering immediate, compounding fiscal savings to the company’s bottom line.</li>
                                                     <li>Enhanced Operational Velocity: Greatly improved end-user satisfaction by streamlining the platform, directly enabling faster, friction-free warehouse logistics.</li>
                                                 </ul>
+                                                <div class="text-center my-3">
+                                                    <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/decoration-01.jpg') ?>" alt="Office Desk" />
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- 3 -->
@@ -214,6 +232,9 @@
                                                     <li>Automated Elastic Volatility Management: Empowered the platform to automatically scale compute resources dynamically ahead of traffic curves, mitigating the risk of future campaign spikes.</li>
                                                     <li>Secured Strategic Infrastructure Buy-In: Transformed organizational culture by permanently closing the gap between marketing planning and engineering preparation, ensuring all future product launches are backed by aligned capacity planning.</li>
                                                 </ul>
+                                                <div class="text-center my-3">
+                                                    <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/decoration-03.jpg') ?>" alt="Thumbs Up" />
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- 4 -->
@@ -239,12 +260,22 @@
                                                     <li>Initiated Low-Risk Technical Execution: Kicked off the engineered integration smoothly, entirely bypassing further regulatory friction and protecting both organizations from legal exposure.</li>
                                                     <li>Validated Technical-Business Advisory: Proven the critical value of embedding senior technical leadership into high-stakes regulatory negotiations to rapidly untangle complex operational and legal impasses.</li>
                                                 </ul>
+                                                <div class="text-center my-3">
+                                                    <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/decoration-05.jpg') ?>" alt="Jakarta, Indonesia" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center my-5">* * *</div>
+                            <h3>Empowering Teams for Sustainable Excellence</h3>
+                            <p class="text-center">
+                                True leadership is about unlocking potential through structured enablement. As a Project Manager, I optimize the triple constraints of time, resources, and scope to build a predictable engineering environment. As a Scrum Master, I protect the team's focus, remove systemic impediments, and champion agile principles to steadily increase delivery velocity. Simultaneously, as a Product Owner, I maximize product value per sprint by ensuring developers operate with absolute requirement clarity. My ultimate goal is to remove friction and cultivate a resilient, self-organizing team equipped to deliver high-impact engineering excellence.
+                            </p>
+                            <div class="text-center my-3">
+                                <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/decoration-02.jpg') ?>" alt="Team at Dinner" />
+                            </div>
                         </div>
                         <div class="col-12">
                             <h3 class="text-center">Read My Blog</h3>

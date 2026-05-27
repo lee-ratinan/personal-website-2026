@@ -54,7 +54,7 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-12 col-md-10 col-xl-9">
-                    <h1><?= lang('Home.system.pages.blog') ?></h1>
+                    <h1 class="mb-5"><?= lang('Home.system.pages.blog') ?></h1>
                     <?php if ('posts' != $mode) { echo '<h2>' . ucfirst($mode) . ': ' . $ms . '</h2><p><a href="?">View All</a></p>'; } ?>
                     <div id="wordpress-posts"></div>
                     <nav class="wp-pagination text-center">

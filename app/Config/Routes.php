@@ -7,6 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('whatsapp', 'Home::whatsapp');
 $routes->get('personal-life', 'Home::personal_life');
+$routes->get('portfolio', 'Home::portfolio');
 $routes->get('certifications', 'Home::certifications');
 $routes->get('writing', 'Home::writing');
 $routes->get('business-card', 'Home::business_card');
@@ -14,6 +15,7 @@ $routes->get('calendar', 'Home::calendar');
 $routes->get('blog', 'Home::blog');
 $routes->get('blog-post/(:num)/(:any)', 'Home::blog_post/$1/$2');
 $routes->get('{locale}/personal-life', 'Home::personal_life');
+$routes->get('{locale}/portfolio', 'Home::portfolio');
 $routes->get('{locale}/certifications', 'Home::certifications');
 $routes->get('{locale}/writing', 'Home::writing');
 $routes->get('{locale}/calendar', 'Home::calendar');

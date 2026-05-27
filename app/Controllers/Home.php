@@ -994,6 +994,16 @@ class Home extends BaseController
         return view('certifications', $data);
     }
 
+    public function portfolio(): string
+    {
+        $locale = $this->request->getLocale();
+        $data   = [
+            'slug'   => 'portfolio',
+            'locale' => $locale
+        ];
+        return view('portfolio', $data);
+    }
+
     public function writing(): string
     {
         $locale = $this->request->getLocale();

@@ -59,6 +59,7 @@
                 <div class="col-12 col-md-10 col-xl-9">
                     <p><a href="<?= base_url($locale . '/blog') ?>"><?= lang('Home.system.pages.blog') ?></a> /</p>
                     <h1 id="post-title">[POST-TITLE]</h1>
+                    <hr class="my-5" />
                     <div id="wordpress-post"></div>
                 </div>
             </div>

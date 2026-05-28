@@ -1,5 +1,32 @@
 <?php
 /**
+ * Convert year to Japanese Era
+ * @param int $year
+ * @return string
+ */
+function japanese_year_converter(int $year): string
+{
+    // 1. Reiwa Era (May 1, 2019 - Present)
+    if ($year >= 2019) {
+        $eraYear = $year - 2018;
+        $eraYear = ($eraYear == 1 ? "元" : $eraYear);
+        return "令和{$eraYear}年";
+    }
+    // 2. Heisei Era (Jan 8, 1989 - Apr 30, 2019)
+    if ($year >= 1989) {
+        $eraYear = $year - 1988;
+        $eraYear = ($eraYear == 1 ? "元" : $eraYear);
+        return "平成{$eraYear}年";
+    }
+    if ($year >= 1926) {
+        $eraYear = $year - 1925;
+        $eraYear = ($eraYear == 1 ? "元" : $eraYear);
+        return "昭和{$eraYear}年";
+    }
+    return '';
+}
+
+/**
  * Format years
  * @param int[] $input_years array of int, use 0 for 'present'
  * @param string $locale accept all acceptable locales in this system
@@ -37,8 +64,12 @@ function calculate_years (array $input_years, string $locale, string $separator 
         if (0 == $year) {
             $output_years[] = $now;
         } else {
-            $year = intval($year) + $adjustment;
-            $output_years[] = str_replace('X', $year, $format);
+            $year     = $year + $adjustment;
+            $str_year = str_replace('X', $year, $format);
+            if ('ja' == $locale) {
+                $str_year .= ' (' . japanese_year_converter($year) . ')';
+            }
+            $output_years[] = $str_year;
         }
     }
     return implode($separator, $output_years);

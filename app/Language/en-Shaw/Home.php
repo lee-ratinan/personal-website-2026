@@ -92,7 +92,7 @@ return [
                             '3' => '𐑕𐑒𐑮𐑳𐑥',
                             '4' => '𐑦𐑯𐑩𐑝𐑱𐑖𐑩𐑯'
                         ],
-                        'country'   => 'Singapore',
+                        'country'   => '𐑕𐑦𐑙𐑩𐑐𐑹',
                         'year'      => [2018, 0],
                     ],
                     '2' => [
@@ -105,7 +105,7 @@ return [
                             '3' => 'SEO',
                             '4' => '𐑒𐑩𐑥𐑿𐑯𐑦𐑒𐑱𐑖𐑩𐑯'
                         ],
-                        'country'   => 'Singapore, Bangkok',
+                        'country'   => '𐑕𐑦𐑙𐑩𐑐𐑹, 𐑚𐑨𐑙𐑒𐑪𐑒',
                         'year'      => [2024, 0],
                     ],
                     '3' => [
@@ -118,7 +118,7 @@ return [
                             '3' => '𐑕𐑦𐑕𐑑𐑩𐑥 𐑩𐑯𐑨𐑤𐑩𐑕𐑦𐑕',
                             '4' => 'UX/UI 𐑛𐑦𐑟𐑲𐑯',
                         ],
-                        'country'   => 'Singapore, Bangkok',
+                        'country'   => '𐑕𐑦𐑙𐑩𐑐𐑹, 𐑚𐑨𐑙𐑒𐑪𐑒',
                         'year'      => [2012, 2017],
                     ]
                 ]
@@ -145,7 +145,7 @@ return [
                         'title'      => '𐑥𐑨𐑕𐑑𐑼 𐑝 𐑕𐑲𐑩𐑯𐑕 (𐑦𐑯𐑓𐑼𐑥𐑱𐑖𐑩𐑯 𐑕𐑦𐑕𐑑𐑩𐑥𐑟)',
                         'university' => 'Wee Kim Wee 𐑕𐑒𐑵𐑤 𐑝 𐑒𐑩𐑥𐑿𐑯𐑦𐑒𐑱𐑖𐑩𐑯 𐑯 𐑦𐑯𐑓𐑼𐑥𐑱𐑖𐑩𐑯, Nanyang 𐑑𐑧𐑒𐑯𐑩𐑤𐑪𐑡𐑦𐑒𐑩𐑤 𐑿𐑯𐑦𐑝𐑻𐑕𐑦𐑑𐑦',
                         'paragraph'  => '𐑥𐑨𐑕𐑑𐑼𐑛 𐑩𐑛𐑝𐑭𐑯𐑕𐑑 𐑦𐑯𐑓𐑼𐑥𐑱𐑖𐑩𐑯 𐑕𐑦𐑕𐑑𐑩𐑥 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑯 𐑥𐑨𐑯𐑦𐑡𐑥𐑩𐑯𐑑.',
-                        'country'    => 'Singapore',
+                        'country'    => '𐑕𐑦𐑙𐑩𐑐𐑹',
                         'class-of'   => 2015
                     ],
                     'bachelor'     => [
@@ -154,7 +154,7 @@ return [
                         'university' => 'Sirindhorn 𐑦𐑯𐑑𐑼𐑯𐑨𐑖𐑩𐑯𐑩𐑤 𐑦𐑯𐑕𐑑𐑦𐑑𐑿𐑑 𐑝 𐑑𐑧𐑒𐑯𐑪𐑤𐑩𐑡𐑦, Thammasat 𐑿𐑯𐑦𐑝𐑻𐑕𐑦𐑑𐑦',
                         'paragraph'  => '𐑤𐑻𐑯𐑛 𐑩 𐑕𐑑𐑮𐑪𐑙 𐑓𐑬𐑯𐑛𐑱𐑖𐑩𐑯 𐑦𐑯 𐑕𐑪𐑓𐑑𐑢𐑺 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑯 𐑸𐑒𐑦𐑑𐑧𐑒𐑗𐑼.',
                         'honors'     => '𐑓𐑻𐑕𐑑 𐑒𐑤𐑭𐑕 𐑪𐑯𐑼𐑟',
-                        'country'    => 'Thailand',
+                        'country'    => '𐑑𐑲𐑤𐑨𐑯𐑛',
                         'class-of'   => 2012
                     ],
                 ]

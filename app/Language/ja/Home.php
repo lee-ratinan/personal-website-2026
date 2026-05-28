@@ -92,7 +92,7 @@ return [
                             '3' => 'スクラム',
                             '4' => 'イノベーション'
                         ],
-                        'country'   => 'Singapore',
+                        'country'   => 'シンガポール',
                         'year'      => [2018, 0],
                     ],
                     '2' => [
@@ -105,7 +105,7 @@ return [
                             '3' => 'SEO',
                             '4' => 'コミュニケーション'
                         ],
-                        'country'   => 'Singapore, Bangkok',
+                        'country'   => 'シンガポール、バンコク',
                         'year'      => [2024, 0],
                     ],
                     '3' => [
@@ -118,7 +118,7 @@ return [
                             '3' => 'システム分析',
                             '4' => 'UX/UI デザイン',
                         ],
-                        'country'   => 'Singapore, Bangkok',
+                        'country'   => 'シンガポール、バンコク',
                         'year'      => [2012, 2017],
                     ]
                 ]
@@ -145,7 +145,7 @@ return [
                         'title'      => '情報システム理学修士',
                         'university' => '南洋理工大学 ウィー・キム・ウィー情報コミュニケーション学部',
                         'paragraph'  => '高度な情報システム工学とマネジメントを習得。',
-                        'country'    => 'Singapore',
+                        'country'    => 'シンガポール',
                         'class-of'   => 2015
                     ],
                     'bachelor'     => [
@@ -154,7 +154,7 @@ return [
                         'university' => 'タマサート大学 シリンドーン国際工学部',
                         'paragraph'  => 'ソフトウェア工学とアーキテクチャの確かな基礎を習得。',
                         'honors'     => '最優等',
-                        'country'    => 'Thailand',
+                        'country'    => 'タイ',
                         'class-of'   => 2012
                     ],
                 ]

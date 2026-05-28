@@ -75,7 +75,7 @@
                         Business Card: <a href="https://connect.ratinan.com/" target="_blank">connect.ratinan.com/</a>
                     </p>
                     <div class="row justify-content-end">
-                        <div class="col-12 col-md-10 col-lg-8 text-end">
+                        <div class="col-12 col-md-10 col-lg-8 text-end my-5">
                             <h3>Who Am I?</h3>
                             <?php
                             $year = (int)date('Y');
@@ -145,7 +145,7 @@
                                 </div>
                             </div>
                             <div class="text-center my-5">* * *</div>
-                            <p>As a <b>Scrum Master</b>, I focus on optimizing team dynamics, removing systemic impediments, and expanding cross-functional capabilities. As a <b>Product Owner</b>, I ensure we maximize product value with every sprint. Wearing the <b>Project Manager</b> hat, I balance the project management triangle—aligning scope, time, and cost to deliver predictable outcomes for stakeholders, engineers, and customers alike. I firmly believe that high performance shouldn’t come at the cost of sustainability; I actively manage boundaries to prevent scope creep and eliminate artificial urgency. My ultimate goal is to foster an environment where a team can deliver high-impact products consistently — without burnout.</p>
+                            <p class="text-center">As a <b>Scrum Master</b>, I focus on optimizing team dynamics, removing systemic impediments, and expanding cross-functional capabilities. As a <b>Product Owner</b>, I ensure we maximize product value with every sprint. Wearing the <b>Project Manager</b> hat, I balance the project management triangle—aligning scope, time, and cost to deliver predictable outcomes for stakeholders, engineers, and customers alike. I firmly believe that high performance shouldn’t come at the cost of sustainability; I actively manage boundaries to prevent scope creep and eliminate artificial urgency. My ultimate goal is to foster an environment where a team can deliver high-impact products consistently — without burnout.</p>
                             <div class="text-center my-5">* * *</div>
                             <h3 class="text-center">Case Studies</h3>
                             <div class="resume mt-5">
@@ -241,15 +241,15 @@
                                 </div>
                             </div>
                             <div class="text-center my-5">* * *</div>
-                            <h3>Empowering Teams for Sustainable Excellence</h3>
-                            <p class="text-center">
+                            <h3 class="text-center">Empowering Teams for Sustainable Excellence</h3>
+                            <p class="text-center my-5">
                                 True leadership is about unlocking potential through structured enablement. As a Project Manager, I optimize the triple constraints of time, resources, and scope to build a predictable engineering environment. As a Scrum Master, I protect the team's focus, remove systemic impediments, and champion agile principles to steadily increase delivery velocity. Simultaneously, as a Product Owner, I maximize product value per sprint by ensuring developers operate with absolute requirement clarity. My ultimate goal is to remove friction and cultivate a resilient, self-organizing team equipped to deliver high-impact engineering excellence.
                             </p>
                             <div class="text-center my-3">
                                 <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/decoration-02.jpg') ?>" alt="Team at Dinner" />
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 my-5">
                             <h3 class="text-center">Read My Blog</h3>
                             <div class="my-5" id="wordpress-posts"></div>
                             <div class="text-center"><a href="<?= base_url($locale . "/blog?m=tags&ms=portfolio&id=62") ?>" class="btn btn-primary">Read More</a></div>

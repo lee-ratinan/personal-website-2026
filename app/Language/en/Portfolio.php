@@ -42,7 +42,7 @@ return [
                 ]
             ],
             '2' => [
-                'title'     => 'Case Study: Taming Complex Requirements – Architectural Alignment & Cost Optimization',
+                'title'     => 'Taming Complex Requirements – Architectural Alignment & Cost Optimization',
                 'challenge' => 'The platform suffered from severe performance degradation and daily system outages driven by a misalignment between business requirements and technical constraints. Non-technical stakeholders routinely requested impractical, synchronous real-time features that choked system resources. This structural overload resulted in chronic instability, impaired critical warehouse operations, and caused server infrastructure costs to skyrocket due to highly inefficient processing patterns.',
                 'solution'  => [
                     'Architected Async Decoupling: Spearheaded the refactoring of the system architecture by eliminating unneeded real-time synchronous dependencies and enforcing asynchronous processing for resource-heavy operations.',
@@ -57,7 +57,7 @@ return [
                 ]
             ],
             '3' => [
-                'title'     => 'Case Study: Reifying Infrastructure Scalability – Resolving Cross-Functional Communication Silos',
+                'title'     => 'Reifying Infrastructure Scalability – Resolving Cross-Functional Communication Silos',
                 'challenge' => 'A critical communication disconnect between business intelligence and engineering led to a catastrophic production failure during a high-profile product launch. Marketing data regarding an impending, massive traffic surge (driven by a major franchise campaign) was never shared with the technical team. Consequently, engineering optimized exclusively at the source-code level without scaling the underlying infrastructure. Upon launch, the unprecedented concurrent user traffic overwhelmed the network layer, triggering server crashes despite highly efficient code execution.',
                 'solution'  => [
                     'Architected Cloud Auto-Scaling: Spearheaded the modernization of the deployment architecture by implementing AWS Elastic Beanstalk to dynamically handle high-traffic volatility and ensure high availability for customer-facing applications.',

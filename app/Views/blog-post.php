@@ -281,10 +281,10 @@
                 $(this).addClass('col-6 col-md-4 col-xl-3');
             });
             $('.wp-block-gallery img').each(function () {
-                $(this).addClass('img-fluid mx-auto');
+                $(this).addClass('img-fluid rounded mx-auto');
             });
             $('.wp-block-image img').each(function () {
-                $(this).addClass('img-fluid max-400');
+                $(this).addClass('img-fluid rounded max-400');
             });
             $('.wp-block-image').each(function () {
                 $(this).addClass('text-center');
@@ -312,7 +312,7 @@
             const imgSrc  = post.mediaObj?.source_url || '';
             const imgAlt  = post.mediaObj?.alt_text   || title;
             const imgHtml = imgSrc
-                ? `<div class="text-center"><img class="img-fluid mb-3" style="width:100%;max-width:400px;" src="${imgSrc}" alt="${_esc(imgAlt)}"></div>`
+                ? `<div class="text-center"><img class="img-fluid rounded mb-3" style="width:100%;max-width:400px;" src="${imgSrc}" alt="${_esc(imgAlt)}"></div>`
                 : '';
 
             // Author — with avatar if available

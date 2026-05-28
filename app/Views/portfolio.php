@@ -57,32 +57,32 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-12 text-center">
-                    <p>PORTFOLIO</p>
-                    <h1>Ratinan “Nat” Lee</h1>
-                    <h2>Scrum in Action | My Journey as a Scrum Master, Tech Lead, Project Manager</h2>
+                    <p><?= lang('Portfolio.title') ?></p>
+                    <h1><?= lang('Portfolio.title-name') ?></h1>
+                    <h2><?= lang('Portfolio.subtitle') ?></h2>
                     <img class="img-fluid max-400 rounded my-3" src="<?= base_url('assets/img/portfolio-page/cover-1.jpg') ?>" alt="Portfolio Cover - Tokyo 2026" />
                 </div>
                 <div class="col-12">
                     <p>
-                        <b>Ratinan “Nat” Leela-Ngamwongsa</b><br>
-                        รตินันท์ ลีลางามวงศา (นัท) &middot; 李榮欽 &middot; 力川栄欽
+                        <b><?= lang('Portfolio.intro.name') ?></b><br>
+                        <?= lang('Portfolio.intro.other-names') ?>
                     </p>
                     <p>
-                        Nationality: <b>Thai</b><br>
-                        Residency: <b>Singapore (permanent residence)</b><br>
-                        Language: <b>Thai</b> (native), <b>English</b> (fluent; CEFR C2 level)<br>
-                        LinkedIn: <a href="https://www.linkedin.com/in/ratinanlee/" target="_blank">/ratinanlee</a><br>
-                        Business Card: <a href="https://connect.ratinan.com/" target="_blank">connect.ratinan.com/</a>
+                        <?= lang('Portfolio.intro.nationality') ?><br>
+                        <?= lang('Portfolio.intro.residency') ?><br>
+                        <?= lang('Portfolio.intro.language') ?><br>
+                        <?= lang('Portfolio.intro.linkedin') ?> <a href="https://www.linkedin.com/in/ratinanlee/" target="_blank">/ratinanlee</a><br>
+                        <?= lang('Portfolio.intro.business-card') ?> <a href="https://connect.ratinan.com/" target="_blank">connect.ratinan.com/</a>
                     </p>
                     <div class="row justify-content-end">
                         <div class="col-12 col-md-10 col-lg-8 text-end my-5">
-                            <h3>Who Am I?</h3>
+                            <h3><?= lang('Portfolio.who-am-i.title') ?></h3>
                             <?php
                             $year = (int)date('Y');
                             $in_industry_yrs = $year - 2012;
                             $leading_yrs = $year - 2017;
                             ?>
-                            <p>With <b><?= $in_industry_yrs ?> years</b> of industry experience—including <b><?= $leading_yrs ?> years</b> leading high-performing development teams in <b>e-Commerce</b> and <b>FinTech</b> — I specialize in driving <b>Agile</b> transformations that deliver high-impact products. A champion of continuous optimization, I combine hands-on technical leadership with advanced governance, backed by <b>PSM</b> II, <b>PSPO</b> II, <b>CSM</b>, Google <b>AI Essentials</b> and Google <b>Project Management</b> certifications. My expertise lies in building resilient cross-functional teams, streamlining workflows, and fostering a collaborative culture that translates complex engineering efforts into tangible business value.</p>
+                            <p><?= lang('Portfolio.who-am-i.para', [$in_industry_yrs, $leading_yrs]) ?></p>
                         </div>
                     </div>
                     <div class="text-center my-5">
@@ -97,20 +97,18 @@
                             <!-- education -->
                             <div class="row">
                                 <div class="col-12 col-lg-6 mb-3">
-                                    <h3>Education</h3>
+                                    <h3><i class="bi bi-mortarboard-fill"></i> <?= lang('Home.sections.resume.education.label') ?></h3>
                                     <p>
-                                        <b>M.Sc. (Information Systems)</b><br>
-                                        Wee Kim Wee School of Communication and Information<br>
-                                        Nanyang Technological University<br>
-                                        Singapore<br>
-                                        Class of 2015
+                                        <i class="bi bi-patch-check"></i> <b><?= lang('Home.sections.resume.education.records.masters.title') ?></b><br>
+                                        <i class="bi bi-bank2"></i> <?= lang('Home.sections.resume.education.records.masters.university') ?><br>
+                                        <i class="bi bi-geo-alt-fill"></i> <?= lang('Home.sections.resume.education.records.masters.country') ?><br>
+                                        <i class="bi bi-calendar-check"></i> <?= lang('Home.sections.resume.education.records.masters.class-of') ?>
                                     </p>
                                     <p>
-                                        <b>B.Sc. (Computer Science) - First Class Honors</b><br>
-                                        Sirindhorn International Institute of Technology<br>
-                                        Thammasat University<br>
-                                        Pathum Thani, Thailand<br>
-                                        Class of 2012
+                                        <i class="bi bi-patch-check"></i> <b><?= lang('Home.sections.resume.education.records.bachelor.title') ?></b><br>
+                                        <i class="bi bi-bank2"></i> <?= lang('Home.sections.resume.education.records.bachelor.university') ?><br>
+                                        <i class="bi bi-geo-alt-fill"></i> <?= lang('Home.sections.resume.education.records.bachelor.country') ?><br>
+                                        <i class="bi bi-calendar-check"></i> <?= lang('Home.sections.resume.education.records.bachelor.class-of') ?>
                                     </p>
                                 </div>
                                 <div class="col-12 col-lg-6 text-center text-lg-end mb-3">
@@ -120,139 +118,77 @@
                             <!-- experience -->
                             <div class="row">
                                 <div class="col-12 col-lg-6 text-lg-end order-lg-2 mb-3">
-                                    <h3>Experience</h3>
-                                    <p>
-                                        <b>Technical Team Leader, Project Manager</b><br>
-                                        Moolahgo, Irvins, Secretlab<br>
-                                        Singapore<br>
-                                        2018 - Present
-                                    </p>
-                                    <p>
-                                        <b>Independent Technology Consultant</b><br>
-                                        Freelance<br>
-                                        Singapore<br>
-                                        2024 - Present
-                                    </p>
-                                    <p>
-                                        <b>Software Engineer</b><br>
-                                        Mobads, BuzzCity, DST<br>
-                                        Singapore, Bangkok<br>
-                                        2012 - 2017
-                                    </p>
+                                    <h3><i class="bi bi-suitcase-lg-fill"></i> <?= lang('Home.sections.resume.experience.label') ?></h3>
+                                    <?php for ($i = 1; $i <= 3; $i++) : ?>
+                                        <p>
+                                            <b><?= lang('Home.sections.resume.experience.records.' . $i . '.title') ?></b><br>
+                                            <?= lang('Home.sections.resume.experience.records.' . $i . '.companies') ?><br>
+                                            <?= lang('Home.sections.resume.experience.records.' . $i . '.country') ?><br>
+                                            <?= lang('Home.sections.resume.experience.records.' . $i . '.year') ?>
+                                        </p>
+                                    <?php endfor; ?>
                                 </div>
                                 <div class="col-12 col-lg-6 text-center text-lg-start order-lg-1 mb-3">
                                     <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/experience-buzzcity.jpg') ?>" alt="BuzzCity Team" />
                                 </div>
                             </div>
                             <div class="text-center my-5">* * *</div>
-                            <p class="text-center">As a <b>Scrum Master</b>, I focus on optimizing team dynamics, removing systemic impediments, and expanding cross-functional capabilities. As a <b>Product Owner</b>, I ensure we maximize product value with every sprint. Wearing the <b>Project Manager</b> hat, I balance the project management triangle—aligning scope, time, and cost to deliver predictable outcomes for stakeholders, engineers, and customers alike. I firmly believe that high performance shouldn’t come at the cost of sustainability; I actively manage boundaries to prevent scope creep and eliminate artificial urgency. My ultimate goal is to foster an environment where a team can deliver high-impact products consistently — without burnout.</p>
+                            <p class="text-center"><?= lang('Portfolio.para.as-a-scrum-master') ?></p>
                             <div class="text-center my-5">* * *</div>
-                            <h3 class="text-center">Case Studies</h3>
+                            <h3 class="text-center"><?= lang('Portfolio.case-studies.title') ?></h3>
                             <div class="resume mt-5">
                                 <div class="experience-section">
                                     <div class="experience-cards">
-                                        <!-- 1 -->
+                                        <?php
+                                        $cs_img = [
+                                            '1' => [base_url('assets/img/portfolio-page/decoration-04.jpg'), 'Agile Board'],
+                                            '2' => [base_url('assets/img/portfolio-page/decoration-01.jpg'), 'Office Desk'],
+                                            '3' => [base_url('assets/img/portfolio-page/decoration-03.jpg'), 'Thumbs Up']
+                                        ];
+                                        ?>
+                                        <?php for ($i = 1; $i <= 3; $i++) : ?>
                                         <div class="exp-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                                             <div class="card-header">
                                                 <div class="company-logo">
-                                                    &nbsp; 1 &nbsp;
+                                                    &nbsp; <?= $i ?> &nbsp;
                                                 </div>
                                             </div>
                                             <div class="card-body">
-                                                <h4>From Chaos to Clarity – Implementing Agile Governance</h4>
-                                                <h5>The Challenge</h5>
-                                                <p>The organization suffered from severe delivery friction caused by a lack of structured scheduling and premature project initiation. Without stabilized requirements, teams experienced constant mid-sprint pivots, leading to chronic scope creep and missed milestones. Because the structural flaws were invisible, developers were unfairly held accountable for systemic delivery delays, destroying team morale.</p>
-                                                <h5>The Solution</h5>
+                                                <h4><?= lang('Portfolio.case-studies.details.' . $i . '.title') ?></h4>
+                                                <h5><?= lang('Portfolio.case-studies.challenge') ?></h5>
+                                                <p><?= lang('Portfolio.case-studies.details.' . $i . '.challenge') ?></p>
+                                                <h5><?= lang('Portfolio.case-studies.solution') ?></h5>
                                                 <ul>
-                                                    <li>Established Structured Governance: Introduced a rigorous cadence of Scrum events to stabilize the delivery pipeline, establish predictable scheduling, and eliminate daily ambiguity.</li>
-                                                    <li>Cultivated Engineering Accountability: Anchored the transformation in core Scrum values—Commitment, Openness, Focus, Respect, and Courage—shifting the team culture from passive task-execution to true ownership.</li>
-                                                    <li>Implemented Active Scope Management: Enforced a strict trade-off negotiation framework for incoming requirements. New features were welcomed into the product backlog but were barred from disrupting active Sprint Goals unless matching scope was swapped out.</li>
+                                                    <?php foreach (lang('Portfolio.case-studies.details.' . $i . '.solution') as $solution) : ?>
+                                                        <li><?= $solution ?></li>
+                                                    <?php endforeach; ?>
                                                 </ul>
-                                                <h5>The Impact</h5>
+                                                <h5><?= lang('Portfolio.case-studies.impact') ?></h5>
                                                 <ul>
-                                                    <li>Eliminated Execution Ambiguity: Developers gained complete clarity on upcoming priorities, drastically reducing context-switching and operational frustration.</li>
-                                                    <li>Stabilized the Delivery Pipeline: Transformed scope creep from a disruptive risk into a manageable, transparent negotiation process, protecting the integrity of the release cycle.</li>
-                                                    <li>Achieved Predictable Velocity: By protecting Sprint Goals from external volatility, the team consistently met its deliverables and stabilized project timelines.</li>
+                                                    <?php foreach (lang('Portfolio.case-studies.details.' . $i . '.impact') as $impact) : ?>
+                                                        <li><?= $impact ?></li>
+                                                    <?php endforeach; ?>
                                                 </ul>
                                                 <div class="text-center my-3">
-                                                    <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/decoration-04.jpg') ?>" alt="Agile Board" />
+                                                    <img class="img-fluid max-400 rounded" src="<?= $cs_img[$i][0] ?>" alt="<?= $cs_img[$i][1] ?>" />
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- 2 -->
-                                        <div class="exp-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
-                                            <div class="card-header">
-                                                <div class="company-logo">
-                                                    &nbsp; 2 &nbsp;
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4>Case Study: Taming Complex Requirements – Architectural Alignment & Cost Optimization</h4>
-                                                <h5>The Challenge</h5>
-                                                <p>The platform suffered from severe performance degradation and daily system outages driven by a misalignment between business requirements and technical constraints. Non-technical stakeholders routinely requested impractical, synchronous real-time features that choked system resources. This structural overload resulted in chronic instability, impaired critical warehouse operations, and caused server infrastructure costs to skyrocket due to highly inefficient processing patterns.</p>
-                                                <h5>The Solution</h5>
-                                                <ul>
-                                                    <li>Architected Async Decoupling: Spearheaded the refactoring of the system architecture by eliminating unneeded real-time synchronous dependencies and enforcing asynchronous processing for resource-heavy operations.</li>
-                                                    <li>Optimized Core Algorithms: Directed targeted engineering interventions to optimize legacy data structures and processing algorithms, fundamentally improving system throughput, scalability, and baseline stability.</li>
-                                                    <li>Established Cross-Functional Governance: Implemented a continuous requirement-review framework with business teams, educating stakeholders on technical boundaries and ensuring all feature requests were value-driven and architecturally viable.</li>
-                                                    <li>Executed Targeted Triage: Stabilized the immediate production environment by introducing a disciplined, single-issue triage methodology to systematically eliminate active failure points without introducing regression risks.</li>
-                                                </ul>
-                                                <h5>The Impact</h5>
-                                                <ul>
-                                                    <li>Restored System Integrity: Transformed a volatile environment into a highly stable infrastructure, completely eliminating daily system crashes and vastly improving platform speed.</li>
-                                                    <li>Halved Infrastructure Overhead: Reduced server operational costs by 50%, delivering immediate, compounding fiscal savings to the company’s bottom line.</li>
-                                                    <li>Enhanced Operational Velocity: Greatly improved end-user satisfaction by streamlining the platform, directly enabling faster, friction-free warehouse logistics.</li>
-                                                </ul>
-                                                <div class="text-center my-3">
-                                                    <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/decoration-01.jpg') ?>" alt="Office Desk" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 3 -->
-                                        <div class="exp-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
-                                            <div class="card-header">
-                                                <div class="company-logo">
-                                                    &nbsp; 3 &nbsp;
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4>Case Study: Reifying Infrastructure Scalability – Resolving Cross-Functional Communication Silos</h4>
-                                                <h5>The Challenge</h5>
-                                                <p>A critical communication disconnect between business intelligence and engineering led to a catastrophic production failure during a high-profile product launch. Marketing data regarding an impending, massive traffic surge (driven by a major franchise campaign) was never shared with the technical team. Consequently, engineering optimized exclusively at the source-code level without scaling the underlying infrastructure. Upon launch, the unprecedented concurrent user traffic overwhelmed the network layer, triggering server crashes despite highly efficient code execution.</p>
-                                                <h5>The Solution</h5>
-                                                <ul>
-                                                    <li>Architected Cloud Auto-Scaling: Spearheaded the modernization of the deployment architecture by implementing AWS Elastic Beanstalk to dynamically handle high-traffic volatility and ensure high availability for customer-facing applications.</li>
-                                                    <li>Decoupled System Environments: Mitigated architectural risk by isolating internal operational systems on dedicated Amazon EC2 instances, ensuring core business functions remained unaffected by external traffic spikes on customer-facing layers.</li>
-                                                    <li>Established Dedicated DevOps Governance: Onboarded dedicated infrastructure engineering expertise to design proactive monitoring, capacity planning, and predictive system-load trending models.</li>
-                                                    <li>Educated Executive Stakeholders: Leveraged the post-mortem analysis to demonstrate the critical link between infrastructure investment and business continuity, securing executive buy-in for long-term cloud infrastructure funding.</li>
-                                                </ul>
-                                                <h5>The Impact</h5>
-                                                <ul>
-                                                    <li>Eliminated Single Points of Failure: Successfully prevented any recurrence of traffic-driven outages, establishing a reliable, seamless digital experience for end-users.</li>
-                                                    <li>Automated Elastic Volatility Management: Empowered the platform to automatically scale compute resources dynamically ahead of traffic curves, mitigating the risk of future campaign spikes.</li>
-                                                    <li>Secured Strategic Infrastructure Buy-In: Transformed organizational culture by permanently closing the gap between marketing planning and engineering preparation, ensuring all future product launches are backed by aligned capacity planning.</li>
-                                                </ul>
-                                                <div class="text-center my-3">
-                                                    <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/decoration-03.jpg') ?>" alt="Thumbs Up" />
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <?php endfor; ?>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center my-5">* * *</div>
-                            <h3 class="text-center">Empowering Teams for Sustainable Excellence</h3>
-                            <p class="text-center my-5">
-                                True leadership is about unlocking potential through structured enablement. As a Project Manager, I optimize the triple constraints of time, resources, and scope to build a predictable engineering environment. As a Scrum Master, I protect the team's focus, remove systemic impediments, and champion agile principles to steadily increase delivery velocity. Simultaneously, as a Product Owner, I maximize product value per sprint by ensuring developers operate with absolute requirement clarity. My ultimate goal is to remove friction and cultivate a resilient, self-organizing team equipped to deliver high-impact engineering excellence.
-                            </p>
+                            <h3 class="text-center"><?= lang('Portfolio.para.empowering') ?></h3>
+                            <p class="text-center my-5"><?= lang('Portfolio.para.true-leadership') ?></p>
                             <div class="text-center my-3">
                                 <img class="img-fluid max-400 rounded" src="<?= base_url('assets/img/portfolio-page/decoration-02.jpg') ?>" alt="Team at Dinner" />
                             </div>
                         </div>
                         <div class="col-12 my-5">
-                            <h3 class="text-center">Read My Blog</h3>
+                            <h3 class="text-center"><?= lang('Portfolio.blog.title') ?></h3>
                             <div class="my-5" id="wordpress-posts"></div>
-                            <div class="text-center"><a href="<?= base_url($locale . "/blog?m=tags&ms=portfolio&id=62") ?>" class="btn btn-primary">Read More</a></div>
+                            <div class="text-center"><a href="<?= base_url($locale . "/blog?m=tags&ms=portfolio&id=62") ?>" class="btn btn-primary"><?= lang('Portfolio.blog.read-more') ?></a></div>
                         </div>
                     </div>
                 </div>

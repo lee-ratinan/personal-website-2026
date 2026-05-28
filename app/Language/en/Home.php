@@ -91,7 +91,9 @@ return [
                             '2' => 'Management',
                             '3' => 'Scrum',
                             '4' => 'Innovation'
-                        ]
+                        ],
+                        'country'   => 'Singapore',
+                        'year'      => '2018 - Present',
                     ],
                     '2' => [
                         'title'     => 'Independent Technology Consultant',
@@ -102,7 +104,9 @@ return [
                             '2' => 'Creativity',
                             '3' => 'SEO',
                             '4' => 'Communication'
-                        ]
+                        ],
+                        'country'   => 'Singapore, Bangkok',
+                        'year'      => '2024 - Present',
                     ],
                     '3' => [
                         'title'     => 'Software Engineer',
@@ -113,7 +117,9 @@ return [
                             '2' => 'Web Development',
                             '3' => 'System Analysis',
                             '4' => 'UX/UI Design',
-                        ]
+                        ],
+                        'country'   => 'Singapore, Bangkok',
+                        'year'      => '2012 - 2017',
                     ]
                 ]
             ],
@@ -138,14 +144,18 @@ return [
                         'label'      => 'Masters',
                         'title'      => 'Master of Science (Information Systems)',
                         'university' => 'Wee Kim Wee School of Communication and Information, Nanyang Technological University',
-                        'paragraph'  => 'Mastered advanced information system engineering and management.'
+                        'paragraph'  => 'Mastered advanced information system engineering and management.',
+                        'country'    => 'Singapore',
+                        'class-of'   => '2015'
                     ],
                     'bachelor'     => [
                         'label'      => 'Bachelors',
                         'title'      => 'Bachelor of Science (Computer Science)',
                         'university' => 'Sirindhorn International Institute of Technology, Thammasat University',
                         'paragraph'  => 'Learned a strong foundation in software engineering and architecture.',
-                        'honors'     => 'First Class Honors'
+                        'honors'     => 'First Class Honors',
+                        'country'    => 'Thailand',
+                        'class-of'   => '2012'
                     ],
                 ]
             ]

@@ -102,13 +102,13 @@
                                         <i class="bi bi-patch-check"></i> <b><?= lang('Home.sections.resume.education.records.masters.title') ?></b><br>
                                         <i class="bi bi-bank2"></i> <?= lang('Home.sections.resume.education.records.masters.university') ?><br>
                                         <i class="bi bi-geo-alt-fill"></i> <?= lang('Home.sections.resume.education.records.masters.country') ?><br>
-                                        <i class="bi bi-calendar-check"></i> <?= lang('Home.sections.resume.education.records.masters.class-of') ?>
+                                        <i class="bi bi-calendar-check"></i> <?= calculate_years([lang('Home.sections.resume.education.records.masters.class-of')], $locale) ?>
                                     </p>
                                     <p>
                                         <i class="bi bi-patch-check"></i> <b><?= lang('Home.sections.resume.education.records.bachelor.title') ?></b><br>
                                         <i class="bi bi-bank2"></i> <?= lang('Home.sections.resume.education.records.bachelor.university') ?><br>
                                         <i class="bi bi-geo-alt-fill"></i> <?= lang('Home.sections.resume.education.records.bachelor.country') ?><br>
-                                        <i class="bi bi-calendar-check"></i> <?= lang('Home.sections.resume.education.records.bachelor.class-of') ?>
+                                        <i class="bi bi-calendar-check"></i> <?= calculate_years([lang('Home.sections.resume.education.records.bachelor.class-of')], $locale) ?>
                                     </p>
                                 </div>
                                 <div class="col-12 col-lg-6 text-center text-lg-end mb-3">
@@ -124,7 +124,7 @@
                                             <b><?= lang('Home.sections.resume.experience.records.' . $i . '.title') ?></b><br>
                                             <?= lang('Home.sections.resume.experience.records.' . $i . '.companies') ?><br>
                                             <?= lang('Home.sections.resume.experience.records.' . $i . '.country') ?><br>
-                                            <?= lang('Home.sections.resume.experience.records.' . $i . '.year') ?>
+                                            <?= calculate_years(lang('Home.sections.resume.experience.records.' . $i . '.year'), $locale, ' - ') ?>
                                         </p>
                                     <?php endfor; ?>
                                 </div>

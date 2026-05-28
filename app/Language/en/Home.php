@@ -93,7 +93,7 @@ return [
                             '4' => 'Innovation'
                         ],
                         'country'   => 'Singapore',
-                        'year'      => '2018 - Present',
+                        'year'      => [2018, 0],
                     ],
                     '2' => [
                         'title'     => 'Independent Technology Consultant',
@@ -106,7 +106,7 @@ return [
                             '4' => 'Communication'
                         ],
                         'country'   => 'Singapore, Bangkok',
-                        'year'      => '2024 - Present',
+                        'year'      => [2024, 0],
                     ],
                     '3' => [
                         'title'     => 'Software Engineer',
@@ -119,7 +119,7 @@ return [
                             '4' => 'UX/UI Design',
                         ],
                         'country'   => 'Singapore, Bangkok',
-                        'year'      => '2012 - 2017',
+                        'year'      => [2012, 2017],
                     ]
                 ]
             ],
@@ -146,7 +146,7 @@ return [
                         'university' => 'Wee Kim Wee School of Communication and Information, Nanyang Technological University',
                         'paragraph'  => 'Mastered advanced information system engineering and management.',
                         'country'    => 'Singapore',
-                        'class-of'   => '2015'
+                        'class-of'   => 2015
                     ],
                     'bachelor'     => [
                         'label'      => 'Bachelors',
@@ -155,7 +155,7 @@ return [
                         'paragraph'  => 'Learned a strong foundation in software engineering and architecture.',
                         'honors'     => 'First Class Honors',
                         'country'    => 'Thailand',
-                        'class-of'   => '2012'
+                        'class-of'   => 2012
                     ],
                 ]
             ]

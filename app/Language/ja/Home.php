@@ -93,7 +93,7 @@ return [
                             '4' => 'イノベーション'
                         ],
                         'country'   => 'Singapore',
-                        'year'      => '2018 - Present',
+                        'year'      => [2018, 0],
                     ],
                     '2' => [
                         'title'     => '独立系テクノロジーコンサルタント',
@@ -106,7 +106,7 @@ return [
                             '4' => 'コミュニケーション'
                         ],
                         'country'   => 'Singapore, Bangkok',
-                        'year'      => '2024 - Present',
+                        'year'      => [2024, 0],
                     ],
                     '3' => [
                         'title'     => 'ソフトウェアエンジニア',
@@ -119,7 +119,7 @@ return [
                             '4' => 'UX/UI デザイン',
                         ],
                         'country'   => 'Singapore, Bangkok',
-                        'year'      => '2012 - 2017',
+                        'year'      => [2012, 2017],
                     ]
                 ]
             ],
@@ -146,7 +146,7 @@ return [
                         'university' => '南洋理工大学 ウィー・キム・ウィー情報コミュニケーション学部',
                         'paragraph'  => '高度な情報システム工学とマネジメントを習得。',
                         'country'    => 'Singapore',
-                        'class-of'   => '2015'
+                        'class-of'   => 2015
                     ],
                     'bachelor'     => [
                         'label'      => '学士号',
@@ -155,7 +155,7 @@ return [
                         'paragraph'  => 'ソフトウェア工学とアーキテクチャの確かな基礎を習得。',
                         'honors'     => '最優等',
                         'country'    => 'Thailand',
-                        'class-of'   => '2012'
+                        'class-of'   => 2012
                     ],
                 ]
             ]

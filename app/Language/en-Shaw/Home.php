@@ -93,7 +93,7 @@ return [
                             '4' => '𐑦𐑯𐑩𐑝𐑱𐑖𐑩𐑯'
                         ],
                         'country'   => 'Singapore',
-                        'year'      => '2018 - Present',
+                        'year'      => [2018, 0],
                     ],
                     '2' => [
                         'title'     => '𐑦𐑯𐑛𐑦𐑐𐑧𐑯𐑛𐑩𐑯𐑑 𐑑𐑧𐑒𐑯𐑪𐑤𐑩𐑡𐑦 𐑒𐑩𐑯𐑕𐑳𐑤𐑑𐑩𐑯𐑑',
@@ -106,7 +106,7 @@ return [
                             '4' => '𐑒𐑩𐑥𐑿𐑯𐑦𐑒𐑱𐑖𐑩𐑯'
                         ],
                         'country'   => 'Singapore, Bangkok',
-                        'year'      => '2024 - Present',
+                        'year'      => [2024, 0],
                     ],
                     '3' => [
                         'title'     => '𐑕𐑪𐑓𐑑𐑢𐑺 𐑧𐑯𐑡𐑦𐑯𐑽',
@@ -119,7 +119,7 @@ return [
                             '4' => 'UX/UI 𐑛𐑦𐑟𐑲𐑯',
                         ],
                         'country'   => 'Singapore, Bangkok',
-                        'year'      => '2012 - 2017',
+                        'year'      => [2012, 2017],
                     ]
                 ]
             ],
@@ -146,7 +146,7 @@ return [
                         'university' => 'Wee Kim Wee 𐑕𐑒𐑵𐑤 𐑝 𐑒𐑩𐑥𐑿𐑯𐑦𐑒𐑱𐑖𐑩𐑯 𐑯 𐑦𐑯𐑓𐑼𐑥𐑱𐑖𐑩𐑯, Nanyang 𐑑𐑧𐑒𐑯𐑩𐑤𐑪𐑡𐑦𐑒𐑩𐑤 𐑿𐑯𐑦𐑝𐑻𐑕𐑦𐑑𐑦',
                         'paragraph'  => '𐑥𐑨𐑕𐑑𐑼𐑛 𐑩𐑛𐑝𐑭𐑯𐑕𐑑 𐑦𐑯𐑓𐑼𐑥𐑱𐑖𐑩𐑯 𐑕𐑦𐑕𐑑𐑩𐑥 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑯 𐑥𐑨𐑯𐑦𐑡𐑥𐑩𐑯𐑑.',
                         'country'    => 'Singapore',
-                        'class-of'   => '2015'
+                        'class-of'   => 2015
                     ],
                     'bachelor'     => [
                         'label'      => '𐑚𐑨𐑗𐑩𐑤𐑼𐑟',
@@ -155,7 +155,7 @@ return [
                         'paragraph'  => '𐑤𐑻𐑯𐑛 𐑩 𐑕𐑑𐑮𐑪𐑙 𐑓𐑬𐑯𐑛𐑱𐑖𐑩𐑯 𐑦𐑯 𐑕𐑪𐑓𐑑𐑢𐑺 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑯 𐑸𐑒𐑦𐑑𐑧𐑒𐑗𐑼.',
                         'honors'     => '𐑓𐑻𐑕𐑑 𐑒𐑤𐑭𐑕 𐑪𐑯𐑼𐑟',
                         'country'    => 'Thailand',
-                        'class-of'   => '2012'
+                        'class-of'   => 2012
                     ],
                 ]
             ]

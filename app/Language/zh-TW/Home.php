@@ -92,8 +92,8 @@ return [
                             '3' => 'Scrum',
                             '4' => '創新'
                         ],
-                        'country'   => 'Singapore',
-                        'year'      => '2018 - Present',
+                        'country'   => '新加坡',
+                        'year'      => [2018, 0],
                     ],
                     '2' => [
                         'title'     => '獨立技術顧問',
@@ -105,8 +105,8 @@ return [
                             '3' => 'SEO',
                             '4' => '溝通能力'
                         ],
-                        'country'   => 'Singapore, Bangkok',
-                        'year'      => '2024 - Present',
+                        'country'   => '新加坡, 曼谷',
+                        'year'      => [2024, 0],
                     ],
                     '3' => [
                         'title'     => '軟體工程師',
@@ -118,8 +118,8 @@ return [
                             '3' => '系統分析',
                             '4' => 'UX/UI 設計',
                         ],
-                        'country'   => 'Singapore, Bangkok',
-                        'year'      => '2012 - 2017',
+                        'country'   => '新加坡, 曼谷',
+                        'year'      => [2012, 2017],
                     ]
                 ]
             ],
@@ -145,8 +145,8 @@ return [
                         'title'      => '資訊系統理學碩士',
                         'university' => '新加坡南洋理工大學・黃金輝傳播與信息學院',
                         'paragraph'  => '修習高階資訊系統工程與管理。',
-                        'country'    => 'Singapore',
-                        'class-of'   => '2015'
+                        'country'    => '新加坡',
+                        'class-of'   => 2015
                     ],
                     'bachelor'     => [
                         'label'      => '學士學位',
@@ -154,8 +154,8 @@ return [
                         'university' => '泰國塔馬薩特大學・席琳通國際科技學院',
                         'paragraph'  => '建立扎實的軟體工程與架構基礎。',
                         'honors'     => '一等榮譽',
-                        'country'    => 'Thailand',
-                        'class-of'   => '2012'
+                        'country'    => '泰國',
+                        'class-of'   => 2012
                     ],
                 ]
             ]

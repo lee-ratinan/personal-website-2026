@@ -84,7 +84,7 @@ return [
                     '1' => [
                         'current'   => '現在',
                         'title'     => '技術團隊領導 / 技術主管、專案經理',
-                        'companies' => 'Moolahgo, Irvins, Secretlab',
+                        'companies' => 'Moolahgo、Irvins、Secretlab',
                         'paragraph' => '具備電商與金融科技經驗的專案經理兼技術領導者，帶領跨職能團隊、優化交付流程，並從概念到上線推動高品質、可擴展的技術解決方案。',
                         'tags'      => [
                             '1' => '領導力',
@@ -105,12 +105,12 @@ return [
                             '3' => 'SEO',
                             '4' => '溝通能力'
                         ],
-                        'country'   => '新加坡, 曼谷',
+                        'country'   => '新加坡、曼谷',
                         'year'      => [2024, 0],
                     ],
                     '3' => [
                         'title'     => '軟體工程師',
-                        'companies' => 'Mobads, BuzzCity, DST',
+                        'companies' => 'Mobads、BuzzCity、DST',
                         'paragraph' => '初階軟體工程師，參與全端開發，學習現代框架，支援功能交付，同時建立良好程式碼、測試與協作工程的扎實基礎。',
                         'tags'      => [
                             '1' => '程式設計',
@@ -118,7 +118,7 @@ return [
                             '3' => '系統分析',
                             '4' => 'UX/UI 設計',
                         ],
-                        'country'   => '新加坡, 曼谷',
+                        'country'   => '新加坡、曼谷',
                         'year'      => [2012, 2017],
                     ]
                 ]

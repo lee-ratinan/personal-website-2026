@@ -29,46 +29,46 @@ return [
         'details'   => [
             '1' => [
                 'title'     => '𐑓𐑮𐑪𐑥 𐑒𐑱𐑪𐑕 𐑑 𐑒𐑤𐑨𐑮𐑦𐑑𐑦 – 𐑦𐑥𐑐𐑤𐑦𐑥𐑧𐑯𐑑𐑦𐑙 𐑨𐑡𐑲𐑤 𐑜𐑳𐑝𐑼𐑯𐑩𐑯𐑕',
-                'challenge' => 'The organization suffered from severe delivery friction caused by a lack of structured scheduling and premature project initiation. Without stabilized requirements, teams experienced constant mid-sprint pivots, leading to chronic scope creep and missed milestones. Because the structural flaws were invisible, developers were unfairly held accountable for systemic delivery delays, destroying team morale.',
+                'challenge' => '𐑞 𐑹𐑜𐑩𐑯𐑲𐑟𐑱𐑖𐑩𐑯 𐑕𐑳𐑓𐑼𐑛 𐑓𐑮𐑪𐑥 𐑕𐑦𐑝𐑽 𐑛𐑦𐑤𐑦𐑝𐑼𐑦 𐑓𐑮𐑦𐑒𐑖𐑩𐑯 𐑒𐑷𐑟𐑛 𐑚𐑲 𐑩 𐑤𐑨𐑒 𐑝 𐑕𐑑𐑮𐑳𐑒𐑗𐑼𐑛 𐑖𐑧𐑡𐑵𐑤𐑦𐑙 𐑯 𐑐𐑮𐑧𐑥𐑩𐑗𐑫𐑼 𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑦𐑯𐑦𐑖𐑦𐑱𐑖𐑩𐑯. 𐑢𐑦𐑞𐑬𐑑 𐑕𐑑𐑱𐑚𐑩𐑤𐑲𐑟𐑛 𐑮𐑦𐑒𐑢𐑲𐑼𐑥𐑩𐑯𐑑𐑕, 𐑑𐑰𐑥𐑟 𐑦𐑒𐑕𐑐𐑽𐑾𐑯𐑕𐑑 𐑒𐑪𐑯𐑕𐑑𐑩𐑯𐑑 𐑥𐑦𐑛-𐑕𐑐𐑮𐑦𐑯𐑑 𐑐𐑦𐑝𐑩𐑑𐑕, 𐑤𐑰𐑛𐑦𐑙 𐑑 𐑒𐑮𐑪𐑯𐑦𐑒 𐑕𐑒𐑴𐑐 𐑒𐑮𐑰𐑐 𐑯 𐑥𐑦𐑕𐑑 𐑥𐑲𐑤𐑕𐑑𐑴𐑯𐑟. 𐑚𐑦𐑒𐑪𐑟 𐑞 𐑕𐑑𐑮𐑳𐑒𐑗𐑼𐑩𐑤 𐑓𐑤𐑷𐑟 𐑢𐑻 𐑦𐑯𐑝𐑦𐑟𐑩𐑚𐑩𐑤, 𐑛𐑦𐑝𐑧𐑤𐑩𐑐𐑼𐑟 𐑢𐑻 𐑳𐑯𐑓𐑺𐑤𐑦 𐑣𐑧𐑤𐑛 𐑩𐑒𐑬𐑯𐑑𐑩𐑚𐑩𐑤 𐑓 𐑕𐑦𐑕𐑑𐑧𐑥𐑦𐑒 𐑛𐑦𐑤𐑦𐑝𐑼𐑦 𐑛𐑦𐑤𐑱𐑟, 𐑛𐑦𐑕𐑑𐑮𐑶𐑦𐑙 𐑑𐑰𐑥 𐑥𐑼𐑭𐑤.',
                 'solution'  => [
-                    'Established Structured Governance: Introduced a rigorous cadence of Scrum events to stabilize the delivery pipeline, establish predictable scheduling, and eliminate daily ambiguity.',
-                    'Cultivated Engineering Accountability: Anchored the transformation in core Scrum values—Commitment, Openness, Focus, Respect, and Courage—shifting the team culture from passive task-execution to true ownership.',
-                    'Implemented Active Scope Management: Enforced a strict trade-off negotiation framework for incoming requirements. New features were welcomed into the product backlog but were barred from disrupting active Sprint Goals unless matching scope was swapped out.'
+                    '𐑦𐑕𐑑𐑨𐑚𐑤𐑦𐑖𐑑 𐑕𐑑𐑮𐑳𐑒𐑗𐑼𐑛 𐑜𐑳𐑝𐑼𐑯𐑩𐑯𐑕: 𐑦𐑯𐑑𐑮𐑩𐑛𐑿𐑕𐑑 𐑩 𐑮𐑦𐑜𐑼𐑩𐑕 𐑒𐑱𐑛𐑩𐑯𐑕 𐑝 𐑕𐑒𐑮𐑳𐑥 𐑦𐑝𐑧𐑯𐑑𐑕 𐑑 𐑕𐑑𐑱𐑚𐑩𐑤𐑲𐑟 𐑞 𐑛𐑦𐑤𐑦𐑝𐑼𐑦 𐑐𐑲𐑐𐑤𐑲𐑯, 𐑦𐑕𐑑𐑨𐑚𐑤𐑦𐑖 𐑐𐑮𐑦𐑛𐑦𐑒𐑑𐑩𐑚𐑩𐑤 𐑖𐑧𐑡𐑵𐑤𐑦𐑙, 𐑯 𐑦𐑤𐑦𐑥𐑦𐑯𐑱𐑑 𐑛𐑱𐑤𐑦 𐑨𐑥𐑚𐑦𐑜𐑿𐑦𐑑𐑦.',
+                    '𐑒𐑳𐑤𐑑𐑦𐑝𐑱𐑑𐑩𐑛 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑩𐑒𐑬𐑯𐑑𐑩𐑚𐑦𐑤𐑦𐑑𐑦: 𐑨𐑙𐑒𐑼𐑛 𐑞 𐑑𐑮𐑨𐑯𐑕𐑓𐑼𐑥𐑱𐑖𐑩𐑯 𐑦𐑯 𐑒𐑹 𐑕𐑒𐑮𐑳𐑥 𐑝𐑨𐑤𐑿𐑟 — 𐑒𐑩𐑥𐑦𐑑𐑥𐑩𐑯𐑑, 𐑴𐑐𐑩𐑯𐑯𐑩𐑕, 𐑓𐑴𐑒𐑩𐑕, 𐑮𐑦𐑕𐑐𐑧𐑒𐑑, 𐑯 𐑒𐑳𐑮𐑦𐑡 — 𐑖𐑦𐑓𐑑𐑦𐑙 𐑞 𐑑𐑰𐑥 𐑒𐑳𐑤𐑗𐑼 𐑓𐑮𐑪𐑥 𐑐𐑨𐑕𐑦𐑝 𐑑𐑭𐑕𐑒-𐑧𐑒𐑕𐑦𐑒𐑿𐑖𐑩𐑯 𐑑 𐑑𐑮𐑵 𐑴𐑯𐑼𐑖𐑦𐑐.',
+                    '𐑦𐑥𐑐𐑤𐑦𐑥𐑧𐑯𐑑𐑩𐑛 𐑨𐑒𐑑𐑦𐑝 𐑕𐑒𐑴𐑐 𐑥𐑨𐑯𐑦𐑡𐑥𐑩𐑯𐑑: 𐑦𐑯𐑓𐑹𐑕𐑑 𐑩 𐑕𐑑𐑮𐑦𐑒𐑑 𐑑𐑮𐑱𐑛-𐑪𐑓 𐑯𐑦𐑜𐑴𐑖𐑦𐑱𐑖𐑩𐑯 𐑓𐑮𐑱𐑥𐑢𐑻𐑒 𐑓 𐑦𐑯𐑒𐑳𐑥𐑦𐑙 𐑮𐑦𐑒𐑢𐑲𐑼𐑥𐑩𐑯𐑑𐑕. 𐑯𐑿 𐑓𐑰𐑗𐑼𐑟 𐑢𐑻 𐑢𐑧𐑤𐑒𐑩𐑥𐑛 𐑦𐑯𐑑𐑵 𐑞 𐑐𐑮𐑪𐑛𐑳𐑒𐑑 𐑚𐑨𐑒𐑤𐑪𐑜 𐑚𐑳𐑑 𐑢𐑻 𐑚𐑸𐑛 𐑓𐑮𐑪𐑥 𐑛𐑦𐑕𐑮𐑳𐑐𐑑𐑦𐑙 𐑨𐑒𐑑𐑦𐑝 𐑕𐑐𐑮𐑦𐑯𐑑 𐑜𐑴𐑤𐑟 𐑩𐑯𐑤𐑧𐑕 𐑥𐑨𐑗𐑦𐑙 𐑕𐑒𐑴𐑐 𐑢𐑪𐑟 𐑕𐑢𐑪𐑐𐑑 𐑬𐑑.',
                 ],
                 'impact'    => [
-                    'Eliminated Execution Ambiguity: Developers gained complete clarity on upcoming priorities, drastically reducing context-switching and operational frustration.',
-                    'Stabilized the Delivery Pipeline: Transformed scope creep from a disruptive risk into a manageable, transparent negotiation process, protecting the integrity of the release cycle.',
-                    'Achieved Predictable Velocity: By protecting Sprint Goals from external volatility, the team consistently met its deliverables and stabilized project timelines.'
+                    '𐑦𐑤𐑦𐑥𐑦𐑯𐑱𐑑𐑩𐑛 𐑧𐑒𐑕𐑦𐑒𐑿𐑖𐑩𐑯 𐑨𐑥𐑚𐑦𐑜𐑿𐑦𐑑𐑦: 𐑛𐑦𐑝𐑧𐑤𐑩𐑐𐑼𐑟 𐑜𐑱𐑯𐑛 𐑒𐑩𐑥𐑐𐑤𐑰𐑑 𐑒𐑤𐑨𐑮𐑦𐑑𐑦 𐑪𐑯 𐑳𐑐𐑒𐑳𐑥𐑦𐑙 𐑐𐑮𐑲𐑪𐑮𐑦𐑑𐑦𐑟, 𐑛𐑮𐑨𐑕𐑑𐑦𐑒𐑤𐑦 𐑮𐑦𐑛𐑿𐑕𐑦𐑙 𐑒𐑪𐑯𐑑𐑧𐑒𐑕𐑑-𐑕𐑢𐑦𐑗𐑦𐑙 𐑯 𐑪𐑐𐑼𐑱𐑖𐑩𐑯𐑩𐑤 𐑓𐑮𐑳𐑕𐑑𐑮𐑱𐑖𐑩𐑯.',
+                    '𐑕𐑑𐑱𐑚𐑩𐑤𐑲𐑟𐑛 𐑞 𐑛𐑦𐑤𐑦𐑝𐑼𐑦 𐑐𐑲𐑐𐑤𐑲𐑯: 𐑑𐑮𐑨𐑯𐑕𐑓𐑹𐑥𐑛 𐑕𐑒𐑴𐑐 𐑒𐑮𐑰𐑐 𐑓𐑮𐑪𐑥 𐑩 𐑛𐑦𐑕𐑮𐑳𐑐𐑑𐑦𐑝 𐑮𐑦𐑕𐑒 𐑦𐑯𐑑𐑵 𐑩 𐑥𐑨𐑯𐑦𐑡𐑩𐑚𐑩𐑤, 𐑑𐑮𐑨𐑯𐑕𐑐𐑨𐑮𐑩𐑯𐑑 𐑯𐑦𐑜𐑴𐑖𐑦𐑱𐑖𐑩𐑯 𐑐𐑮𐑴𐑕𐑧𐑕, 𐑐𐑮𐑩𐑑𐑧𐑒𐑑𐑦𐑙 𐑞 𐑦𐑯𐑑𐑧𐑜𐑮𐑦𐑑𐑦 𐑝 𐑞 𐑮𐑦𐑤𐑰𐑕 𐑕𐑲𐑒𐑩𐑤.',
+                    '𐑩𐑗𐑰𐑝𐑛 𐑐𐑮𐑦𐑛𐑦𐑒𐑑𐑩𐑚𐑩𐑤 𐑝𐑩𐑤𐑪𐑕𐑦𐑑𐑦: 𐑚𐑲 𐑐𐑮𐑩𐑑𐑧𐑒𐑑𐑦𐑙 𐑕𐑐𐑮𐑦𐑯𐑑 𐑜𐑴𐑤𐑟 𐑓𐑮𐑪𐑥 𐑦𐑒𐑕𐑑𐑻𐑯𐑩𐑤 𐑝𐑪𐑤𐑩𐑑𐑦𐑤𐑦𐑑𐑦, 𐑞 𐑑𐑰𐑥 𐑒𐑩𐑯𐑕𐑦𐑕𐑑𐑩𐑯𐑑𐑤𐑦 𐑥𐑧𐑑 𐑦𐑑𐑕 𐑛𐑦𐑤𐑦𐑝𐑼𐑱𐑚𐑩𐑤𐑟 𐑯 𐑕𐑑𐑱𐑚𐑩𐑤𐑲𐑟𐑛 𐑐𐑮𐑪𐑡𐑧𐑒𐑑 𐑑𐑲𐑥𐑤𐑲𐑯𐑟.'
                 ]
             ],
             '2' => [
                 'title'     => '𐑑𐑱𐑥𐑦𐑙 𐑒𐑪𐑥𐑐𐑤𐑧𐑒𐑕 𐑮𐑦𐑒𐑢𐑲𐑼𐑥𐑩𐑯𐑑𐑕 – 𐑸𐑒𐑦𐑑𐑧𐑒𐑗𐑼𐑩𐑤 𐑩𐑤𐑲𐑯𐑥𐑩𐑯𐑑 & 𐑒𐑪𐑕𐑑 𐑪𐑐𐑑𐑦𐑥𐑲𐑟𐑱𐑖𐑩𐑯',
-                'challenge' => 'The platform suffered from severe performance degradation and daily system outages driven by a misalignment between business requirements and technical constraints. Non-technical stakeholders routinely requested impractical, synchronous real-time features that choked system resources. This structural overload resulted in chronic instability, impaired critical warehouse operations, and caused server infrastructure costs to skyrocket due to highly inefficient processing patterns.',
+                'challenge' => '𐑞 𐑐𐑤𐑨𐑑𐑓𐑹𐑥 𐑕𐑳𐑓𐑼𐑛 𐑓𐑮𐑪𐑥 𐑕𐑦𐑝𐑽 𐑐𐑼𐑓𐑹𐑥𐑩𐑯𐑕 𐑛𐑧𐑜𐑮𐑩𐑛𐑱𐑖𐑩𐑯 𐑯 𐑛𐑱𐑤𐑦 𐑕𐑦𐑕𐑑𐑩𐑥 𐑬𐑑𐑦𐑡𐑩𐑟 𐑛𐑮𐑦𐑝𐑩𐑯 𐑚𐑲 𐑩 𐑥𐑦𐑕𐑩𐑤𐑲𐑯𐑥𐑩𐑯𐑑 𐑚𐑦𐑑𐑢𐑰𐑯 𐑚𐑦𐑟𐑯𐑩𐑕 𐑮𐑦𐑒𐑢𐑲𐑼𐑥𐑩𐑯𐑑𐑕 𐑯 𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑒𐑩𐑯𐑕𐑑𐑮𐑱𐑯𐑑𐑕. 𐑯𐑪𐑯-𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑕𐑑𐑱𐑒𐑣𐑴𐑤𐑛𐑼𐑟 𐑮𐑵𐑑𐑰𐑯𐑤𐑦 𐑮𐑦𐑒𐑢𐑧𐑕𐑑𐑩𐑛 𐑦𐑥𐑐𐑮𐑨𐑒𐑑𐑦𐑒𐑩𐑤, 𐑕𐑦𐑙𐑒𐑮𐑩𐑯𐑩𐑕 𐑮𐑾𐑤-𐑑𐑲𐑥 𐑓𐑰𐑗𐑼𐑟 𐑞𐑨𐑑 𐑗𐑴𐑒𐑑 𐑕𐑦𐑕𐑑𐑩𐑥 𐑮𐑦𐑟𐑹𐑕𐑩𐑟. 𐑞𐑦𐑕 𐑕𐑑𐑮𐑳𐑒𐑗𐑼𐑩𐑤 𐑴𐑝𐑼𐑤𐑴𐑛 𐑮𐑦𐑟𐑳𐑤𐑑𐑩𐑛 𐑦𐑯 𐑒𐑮𐑪𐑯𐑦𐑒 𐑦𐑯𐑕𐑑𐑩𐑚𐑦𐑤𐑦𐑑𐑦, 𐑦𐑥𐑐𐑺𐑛 𐑒𐑮𐑦𐑑𐑦𐑒𐑩𐑤 𐑢𐑺𐑣𐑬𐑕 𐑪𐑐𐑼𐑱𐑖𐑩𐑯𐑟, 𐑯 𐑒𐑷𐑟𐑛 𐑕𐑻𐑝𐑼 𐑦𐑯𐑓𐑮𐑩𐑕𐑑𐑮𐑳𐑒𐑗𐑼 𐑒𐑪𐑕𐑑𐑕 𐑑 𐑕𐑒𐑲𐑮𐑪𐑒𐑩𐑑 𐑛𐑿 𐑑 𐑣𐑲𐑤𐑦 𐑦𐑯𐑦𐑓𐑦𐑖𐑩𐑯𐑑 𐑐𐑮𐑴𐑕𐑧𐑕𐑦𐑙 𐑐𐑨𐑑𐑼𐑯𐑟.',
                 'solution'  => [
-                    'Architected Async Decoupling: Spearheaded the refactoring of the system architecture by eliminating unneeded real-time synchronous dependencies and enforcing asynchronous processing for resource-heavy operations.',
-                    'Optimized Core Algorithms: Directed targeted engineering interventions to optimize legacy data structures and processing algorithms, fundamentally improving system throughput, scalability, and baseline stability.',
-                    'Established Cross-Functional Governance: Implemented a continuous requirement-review framework with business teams, educating stakeholders on technical boundaries and ensuring all feature requests were value-driven and architecturally viable.',
-                    'Executed Targeted Triage: Stabilized the immediate production environment by introducing a disciplined, single-issue triage methodology to systematically eliminate active failure points without introducing regression risks.'
+                    '𐑸𐑒𐑦𐑑𐑧𐑒𐑑𐑦𐑛 𐑩𐑕𐑦𐑙𐑒 𐑛𐑰𐑒𐑳𐑐𐑤𐑦𐑙: 𐑕𐑐𐑽𐑣𐑧𐑛𐑩𐑛 𐑞 𐑮𐑰𐑓𐑨𐑒𐑑𐑼𐑦𐑙 𐑝 𐑞 𐑕𐑦𐑕𐑑𐑩𐑥 𐑸𐑒𐑦𐑑𐑧𐑒𐑗𐑼 𐑚𐑲 𐑦𐑤𐑦𐑥𐑦𐑯𐑱𐑑𐑦𐑙 𐑳𐑯𐑰𐑛𐑩𐑛 𐑮𐑾𐑤-𐑑𐑲𐑥 𐑕𐑦𐑙𐑒𐑮𐑩𐑯𐑩𐑕 𐑛𐑦𐑐𐑧𐑯𐑛𐑩𐑯𐑕𐑦𐑟 𐑯 𐑦𐑯𐑓𐑹𐑕𐑦𐑙 𐑱𐑕𐑦𐑙𐑒𐑮𐑩𐑯𐑩𐑕 𐑐𐑮𐑴𐑕𐑧𐑕𐑦𐑙 𐑓 𐑮𐑦𐑟𐑹𐑕-𐑣𐑧𐑝𐑦 𐑪𐑐𐑼𐑱𐑖𐑩𐑯𐑟.',
+                    '𐑪𐑐𐑑𐑦𐑥𐑲𐑟𐑛 𐑒𐑹 𐑨𐑤𐑜𐑼𐑦𐑞𐑩𐑥𐑟: 𐑛𐑦𐑮𐑧𐑒𐑑𐑩𐑛 𐑑𐑸𐑜𐑩𐑑𐑩𐑛 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑦𐑯𐑑𐑼𐑝𐑧𐑯𐑖𐑩𐑯𐑟 𐑑 𐑪𐑐𐑑𐑦𐑥𐑲𐑟 𐑤𐑧𐑜𐑩𐑕𐑦 𐑛𐑱𐑑𐑩 𐑕𐑑𐑮𐑳𐑒𐑗𐑼𐑟 𐑯 𐑐𐑮𐑴𐑕𐑧𐑕𐑦𐑙 𐑨𐑤𐑜𐑼𐑦𐑞𐑩𐑥𐑟, 𐑓𐑳𐑯𐑛𐑩𐑥𐑧𐑯𐑑𐑩𐑤𐑦 𐑦𐑥𐑐𐑮𐑵𐑝𐑦𐑙 𐑕𐑦𐑕𐑑𐑩𐑥 𐑔𐑮𐑵𐑐𐑫𐑑, 𐑕𐑒𐑱𐑤𐑩𐑚𐑦𐑤𐑦𐑑𐑦, 𐑯 𐑚𐑱𐑕𐑤𐑲𐑯 𐑕𐑑𐑩𐑚𐑦𐑤𐑦𐑑𐑦.',
+                    '𐑦𐑕𐑑𐑨𐑚𐑤𐑦𐑖𐑑 𐑒𐑮𐑪𐑕-𐑓𐑳𐑙𐑒𐑖𐑩𐑯𐑩𐑤 𐑜𐑳𐑝𐑼𐑯𐑩𐑯𐑕: 𐑦𐑥𐑐𐑤𐑦𐑥𐑧𐑯𐑑𐑩𐑛 𐑩 𐑒𐑩𐑯𐑑𐑦𐑯𐑘𐑫𐑩𐑕 𐑮𐑦𐑒𐑢𐑲𐑼𐑥𐑩𐑯𐑑-𐑮𐑦𐑝𐑿 𐑓𐑮𐑱𐑥𐑢𐑻𐑒 𐑢𐑦𐑞 𐑚𐑦𐑟𐑯𐑩𐑕 𐑑𐑰𐑥𐑟, 𐑧𐑡𐑩𐑒𐑱𐑑𐑦𐑙 𐑕𐑑𐑱𐑒𐑣𐑴𐑤𐑛𐑼𐑟 𐑪𐑯 𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑚𐑬𐑯𐑛𐑮𐑦𐑟 𐑯 𐑦𐑯𐑖𐑫𐑼𐑦𐑙 𐑷𐑤 𐑓𐑰𐑗𐑼 𐑮𐑦𐑒𐑢𐑧𐑕𐑑𐑕 𐑢𐑻 𐑝𐑨𐑤𐑿-𐑛𐑮𐑦𐑝𐑩𐑯 𐑯 𐑸𐑒𐑦𐑑𐑧𐑒𐑗𐑼𐑩𐑤𐑦 𐑝𐑲𐑩𐑚𐑩𐑤.',
+                    '𐑧𐑒𐑕𐑦𐑒𐑿𐑑𐑩𐑛 𐑑𐑸𐑜𐑩𐑑𐑩𐑛 𐑑𐑮𐑰𐑭𐑠: 𐑕𐑑𐑱𐑚𐑩𐑤𐑲𐑟𐑛 𐑞 𐑦𐑥𐑰𐑛𐑾𐑑 𐑐𐑮𐑩𐑛𐑳𐑒𐑖𐑩𐑯 𐑦𐑯𐑝𐑲𐑮𐑩𐑯𐑥𐑩𐑯𐑑 𐑚𐑲 𐑦𐑯𐑑𐑮𐑩𐑛𐑿𐑕𐑦𐑙 𐑩 𐑛𐑦𐑕𐑩𐑐𐑤𐑦𐑯𐑛, 𐑕𐑦𐑙𐑜𐑩𐑤-𐑦𐑖𐑵 𐑑𐑮𐑰𐑭𐑠 𐑥𐑧𐑔𐑩𐑛𐑪𐑤𐑩𐑡𐑦 𐑑 𐑕𐑦𐑕𐑑𐑩𐑥𐑨𐑑𐑦𐑒𐑤𐑦 𐑦𐑤𐑦𐑥𐑦𐑯𐑱𐑑 𐑨𐑒𐑑𐑦𐑝 𐑓𐑱𐑤𐑘𐑼 𐑐𐑶𐑯𐑑𐑕 𐑢𐑦𐑞𐑬𐑑 𐑦𐑯𐑑𐑮𐑩𐑛𐑿𐑕𐑦𐑙 𐑮𐑦𐑜𐑮𐑧𐑖𐑩𐑯 𐑮𐑦𐑕𐑒𐑕.'
                 ],
                 'impact'    => [
-                    'Restored System Integrity: Transformed a volatile environment into a highly stable infrastructure, completely eliminating daily system crashes and vastly improving platform speed.',
-                    'Halved Infrastructure Overhead: Reduced server operational costs by 50%, delivering immediate, compounding fiscal savings to the company’s bottom line.',
-                    'Enhanced Operational Velocity: Greatly improved end-user satisfaction by streamlining the platform, directly enabling faster, friction-free warehouse logistics.'
+                    '𐑮𐑦𐑕𐑑𐑹𐑛 𐑕𐑦𐑕𐑑𐑩𐑥 𐑦𐑯𐑑𐑧𐑜𐑮𐑦𐑑𐑦: 𐑑𐑮𐑨𐑯𐑕𐑓𐑹𐑥𐑛 𐑩 𐑝𐑪𐑤𐑩𐑑𐑲𐑤 𐑦𐑯𐑝𐑲𐑮𐑩𐑯𐑥𐑩𐑯𐑑 𐑦𐑯𐑑𐑵 𐑩 𐑣𐑲𐑤𐑦 𐑕𐑑𐑱𐑚𐑩𐑤 𐑦𐑯𐑓𐑮𐑩𐑕𐑑𐑮𐑳𐑒𐑗𐑼, 𐑒𐑩𐑥𐑐𐑤𐑰𐑑𐑤𐑦 𐑦𐑤𐑦𐑥𐑦𐑯𐑱𐑑𐑦𐑙 𐑛𐑱𐑤𐑦 𐑕𐑦𐑕𐑑𐑩𐑥 𐑒𐑮𐑨𐑖𐑩𐑟 𐑯 𐑝𐑭𐑕𐑑𐑤𐑦 𐑦𐑥𐑐𐑮𐑵𐑝𐑦𐑙 𐑐𐑤𐑨𐑑𐑓𐑹𐑥 𐑕𐑐𐑰𐑛.',
+                    '𐑣𐑭𐑝𐑛 𐑦𐑯𐑓𐑮𐑩𐑕𐑑𐑮𐑳𐑒𐑗𐑼 𐑴𐑝𐑼𐑣𐑧𐑛: 𐑮𐑦𐑛𐑿𐑕𐑑 𐑕𐑻𐑝𐑼 𐑪𐑐𐑼𐑱𐑖𐑩𐑯𐑩𐑤 𐑒𐑪𐑕𐑑𐑕 𐑚𐑲 50%, 𐑛𐑦𐑤𐑦𐑝𐑼𐑦𐑙 𐑦𐑥𐑰𐑛𐑾𐑑, 𐑒𐑩𐑥𐑐𐑬𐑯𐑛𐑦𐑙 𐑓𐑦𐑕𐑒𐑩𐑤 𐑕𐑱𐑝𐑦𐑙𐑟 𐑑 𐑞 𐑒𐑳𐑥𐑐𐑩𐑯𐑦𐑟 𐑚𐑪𐑑𐑩𐑥 𐑤𐑲𐑯.',
+                    '𐑦𐑯𐑣𐑭𐑯𐑕𐑑 𐑪𐑐𐑼𐑱𐑖𐑩𐑯𐑩𐑤 𐑝𐑩𐑤𐑪𐑕𐑦𐑑𐑦: 𐑜𐑮𐑱𐑑𐑤𐑦 𐑦𐑥𐑐𐑮𐑵𐑝𐑛 𐑧𐑯𐑛-𐑿𐑟𐑼 𐑕𐑨𐑑𐑦𐑕𐑓𐑨𐑒𐑖𐑩𐑯 𐑚𐑲 𐑕𐑑𐑮𐑰𐑥𐑤𐑲𐑯𐑦𐑙 𐑞 𐑐𐑤𐑨𐑑𐑓𐑹𐑥, 𐑛𐑦𐑮𐑧𐑒𐑑𐑤𐑦 𐑦𐑯𐑱𐑚𐑤𐑦𐑙 𐑓𐑭𐑕𐑑𐑼, 𐑓𐑮𐑦𐑒𐑖𐑩𐑯-𐑓𐑮𐑰 𐑢𐑺𐑣𐑬𐑕 𐑤𐑩𐑡𐑦𐑕𐑑𐑦𐑒𐑕.'
                 ]
             ],
             '3' => [
                 'title'     => '𐑮𐑱𐑦𐑓𐑲𐑦𐑙 𐑦𐑯𐑓𐑮𐑩𐑕𐑑𐑮𐑳𐑒𐑗𐑼 𐑕𐑒𐑱𐑤𐑩𐑚𐑦𐑤𐑦𐑑𐑦 – 𐑮𐑦𐑟𐑪𐑤𐑝𐑦𐑙 𐑒𐑮𐑪𐑕-𐑓𐑳𐑙𐑒𐑖𐑩𐑯𐑩𐑤 𐑒𐑩𐑥𐑿𐑯𐑦𐑒𐑱𐑖𐑩𐑯 𐑕𐑲𐑤𐑴𐑟',
-                'challenge' => 'A critical communication disconnect between business intelligence and engineering led to a catastrophic production failure during a high-profile product launch. Marketing data regarding an impending, massive traffic surge (driven by a major franchise campaign) was never shared with the technical team. Consequently, engineering optimized exclusively at the source-code level without scaling the underlying infrastructure. Upon launch, the unprecedented concurrent user traffic overwhelmed the network layer, triggering server crashes despite highly efficient code execution.',
+                'challenge' => '𐑩 𐑒𐑮𐑦𐑑𐑦𐑒𐑩𐑤 𐑒𐑩𐑥𐑿𐑯𐑦𐑒𐑱𐑖𐑩𐑯 𐑛𐑦𐑕𐑒𐑩𐑯𐑧𐑒𐑑 𐑚𐑦𐑑𐑢𐑰𐑯 𐑚𐑦𐑟𐑯𐑩𐑕 𐑦𐑯𐑑𐑧𐑤𐑦𐑡𐑩𐑯𐑕 𐑯 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑤𐑧𐑛 𐑑 𐑩 𐑒𐑨𐑑𐑩𐑕𐑑𐑮𐑪𐑓𐑦𐑒 𐑐𐑮𐑩𐑛𐑳𐑒𐑖𐑩𐑯 𐑓𐑱𐑤𐑘𐑼 𐑛𐑘𐑫𐑼𐑦𐑙 𐑩 𐑣𐑲-𐑐𐑮𐑴𐑓𐑲𐑤 𐑐𐑮𐑪𐑛𐑳𐑒𐑑 𐑤𐑷𐑯𐑗. 𐑥𐑸𐑒𐑩𐑑𐑦𐑙 𐑛𐑱𐑑𐑩 𐑮𐑦𐑜𐑸𐑛𐑦𐑙 𐑩𐑯 𐑦𐑥𐑐𐑧𐑯𐑛𐑦𐑙, 𐑥𐑨𐑕𐑦𐑝 𐑑𐑮𐑨𐑓𐑦𐑒 𐑕𐑻𐑡 (𐑛𐑮𐑦𐑝𐑩𐑯 𐑚𐑲 𐑩 𐑥𐑱𐑡𐑼 𐑓𐑮𐑨𐑯𐑗𐑲𐑟 𐑒𐑨𐑥𐑐𐑱𐑯) 𐑢𐑪𐑟 𐑯𐑧𐑝𐑼 𐑖𐑺𐑛 𐑢𐑦𐑞 𐑞 𐑑𐑧𐑒𐑯𐑦𐑒𐑩𐑤 𐑑𐑰𐑥. 𐑒𐑪𐑯𐑕𐑦𐑒𐑢𐑩𐑯𐑑𐑤𐑦, 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑪𐑐𐑑𐑦𐑥𐑲𐑟𐑛 𐑦𐑒𐑕𐑒𐑤𐑵𐑕𐑦𐑝𐑤𐑦 𐑨𐑑 𐑞 𐑕𐑹𐑕-𐑒𐑴𐑛 𐑤𐑧𐑝𐑩𐑤 𐑢𐑦𐑞𐑬𐑑 𐑕𐑒𐑱𐑤𐑦𐑙 𐑞 𐑳𐑯𐑛𐑼𐑤𐑲𐑦𐑙 𐑦𐑯𐑓𐑮𐑩𐑕𐑑𐑮𐑳𐑒𐑗𐑼. 𐑩𐑐𐑪𐑯 𐑤𐑷𐑯𐑗, 𐑞 𐑳𐑯𐑐𐑮𐑧𐑕𐑦𐑛𐑧𐑯𐑑𐑩𐑛 𐑒𐑩𐑯𐑒𐑳𐑮𐑩𐑯𐑑 𐑿𐑟𐑼 𐑑𐑮𐑨𐑓𐑦𐑒 𐑴𐑝𐑼𐑢𐑧𐑤𐑥𐑛 𐑞 𐑯𐑧𐑑𐑢𐑻𐑒 𐑤𐑱𐑼, 𐑑𐑮𐑦𐑜𐑼𐑦𐑙 𐑕𐑻𐑝𐑼 𐑒𐑮𐑨𐑖𐑩𐑟 𐑛𐑦𐑕𐑐𐑲𐑑 𐑣𐑲𐑤𐑦 𐑦𐑓𐑦𐑖𐑩𐑯𐑑 𐑒𐑴𐑛 𐑧𐑒𐑕𐑦𐑒𐑿𐑖𐑩𐑯.',
                 'solution'  => [
-                    'Architected Cloud Auto-Scaling: Spearheaded the modernization of the deployment architecture by implementing AWS Elastic Beanstalk to dynamically handle high-traffic volatility and ensure high availability for customer-facing applications.',
-                    'Decoupled System Environments: Mitigated architectural risk by isolating internal operational systems on dedicated Amazon EC2 instances, ensuring core business functions remained unaffected by external traffic spikes on customer-facing layers.',
-                    'Established Dedicated DevOps Governance: Onboarded dedicated infrastructure engineering expertise to design proactive monitoring, capacity planning, and predictive system-load trending models.',
-                    'Educated Executive Stakeholders: Leveraged the post-mortem analysis to demonstrate the critical link between infrastructure investment and business continuity, securing executive buy-in for long-term cloud infrastructure funding.'
+                    '𐑸𐑒𐑦𐑑𐑧𐑒𐑑𐑦𐑛 𐑒𐑤𐑬𐑛 𐑷𐑑𐑴-𐑕𐑒𐑱𐑤𐑦𐑙: 𐑕𐑐𐑽𐑣𐑧𐑛𐑩𐑛 𐑞 𐑥𐑪𐑛𐑼𐑯𐑲𐑟𐑱𐑖𐑩𐑯 𐑝 𐑞 𐑛𐑦𐑐𐑤𐑶𐑥𐑩𐑯𐑑 𐑸𐑒𐑦𐑑𐑧𐑒𐑗𐑼 𐑚𐑲 𐑦𐑥𐑐𐑤𐑦𐑥𐑧𐑯𐑑𐑦𐑙 AWS 𐑦𐑤𐑨𐑕𐑑𐑦𐑒 𐑚𐑰𐑯𐑕𐑑𐑷𐑒 𐑑 𐑛𐑲𐑯𐑨𐑥𐑦𐑒𐑤𐑦 𐑣𐑨𐑯𐑛𐑩𐑤 𐑣𐑲-𐑑𐑮𐑨𐑓𐑦𐑒 𐑝𐑪𐑤𐑩𐑑𐑦𐑤𐑦𐑑𐑦 𐑯 𐑦𐑯𐑖𐑫𐑼 𐑣𐑲 𐑩𐑝𐑱𐑤𐑩𐑚𐑦𐑤𐑦𐑑𐑦 𐑓 𐑒𐑳𐑕𐑑𐑩𐑥𐑼-𐑓𐑱𐑕𐑦𐑙 𐑨𐑐𐑤𐑦𐑒𐑱𐑖𐑩𐑯𐑟.',
+                    '𐑛𐑰 𐑒𐑳𐑐𐑩𐑤𐑛 𐑕𐑦𐑕𐑑𐑩𐑥 𐑦𐑯𐑝𐑲𐑮𐑩𐑯𐑥𐑩𐑯𐑑𐑕: 𐑥𐑦𐑑𐑦𐑜𐑱𐑑𐑩𐑛 𐑸𐑒𐑦𐑑𐑧𐑒𐑗𐑼𐑩𐑤 𐑮𐑦𐑕𐑒 𐑚𐑲 𐑲𐑕𐑩𐑤𐑱𐑑𐑦𐑙 𐑦𐑯𐑑𐑻𐑯𐑩𐑤 𐑪𐑐𐑼𐑱𐑖𐑩𐑯𐑩𐑤 𐑕𐑦𐑕𐑑𐑩𐑥𐑟 𐑪𐑯 𐑛𐑧𐑛𐑦𐑒𐑱𐑑𐑩𐑛 𐑨𐑥𐑩𐑟𐑩𐑯 𐑰𐑕𐑰2 𐑦𐑯𐑕𐑑𐑩𐑯𐑕𐑩𐑟, 𐑦𐑯𐑖𐑫𐑼𐑦𐑙 𐑒𐑹 𐑚𐑦𐑟𐑯𐑩𐑕 𐑓𐑳𐑙𐑒𐑖𐑩𐑯𐑟 𐑮𐑦𐑥𐑱𐑯𐑛 𐑳𐑯𐑩𐑓𐑧𐑒𐑑𐑩𐑛 𐑚𐑲 𐑦𐑒𐑕𐑑𐑻𐑯𐑩𐑤 𐑑𐑮𐑨𐑓𐑦𐑒 𐑕𐑐𐑲𐑒𐑕 𐑪𐑯 𐑒𐑳𐑕𐑑𐑩𐑥𐑼-𐑓𐑱𐑕𐑦𐑙 𐑤𐑱𐑼𐑟.',
+                    '𐑦𐑕𐑑𐑨𐑚𐑤𐑦𐑖𐑑 𐑛𐑧𐑛𐑦𐑒𐑱𐑑𐑩𐑛 DevOps 𐑜𐑳𐑝𐑼𐑯𐑩𐑯𐑕: 𐑪𐑯 𐑚𐑹𐑛𐑩𐑛 𐑛𐑧𐑛𐑦𐑒𐑱𐑑𐑩𐑛 𐑦𐑯𐑓𐑮𐑩𐑕𐑑𐑮𐑳𐑒𐑗𐑼 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑧𐑒𐑕𐑐𐑻𐑑𐑰𐑟 𐑑 𐑛𐑦𐑟𐑲𐑯 𐑐𐑮𐑴𐑨𐑒𐑑𐑦𐑝 𐑥𐑪𐑯𐑦𐑑𐑼𐑦𐑙, 𐑒𐑩𐑐𐑨𐑕𐑦𐑑𐑦 𐑐𐑤𐑨𐑯𐑦𐑙, 𐑯 𐑐𐑮𐑦𐑛𐑦𐑒𐑑𐑦𐑝 𐑕𐑦𐑕𐑑𐑩𐑥-𐑤𐑴𐑛 𐑑𐑮𐑧𐑯𐑛𐑦𐑙 𐑥𐑪𐑛𐑩𐑤𐑟.',
+                    '𐑧𐑡𐑩𐑒𐑱𐑑𐑩𐑛 𐑦𐑜𐑟𐑧𐑒𐑘𐑩𐑑𐑦𐑝 𐑕𐑑𐑱𐑒-𐑣𐑴𐑤𐑛𐑼𐑟: 𐑤𐑧𐑝𐑼𐑦𐑡𐑛 𐑞 𐑐𐑴𐑕𐑑-𐑥𐑹𐑑𐑩𐑥 𐑩𐑯𐑨𐑤𐑩𐑕𐑦𐑕 𐑑 𐑛𐑧𐑥𐑩𐑯𐑕𐑑𐑮𐑱𐑑 𐑞 𐑒𐑮𐑦𐑑𐑦𐑒𐑩𐑤 𐑤𐑦𐑙𐑒 𐑚𐑦𐑑𐑢𐑰𐑯 𐑦𐑯𐑓𐑮𐑩𐑕𐑑𐑮𐑳𐑒𐑗𐑼 𐑦𐑯𐑝𐑧𐑕𐑑𐑥𐑩𐑯𐑑 𐑯 𐑚𐑦𐑟𐑯𐑩𐑕 𐑒𐑪𐑯𐑑𐑦𐑯𐑿𐑦𐑑𐑦, 𐑕𐑦𐑒𐑘𐑫𐑼𐑦𐑙 𐑦𐑜𐑟𐑧𐑒𐑘𐑩𐑑𐑦𐑝 𐑚𐑲-𐑦𐑯 𐑓 𐑤𐑪𐑙-𐑑𐑻𐑥 𐑒𐑤𐑬𐑛 𐑦𐑯𐑓𐑮𐑩𐑕𐑑𐑮𐑳𐑒𐑗𐑼 𐑓𐑳𐑯𐑛𐑦𐑙.'
                 ],
                 'impact'    => [
-                    'Eliminated Single Points of Failure: Successfully prevented any recurrence of traffic-driven outages, establishing a reliable, seamless digital experience for end-users.',
-                    'Automated Elastic Volatility Management: Empowered the platform to automatically scale compute resources dynamically ahead of traffic curves, mitigating the risk of future campaign spikes.',
-                    'Secured Strategic Infrastructure Buy-In: Transformed organizational culture by permanently closing the gap between marketing planning and engineering preparation, ensuring all future product launches are backed by aligned capacity planning.'
+                    '𐑦𐑤𐑦𐑥𐑦𐑯𐑱𐑑𐑩𐑛 𐑕𐑦𐑙𐑜𐑩𐑤 𐑐𐑶𐑯𐑑𐑕 𐑝 𐑓𐑱𐑤𐑘𐑼: 𐑕𐑩𐑒𐑕𐑧𐑕𐑓𐑩𐑤𐑦 𐑐𐑮𐑦𐑝𐑧𐑯𐑑𐑩𐑛 𐑧𐑯𐑦 𐑮𐑦𐑒𐑳𐑮𐑩𐑯𐑕 𐑝 𐑑𐑮𐑨𐑓𐑦𐑒-𐑛𐑮𐑦𐑝𐑩𐑯 𐑬𐑑𐑦𐑡𐑩𐑟, 𐑦𐑕𐑑𐑨𐑚𐑤𐑦𐑖𐑦𐑙 𐑩 𐑮𐑦𐑤𐑲𐑩𐑚𐑩𐑤, 𐑕𐑰𐑥𐑤𐑩𐑕 𐑛𐑦𐑡𐑦𐑑𐑩𐑤 𐑦𐑒𐑕𐑐𐑽𐑾𐑯𐑕 𐑓 𐑧𐑯𐑛-𐑿𐑟𐑼𐑟.',
+                    '𐑷𐑑𐑩𐑥𐑱𐑑𐑩𐑛 𐑦𐑤𐑨𐑕𐑑𐑦𐑒 𐑝𐑪𐑤𐑩𐑑𐑦𐑤𐑦𐑑𐑦 𐑥𐑨𐑯𐑦𐑡𐑥𐑩𐑯𐑑: 𐑦𐑥𐑐𐑬𐑼𐑛 𐑞 𐑐𐑤𐑨𐑑𐑓𐑹𐑥 𐑑 𐑷𐑑𐑩𐑥𐑨𐑑𐑦𐑒𐑤𐑦 𐑕𐑒𐑱𐑤 𐑒𐑩𐑥𐑐𐑿𐑑 𐑮𐑦𐑟𐑹𐑕𐑩𐑟 𐑛𐑲𐑯𐑨𐑥𐑦𐑒𐑤𐑦 𐑩𐑣𐑧𐑛 𐑝 𐑑𐑮𐑨𐑓𐑦𐑒 𐑒𐑻𐑝𐑟, 𐑥𐑦𐑑𐑦𐑜𐑱𐑑𐑦𐑙 𐑞 𐑮𐑦𐑕𐑒 𐑝 𐑓𐑿𐑗𐑼 𐑒𐑨𐑥𐑐𐑱𐑯 𐑕𐑐𐑲𐑒𐑕.',
+                    '𐑕𐑦𐑒𐑘𐑫𐑼𐑛 𐑕𐑑𐑮𐑩𐑑𐑰𐑡𐑦𐑒 𐑦𐑯𐑓𐑮𐑩𐑕𐑑𐑮𐑳𐑒𐑗𐑼 𐑚𐑲-𐑦𐑯: 𐑑𐑮𐑨𐑯𐑕𐑓𐑹𐑥𐑛 𐑹𐑜𐑩𐑯𐑲𐑟𐑱𐑖𐑩𐑯𐑩𐑤 𐑒𐑳𐑤𐑗𐑼 𐑚𐑲 𐑐𐑻𐑥𐑩𐑯𐑩𐑯𐑑𐑤𐑦 𐑒𐑤𐑴𐑟𐑦𐑙 𐑞 𐑜𐑨𐑐 𐑚𐑦𐑑𐑢𐑰𐑯 𐑥𐑸𐑒𐑩𐑑𐑦𐑙 𐑐𐑤𐑨𐑯𐑦𐑙 𐑯 𐑧𐑯𐑡𐑦𐑯𐑽𐑦𐑙 𐑐𐑮𐑧𐑐𐑼𐑱𐑖𐑩𐑯, 𐑦𐑯𐑖𐑫𐑼𐑦𐑙 𐑷𐑤 𐑓𐑿𐑗𐑼 𐑐𐑮𐑪𐑛𐑳𐑒𐑑 𐑤𐑷𐑯𐑗𐑩𐑟 𐑸 𐑚𐑨𐑒𐑑 𐑚𐑲 𐑩𐑤𐑲𐑯𐑛 𐑒𐑩𐑐𐑨𐑕𐑦𐑑𐑦 𐑐𐑤𐑨𐑯𐑦𐑙.'
                 ]
             ]
         ]

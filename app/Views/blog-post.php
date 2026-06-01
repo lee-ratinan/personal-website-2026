@@ -61,7 +61,19 @@
                 <div class="col-12 col-md-10 col-xl-9">
                     <p><a href="<?= base_url($locale . '/blog') ?>"><?= lang('Home.system.pages.blog') ?></a> /</p>
                     <h1 id="post-title">[POST-TITLE]</h1>
-                    <hr class="my-5" />
+                    <hr />
+                    <div id="share-container" class="mt-3 mb-5">
+                        <button class="btn btn-outline-success btn-sm btn-share btn btn-outline-success btn-sm btn-share-facebook"><i class="bi bi-facebook"></i></button>
+                        <button class="btn btn-outline-success btn-sm btn-share btn btn-outline-success btn-sm btn-share-twitter"><i class="bi bi-twitter-x"></i></button>
+                        <button class="btn btn-outline-success btn-sm btn-share btn btn-outline-success btn-sm btn-share-threads"><i class="bi bi-threads"></i></button>
+                        <button class="btn btn-outline-success btn-sm btn-share btn btn-outline-success btn-sm btn-share-bookmark"><i class="bi bi-bookmark-check"></i> Bookmark</button>
+                        <button class="btn btn-outline-success btn-sm btn-share btn btn-outline-success btn-sm btn-share-copy-link"><i class="bi bi-clipboard-check"></i> Copy</button>
+                        <button class="btn btn-outline-success btn-sm btn-share btn btn-outline-success btn-sm btn-share-qr"><i class="bi bi-qr-code-scan"></i></button>
+                    </div>
+                    <div class="text-center my-5" id="qr-code" style="display:none">
+                        <button class="btn btn-outline-danger btn-sm float-end" id="close-qr"><i class="bi bi-x-circle-fill"></i></button><br>
+                        <canvas id="canvas"></canvas>
+                    </div>
                     <div id="wordpress-post"></div>
                 </div>
             </div>
@@ -69,6 +81,8 @@
     </section>
 </main>
 <?php include "_footer.php"; ?>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="<?= base_url('assets/js/sharer.js') ?>"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/js/glightbox.min.js" integrity="sha512-XL54SjceXZFzblziNnaFFaXggzqCuZrFS4loWPpvPJ6Kg0kc2HyL89+cPeH0GMq0sKL2SegzUmA8Lx9a0st2ow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/css/glightbox.min.css" integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />

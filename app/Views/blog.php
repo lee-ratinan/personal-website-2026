@@ -56,6 +56,18 @@
                 <div class="col-12 col-md-10 col-xl-9">
                     <h1 class="mb-5"><?= lang('Home.system.pages.blog') ?></h1>
                     <?php if ('posts' != $mode) { echo '<h2>' . ucfirst($mode) . ': ' . $ms . '</h2><p><a href="?">View All</a></p>'; } ?>
+                    <div class="mb-3">
+                        <?php
+                        $tag_links = [
+                            'blog?m=tags&ms=song%20translation&id=75' => 'Song Translation',
+                            'blog?m=tags&ms=Gallery&id=76'            => 'Gallery',
+                            'blog?m=tags&ms=portfolio&id=62' => 'Portfolio'
+                        ];
+                        foreach ($tag_links as $link => $name) {
+                            echo '<a class="btn btn-outline-success btn-sm me-1" href="' . $link . '"><i class="bi bi-tag"></i> ' . $name . '</a>';
+                        }
+                        ?>
+                    </div>
                     <div id="wordpress-posts"></div>
                     <nav class="wp-pagination text-center">
                         <button id="wp-prev" class="btn btn-success">← Previous</button>
@@ -261,7 +273,7 @@
                     : '';
 
                 const tagsHtml = (post.tagObjs || [])
-                    .map((t) => `<a class="wp-post__tag btn btn-sm btn-outline-success m-1" href="?m=tags&ms=${_esc(t.name)}&id=${_esc(t.id)}">${_esc(t.name)}</a>`)
+                    .map((t) => `<a class="wp-post__tag btn btn-sm btn-outline-success m-1" href="?m=tags&ms=${_esc(t.name)}&id=${_esc(t.id)}"><i class="bi bi-tag"></i> ${_esc(t.name)}</a>`)
                     .join('');
                 const postLink = `<?= base_url($locale . '/blog-post') ?>/${_esc(post.id)}/${_esc(post.slug)}`;
 

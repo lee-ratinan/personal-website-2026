@@ -333,7 +333,7 @@
 
             // Tags
             const tagsHtml = (post.tagObjs || [])
-                .map((t) => `<a class="btn btn-sm btn-outline-success m-1" href="<?= base_url($locale . '/blog') ?>?m=tags&ms=${_esc(t.name)}&id=${_esc(t.id)}" target="_blank" rel="noopener">${_esc(t.name)}</a>`)
+                .map((t) => `<a class="btn btn-sm btn-outline-success m-1" href="<?= base_url($locale . '/blog') ?>?m=tags&ms=${_esc(t.name)}&id=${_esc(t.id)}" target="_blank" rel="noopener"><i class="bi bi-tag"></i> ${_esc(t.name)}</a>`)
                 .join('');
             $('#post-title').html(title);
             $container.html(`

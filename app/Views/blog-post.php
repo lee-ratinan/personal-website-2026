@@ -71,7 +71,6 @@
                         <button class="btn btn-outline-success btn-sm btn-share btn btn-outline-success btn-sm btn-share-qr"><i class="bi bi-qr-code-scan"></i></button>
                     </div>
                     <div class="text-center my-5" id="qr-code" style="display:none">
-                        <button class="btn btn-outline-danger btn-sm float-end" id="close-qr"><i class="bi bi-x-circle-fill"></i></button><br>
                         <canvas id="canvas"></canvas>
                     </div>
                     <div id="wordpress-post"></div>

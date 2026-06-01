@@ -6,6 +6,7 @@ const shareData = {
 };
 
 // Main handler function
+let qrGenerated = false;
 function handleShare(event) {
     // Find the closest button with the class 'btn-share'
     const button = event.target.closest('.btn-share');
@@ -29,14 +30,17 @@ function handleShare(event) {
         else if (isClass('btn-share-copy-link')) {
             navigator.clipboard.writeText(shareData.url)
                 .then(() => {
-                    const originalText = button.textContent;
                     button.textContent = "Copied!";
-                    setTimeout(() => button.textContent = originalText, 2000);
+                    setTimeout(() => $('.btn-share-copy-link').html('<i class="bi bi-clipboard-check"></i> Copy'), 5000);
                 })
                 .catch(err => console.error('Failed to copy link: ', err));
         }
         else if (isClass('btn-share-qr')) {
-            generateQRCode(shareData.url);
+            $('#qr-code').slideToggle();
+            if (!qrGenerated) {
+                generateQRCode(shareData.url);
+                qrGenerated = true;
+            }
         }
     } catch (error) {
         console.error("Sharing failed:", error);
@@ -58,11 +62,6 @@ function generateQRCode(url) {
         if (error) console.error(error);
         console.log('QR code generated successfully!');
     });
-    $('#qr-code').slideDown();
 }
 const container = document.getElementById('share-container');
 container.addEventListener('click', handleShare);
-// close QR
-document.getElementById('close-qr').addEventListener('click', function () {
-    $('#qr-code').slideUp();
-});

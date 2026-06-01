@@ -73,7 +73,9 @@
                     <div class="text-center my-5" id="qr-code" style="display:none">
                         <canvas id="canvas"></canvas>
                     </div>
-                    <div id="wordpress-post"></div>
+                    <div id="wordpress-post">
+                        <div class="text-center m-5"><i class="bi bi-gear-fill spinner-border"></i></div>
+                    </div>
                 </div>
             </div>
         </div>

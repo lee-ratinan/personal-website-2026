@@ -68,7 +68,9 @@
                         }
                         ?>
                     </div>
-                    <div id="wordpress-posts"></div>
+                    <div id="wordpress-posts">
+                        <div class="text-center m-5"><i class="bi bi-gear-fill spinner-border"></i></div>
+                    </div>
                     <nav class="wp-pagination text-center">
                         <button id="wp-prev" class="btn btn-success">← Previous</button>
                         <span id="wp-page-info"></span>

@@ -1,6 +1,6 @@
 <?php
 return [
-    'system'   => [
+    'system'         => [
         'website-name'    => '力川エイキン',
         'site-name-head'  => '力川<span style="color:#a00">エイキン</span>',
         'footer-msg'      => 'これは力川エイキンの公式個人サイトです。彼はシンガポールとバンコクを拠点とするシニアソフトウェアエンジニア兼テクノロジーリードです。',
@@ -17,14 +17,14 @@ return [
             'author'      => '力川エイキン',
         ]
     ],
-    'numbers'  => [
+    'numbers'        => [
         '1' => '一',
         '2' => '二',
         '3' => '三',
         '4' => '四',
         '5' => '五',
     ],
-    'sections' => [
+    'sections'       => [
         'home'      => [
             'title'       => 'ホーム',
             'greetings'   => 'こんにちは！僕は力川エイキンです！',
@@ -224,6 +224,9 @@ return [
             'whatsapp'  => 'WhatsApp',
         ],
     ],
-    'calendar' => 'カレンダー',
-    'read-cnt' => '所要時間${minutes}分（${words}語）'
+    'calendar'       => 'カレンダー',
+    'read-cnt'       => '所要時間${minutes}分（${words}語）',
+    'password'       => 'パスワード',
+    'password-error' => 'パスワードが間違っています',
+    'submit'         => '送信',
 ];

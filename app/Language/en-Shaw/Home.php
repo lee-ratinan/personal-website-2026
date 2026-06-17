@@ -1,6 +1,6 @@
 <?php
 return [
-    'system'   => [
+    'system'         => [
         'website-name'    => '·𐑮𐑳𐑑𐑦𐑯𐑳𐑯 𐑤𐑰 𐑩𐑓𐑦𐑖𐑩𐑤',
         'site-name-head'  => '·𐑮𐑳𐑑𐑦𐑯𐑳𐑯<span style="color:#080">𐑤𐑰</span>',
         'footer-msg'      => '𐑞𐑦𐑕 𐑦𐑟 𐑩𐑯 𐑩𐑓𐑦𐑖𐑩𐑤 𐑐𐑻𐑕𐑩𐑯𐑩𐑤 𐑢𐑧𐑚𐑕𐑲𐑑 𐑝 ·𐑮𐑳𐑑𐑦𐑯𐑳𐑯 𐑤𐑰. 𐑣𐑰 𐑦𐑟 𐑩 𐑕𐑰𐑯𐑽 𐑕𐑪𐑓𐑑𐑢𐑺 𐑧𐑯𐑡𐑦𐑯𐑽 𐑯 𐑑𐑧𐑒𐑯𐑪𐑤𐑩𐑡𐑦 𐑤𐑰𐑛 𐑚𐑱𐑕𐑑 𐑦𐑯 𐑕𐑦𐑙𐑩𐑐𐑹 𐑯 𐑚𐑨𐑙𐑒𐑪𐑒.',
@@ -17,14 +17,14 @@ return [
             'author'      => '·𐑮𐑳𐑑𐑦𐑯𐑳𐑯 𐑤𐑰',
         ]
     ],
-    'numbers'  => [
+    'numbers'        => [
         '1' => '1',
         '2' => '2',
         '3' => '3',
         '4' => '4',
         '5' => '5',
     ],
-    'sections' => [
+    'sections'       => [
         'home'      => [
             'title'       => '𐑣𐑴𐑥',
             'greetings'   => '𐑣𐑲! 𐑲𐑥 ·𐑮𐑳𐑑𐑦𐑯𐑳𐑯 “𐑯𐑨𐑑” 𐑤𐑰!',
@@ -224,6 +224,9 @@ return [
             'whatsapp'  => 'WhatsApp',
         ],
     ],
-    'calendar' => '𐑒𐑨𐑤𐑦𐑯𐑛𐑼',
-    'read-cnt' => '${minutes} 𐑥𐑦𐑯𐑦𐑑${minutes !== 1 ? "𐑕" : ""} 𐑮𐑰𐑛 (${words} 𐑢𐑻𐑛𐑟)'
+    'calendar'       => '𐑒𐑨𐑤𐑦𐑯𐑛𐑼',
+    'read-cnt'       => '${minutes} 𐑥𐑦𐑯𐑦𐑑${minutes !== 1 ? "𐑕" : ""} 𐑮𐑰𐑛 (${words} 𐑢𐑻𐑛𐑟)',
+    'password'       => '𐑐𐑭𐑕𐑢𐑻𐑛',
+    'password-error' => '𐑐𐑭𐑕𐑢𐑻𐑛 𐑦𐑟 𐑦𐑯𐑒𐑼𐑧𐑒𐑑',
+    'submit'         => '𐑕𐑩𐑚𐑥𐑦𐑑',
 ];

@@ -1,6 +1,6 @@
 <?php
 return [
-    'system'   => [
+    'system'         => [
         'website-name'    => 'Ratinan Lee Official',
         'site-name-head'  => 'RATINAN<span style="color:#0c0">LEE</span>',
         'footer-msg'      => 'This is an official personal website of Ratinan Lee. He is a senior software engineer and technology lead based in Singapore and Bangkok.',
@@ -17,14 +17,14 @@ return [
             'author'      => 'Ratinan Lee',
         ]
     ],
-    'numbers'  => [
+    'numbers'        => [
         '1' => '1',
         '2' => '2',
         '3' => '3',
         '4' => '4',
         '5' => '5',
     ],
-    'sections' => [
+    'sections'       => [
         'home'      => [
             'title'       => 'Home',
             'greetings'   => 'Hi! I’m Ratinan “Nat” Lee!',
@@ -224,6 +224,9 @@ return [
             'whatsapp'  => 'WhatsApp',
         ],
     ],
-    'calendar' => 'Calendar',
-    'read-cnt' => '${minutes} minute${minutes !== 1 ? "s" : ""} read (${words} words)'
+    'calendar'       => 'Calendar',
+    'read-cnt'       => '${minutes} minute${minutes !== 1 ? "s" : ""} read (${words} words)',
+    'password'       => 'Password',
+    'password-error' => 'Password is incorrect',
+    'submit'         => 'Submit',
 ];

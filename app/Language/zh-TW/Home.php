@@ -1,6 +1,6 @@
 <?php
 return [
-    'system'   => [
+    'system'         => [
         'website-name'    => '李榮欽的網站',
         'site-name-head'  => '李<span style="color:#1B9431">榮欽</span>',
         'footer-msg'      => '這是李榮欽的官方個人網站。他是一位常駐新加坡與曼谷的資深軟體工程師與技術領導者。',
@@ -17,14 +17,14 @@ return [
             'author'      => '李榮欽',
         ]
     ],
-    'numbers'  => [
+    'numbers'        => [
         '1' => '一',
         '2' => '二',
         '3' => '三',
         '4' => '四',
         '5' => '五',
     ],
-    'sections' => [
+    'sections'       => [
         'home'      => [
             'title'       => '首頁',
             'greetings'   => '你好！我是李榮欽！',
@@ -224,6 +224,9 @@ return [
             'whatsapp'  => 'WhatsApp',
         ],
     ],
-    'calendar' => '日曆',
-    'read-cnt' => '閱讀時間：${minutes}分鐘（${words}字）'
+    'calendar'       => '日曆',
+    'read-cnt'       => '閱讀時間：${minutes}分鐘（${words}字）',
+    'password'       => '密碼',
+    'password-error' => '密碼錯誤',
+    'submit'         => '提交',
 ];

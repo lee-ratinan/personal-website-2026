@@ -76,6 +76,16 @@
                     <div id="wordpress-post">
                         <div class="text-center m-5"><i class="bi bi-gear-fill spinner-border"></i></div>
                     </div>
+                    <div class="text-center my-5 py-5 d-none" id="password-form">
+                        <div class="row">
+                            <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                                <p class="alert alert-danger d-none" id="password-error"><?= lang('Home.password-error') ?></p>
+                                <label for="password-input" class="form-label"><?= lang('Home.password') ?></label>
+                                <input type="password" class="form-control" name="password-input" id="password-input" placeholder="<?= lang('Home.password') ?>">
+                                <button class="btn btn-success w-100 mt-3" id="btn-submit-password"><?= lang('Home.submit') ?></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,6 +99,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/css/glightbox.min.css" integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>.gslide-desc {color:#000;}</style>
 <script>
+    // HASH
+    function djb2Hash(str) {
+        let hash = 5381;
+        for (let i = 0; i < str.length; i++) {
+            hash = (hash * 33) ^ str.charCodeAt(i);
+        }
+        return hash >>> 0; // Force output to be an unsigned 32-bit integer
+    }
     /**
      * WordPress REST API — Single Post Fetcher & Renderer
      * Requires: jQuery
@@ -104,10 +122,9 @@
      *   WPPost.loadById(123);
      *   WPPost.loadBySlug('my-post-slug');
      */
-
     const WPPost = (() => {
         // ─── Config ──────────────────────────────────────────────────────────────
-
+        let passwordProtected = false;
         const CONFIG = {
             baseUrl: '',
         };
@@ -378,13 +395,16 @@
             const tagsHtml = (post.tagObjs || [])
                 .map((t) => `<a class="btn btn-sm btn-outline-success m-1" href="<?= base_url($locale . '/blog') ?>?m=tags&ms=${_esc(t.name)}&id=${_esc(t.id)}" target="_blank" rel="noopener"><i class="bi bi-tag"></i> ${_esc(t.name)}</a>`)
                 .join('');
-
+            for (const value of post.tagObjs) {
+                if (90 === value.id) {
+                    passwordProtected = true;
+                }
+            }
             // Reading time
             let readingTimeString = renderReadingTime(content);
-
             $('#post-title').html(title);
             $container.html(`
-      <article class="wp-post" data-id="${post.id}" data-slug="${_esc(post.slug)}">
+      <article class="wp-post" id="main-post" data-id="${post.id}" data-slug="${_esc(post.slug)}">
         ${imgHtml}
         <div class="wp-post__body">
           <div class="wp-post__meta my-3">
@@ -399,6 +419,10 @@
     `);
             _glightboxInit();
             _fixRowCol();
+            if (passwordProtected) {
+                $('#main-post').addClass('d-none');
+                $('#password-form').removeClass('d-none');
+            }
         }
 
         // ─── Utility helpers ─────────────────────────────────────────────────────
@@ -427,6 +451,24 @@
     $(function () {
       WPPost.init({ baseUrl: 'https://blog.ratinan.com' });
       WPPost.loadById(<?= $post_id ?>);
+      function checkPassword() {
+          const actualPassword = 571009401;
+          let inputPassword = $('#password-input').val(),
+              hashedInputPassword = djb2Hash(inputPassword);
+          if ('' === inputPassword) {
+              $('#password-input').focus();
+              return;
+          }
+          if (actualPassword === hashedInputPassword) {
+              $('#main-post').removeClass('d-none');
+              $('#password-form').addClass('d-none');
+          } else {
+              $('#password-error').removeClass('d-none');
+              $('#password-input').val('').focus();
+          }
+      }
+      $('#btn-submit-password').click(function () {checkPassword();});
+      $('#password-input').change(function () {checkPassword();})
     });
 </script>
 </body>

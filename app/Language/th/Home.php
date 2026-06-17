@@ -1,6 +1,6 @@
 <?php
 return [
-    'system'   => [
+    'system'         => [
         'website-name'    => 'เว็บไซต์ทางการของรตินันท์ ลี',
         'site-name-head'  => 'รตินันท์<span style="color:#ff6a00">ลี</span>',
         'footer-msg'      => 'เว็บนี้เป็นเว็บส่วนตัวของ นัท รตินันท์ วิศวกรซอฟต์แวร์มืออาชีพและหัวหน้าทีมเทคโนโลยีในสิงคโปร์และกรุงเทพฯ',
@@ -17,14 +17,14 @@ return [
             'author'      => 'รตินันท์ ลีลางามวงศา',
         ]
     ],
-    'numbers'  => [
+    'numbers'        => [
         '1' => '๑',
         '2' => '๒',
         '3' => '๓',
         '4' => '๔',
         '5' => '๕',
     ],
-    'sections' => [
+    'sections'       => [
         'home'      => [
             'title'       => 'หน้าแรก',
             'greetings'   => 'ไง! ผมชื่อรตินันท์ “นัท” ลี',
@@ -224,6 +224,9 @@ return [
             'whatsapp'  => 'WhatsApp',
         ],
     ],
-    'calendar' => 'ปฏิทิน',
-    'read-cnt' => 'อ่าน ${minutes} นาที (${words} คำ)'
+    'calendar'       => 'ปฏิทิน',
+    'read-cnt'       => 'อ่าน ${minutes} นาที (${words} คำ)',
+    'password'       => 'รหัสผ่าน',
+    'password-error' => 'รหัสผ่านไม่ถูกต้อง',
+    'submit'         => 'ยืนยัน',
 ];

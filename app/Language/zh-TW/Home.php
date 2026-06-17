@@ -224,5 +224,6 @@ return [
             'whatsapp'  => 'WhatsApp',
         ],
     ],
-    'calendar' => '日曆'
+    'calendar' => '日曆',
+    'read-cnt' => '閱讀時間：${minutes}分鐘（${words}字）'
 ];

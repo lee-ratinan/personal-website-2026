@@ -224,5 +224,6 @@ return [
             'whatsapp'  => 'WhatsApp',
         ],
     ],
-    'calendar' => 'Calendar'
+    'calendar' => 'Calendar',
+    'read-cnt' => '${minutes} minute${minutes !== 1 ? "s" : ""} read (${words} words)'
 ];

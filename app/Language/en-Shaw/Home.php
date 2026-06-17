@@ -224,5 +224,6 @@ return [
             'whatsapp'  => 'WhatsApp',
         ],
     ],
-    'calendar' => '𐑒𐑨𐑤𐑦𐑯𐑛𐑼'
+    'calendar' => '𐑒𐑨𐑤𐑦𐑯𐑛𐑼',
+    'read-cnt' => '${minutes} 𐑥𐑦𐑯𐑦𐑑${minutes !== 1 ? "𐑕" : ""} 𐑮𐑰𐑛 (${words} 𐑢𐑻𐑛𐑟)'
 ];

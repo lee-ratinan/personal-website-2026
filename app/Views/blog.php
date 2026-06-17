@@ -244,7 +244,22 @@
         }
 
         // ─── Renderer ────────────────────────────────────────────────────────────
-
+        function renderDate(dateString) {
+            let locale = '<?= $locale ?>';
+            if ('th' === locale || 'zh-TW' === locale || 'ja' === locale) {
+                return new Date(dateString).toLocaleDateString(locale, {
+                    year: 'numeric', month: 'long', day: 'numeric',
+                });
+            } else if ('en-Shaw' === locale) {
+                let postDate = new Date(dateString);
+                let day = postDate.getDate(), month = postDate.getMonth(), year = postDate.getFullYear();
+                let monthArray = ['𐑡𐑨𐑯𐑘𐑫𐑼𐑦', '𐑓𐑧𐑚𐑮𐑫𐑼𐑦', '𐑥𐑸𐑗', '𐑱𐑐𐑮𐑩𐑤', '𐑥𐑱', '𐑡𐑵𐑯', '𐑡𐑩𐑤𐑲', '𐑷𐑜𐑩𐑕𐑑', '𐑕𐑧𐑐𐑑𐑧𐑥𐑚𐑼', '𐑪𐑒𐑑𐑴𐑚𐑼', '𐑯𐑴𐑝𐑧𐑥𐑚𐑼', '𐑛𐑦𐑕𐑧𐑥𐑚𐑼'];
+                return `${monthArray[month]} ${day}, ${year}`;
+            }
+            return new Date(dateString).toLocaleDateString('en-US', {
+                year: 'numeric', month: 'long', day: 'numeric',
+            });
+        }
         function renderPosts(posts) {
             const $container = $('#wordpress-posts');
             $container.empty();
@@ -257,11 +272,7 @@
             posts.forEach((post) => {
                 const title   = post.title?.rendered   || '(Untitled)';
                 const excerpt = post.excerpt?.rendered || '';
-                const date    = post.date_gmt
-                    ? '<i class="bi bi-calendar-plus"></i> ' + new Date(post.date_gmt).toLocaleDateString(undefined, {
-                        year: 'numeric', month: 'long', day: 'numeric',
-                    })
-                    : '';
+                const date    = post.date_gmt ? renderDate(post.date_gmt) : '';
 
                 const imgSrc  = post.mediaObj?.source_url || '';
                 const imgAlt  = post.mediaObj?.alt_text   || title;
@@ -288,7 +299,7 @@
             </h2>
             <div class="wp-post__meta">
               ${authorHtml}
-              <time class="wp-post__date" datetime="${post.date_gmt}">${date}</time>
+              <time class="wp-post__date" datetime="${post.date_gmt}"><i class="bi bi-calendar-plus"></i>  ${date}</time>
             </div>
             <div class="wp-post__excerpt">${excerpt}</div>
             ${tagsHtml ? `<div class="wp-post__tags">${tagsHtml}</div>` : ''}

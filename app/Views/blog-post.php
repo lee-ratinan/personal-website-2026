@@ -402,6 +402,7 @@
             }
             // Reading time
             let readingTimeString = renderReadingTime(content);
+
             $('#post-title').html(title);
             $container.html(`
       <article class="wp-post" id="main-post" data-id="${post.id}" data-slug="${_esc(post.slug)}">

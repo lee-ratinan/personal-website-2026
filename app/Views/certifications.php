@@ -131,13 +131,12 @@
                             </tbody>
                         </table>
                     </div>
-                    <h3><?= lang('Certifications.cefr.title') ?></h3>
+                    <h3><?= lang('Certifications.cefr.title') ?> <sup><a href="https://www.eur.nl/en/media/2021-03-assessment-grid-council-europe-english" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a></sup></h3>
                     <div class="table-responsive">
                         <table class="table table-dark table-striped table-hover table-sm">
                             <thead>
                             <tr>
                                 <th><?= lang('Certifications.cefr.language') ?></th>
-                                <th colspan="2"><?= lang('Certifications.cefr.test') ?></th>
                                 <th>A1</th>
                                 <th>A2</th>
                                 <th>B1</th>
@@ -149,59 +148,44 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>ภาษาไทย<br>Thai</td>
-                                <td colspan="2">-</td>
-                                <td colspan="6"></td>
-                                <td><span class="badge bg-success"><i class="bi bi-check2-circle"></i> <?= lang('Certifications.cefr.mother-tongue') ?></span></td>
+                                <td>ภาษาไทย Thai</td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
                             </tr>
                             <tr>
                                 <td>English</td>
-                                <td colspan="2">EF SET<br><small>(Computerized Adaptive Test)</small></td>
-                                <td colspan="5"></td>
-                                <td><a class="btn btn-sm btn-info" href="https://drive.google.com/file/d/18piWVwM1u3UT2zCmABG8uasEyYcuMHdv/view?usp=sharing" target="_blank"><i class="bi bi-file-earmark-pdf"></i> <?= format_date(['2025-08-08'], $locale) ?></a></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td rowspan="5">日本語<br>Japanese</td>
-                                <td rowspan="5">JLPT<br><small>(Paper-based)</small></td>
-                                <td>N5</td>
-                                <td><span class="badge bg-warning">80+/180</span></td>
-                                <td colspan="6"></td>
+                                <td>日本語 Japanese</td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-warning rounded-pill"><i class="bi bi-arrow-right-circle"></i></span></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td>N4</td>
-                                <td></td>
-                                <td><span class="badge bg-warning">90+/180</span></td>
-                                <td colspan="5"></td>
-                            </tr>
-                            <tr>
-                                <td>N3</td>
-                                <td></td>
-                                <td><span class="badge bg-warning">95-103/180</span></td>
-                                <td><span class="badge bg-warning">104+/180</span></td>
-                                <td colspan="4"></td>
-                            </tr>
-                            <tr>
-                                <td>N2</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="badge bg-warning">90-111/180</span></td>
-                                <td><span class="badge bg-warning">112+/180</span></td>
-                                <td colspan="3"></td>
-                            </tr>
-                            <tr>
-                                <td>N1</td>
+                                <td>國語 Taiwanese Mandarin</td>
+                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><span class="badge bg-warning rounded-pill"><i class="bi bi-arrow-right-circle"></i></span></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><span class="badge bg-warning">100-141/180</span></td>
-                                <td><span class="badge bg-warning">142+/180</span></td>
-                                <td colspan="2"></td>
-                            </tr>
-                            <tr>
-                                <td>國語｜中文（台灣）<br>Taiwanese Mandarin</td>
-                                <td colspan="2">TOCFL<br><small>(Computerized Adaptive Test)</small></td>
-                                <td colspan="7"></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             </tbody>
                         </table>

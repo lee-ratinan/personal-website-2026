@@ -853,12 +853,12 @@ class Home extends BaseController
                             format_date(['2015-07-01'], $locale),
                             'https://drive.google.com/file/d/1oxnmnAjZW2qXWWwZNaObFYOf1zTdTOWg/view?usp=sharing'
                         ],
-                        [
-                            lang('Certifications.data.mba'),
-                            lang('Certifications.data.australia'),
-                            lang('Certifications.data.future.by-2029'),
-                            ''
-                        ]
+//                        [
+//                            lang('Certifications.data.mba'),
+//                            lang('Certifications.data.australia'),
+//                            lang('Certifications.data.future.by-2029'),
+//                            ''
+//                        ]
                     ],
                 ],
                 'professional' => [
@@ -923,12 +923,12 @@ class Home extends BaseController
                             format_date(['2024-11-17'], $locale),
                             'https://drive.google.com/file/d/1-pHldM2W9NPDHUZPofa-KlFke5XHUaZx/view?usp=sharing'
                         ],
-                        [
-                            'PSM III (Professional Scrum Master)',
-                            'Scrum.org',
-                            lang('Certifications.data.future.by-2030'),
-                            ''
-                        ],
+//                        [
+//                            'PSM III (Professional Scrum Master)',
+//                            'Scrum.org',
+//                            lang('Certifications.data.future.by-2030'),
+//                            ''
+//                        ],
                         [
                             'PSPO I (Professional Scrum Product Owner)',
                             'Scrum.org',
@@ -941,17 +941,29 @@ class Home extends BaseController
                             format_date(['2025-02-05'], $locale),
                             'https://drive.google.com/file/d/16RU0OgvyPdeLw8anCE8khn9z8UCKKhRu/view?usp=sharing'
                         ],
-                        [
-                            'PSM III (Professional Scrum Master)',
-                            'Scrum.org',
-                            lang('Certifications.data.future.by-2030'),
-                            ''
-                        ],
+//                        [
+//                            'PSM III (Professional Scrum Master)',
+//                            'Scrum.org',
+//                            lang('Certifications.data.future.by-2030'),
+//                            ''
+//                        ],
                     ],
                 ],
                 'others'       => [
                     'languages' => [
                         'english'   => [
+                            [
+                                'Test of English Proficiency (CU-TEP): ~B1 Intermediate',
+                                'Chulalongkorn University Academic Testing Center',
+                                format_date(['2007-11-04'], $locale),
+                                'https://drive.google.com/file/d/1nlDMxBIC4RE7o0Fi70o009jEd7BSw-EV/view?usp=sharing'
+                            ],
+                            [
+                                'General English Test (TU-GET): ~B2-C1 Intermediate-Advanced',
+                                'Language Institute, Thammasat University',
+                                format_date(['2010-09-00'], $locale),
+                                'https://drive.google.com/file/d/1MbfI1rGCHA5kVHA4ggB47asY6RXxKoB6/view?usp=sharing'
+                            ],
                             [
                                 'EF SET Certificate: C2 Proficient',
                                 'Education First (EF)',
@@ -966,27 +978,27 @@ class Home extends BaseController
                                 format_date(['2025-09-22'], $locale),
                                 'https://drive.google.com/file/d/1lD7jXK5PMW8M7DS0BmxXCS-aqq_X0GTA/view?usp=sharing'
                             ],
-                            [
-                                lang('Certifications.data.jlpt') . ' N5',
-                                lang('Certifications.data.jlpt-body'),
-                                lang('Certifications.data.future.by-2026'),
-                                ''
-                            ],
-                            [
-                                lang('Certifications.data.jlpt') . ' N4',
-                                lang('Certifications.data.jlpt-body'),
-                                lang('Certifications.data.future.by-2027'),
-                                ''
-                            ]
+//                            [
+//                                lang('Certifications.data.jlpt') . ' N5',
+//                                lang('Certifications.data.jlpt-body'),
+//                                lang('Certifications.data.future.by-2026'),
+//                                ''
+//                            ],
+//                            [
+//                                lang('Certifications.data.jlpt') . ' N4',
+//                                lang('Certifications.data.jlpt-body'),
+//                                lang('Certifications.data.future.by-2027'),
+//                                ''
+//                            ]
                         ],
-                        'taiwanese' => [
-                            [
-                                lang('Certifications.data.tocfl'),
-                                lang('Certifications.data.tocfl-body'), // Steering Committee for the Test Of Proficiency-Huayu
-                                lang('Certifications.data.future.by-2030'),
-                                ''
-                            ]
-                        ]
+//                        'taiwanese' => [
+//                            [
+//                                lang('Certifications.data.tocfl'),
+//                                lang('Certifications.data.tocfl-body'), // Steering Committee for the Test Of Proficiency-Huayu
+//                                lang('Certifications.data.future.by-2030'),
+//                                ''
+//                            ]
+//                        ]
                     ]
                 ]
             ]

@@ -179,9 +179,9 @@
                                     </div>
                                 </div>
                                 <div class="portfolio-meta">
-                                    <div class="project-tags me-2 d-block">
-                                        <span class="tag float-start m-1">
-                                            <?= implode('</span><span class="tag float-start m-1">', $locations) ?>
+                                    <div class="d-flex flex-nowrap overflow-x-auto gap-2 pb-2">
+                                        <span class="badge bg-success text-white text-nowrap">
+                                            <?= implode('</span><span class="badge bg-success text-white text-nowrap">', $locations) ?>
                                         </span>
                                     </div>
                                 </div>
@@ -261,8 +261,10 @@
                                     </div>
                                 </div>
                                 <div class="portfolio-meta">
-                                    <div class="project-tags">
-                                        <span class="tag float-start"><?= implode('</span><span class="tag float-start">', $locations) ?></span>
+                                    <div class="d-flex flex-nowrap overflow-x-auto gap-2 pb-2">
+                                        <span class="badge bg-success text-white text-nowrap">
+                                            <?= implode('</span><span class="badge bg-success text-white text-nowrap">', $locations) ?>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="portfolio-meta">

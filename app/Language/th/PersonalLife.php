@@ -75,9 +75,12 @@ return [
         'karawaci'         => 'การาวาจี',
         // TAIWAN
         'beitou'           => 'เป่ยโถว',
+        'chiayi'           => 'เจียอี้',
         'hualien'          => 'ฮัวเหลียน',
         'jiufen'           => 'จิ่วเฟิ่น',
+        'kaohsiung'        => 'เกาสง',
         'taichung'         => 'ไถจง',
+        'tainan'           => 'ไถหนาน',
         'taipei'           => 'ไทเป',
         'tamsui'           => 'ต้านฉุ่ย',
         'wulai'            => 'อูหลาย',

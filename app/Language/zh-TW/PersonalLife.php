@@ -75,9 +75,12 @@ return [
         'karawaci'         => '卡拉瓦奇',
         // TAIWAN
         'beitou'           => '北投',
+        'chiayi'           => '嘉義',
         'hualien'          => '花蓮',
         'jiufen'           => '九份',
+        'kaohsiung'        => '高雄',
         'taichung'         => '台中',
+        'tainan'           => '台南',
         'taipei'           => '台北',
         'tamsui'           => '淡水',
         'wulai'            => '烏來',

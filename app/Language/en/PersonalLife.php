@@ -75,9 +75,12 @@ return [
         'karawaci'         => 'Karawaci',
         // TAIWAN
         'beitou'           => 'Beitou',
+        'chiayi'           => 'Chiayi',
         'hualien'          => 'Hualien',
         'jiufen'           => 'Jiufen',
+        'kaohsiung'        => 'Kaohsiung',
         'taichung'         => 'Taichung',
+        'tainan'           => 'Tainan',
         'taipei'           => 'Taipei',
         'tamsui'           => 'Tamsui',
         'wulai'            => 'Wulai',

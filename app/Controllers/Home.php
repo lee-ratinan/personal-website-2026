@@ -67,6 +67,15 @@ class Home extends BaseController
             'flights'              => 104,
             'galleries'            => [
                 [
+                    'code'      => 'tpe2026',
+                    'filter'    => 'east-asia',
+                    'title'     => '台灣高鐵115年',
+                    'locations' => ['taipei', 'chiayi', 'taichung', 'tainan', 'kaohsiung'],
+                    'dates'     => ['2026-08-02', '2026-08-05'],
+                    'detail'    => 'BL Pilgrimages Trip... again!',
+//                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/???/tpe2026'
+                ],
+                [
                     'code'      => 'kix2026',
                     'filter'    => 'east-asia',
                     'title'     => 'エイキンのソーロートラベル',
@@ -1006,6 +1015,10 @@ class Home extends BaseController
         return view('certifications', $data);
     }
 
+    /**
+     * Portfolio page
+     * @return string
+     */
     public function portfolio(): string
     {
         $locale = $this->request->getLocale();
@@ -1016,6 +1029,10 @@ class Home extends BaseController
         return view('portfolio', $data);
     }
 
+    /**
+     * Writing page
+     * @return string
+     */
     public function writing(): string
     {
         $locale = $this->request->getLocale();
@@ -1026,6 +1043,10 @@ class Home extends BaseController
         return view('writing', $data);
     }
 
+    /**
+     * Calendar page
+     * @return string
+     */
     public function calendar(): string
     {
         $data = [
@@ -1035,6 +1056,29 @@ class Home extends BaseController
         return view('calendar', $data);
     }
 
+    /**
+     * Trip page
+     * @return string
+     */
+    public function trip(): string
+    {
+        return view('trip');
+    }
+
+    /**
+     * Trip data page
+     * @param string $trip_code
+     * @return string
+     */
+    public function trip_data(string $trip_code): string
+    {
+        return view('trip_data');
+    }
+
+    /**
+     * Blog page
+     * @return string
+     */
     public function blog(): string
     {
         $mode = $this->request->getGet('m') ?? '';
@@ -1053,6 +1097,12 @@ class Home extends BaseController
         return view('blog', $data);
     }
 
+    /**
+     * Blog Post page
+     * @param int $id
+     * @param string $slug
+     * @return string
+     */
     public function blog_post(int $id, string $slug): string
     {
         $data = [

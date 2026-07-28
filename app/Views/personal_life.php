@@ -194,6 +194,13 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col py-5 text-center">
+                    Trips
+                </div>
+            </div>
+        </div>
     </section><!-- /Gallery Section -->
     <script>
         document.getElementById('count-gallery-all').innerHTML = '(<?= count($galleries) ?>)';

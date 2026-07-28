@@ -173,7 +173,7 @@
                                         <div class="portfolio-actions">
                                             <a href="<?= base_url('assets/img/gallery/' . $gallery['code'] . '.jpg') ?>" class="glightbox portfolio-link" data-glightbox="title:<?= $gallery['title'] ?>;description: <i class='bi bi-geo-alt'></i> <?= implode(get_comma($locale), $locations) ?> <i class='bi bi-calendar-heart'></i> <?= $date_str ?> <?= (!empty($gallery['detail']) ? '<br>' . $gallery['detail'] : '')?>"><i class="bi bi-plus-lg"></i></a>
                                             <?php if (!empty($gallery['link'])) : ?>
-                                                <a href="<?= $gallery['link'] ?>" class="portfolio-details" target="_blank"><i class="bi bi-arrow-right"></i></a>
+                                                <a href="<?= str_replace('[[LOCALE]]', $locale, $gallery['link']) ?>" class="portfolio-details" target="_blank"><i class="bi bi-arrow-right"></i></a>
                                             <?php endif ?>
                                         </div>
                                     </div>
@@ -196,8 +196,8 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col py-5 text-center">
-                    Trips
+                <div class="col py-5 text-end">
+                    <a href="<?= base_url($locale . '/trip') ?>"><?= lang('PersonalLife.trip.button') ?> <i class="bi bi-arrow-right-circle"></i></a>
                 </div>
             </div>
         </div>

@@ -120,5 +120,9 @@ return [
         // SG
         'singapore'        => 'Singapore',
     ],
-    'since'     => 'Since {0}'
+    'since'     => 'Since {0}',
+    'trip'      => [
+        'button' => 'Read more about my trips',
+        'title'  => 'Trip Details'
+    ]
 ];

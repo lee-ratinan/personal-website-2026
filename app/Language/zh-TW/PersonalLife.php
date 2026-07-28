@@ -120,5 +120,9 @@ return [
         // SG
         'singapore'        => '新加坡',
     ],
-    'since'     => '自{0}'
+    'since'     => '自{0}',
+    'trip'      => [
+        'button' => '了解更多我的旅程',
+        'title'  => '旅程明細'
+    ]
 ];

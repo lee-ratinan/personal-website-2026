@@ -161,3 +161,36 @@ function get_comma (string $locale): string
     }
     return ', ';
 }
+
+/**
+ * @param float $amount
+ * @param string $currency
+ * @return string
+ */
+function format_money(float $amount, string $currency): string
+{
+    $decimals            = 2;
+    $thousands_separator = ',';
+    $decimal_point       = '.';
+    if (in_array($currency, ['JPY', 'IDR', 'KRW'])) {
+        $decimals = 0;
+    }
+    if ('IDR' == $currency) {
+        $thousands_separator = '.';
+        $decimal_point       = ',';
+    }
+    $str_amount = number_format($amount, $decimals, $decimal_point, $thousands_separator);
+    $formats    = [
+        'AUD' => 'A$ ###',
+        'IDR' => 'Rp ###',
+        'JPY' => '###円',
+        'MYR' => '<small>RM</small> ###',
+        'PHP' => '₱ ###',
+        'SGD' => 'S$ ###',
+        'THB' => '฿ ###',
+        'TWD' => 'NT$ ###',
+        'USD' => 'US$ ###',
+        'VND' => '###₫',
+    ];
+    return str_replace('###', $str_amount, $formats[$currency]);
+}

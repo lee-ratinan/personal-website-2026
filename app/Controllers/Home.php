@@ -2,12 +2,463 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\Exceptions\PageNotFoundException;
 use CodeIgniter\HTTP\RedirectResponse;
 
 class Home extends BaseController
 {
 
     private array $business_card_languages = ['en', 'th', 'ja', 'zh-TW', 'en-Shaw', 'ko', 'id', 'vi', 'lo', 'es', 'art-x-navi'];
+
+    private array $trips = [
+        [
+            'code'      => 'tpe2026',
+            'country'   => 'TW',
+            'filter'    => 'east-asia',
+            'title'     => '台灣高鐵115年',
+            'locations' => ['taipei', 'chiayi', 'taichung', 'tainan', 'kaohsiung'],
+            'dates'     => ['2026-08-02', '2026-08-05'],
+            'detail'    => 'BL Pilgrimages Trip... again!',
+        ],
+        [
+            'code'      => 'kix2026',
+            'country'   => 'JP',
+            'filter'    => 'east-asia',
+            'title'     => 'エイキンのソーロートラベル',
+            'locations' => [
+                'osaka', 'nara', 'hokuei', 'tottori', 'kinosakionsen', 'himeji', 'kobe', 'kyoto', 'uji',
+                'tokyo', 'fujisan'
+            ],
+            'dates'     => ['2026-01-06', '2026-01-15'],
+            'detail'    => 'It’s my first Japan solo trip in the winter!',
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/141/kix2026'
+        ],
+        [
+            'code'      => 'hkt2025',
+            'country'   => 'TH',
+            'filter'    => 'southeast-asia',
+            'title'     => 'เที่ยวภูเก็ต 2568',
+            'locations' => ['phuket', 'phang-nga', 'krabi'],
+            'dates'     => ['2025-11-14', '2025-11-17'],
+            'detail'    => 'Celebrating birthday in the sea~~',
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/37/hkt2025'
+        ],
+        [
+            'code'      => 'kul2025',
+            'country'   => 'MY',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Kuala Lumpur Trip 2025',
+            'locations' => ['bandar-utama', 'kuala-lumpur'],
+            'dates'     => ['2025-04-22', '2025-04-30'],
+            'detail'    => 'A strange work trip with lots of free time to enjoy.',
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/9/kul2025'
+        ],
+        [
+            'code'      => 'bkk2025',
+            'country'   => 'TH',
+            'filter'    => 'southeast-asia',
+            'title'     => 'เที่ยวกรุงเทพ 2568',
+            'locations' => ['bangkok'],
+            'dates'     => ['2025-03-06', '2025-03-10'],
+            'detail'    => 'Cool trip',
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/39/bkk2025'
+        ],
+        [
+            'code'      => 'tpe2024',
+            'country'   => 'TW',
+            'filter'    => 'east-asia',
+            'title'     => '花蓮、台北 113年',
+            'locations' => ['hualien', 'taipei', 'tamsui', 'yangmingshan', 'beitou'],
+            'dates'     => ['2024-10-23', '2024-10-27'],
+            'detail'    => 'Taiwan PRIDE 2024, Capybara Encounter, Hiking, and 某某 Pilgrimage',
+        ],
+        [
+            'code'      => 'dmk2024b',
+            'country'   => 'TH',
+            'filter'    => 'southeast-asia',
+            'title'     => 'กรุงเทพอีกแล้ว 2567',
+            'locations' => ['bangkok'],
+            'dates'     => ['2024-09-04', '2024-09-11'],
+            'detail'    => 'Escape boring Singapore again',
+        ],
+        [
+            'code'      => 'cgk2024b',
+            'country'   => 'ID',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Jakarta 2024',
+            'locations' => ['jakarta'],
+            'dates'     => ['2024-08-23', '2024-08-27'],
+            'detail'    => 'Relaxing in Jakarta just for a while',
+        ],
+        [
+            'code'      => 'pen2024',
+            'country'   => 'MY',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Pulau Pinang 2024',
+            'locations' => ['george-town'],
+            'dates'     => ['2024-06-21', '2024-06-23'],
+            'detail'    => 'A quick stop in Penang, chasing murals and fun',
+        ],
+        [
+            'code'      => 'kix2024',
+            'country'   => 'JP',
+            'filter'    => 'east-asia',
+            'title'     => '関西と関東 2024',
+            'locations' => ['osaka', 'arimaonsen', 'kobe', 'nara', 'kyoto', 'tokyo', 'yokohama', 'fujisawa'],
+            'dates'     => ['2024-04-22', '2024-05-02'],
+            'detail'    => 'First time in Kansai~ Have fun!',
+        ],
+        [
+            'code'      => 'cgk2024a',
+            'country'   => 'ID',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Karawaci 2024',
+            'locations' => ['karawaci'],
+            'dates'     => ['2024-03-24', '2024-03-27'],
+            'detail'    => 'Work and fun in Karawaci ~ meeting with the bankers',
+        ],
+        [
+            'code'      => 'dmk2024a',
+            'country'   => 'TH',
+            'filter'    => 'southeast-asia',
+            'title'     => 'พัทยา-กรุงเทพ 2567',
+            'locations' => ['pattaya', 'bangkok'],
+            'dates'     => ['2024-02-05', '2024-02-15'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'jhb2023',
+            'country'   => 'MY',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Johor Bahru 2023',
+            'locations' => ['johor-bahru'],
+            'dates'     => ['2023-12-16', '2023-12-17'],
+            'detail'    => 'A quick relaxing trip in JB',
+        ],
+        [
+            'code'      => 'tpe2023',
+            'country'   => 'TW',
+            'filter'    => 'east-asia',
+            'title'     => '台北 112年',
+            'locations' => ['taipei', 'beitou', 'jiufen'],
+            'dates'     => ['2023-10-26', '2023-10-30'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'dps2023',
+            'country'   => 'ID',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Jakarta-Bali 2023',
+            'locations' => ['jakarta', 'bali'],
+            'dates'     => ['2023-10-14', '2023-10-20'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'ceb2023',
+            'country'   => 'PH',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Cebu 2023',
+            'locations' => ['cebu', 'mactan', 'oslob', 'alegria'],
+            'dates'     => ['2023-06-29', '2023-07-06'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'jhb2022',
+            'country'   => 'MY',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Desaru 2022',
+            'locations' => ['johor-bahru', 'desaru'],
+            'dates'     => ['2022-11-12', '2022-11-13'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'sgn2022',
+            'country'   => 'VN',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Sài Gòn 2022',
+            'locations' => ['ho-chi-minh-city'],
+            'dates'     => ['2022-10-28', '2022-10-31'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'hkt2022',
+            'country'   => 'TH',
+            'filter'    => 'southeast-asia',
+            'title'     => 'ภูเก็ตแซนด์บ๊อก 2565',
+            'locations' => ['phuket', 'phang-nga', 'krabi', 'bangkok'],
+            'dates'     => ['2022-05-15', '2022-05-23'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'iph2020',
+            'country'   => 'MY',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Ipoh 2020',
+            'locations' => ['ipoh'],
+            'dates'     => ['2020-01-06', '2020-01-10'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'syd2019',
+            'country'   => 'AU',
+            'filter'    => 'oceania',
+            'title'     => 'Sydney &amp; Melbourne 2019',
+            'locations' => ['sydney', 'melbourne'],
+            'dates'     => ['2019-10-17', '2019-10-26'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'tpe2018',
+            'country'   => 'TW',
+            'filter'    => 'east-asia',
+            'title'     => '台北&amp;台中 107年',
+            'locations' => ['taipei', 'taichung', 'beitou', 'wulai'],
+            'dates'     => ['2018-11-11', '2018-11-17'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'utp2018',
+            'country'   => 'TH',
+            'filter'    => 'southeast-asia',
+            'title'     => 'เที่ยวพัทยา กับ　GrapeVine 2018',
+            'locations' => ['pattaya'],
+            'dates'     => ['2018-03-XX'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'hhq2017',
+            'country'   => 'TH',
+            'filter'    => 'southeast-asia',
+            'title'     => 'ทริปกาญจน์ กับ GrapeVine 2017',
+            'locations' => ['kanchanaburi'],
+            'dates'     => ['2017-10-11'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'bth2016',
+            'country'   => 'ID',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Pulau Batam 2016',
+            'locations' => ['batam'],
+            'dates'     => ['2016-09-11'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'nrt2016',
+            'country'   => 'JP',
+            'filter'    => 'east-asia',
+            'title'     => '日本関東 2016',
+            'locations' => ['tokyo', 'yokohama', 'kamakura'],
+            'dates'     => ['2016-06-11', '2016-06-16'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'kul2014',
+            'country'   => 'MY',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Kuala Lumpur dan Pulau Langkawi 2014',
+            'locations' => ['kuala-lumpur', 'langkawi'],
+            'dates'     => ['2014-05-12', '2014-05-16'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'hhq2013',
+            'country'   => 'TH',
+            'filter'    => 'southeast-asia',
+            'title'     => 'ชะอำ/หัวหิน Retreat with GrapeVine 2013',
+            'locations' => ['hua-hin', 'cha-am'],
+            'dates'     => ['2013-03-XX'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'sin2012b',
+            'country'   => 'SG',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Singapore 2012 Again!',
+            'locations' => ['singapore'],
+            'dates'     => ['2012-08-11', '2012-08-13'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'sin2012a',
+            'country'   => 'SG',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Singapore 2012',
+            'locations' => ['singapore'],
+            'dates'     => ['2012-04-27', '2012-05-01'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'cvg2010',
+            'country'   => 'US',
+            'filter'    => 'america',
+            'title'     => 'Work-Travel Trip @ Cincinnati!',
+            'locations' => ['cincinnati', 'covington', 'newport', 'chicago', 'new-york-city'],
+            'dates'     => ['2010-03-16', '2010-06-07'],
+            'detail'    => '',
+        ],
+        [
+            'code'      => 'sin2006',
+            'country'   => 'SG',
+            'filter'    => 'southeast-asia',
+            'title'     => 'Singapore School Trip 2006',
+            'locations' => ['singapore'],
+            'dates'     => ['2006-04-09', '2006-04-18'],
+            'detail'    => '',
+        ]
+    ];
+
+    private array $trip_details = [
+        'kix2026' => [
+            'date'      => '令和8年1月6〜15日',
+            'itinerary' => [
+                [
+                    'date'  => '1月6日（火）大阪市、奈良市',
+                    'lines' => [
+                        ['✈️', 'SINシンガポール〜KIX大阪（MM774 Peach Aviation A321LR)'],
+                        ['', '「大阪関西空港」'],
+                        ['🚈', 'はるか（関西空港〜梅田）'],
+                        ['🛏', 'チェックイン（ファーストキャビン西梅田）'],
+                        ['🚈', '近鉄電車：（難波〜奈良）'],
+                        ['', '<b class="text-danger">名探偵コナン</b> 奈良公園、興福寺、JR奈良駅'],
+                        ['🚈', '近鉄電車：（奈良〜難波）'],
+                        ['', '<b class="text-danger">名探偵コナン</b> 道頓堀'],
+                    ]
+                ],
+                [
+                    'date'  => '1月7日（水）北栄町、鳥取市',
+                    'lines' => [
+                        ['🛏', 'チェックアウト（ファーストキャビン西梅田）'],
+                        ['🚈', 'スーパーはくと（大阪〜倉吉）'],
+                        ['🚈', '山陰線（倉吉〜由良）'],
+                        [
+                            '', '<b class="text-danger">名探偵コナン</b> 北栄：青山剛昌ふるさと館、コナン通り、コナンの家、米花商店街'
+                        ],
+                        ['🚈', '山陰線（由良〜鳥取）'],
+                        ['🛏', 'チェックイン（アパホテル鳥取駅前南）'],
+                    ]
+                ],
+                [
+                    'date'  => '1月8日（木）城崎温泉',
+                    'lines' => [
+                        ['🛏', 'チェックアウト（アパホテル鳥取駅前南）'],
+                        ['🚈', '山陰線（鳥取〜城崎温泉）'],
+                        ['', '♨️一の湯、♨️地蔵湯、♨️鴻の湯、♨️まだら湯'],
+                        ['🚈', 'はまかぜ（城崎温泉〜姫路）'],
+                        ['🚄', '新幹線（姫路〜新大阪）'],
+                        ['🛏', 'チェックイン（ファーストキャビン西梅田）'],
+                    ]
+                ],
+                [
+                    'date'  => '1月9日（金）姫路市、神戸市、大阪市',
+                    'lines' => [
+                        ['🚄', '新幹線（新大阪〜姫路）'],
+                        ['', '姫路城'],
+                        ['🚄', '新幹線（姫路〜新神戸）'],
+                        ['', '神戸ポートタワー、神戸港、神戸港震災メモリアルパーク'],
+                        ['🚈', 'JR線（三宮〜梅田）'],
+                        ['', '💆マッサージ'],
+                    ]
+                ],
+                [
+                    'date'  => '1月10日（土）京都市',
+                    'lines' => [
+                        ['🛏', 'チェックアウト（ファーストキャビン西梅田）'],
+                        ['🚈', 'JR線（梅田〜京都）'],
+                        ['🛏', 'チェックイン（ピースホステル）'],
+                        [
+                            '', '<b class="text-danger">名探偵コナン</b> 五条大橋、五条天神宮、六角堂、弁慶石、蹴上インクライン、義経地蔵、清水寺、先斗町'
+                        ],
+                    ]
+                ],
+                [
+                    'date'  => '1月11日（日）宇治市、鞍馬、京都市',
+                    'lines' => [
+                        ['🚈', 'JR奈良線（京都〜宇治）'],
+                        ['', '宇治、買い物'],
+                        ['🚈', 'JR奈良線（宇治〜東福寺）'],
+                        ['🚈', '京阪線（東福寺〜出町柳）、叡山鞍馬線（出町柳〜鞍馬）'],
+                        ['', '鞍馬時、♨️鞍馬温泉'],
+                        ['🚈', '叡山鞍馬線（鞍馬〜出町柳）、京阪線（出町柳〜七条）'],
+                    ]
+                ],
+                [
+                    'date'  => '1月12日（月）東京市',
+                    'lines' => [
+                        ['🛏', 'チェックアウト（ピースホステル）'],
+                        ['🚄', 'のぞみ新幹線（京都〜東京）'],
+                        ['🚈', '中央線（東京〜新宿）'],
+                        ['🛏', 'チェックイン（安心お宿新宿）'],
+                        [
+                            '', '<b class="text-warning">Harry Potter</b> ワーナー ブラザース スタジオツアー東京 - メイキング・オブ・ハリー・ポッター'
+                        ],
+                        ['', '<b class="text-info">君の名は</b> 東京シティビュー'],
+                    ]
+                ],
+                [
+                    'date'  => '1月13日（火）富士山',
+                    'lines' => [
+                        ['🗻', '富士山：LAWSONコンビニ、大石公園、忍野八海、新倉山浅間公園、富士吉田'],
+                        ['', '＊池袋に友達と晩ご飯を食べる'],
+                    ]
+                ],
+                [
+                    'date'  => '1月14日（水）東京市',
+                    'lines' => [
+                        ['', '渋谷スカイ'],
+                        ['🛏', 'チェックアウト（安心お宿新宿）'],
+                        ['🛏', 'チェックイン（アパホテル新宿御苑前）'],
+                        ['', '明治神宮'],
+                        ['', '<b class="text-info">君の名は</b> カフェラ・ボエム、須賀神社'],
+                        ['', '＊新橋に友達と晩ご飯を食べる'],
+                    ]
+                ],
+                [
+                    'date'  => '1月15日（木）東京市',
+                    'lines' => [
+                        ['🛏', 'チェックアウト（アパホテル新宿御苑前）'],
+                        ['', '新宿の猫、ゴジラヘッド、渋谷のハチ公、上野'],
+                        ['', '<b class="text-info">君の名は</b> 聖徳記念絵画館'],
+                        ['🚈', '山手線（新宿〜上野）'],
+                        ['🚈', '京成スカイライナー（上野〜成田空港第１ターミナル）'],
+                        ['', '「東京成田空港」'],
+                        ['✈️', 'NRT東京〜SINシンガポール（NQ3 Air Japan B788)'],
+                    ]
+                ],
+            ],
+            'budget'    => [
+                'title'      => '詳細',
+                'totals'     => '合計',
+                'currencies' => ['SGD', 'JPY'],
+                'lines'      => [
+                    ['✈️', 'ピーチ（シンガポール〜大阪）', 335.57, 0],
+                    ['✈️', 'エアージャパン（東京〜シンガポール）', 263.79, 0],
+                    ['🚈', 'はるか（関西空港〜梅田）1800円', 14.65, 0],
+                    ['🚈', '関西ワイドエリアパス（5日間）12000円', 100.09, 0],
+                    ['🚈', '京都1日券パス', 0, 1100],
+                    ['🚈', 'のぞみ新幹線　13970円', 120.86, 0],
+                    ['🚈', '東京メトロ72時間パス', 19.95, 0],
+                    ['🚈', '京成スカイライナー（上野〜成田空港）', 10.00, 0],
+                    ['🛏️', '大阪：ファーストキャビン西梅田（１泊）', 55.67, 0],
+                    ['🛏️', '鳥取：アパホテル鳥取駅前南（１泊）', 47.40, 0],
+                    ['🛏️', '大阪：ファーストキャビン西梅田（２泊）', 124.07, 0],
+                    ['🛏️', '京都：ピースホステル（２泊）', 62.61, 0],
+                    ['🛏️', '東京：安心お宿新宿駅前店（２泊）', 113.26, 0],
+                    ['🛏️', '東京：アパホテル新宿御苑前（１泊）', 112.36, 0],
+                    ['', '富士山デーツアー', 60.05, 0],
+                    ['', 'メイキング・オブ・ハリー・ポッター', 58.25, 0],
+                    ['', '渋谷スカイ', 23.00, 0],
+                    ['', '東京シティビュー', 10.05, 0],
+                    ['', '青山剛昌ふるさと館', 0, 600],
+                    ['', '城崎温泉1日間パス', 0, 1500],
+                    ['', '姫路城', 0, 1000],
+                    ['', '神戸ポートタワー', 0, 1200],
+                    ['', '清水寺', 0, 500],
+                    ['', '鞍馬温泉', 0, 2700],
+                ]
+            ]
+        ]
+    ];
 
     /**
      * Get locale
@@ -65,272 +516,7 @@ class Home extends BaseController
             'countries_visited'    => 10,
             'distant_traveled'     => 198000,
             'flights'              => 104,
-            'galleries'            => [
-                [
-                    'code'      => 'tpe2026',
-                    'filter'    => 'east-asia',
-                    'title'     => '台灣高鐵115年',
-                    'locations' => ['taipei', 'chiayi', 'taichung', 'tainan', 'kaohsiung'],
-                    'dates'     => ['2026-08-02', '2026-08-05'],
-                    'detail'    => 'BL Pilgrimages Trip... again!',
-//                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/???/tpe2026'
-                ],
-                [
-                    'code'      => 'kix2026',
-                    'filter'    => 'east-asia',
-                    'title'     => 'エイキンのソーロートラベル',
-                    'locations' => [
-                        'osaka', 'nara', 'hokuei', 'tottori', 'kinosakionsen', 'himeji', 'kobe', 'kyoto', 'uji',
-                        'tokyo', 'fujisan'
-                    ],
-                    'dates'     => ['2026-01-06', '2026-01-15'],
-                    'detail'    => 'It’s my first Japan solo trip in the winter!',
-                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/141/kix2026'
-                ],
-                [
-                    'code'      => 'hkt2025',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'เที่ยวภูเก็ต 2568',
-                    'locations' => ['phuket', 'phang-nga', 'krabi'],
-                    'dates'     => ['2025-11-14', '2025-11-17'],
-                    'detail'    => 'Celebrating birthday in the sea~~',
-                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/37/hkt2025'
-                ],
-                [
-                    'code'      => 'kul2025',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Kuala Lumpur Trip 2025',
-                    'locations' => ['bandar-utama', 'kuala-lumpur'],
-                    'dates'     => ['2025-04-22', '2025-04-30'],
-                    'detail'    => 'A strange work trip with lots of free time to enjoy.',
-                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/9/kul2025'
-                ],
-                [
-                    'code'      => 'bkk2025',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'เที่ยวกรุงเทพ 2568',
-                    'locations' => ['bangkok'],
-                    'dates'     => ['2025-03-06', '2025-03-10'],
-                    'detail'    => 'Cool trip',
-                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/39/bkk2025'
-                ],
-                [
-                    'code'      => 'tpe2024',
-                    'filter'    => 'east-asia',
-                    'title'     => '花蓮、台北 113年',
-                    'locations' => ['hualien', 'taipei', 'tamsui', 'yangmingshan', 'beitou'],
-                    'dates'     => ['2024-10-23', '2024-10-27'],
-                    'detail'    => 'Taiwan PRIDE 2024, Capybara Encounter, Hiking, and 某某 Pilgrimage',
-                ],
-                [
-                    'code'      => 'dmk2024b',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'กรุงเทพอีกแล้ว 2567',
-                    'locations' => ['bangkok'],
-                    'dates'     => ['2024-09-04', '2024-09-11'],
-                    'detail'    => 'Escape boring Singapore again',
-                ],
-                [
-                    'code'      => 'cgk2024b',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Jakarta 2024',
-                    'locations' => ['jakarta'],
-                    'dates'     => ['2024-08-23', '2024-08-27'],
-                    'detail'    => 'Relaxing in Jakarta just for a while',
-                ],
-                [
-                    'code'      => 'pen2024',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Pulau Pinang 2024',
-                    'locations' => ['george-town'],
-                    'dates'     => ['2024-06-21', '2024-06-23'],
-                    'detail'    => 'A quick stop in Penang, chasing murals and fun',
-                ],
-                [
-                    'code'      => 'kix2024',
-                    'filter'    => 'east-asia',
-                    'title'     => '関西と関東 2024',
-                    'locations' => ['osaka', 'arimaonsen', 'kobe', 'nara', 'kyoto', 'tokyo', 'yokohama', 'fujisawa'],
-                    'dates'     => ['2024-04-22', '2024-05-02'],
-                    'detail'    => 'First time in Kansai~ Have fun!',
-                ],
-                [
-                    'code'      => 'cgk2024a',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Karawaci 2024',
-                    'locations' => ['karawaci'],
-                    'dates'     => ['2024-03-24', '2024-03-27'],
-                    'detail'    => 'Work and fun in Karawaci ~ meeting with the bankers',
-                ],
-                [
-                    'code'      => 'dmk2024a',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'พัทยา-กรุงเทพ 2567',
-                    'locations' => ['pattaya', 'bangkok'],
-                    'dates'     => ['2024-02-05', '2024-02-15'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'jhb2023',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Johor Bahru 2023',
-                    'locations' => ['johor-bahru'],
-                    'dates'     => ['2023-12-16', '2023-12-17'],
-                    'detail'    => 'A quick relaxing trip in JB',
-                ],
-                [
-                    'code'      => 'tpe2023',
-                    'filter'    => 'east-asia',
-                    'title'     => '台北 112年',
-                    'locations' => ['taipei', 'beitou', 'jiufen'],
-                    'dates'     => ['2023-10-26', '2023-10-30'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'dps2023',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Jakarta-Bali 2023',
-                    'locations' => ['jakarta', 'bali'],
-                    'dates'     => ['2023-10-14', '2023-10-20'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'ceb2023',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Cebu 2023',
-                    'locations' => ['cebu', 'mactan', 'oslob', 'alegria'],
-                    'dates'     => ['2023-06-29', '2023-07-06'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'jhb2022',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Desaru 2022',
-                    'locations' => ['johor-bahru', 'desaru'],
-                    'dates'     => ['2022-11-12', '2022-11-13'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'sgn2022',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Sài Gòn 2022',
-                    'locations' => ['ho-chi-minh-city'],
-                    'dates'     => ['2022-10-28', '2022-10-31'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'hkt2022',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'ภูเก็ตแซนด์บ๊อก 2565',
-                    'locations' => ['phuket', 'phang-nga', 'krabi', 'bangkok'],
-                    'dates'     => ['2022-05-15', '2022-05-23'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'iph2020',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Ipoh 2020',
-                    'locations' => ['ipoh'],
-                    'dates'     => ['2020-01-06', '2020-01-10'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'syd2019',
-                    'filter'    => 'oceania',
-                    'title'     => 'Sydney &amp; Melbourne 2019',
-                    'locations' => ['sydney', 'melbourne'],
-                    'dates'     => ['2019-10-17', '2019-10-26'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'tpe2018',
-                    'filter'    => 'east-asia',
-                    'title'     => '台北&amp;台中 107年',
-                    'locations' => ['taipei', 'taichung', 'beitou', 'wulai'],
-                    'dates'     => ['2018-11-11', '2018-11-17'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'utp2018',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'เที่ยวพัทยา กับ　GrapeVine 2018',
-                    'locations' => ['pattaya'],
-                    'dates'     => ['2018-03-XX'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'hhq2017',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'ทริปกาญจน์ กับ GrapeVine 2017',
-                    'locations' => ['kanchanaburi'],
-                    'dates'     => ['2017-10-11'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'bth2016',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Pulau Batam 2016',
-                    'locations' => ['batam'],
-                    'dates'     => ['2016-09-11'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'nrt2016',
-                    'filter'    => 'east-asia',
-                    'title'     => '日本関東 2016',
-                    'locations' => ['tokyo', 'yokohama', 'kamakura'],
-                    'dates'     => ['2016-06-11', '2016-06-16'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'kul2014',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Kuala Lumpur dan Pulau Langkawi 2014',
-                    'locations' => ['kuala-lumpur', 'langkawi'],
-                    'dates'     => ['2014-05-12', '2014-05-16'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'hhq2013',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'ชะอำ/หัวหิน Retreat with GrapeVine 2013',
-                    'locations' => ['hua-hin', 'cha-am'],
-                    'dates'     => ['2013-03-XX'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'sin2012b',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Singapore 2012 Again!',
-                    'locations' => ['singapore'],
-                    'dates'     => ['2012-08-11', '2012-08-13'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'sin2012a',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Singapore 2012',
-                    'locations' => ['singapore'],
-                    'dates'     => ['2012-04-27', '2012-05-01'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'cvg2010',
-                    'filter'    => 'america',
-                    'title'     => 'Work-Travel Trip @ Cincinnati!',
-                    'locations' => ['cincinnati', 'covington', 'newport', 'chicago', 'new-york-city'],
-                    'dates'     => ['2010-03-16', '2010-06-07'],
-                    'detail'    => '',
-                ],
-                [
-                    'code'      => 'sin2006',
-                    'filter'    => 'southeast-asia',
-                    'title'     => 'Singapore School Trip 2006',
-                    'locations' => ['singapore'],
-                    'dates'     => ['2006-04-09', '2006-04-18'],
-                    'detail'    => '',
-                ]
-            ],
+            'galleries'            => $this->trips,
             'bucket_lists'         => [
                 // 2026
                 [
@@ -1062,7 +1248,13 @@ class Home extends BaseController
      */
     public function trip(): string
     {
-        return view('trip');
+        $data = [
+            'slug'    => 'trip',
+            'locale'  => $this->request->getLocale(),
+            'trips'   => $this->trips,
+            'details' => $this->trip_details,
+        ];
+        return view('trip', $data);
     }
 
     /**
@@ -1072,7 +1264,23 @@ class Home extends BaseController
      */
     public function trip_data(string $trip_code): string
     {
-        return view('trip_data');
+        if (!isset($this->trip_details[$trip_code])) {
+            throw PageNotFoundException::forPageNotFound();
+        }
+        $trip_main_detail = [];
+        foreach ($this->trips as $row) {
+            if ($trip_code === $row['code']) {
+                $trip_main_detail = $row;
+                break;
+            }
+        }
+        $data = [
+            'slug'   => 'trip/' . $trip_code,
+            'locale' => $this->request->getLocale(),
+            'trip'   => $trip_main_detail,
+            'detail' => $this->trip_details[$trip_code],
+        ];
+        return view('trip_data', $data);
     }
 
     /**

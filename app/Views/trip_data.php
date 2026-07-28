@@ -67,7 +67,7 @@
                     <p><i class="bi bi-calendar-check"></i> <?= format_date($trip['dates'], $locale, ' - ') ?></p>
                     <p><?= $trip['detail'] ?></p>
                     <?php if (!empty($trip['link'])) : ?>
-                        <p><a href="<?= $trip['link'] ?>"><i class="bi bi-image"></i> <?= $trip['title'] ?></a></p>
+                        <p><a href="<?= str_replace('[[LOCALE]]', $locale, $trip['link']) ?>"><i class="bi bi-image"></i> <?= $trip['title'] ?></a></p>
                     <?php endif; ?>
                     <?php if ($detail['itinerary']) : ?>
                     <table class="table table-sm table-hover table-striped table-borderless table-dark">

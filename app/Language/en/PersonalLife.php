@@ -124,5 +124,17 @@ return [
     'trip'      => [
         'button' => 'Read more about my trips',
         'title'  => 'Trip Details'
+    ],
+    'country' => [
+        'AU' => 'Australia',
+        'ID' => 'Indonesia',
+        'JP' => 'Japan',
+        'MY' => 'Malaysia',
+        'PH' => 'Philippines',
+        'SG' => 'Singapore',
+        'TH' => 'Thailand',
+        'TW' => 'Taiwan',
+        'US' => 'United States',
+        'VN' => 'Vietnam',
     ]
 ];

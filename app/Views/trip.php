@@ -66,8 +66,9 @@
                                     <td><?= $trip['title'] ?></td>
                                     <td><?= $date_str ?></td>
                                     <td><?= lang('PersonalLife.sections.gallery.filters.' . $trip['filter']) ?></td>
-                                    <td><?= $trip['country'] ?></td>
-                                    <td><?= (isset($details[$trip['code']]) ? '<a href="' . base_url($locale . '/trip/' . $trip['code']) . '">' . lang('Writing.label.read') . '</a>' : '') ?></td>
+                                    <td><?= lang('PersonalLife.country.' . $trip['country']) ?></td>
+                                    <td><?= (isset($details[$trip['code']]) ? '<a href="' . base_url($locale . '/trip/' . $trip['code']) . '">' . lang('PersonalLife.trip.title') . '</a>' : '') ?></td>
+                                    <td><?= (isset($trip['link']) ? '<a href="#">' . lang('Home.system.pages.blog') . '</a>' : '') ?></td>
                                 </tr>
                             <?php endforeach; ?>
                             </tbody>

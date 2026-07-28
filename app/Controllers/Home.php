@@ -220,7 +220,7 @@ class Home extends BaseController
             'code'      => 'utp2018',
             'country'   => 'TH',
             'filter'    => 'southeast-asia',
-            'title'     => 'เที่ยวพัทยา กับ　GrapeVine 2018',
+            'title'     => 'เที่ยวพัทยา กับ GrapeVine 2018',
             'locations' => ['pattaya'],
             'dates'     => ['2018-03-XX'],
             'detail'    => '',

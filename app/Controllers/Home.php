@@ -526,6 +526,61 @@ class Home extends BaseController
                 ]
             ]
         ],
+        'kul2025' => [
+            'date'      => '22-30 Apr 2025',
+            'itinerary' => [
+                [
+                    'date'  => '22-25 Apr',
+                    'lines' => [
+                        ['✈️', 'SIN Singapura - KUL Kuala Lumpur (AK702 AirAsia A320)'],
+                        ['🛏', 'Daftar masuk (M World Hotel)'],
+                        ['', 'Bekerja di Bandar Utama'],
+                        ['', 'FitnessFirst @ The Curve'],
+                    ]
+                ],
+                [
+                    'date'  => '26 Apr (S)',
+                    'lines' => [
+                        ['', 'Berenang di hotel'],
+                        ['', '1 Utama: FlowRider'],
+                        ['🚇', 'Pergi ke Kuala Lumpur'],
+                        ['', 'Berjalan-jalan di Bukit Bintang'],
+                        ['', 'Taman KLCC'],
+                        ['', 'The Exchange 106'],
+                        ['', 'Merdeka 118']
+                    ]
+                ],
+                [
+                    'date'  => '27 Apr (Su)',
+                    'lines' => [
+                        ['', '1 Utama: WINDLAB: Indoor Skydiving'],
+                        ['🚇', 'Pergi ke Kuala Lumpur'],
+                        ['', 'Massage'],
+                        ['', 'Pavillion Bukit Bintang']
+                    ]
+                ],
+                [
+                    'date'  => '28-30 Apr',
+                    'lines' => [
+                        ['', 'Bekerja di Bandar Utama'],
+                        ['', 'FitnessFirst @ The Curve'],
+                        ['🛏', 'Daftar keluar (M World Hotel)'],
+                        ['✈️', 'KUL Kuala Lumpur - SIN Singapura (AK717 AirAsia A320)']
+                    ]
+                ]
+            ],
+            'budget'    => [
+                'title'      => 'Butiran',
+                'totals'     => 'Jumlah',
+                'currencies' => ['SGD', 'MYR'],
+                'lines'      => [
+                    ['✈️', 'AirAsia', 0, 0],
+                    ['🛏️', 'M World Hotel', 0, 0],
+                    ['', 'FlowRider', 0, 65],
+                    ['', 'WINDLAB Indoor Skydiving', 0, 173],
+                ]
+            ]
+        ]
     ];
 
     /**

@@ -70,53 +70,70 @@
                         <p><a href="<?= str_replace('[[LOCALE]]', $locale, $trip['link']) ?>"><i class="bi bi-image"></i> <?= $trip['title'] ?></a></p>
                     <?php endif; ?>
                     <?php if ($detail['itinerary']) : ?>
-                    <table class="table table-sm table-hover table-striped table-borderless table-dark">
-                        <tr>
-                            <td style="width:50px"></td>
-                            <td><b><?= $detail['date'] ?></b></td>
-                        </tr>
-                        <?php foreach ($detail['itinerary'] as $day) : ?>
-                            <tr>
-                                <td colspan="2"><b><?= $day['date'] ?></b></td>
-                            </tr>
-                            <?php foreach ($day['lines'] as $line) : ?>
+                        <div class="table-responsive">
+                            <table id="table-1" class="table table-sm table-hover table-striped table-borderless table-dark">
+                                <thead>
                                 <tr>
-                                    <td><?= $line[0] ?></td>
-                                    <td><?= $line[1] ?></td>
+                                    <td style="width:50px">#</td>
+                                    <td><b><?= $detail['date'] ?></b></td>
                                 </tr>
-                            <?php endforeach; ?>
-                        <?php endforeach; ?>
-                    </table>
+                                </thead>
+                                <tbody>
+                                <?php foreach ($detail['itinerary'] as $day) : ?>
+                                    <tr>
+                                        <td></td>
+                                        <td><b><?= $day['date'] ?></b></td>
+                                    </tr>
+                                    <?php foreach ($day['lines'] as $line) : ?>
+                                        <tr>
+                                            <td><?= $line[0] ?></td>
+                                            <td><?= $line[1] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
                     <?php endif; ?>
                     <?php if ($detail['budget']) : ?>
-                        <table class="table table-sm table-hover table-striped table-borderless table-dark">
-                            <?php if ($detail['budget']['title']) : ?>
-                            <tr>
-                                <td colspan="4"><b><?= $detail['budget']['title'] ?></b></td>
-                            </tr>
-                            <?php endif; ?>
-                            <?php
-                            $totals[0] = 0.0;
-                            $totals[1] = 0.0;
-                            ?>
-                            <?php foreach ($detail['budget']['lines'] as $line) : ?>
-                            <tr>
+                        <div class="table-responsive">
+                            <table id="table-2" class="table table-sm table-hover table-striped table-borderless table-dark">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                        <td><b><?= $detail['budget']['title'] ?></b></td>
+                                        <td class="text-end" style="width:100px"><?= $detail['budget']['currencies'][0] ?></td>
+                                        <td class="text-end" style="width:100px"><?= $detail['budget']['currencies'][1] ?></td>
+                                    </tr>
+                                </thead>
                                 <?php
-                                $totals[0] += $line[2];
-                                $totals[1] += $line[3];
+                                $totals[0] = 0.0;
+                                $totals[1] = 0.0;
                                 ?>
-                                <td><?= $line[0] ?></td>
-                                <td><?= $line[1] ?></td>
-                                <td class="text-end"><?= (0 < $line[2] ? format_money($line[2], $detail['budget']['currencies'][0]) : '-') ?></td>
-                                <td class="text-end"><?= (0 < $line[3] ? format_money($line[3], $detail['budget']['currencies'][1]) : '-') ?></td>
-                            </tr>
-                            <?php endforeach; ?>
-                            <tr>
-                                <td class="text-end" colspan="2"><?= $detail['budget']['totals'] ?></td>
-                                <td class="text-end"><?= (0 < $totals[0] ? format_money($totals[0], $detail['budget']['currencies'][0]) : '-') ?></td>
-                                <td class="text-end"><?= (0 < $totals[1] ? format_money($totals[1], $detail['budget']['currencies'][1]) : '-') ?></td>
-                            </tr>
-                        </table>
+                                <tbody>
+                                <?php foreach ($detail['budget']['lines'] as $line) : ?>
+                                    <tr>
+                                        <?php
+                                        $totals[0] += $line[2];
+                                        $totals[1] += $line[3];
+                                        ?>
+                                        <td><?= $line[0] ?></td>
+                                        <td><?= $line[1] ?></td>
+                                        <td class="text-end"><?= (0 < $line[2] ? format_money($line[2], $detail['budget']['currencies'][0]) : '-') ?></td>
+                                        <td class="text-end"><?= (0 < $line[3] ? format_money($line[3], $detail['budget']['currencies'][1]) : '-') ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-end"><?= $detail['budget']['totals'] ?></td>
+                                    <td class="text-end"><?= (0 < $totals[0] ? format_money($totals[0], $detail['budget']['currencies'][0]) : '-') ?></td>
+                                    <td class="text-end"><?= (0 < $totals[1] ? format_money($totals[1], $detail['budget']['currencies'][1]) : '-') ?></td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
                     <?php endif; ?>
                 </div>
             </div>
@@ -124,5 +141,13 @@
     </section>
 </main>
 <?php include "_footer.php"; ?>
+<link href="https://cdn.datatables.net/v/dt/dt-3.0.0/datatables.min.css" rel="stylesheet">
+<script src="https://cdn.datatables.net/v/dt/dt-3.0.0/datatables.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const table1 = new DataTable('#table-1', {paging: false, ordering: false, info: false});
+        const table2 = new DataTable('#table-2', {paging: false, ordering: false, info: false});
+    });
+</script>
 </body>
 </html>

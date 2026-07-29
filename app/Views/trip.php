@@ -58,15 +58,25 @@
                 </div>
                 <div class="col">
                     <div class="table-responsive">
-                        <table class="table table-dark table-striped table-hover table-sm">
+                        <table id="main-table" class="table table-dark table-striped table-hover table-sm">
+                            <thead>
+                            <tr>
+                                <td><i class="bi bi-calendar-check"></i></td>
+                                <td><i class="bi bi-globe-americas"></i></td>
+                                <td><i class="bi bi-pin-map"></i></td>
+                                <td></td>
+                                <td><i class="bi bi-file-earmark-text"></i></td>
+                                <td><i class="bi bi-image"></i></td>
+                            </tr>
+                            </thead>
                             <tbody>
                             <?php foreach ($trips as $trip) : ?>
                                 <?php $date_str  = format_date($trip['dates'], $locale, ' - '); ?>
                                 <tr>
-                                    <td><?= $trip['title'] ?></td>
-                                    <td><?= $date_str ?></td>
+                                    <td data-order="<?= $trip['dates'][0] ?>"><?= $date_str ?></td>
                                     <td><?= lang('PersonalLife.sections.gallery.filters.' . $trip['filter']) ?></td>
                                     <td><?= lang('PersonalLife.country.' . $trip['country']) ?></td>
+                                    <td><?= $trip['title'] ?></td>
                                     <td><?= (isset($details[$trip['code']]) ? '<a href="' . base_url($locale . '/trip/' . $trip['code']) . '">' . lang('PersonalLife.trip.title') . '</a>' : '') ?></td>
                                     <td><?= (isset($trip['link']) ? '<a href="#">' . lang('Home.system.pages.blog') . '</a>' : '') ?></td>
                                 </tr>
@@ -80,5 +90,12 @@
     </section>
 </main>
 <?php include "_footer.php"; ?>
+<link href="https://cdn.datatables.net/v/dt/dt-3.0.0/datatables.min.css" rel="stylesheet">
+<script src="https://cdn.datatables.net/v/dt/dt-3.0.0/datatables.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const table = new DataTable('#main-table', {pageLength: 50, order: [{column: 0, direction: 'desc'}]});
+    });
+</script>
 </body>
 </html>

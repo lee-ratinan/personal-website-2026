@@ -136,56 +136,39 @@
                         <table class="table table-dark table-striped table-hover table-sm">
                             <thead>
                             <tr>
-                                <th><?= lang('Certifications.cefr.language') ?></th>
-                                <th>A1</th>
-                                <th>A2</th>
-                                <th>B1</th>
-                                <th>B2</th>
-                                <th>C1</th>
-                                <th>C2</th>
-                                <th><?= lang('Certifications.cefr.mother-tongue') ?></th>
+                                <th style="min-width:150px"><?= lang('Certifications.cefr.language') ?></th>
+                                <th style="min-width:250px"></th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
                                 <td>ภาษาไทย Thai</td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
+                                <td><div class="progress" role="progressbar" aria-label="ภาษาไทย Thai" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-success w-100"><?= lang('Certifications.cefr.mother-tongue') ?></div></div></td>
                             </tr>
                             <tr>
                                 <td>English</td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td></td>
+                                <td><div class="progress" role="progressbar" aria-label="English" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-success w-100">C2</div></div></td>
                             </tr>
                             <tr>
                                 <td>日本語 Japanese</td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-warning rounded-pill"><i class="bi bi-arrow-right-circle"></i></span></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><div class="progress" role="progressbar" aria-label="日本語 Japanese" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-warning" style="width:17%">A1</div></div></td>
                             </tr>
                             <tr>
                                 <td>國語 Taiwanese Mandarin</td>
-                                <td><span class="badge bg-success rounded-pill"><i class="bi bi-check2-circle"></i></span></td>
-                                <td><span class="badge bg-warning rounded-pill"><i class="bi bi-arrow-right-circle"></i></span></td>
+                                <td><div class="progress" role="progressbar" aria-label="國語 Taiwanese Mandarin" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-warning" style="width:17%">A1</div></div></td>
+                            </tr>
+                            <tr>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>
+                                    <div class="progress-stacked">
+                                        <div class="progress" role="progressbar" aria-label="A1" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width: 17%"><div class="progress-bar bg-info">A1</div></div>
+                                        <div class="progress" role="progressbar" aria-label="A2" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="width: 16%"><div class="progress-bar bg-primary">A2</div></div>
+                                        <div class="progress" role="progressbar" aria-label="B1" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width: 17%"><div class="progress-bar bg-info">B1</div></div>
+                                        <div class="progress" role="progressbar" aria-label="B2" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="width: 16%"><div class="progress-bar bg-primary">B2</div></div>
+                                        <div class="progress" role="progressbar" aria-label="C1" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width: 17%"><div class="progress-bar bg-info">C1</div></div>
+                                        <div class="progress" role="progressbar" aria-label="C2" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width: 17%"><div class="progress-bar bg-primary">C2</div></div>
+                                    </div>
+                                </td>
                             </tr>
                             </tbody>
                         </table>

@@ -82,6 +82,7 @@ return [
         'taichung'         => 'ไถจง',
         'tainan'           => 'ไถหนาน',
         'taipei'           => 'ไทเป',
+        'taoyuan'          => 'เถาหยวน',
         'tamsui'           => 'ต้านฉุ่ย',
         'wulai'            => 'อูหลาย',
         'yangmingshan'     => 'หยางหมิงชาน',

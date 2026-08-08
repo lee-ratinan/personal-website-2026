@@ -16,9 +16,14 @@ class Home extends BaseController
             'country'   => 'TW',
             'filter'    => 'east-asia',
             'title'     => '台灣高鐵115年',
-            'locations' => ['taipei', 'chiayi', 'taichung', 'tainan', 'kaohsiung'],
+            'locations' => ['taipei', 'kaohsiung', 'taichung', 'chiayi', 'tainan', 'taoyuan'],
             'dates'     => ['2026-08-02', '2026-08-05'],
             'detail'    => 'BL Pilgrimages Trip... again!',
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/811/tpe2026',
+            'junrei'    => [
+                ['link' => 'https://lee.ratinan.com/en/blog-post/826/first-note-of-love-pilgrimage', 'title' => '彈一場完美戀愛'],
+                ['link' => 'https://lee.ratinan.com/en/blog-post/828/wishing-upon-the-shooting-stars-pilgrimage', 'title' => '向流星許願的我們']
+            ]
         ],
         [
             'code'      => 'kix2026',
@@ -31,7 +36,14 @@ class Home extends BaseController
             ],
             'dates'     => ['2026-01-06', '2026-01-15'],
             'detail'    => 'It’s my first Japan solo trip in the winter!',
-            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/141/kix2026'
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/141/kix2026',
+            'junrei'    => [
+                ['link' => 'https://lee.ratinan.com/en/blog-post/188/harry-potter-pilgrimage', 'title' => 'Harry Potter'],
+                ['link' => 'https://lee.ratinan.com/en/blog-post/281/lost-ship-in-the-sky-pilgrimage', 'title' => '名探偵コナン　天空の難破船'],
+                ['link' => 'https://lee.ratinan.com/en/blog-post/186/crossroad-in-the-ancient-capital-pilgrimage', 'title' => '名探偵コナン　迷宮の十字路'],
+                ['link' => 'https://lee.ratinan.com/en/blog-post/285/conan-town-pilgrimage', 'title' => 'コナンタウン'],
+                ['link' => 'https://lee.ratinan.com/en/blog-post/184/kimi-no-na-wa-pilgrimage', 'title' => '君の名は。']
+            ]
         ],
         [
             'code'      => 'hkt2025',
@@ -71,6 +83,9 @@ class Home extends BaseController
             'locations' => ['hualien', 'taipei', 'tamsui', 'yangmingshan', 'beitou'],
             'dates'     => ['2024-10-23', '2024-10-27'],
             'detail'    => 'Taiwan PRIDE 2024, Capybara Encounter, Hiking, and 某某 Pilgrimage',
+            'junrei'    => [
+                ['link' => 'https://lee.ratinan.com/en/blog-post/202/the-on1y-one-pilgrimage', 'title' => '某某']
+            ]
         ],
         [
             'code'      => 'dmk2024b',
@@ -107,6 +122,11 @@ class Home extends BaseController
             'locations' => ['osaka', 'arimaonsen', 'kobe', 'nara', 'kyoto', 'tokyo', 'yokohama', 'fujisawa'],
             'dates'     => ['2024-04-22', '2024-05-02'],
             'detail'    => 'First time in Kansai~ Have fun!',
+            'junrei'    => [
+                ['link' => 'https://lee.ratinan.com/en/blog-post/188/harry-potter-pilgrimage', 'title' => 'Harry Potter'],
+                ['link' => 'https://lee.ratinan.com/en/blog-post/186/crossroad-in-the-ancient-capital-pilgrimage', 'title' => '名探偵コナン　迷宮の十字路'],
+                ['link' => 'https://lee.ratinan.com/en/blog-post/184/kimi-no-na-wa-pilgrimage', 'title' => '君の名は。']
+            ]
         ],
         [
             'code'      => 'cgk2024a',
@@ -206,6 +226,9 @@ class Home extends BaseController
             'locations' => ['sydney', 'melbourne'],
             'dates'     => ['2019-10-17', '2019-10-26'],
             'detail'    => '',
+            'junrei'    => [
+                ['link' => 'https://lee.ratinan.com/en/blog-post/188/harry-potter-pilgrimage', 'title' => 'Harry Potter']
+            ]
         ],
         [
             'code'      => 'tpe2018',
@@ -309,6 +332,78 @@ class Home extends BaseController
     ];
 
     private array $trip_details = [
+        'tpe2026' => [
+            'date'      => '115年8月2～5日',
+            'itinerary' => [
+                [
+                    'date'  => '8月2日（日）高雄市',
+                    'lines' => [
+                        ['✈️', 'SIN新加坡～TPE台灣桃園（TR866 Scoot B789）'],
+                        ['🚄', '高鐵：台北～左營'],
+                        ['🚈', '左營～高雄車站'],
+                        ['', '高雄車站'],
+                        ['', '💆 按摩'],
+                        ['', 'Dome of Light@美麗島站'],
+                        ['', 'FOCUS 13 珊瑚廣場'],
+                        ['', '高雄流行音樂中心'],
+                        ['', '大港橋'],
+                        ['⛴️', '旗津老街'],
+                        ['', '一號船渠景觀橋'],
+                        ['', '新濱町海洋廚房'],
+                        ['', 'The Pier Garden'],
+                        ['🚄', '高鐵：左營～台北'],
+                    ]
+                ],
+                [
+                    'date'  => '8月3日（一）台中是，台北市',
+                    'lines' => [
+                        ['🚄', '高鐵：台北～台中'],
+                        ['', 'Miyahara 宮原眼科'],
+                        ['', '審計新村'],
+                        ['', '文心森林公園'],
+                        ['🚄', '高鐵：台中～台北'],
+                        ['♨️', '溫泉'],
+                        ['', '士林夜市'],
+                    ]
+                ],
+                [
+                    'date'  => '8月4日（二）嘉義市，台南市，台北市',
+                    'lines' => [
+                        ['🚄', '高鐵：台北～嘉義'],
+                        ['', '北香湖公園'],
+                        ['', 'Hinoki Village 檜意森活村'],
+                        ['', '嘉義舊監獄'],
+                        ['🚄', '高鐵：嘉義～台南'],
+                        ['', 'Mitsui Outlet Park'],
+                        ['🚄', '高鐵：台南～台北'],
+                        ['', '國立中正紀念堂'],
+                        ['', '💆 按摩'],
+                        ['', '士林夜市'],
+                        ['', '西門町'],
+                    ]
+                ],
+                [
+                    'date'  => '8月5日（三）台北市，桃園市',
+                    'lines' => [
+                        ['', '西門町'],
+                        ['🚄', '高鐵：台北～桃園'],
+                        ['', 'Gloria Outlets 華泰名品城'],
+                        ['✈️', 'TPE台灣桃園～SIN新加坡（TR867 Scoot B789）'],
+                    ]
+                ],
+            ],
+            'budget'    => [
+                'title'      => '細節',
+                'totals'     => '總計',
+                'currencies' => ['SGD', 'TWD'],
+                'lines'      => [
+                    ['✈️', 'Scoot（新加坡～台灣桃園）', 334.21, 0],
+                    ['🛏️', '品格子旅店北車館', 91.92, 0],
+                    ['🚄', 'Taiwan Pass', 79.69, 0],
+                    ['🚄', '高鐵：台北～左營', 0, 2890]
+                ]
+            ]
+        ],
         'kix2026' => [
             'date'      => '令和8年1月6〜15日',
             'itinerary' => [
@@ -975,7 +1070,7 @@ class Home extends BaseController
                     'code'      => 'taiwan-hsr',
                     'filter'    => 'others',
                     'title'     => 'Taiwan HSR 台灣高鐵',
-                    'locations' => ['taipei', 'taichung'],
+                    'locations' => ['taipei', 'taichung', 'kaohsiung', 'chiayi', 'tainan', 'taoyuan'],
                     'dates'     => ['2018-11-14'],
                 ],
                 [

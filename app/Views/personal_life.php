@@ -185,8 +185,8 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="portfolio-meta">
-                                    <span class="small"><i class="bi bi-calendar-heart"></i> <?= $date_str ?></span>
+                                <div class="portfolio-meta overflow-x-auto">
+                                    <span class="small text-nowrap"><i class="bi bi-calendar-heart"></i> <?= $date_str ?></span>
                                 </div>
                             </div>
                         </div>
@@ -274,8 +274,8 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="portfolio-meta">
-                                    <span class="small">
+                                <div class="portfolio-meta overflow-x-auto">
+                                    <span class="small text-nowrap">
                                         <i class="bi bi-calendar-heart"></i> <?= $date_str ?>
                                     </span>
                                 </div>

@@ -61,12 +61,12 @@
                         <table id="main-table" class="table table-dark table-striped table-hover table-sm">
                             <thead>
                             <tr>
-                                <td><i class="bi bi-calendar-check"></i></td>
-                                <td><i class="bi bi-globe-americas"></i></td>
-                                <td><i class="bi bi-pin-map"></i></td>
-                                <td></td>
-                                <td><i class="bi bi-file-earmark-text"></i></td>
-                                <td><i class="bi bi-image"></i></td>
+                                <td style="min-width:225px;"><i class="bi bi-calendar-check"></i></td>
+                                <td style="min-width:150px;"><i class="bi bi-globe-americas"></i></td>
+                                <td style="min-width:150px;"><i class="bi bi-pin-map"></i></td>
+                                <td style="min-width:300px;"></td>
+                                <td style="min-width:150px;"><i class="bi bi-file-earmark-text"></i></td>
+                                <td style="min-width:300px;"><i class="bi bi-image"></i></td>
                             </tr>
                             </thead>
                             <tbody>
@@ -77,8 +77,21 @@
                                     <td><?= lang('PersonalLife.sections.gallery.filters.' . $trip['filter']) ?></td>
                                     <td><?= lang('PersonalLife.country.' . $trip['country']) ?></td>
                                     <td><?= $trip['title'] ?></td>
-                                    <td><?= (isset($details[$trip['code']]) ? '<a href="' . base_url($locale . '/trip/' . $trip['code']) . '">' . lang('PersonalLife.trip.title') . '</a>' : '') ?></td>
-                                    <td><?= (isset($trip['link']) ? '<a href="#">' . lang('Home.system.pages.blog') . '</a>' : '') ?></td>
+                                    <td>
+                                        <ul class="ps-0">
+                                            <?= (isset($details[$trip['code']]) ? '<li><a href="' . base_url($locale . '/trip/' . $trip['code']) . '"><i class="bi bi-file-earmark-text"></i> ' . lang('PersonalLife.trip.title') . '</a></li>' : '') ?>
+                                            <?= (isset($trip['link']) ? '<li><a href="' . str_replace('[[LOCALE]]', $locale, $trip['link']) . '"><i class="bi bi-image"></i> ' . lang('PersonalLife.sections.gallery.title') . '</a></li>' : '') ?>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <?php if (isset($trip['junrei']) && is_array($trip['junrei']) && !empty($trip['junrei'])) : ?>
+                                        <ul class="ps-0">
+                                        <?php foreach ($trip['junrei'] as $junrei) : ?>
+                                            <li><a href="<?= $junrei['link'] ?>"><?= $junrei['title'] ?></a></li>
+                                        <?php endforeach; ?>
+                                        </ul>
+                                        <?php endif; ?>
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                             </tbody>
@@ -94,7 +107,7 @@
 <script src="https://cdn.datatables.net/v/dt/dt-3.0.0/datatables.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        const table = new DataTable('#main-table', {pageLength: 50, order: [{column: 0, direction: 'desc'}]});
+        const table = new DataTable('#main-table', {paging: false, order: [{column: 0, direction: 'desc'}]});
     });
 </script>
 </body>

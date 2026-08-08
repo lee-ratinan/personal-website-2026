@@ -82,6 +82,7 @@ return [
         'taichung'         => '台中',
         'tainan'           => '台南',
         'taipei'           => '台北',
+        'taoyuan'          => '桃園',
         'tamsui'           => '淡水',
         'wulai'            => '烏来',
         'yangmingshan'     => '陽明山',
@@ -125,7 +126,7 @@ return [
         'button' => '旅行の詳細を見る',
         'title'  => '旅行の詳細'
     ],
-    'country' => [
+    'country'   => [
         'AU' => 'オーストラリア',
         'ID' => 'インドネシア',
         'JP' => '日本',

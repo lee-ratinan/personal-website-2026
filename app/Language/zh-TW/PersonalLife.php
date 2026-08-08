@@ -82,6 +82,7 @@ return [
         'taichung'         => '台中',
         'tainan'           => '台南',
         'taipei'           => '台北',
+        'taoyuan'          => '桃園',
         'tamsui'           => '淡水',
         'wulai'            => '烏來',
         'yangmingshan'     => '陽明山',

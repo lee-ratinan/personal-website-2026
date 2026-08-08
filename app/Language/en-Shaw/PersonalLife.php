@@ -82,6 +82,7 @@ return [
         'taichung'         => 'Taichung',
         'tainan'           => 'Tainan',
         'taipei'           => 'Taipei',
+        'taoyuan'          => 'Taoyuan',
         'tamsui'           => 'Tamsui',
         'wulai'            => 'Wulai',
         'yangmingshan'     => 'Yangmingshan',

@@ -78,14 +78,12 @@
                                     <td><?= lang('PersonalLife.country.' . $trip['country']) ?></td>
                                     <td><?= $trip['title'] ?></td>
                                     <td>
-                                        <ul class="ps-0">
-                                            <?= (isset($details[$trip['code']]) ? '<li><a href="' . base_url($locale . '/trip/' . $trip['code']) . '"><i class="bi bi-file-earmark-text"></i> ' . lang('PersonalLife.trip.title') . '</a></li>' : '') ?>
-                                            <?= (isset($trip['link']) ? '<li><a href="' . str_replace('[[LOCALE]]', $locale, $trip['link']) . '"><i class="bi bi-image"></i> ' . lang('PersonalLife.sections.gallery.title') . '</a></li>' : '') ?>
-                                        </ul>
+                                        <?= (isset($details[$trip['code']]) ? '<a href="' . base_url($locale . '/trip/' . $trip['code']) . '"><i class="bi bi-file-earmark-text"></i> ' . lang('PersonalLife.detail') . '</a><br/>' : '') ?>
+                                        <?= (isset($trip['link']) ? '<a href="' . str_replace('[[LOCALE]]', $locale, $trip['link']) . '"><i class="bi bi-image"></i> ' . lang('PersonalLife.gallery') . '</a>' : '') ?>
                                     </td>
                                     <td>
                                         <?php if (isset($trip['junrei']) && is_array($trip['junrei']) && !empty($trip['junrei'])) : ?>
-                                        <ul class="ps-0">
+                                        <ul class="ps-1">
                                         <?php foreach ($trip['junrei'] as $junrei) : ?>
                                             <li><a href="<?= $junrei['link'] ?>"><?= $junrei['title'] ?></a></li>
                                         <?php endforeach; ?>

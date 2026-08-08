@@ -126,7 +126,7 @@ return [
         'button' => 'Read more about my trips',
         'title'  => 'Trip Details'
     ],
-    'country' => [
+    'country'   => [
         'AU' => 'Australia',
         'ID' => 'Indonesia',
         'JP' => 'Japan',
@@ -137,5 +137,7 @@ return [
         'TW' => 'Taiwan',
         'US' => 'United States',
         'VN' => 'Vietnam',
-    ]
+    ],
+    'detail'    => 'Detail',
+    'gallery'   => 'Gallery',
 ];

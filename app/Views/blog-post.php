@@ -420,6 +420,7 @@
     `);
             _glightboxInit();
             _fixRowCol();
+            _countImg();
             if (passwordProtected) {
                 $('#main-post').addClass('d-none');
                 $('#password-form').removeClass('d-none');
@@ -428,6 +429,25 @@
 
         // ─── Utility helpers ─────────────────────────────────────────────────────
 
+        function _countImg() {
+            // Look for the required elements
+            const imageContainer = document.querySelector('.count-img');
+            const contentContainer = document.querySelector('.wp-post__content');
+
+// Proceed only if both elements exist on the page
+            if (imageContainer && contentContainer) {
+                // Count the images inside .count-img
+                const count = imageContainer.querySelectorAll('img').length;
+
+                // Create a element to display the count
+                const countDisplay = document.createElement('p');
+                countDisplay.className = 'image-count-display';
+                countDisplay.innerHTML = `<i class="bi bi-images"></i> ${count}`;
+
+                // Append it to the end of .wp-post__content
+                contentContainer.appendChild(countDisplay);
+            }
+        }
         function _toMap(arr) {
             return arr.reduce((acc, item) => { acc[item.id] = item; return acc; }, {});
         }

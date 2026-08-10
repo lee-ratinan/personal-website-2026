@@ -140,4 +140,5 @@ return [
     ],
     'detail'    => '明細',
     'gallery'   => '相簿',
+    'pinned'    => 'Pinned',
 ];

@@ -140,4 +140,5 @@ return [
     ],
     'detail'    => '𐑛𐑰𐑑𐑱𐑤',
     'gallery'   => '𐑜𐑨𐑤𐑼𐑦',
+    'pinned'    => '𐑐𐑦𐑯𐑛',
 ];

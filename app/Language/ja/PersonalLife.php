@@ -140,4 +140,5 @@ return [
     ],
     'detail'    => '詳細',
     'gallery'   => 'ギャラリー',
+    'pinned'    => 'Pinned',
 ];

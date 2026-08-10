@@ -140,4 +140,5 @@ return [
     ],
     'detail'    => 'Detail',
     'gallery'   => 'Gallery',
+    'pinned'    => 'Pinned',
 ];

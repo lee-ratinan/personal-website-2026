@@ -158,7 +158,7 @@
                     url: `${CONFIG.baseUrl}/wp-json/wp/v2/posts`,
                     method: 'GET',
                     data: {
-                        _fields: 'id,date_gmt,excerpt,title,featured_media,slug,tags,author',
+                        _fields: 'id,date_gmt,excerpt,title,featured_media,slug,tags,author,sticky',
                         per_page: CONFIG.perPage,
                         <?= 'posts' != $mode ? $mode .': ' . $id . ',' : '' ?>
                         page,
@@ -273,6 +273,7 @@
                 const title   = post.title?.rendered   || '(Untitled)';
                 const excerpt = post.excerpt?.rendered || '';
                 const date    = post.date_gmt ? renderDate(post.date_gmt) : '';
+                const sticky  = (post.sticky ? '<span class="float-end"><i class="bi bi-pin-angle-fill"></i> <?= lang('PersonalLife.pinned') ?></span>' : '')
 
                 const imgSrc  = post.mediaObj?.source_url || '';
                 const imgAlt  = post.mediaObj?.alt_text   || title;
@@ -294,6 +295,7 @@
         <article class="wp-post row" data-id="${post.id}" data-slug="${_esc(post.slug)}">
           <div class="col-12 col-md-4 col-lg-3 col-xl-2 mb-3 wp-post__img">${imgHtml}</div>
           <div class="col-12 col-md-8 col-lg-9 col-xl-10 mb-3 wp-post__body">
+            ${sticky}
             <h2 class="wp-post__title">
               <a href="${postLink}">${title}</a>
             </h2>

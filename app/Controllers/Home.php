@@ -798,9 +798,6 @@ class Home extends BaseController
         $data   = [
             'slug'                 => 'personal-life',
             'locale'               => $locale,
-            'countries_visited'    => 10,
-            'distant_traveled'     => 198000,
-            'flights'              => 104,
             'galleries'            => $this->trips,
             'bucket_lists'         => [
                 // 2026

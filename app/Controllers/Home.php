@@ -802,6 +802,13 @@ class Home extends BaseController
             'bucket_lists'         => [
                 // 2026
                 [
+                    'code'      => 'bungee-jumping',
+                    'filter'    => 'adventure',
+                    'title'     => 'Bungee Jumping',
+                    'locations' => ['singapore'],
+                    'dates'     => ['2026-08-14']
+                ],
+                [
                     'code'      => 'fuji-sighting',
                     'filter'    => 'cultural',
                     'title'     => 'Fuji Sighting　富士山',
@@ -1247,7 +1254,6 @@ class Home extends BaseController
                 'adventure'   => [
                     'Skiing',
                     'Wakeboarding',
-                    'Bungee Jumping',
                     'Canoeing'
                 ],
                 'cultural'    => [

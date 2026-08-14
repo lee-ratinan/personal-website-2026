@@ -85,7 +85,7 @@
                                         <?php if (isset($trip['junrei']) && is_array($trip['junrei']) && !empty($trip['junrei'])) : ?>
                                         <ul class="ps-1">
                                         <?php foreach ($trip['junrei'] as $junrei) : ?>
-                                            <li><a href="<?= $junrei['link'] ?>"><?= $junrei['title'] ?></a></li>
+                                            <li><a href="<?= str_replace('[[LOCALE]]', $locale, $junrei['link']) ?>"><?= $junrei['title'] ?></a></li>
                                         <?php endforeach; ?>
                                         </ul>
                                         <?php endif; ?>

@@ -21,8 +21,8 @@ class Home extends BaseController
             'detail'    => 'BL Pilgrimages Trip... again!',
             'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/811/tpe2026',
             'junrei'    => [
-                ['link' => 'https://lee.ratinan.com/en/blog-post/826/first-note-of-love-pilgrimage', 'title' => '彈一場完美戀愛'],
-                ['link' => 'https://lee.ratinan.com/en/blog-post/828/wishing-upon-the-shooting-stars-pilgrimage', 'title' => '向流星許願的我們']
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/826/first-note-of-love-pilgrimage', 'title' => '彈一場完美戀愛'],
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/828/wishing-upon-the-shooting-stars-pilgrimage', 'title' => '向流星許願的我們']
             ]
         ],
         [
@@ -38,11 +38,11 @@ class Home extends BaseController
             'detail'    => 'It’s my first Japan solo trip in the winter!',
             'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/141/kix2026',
             'junrei'    => [
-                ['link' => 'https://lee.ratinan.com/en/blog-post/188/harry-potter-pilgrimage', 'title' => 'Harry Potter'],
-                ['link' => 'https://lee.ratinan.com/en/blog-post/281/lost-ship-in-the-sky-pilgrimage', 'title' => '名探偵コナン　天空の難破船'],
-                ['link' => 'https://lee.ratinan.com/en/blog-post/186/crossroad-in-the-ancient-capital-pilgrimage', 'title' => '名探偵コナン　迷宮の十字路'],
-                ['link' => 'https://lee.ratinan.com/en/blog-post/285/conan-town-pilgrimage', 'title' => 'コナンタウン'],
-                ['link' => 'https://lee.ratinan.com/en/blog-post/184/kimi-no-na-wa-pilgrimage', 'title' => '君の名は。']
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/188/harry-potter-pilgrimage', 'title' => 'Harry Potter'],
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/281/lost-ship-in-the-sky-pilgrimage', 'title' => '名探偵コナン　天空の難破船'],
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/186/crossroad-in-the-ancient-capital-pilgrimage', 'title' => '名探偵コナン　迷宮の十字路'],
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/285/conan-town-pilgrimage', 'title' => 'コナンタウン'],
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/184/kimi-no-na-wa-pilgrimage', 'title' => '君の名は。']
             ]
         ],
         [
@@ -84,7 +84,7 @@ class Home extends BaseController
             'dates'     => ['2024-10-23', '2024-10-27'],
             'detail'    => 'Taiwan PRIDE 2024, Capybara Encounter, Hiking, and 某某 Pilgrimage',
             'junrei'    => [
-                ['link' => 'https://lee.ratinan.com/en/blog-post/202/the-on1y-one-pilgrimage', 'title' => '某某']
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/202/the-on1y-one-pilgrimage', 'title' => '某某']
             ]
         ],
         [
@@ -123,9 +123,9 @@ class Home extends BaseController
             'dates'     => ['2024-04-22', '2024-05-02'],
             'detail'    => 'First time in Kansai~ Have fun!',
             'junrei'    => [
-                ['link' => 'https://lee.ratinan.com/en/blog-post/188/harry-potter-pilgrimage', 'title' => 'Harry Potter'],
-                ['link' => 'https://lee.ratinan.com/en/blog-post/186/crossroad-in-the-ancient-capital-pilgrimage', 'title' => '名探偵コナン　迷宮の十字路'],
-                ['link' => 'https://lee.ratinan.com/en/blog-post/184/kimi-no-na-wa-pilgrimage', 'title' => '君の名は。']
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/188/harry-potter-pilgrimage', 'title' => 'Harry Potter'],
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/186/crossroad-in-the-ancient-capital-pilgrimage', 'title' => '名探偵コナン　迷宮の十字路'],
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/184/kimi-no-na-wa-pilgrimage', 'title' => '君の名は。']
             ]
         ],
         [
@@ -227,7 +227,7 @@ class Home extends BaseController
             'dates'     => ['2019-10-17', '2019-10-26'],
             'detail'    => '',
             'junrei'    => [
-                ['link' => 'https://lee.ratinan.com/en/blog-post/188/harry-potter-pilgrimage', 'title' => 'Harry Potter']
+                ['link' => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/188/harry-potter-pilgrimage', 'title' => 'Harry Potter']
             ]
         ],
         [
@@ -329,6 +329,464 @@ class Home extends BaseController
             'dates'     => ['2006-04-09', '2006-04-18'],
             'detail'    => '',
         ]
+    ];
+
+    private array $bucket_lists = [
+        // 2026
+        [
+            'code'      => 'bungee-jumping',
+            'filter'    => 'adventure',
+            'title'     => 'Bungee Jumping',
+            'locations' => ['singapore'],
+            'dates'     => ['2026-08-14']
+        ],
+        [
+            'code'      => 'first-note-of-love',
+            'filter'    => 'pilgrimage',
+            'title'     => 'First Note of Love 彈一場完美戀愛',
+            'locations' => ['kaohsiung'],
+            'dates'     => ['2026-08-02'],
+            'link'      => 'https://lee.ratinan.com/en/blog-post/826/first-note-of-love-pilgrimage'
+        ],
+        [
+            'code'      => 'wishing-upon-the-shooting-stars',
+            'filter'    => 'pilgrimage',
+            'title'     => 'Wishing Upon the Shooting Stars 向流星許願的我們',
+            'locations' => ['kaohsiung', 'chiayi'],
+            'dates'     => ['2026-08-02', '2026-08-04'],
+            'link'      => 'https://lee.ratinan.com/en/blog-post/828/wishing-upon-the-shooting-stars-pilgrimage'
+        ],
+        [
+            'code'      => 'fuji-sighting',
+            'filter'    => 'cultural',
+            'title'     => 'Fuji Sighting　富士山',
+            'locations' => ['tokyo'],
+            'dates'     => ['2026-01-XX']
+        ],
+        [
+            'code'      => 'tokyo-city-view',
+            'filter'    => 'observatory',
+            'title'     => 'Tokyo City View',
+            'locations' => ['tokyo'],
+            'dates'     => ['2026-01-12']
+        ],
+        [
+            'code'      => 'kobe-port-tower',
+            'filter'    => 'observatory',
+            'title'     => 'Kobe Port Tower 神戸ポートタワー',
+            'locations' => ['kobe'],
+            'dates'     => ['2026-01-09']
+        ],
+        [
+            'code'      => 'conan-town',
+            'filter'    => 'pilgrimage',
+            'title'     => 'Conan Town コナンタウン',
+            'locations' => ['hokuei'],
+            'dates'     => ['2026-01-07'],
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/285/conan-town-pilgrimage'
+        ],
+        [
+            'code'      => 'lost-ship-in-the-sky',
+            'filter'    => 'pilgrimage',
+            'title'     => 'Lost Ship in the Sky 天空の難破船',
+            'locations' => ['nara', 'osaka'],
+            'dates'     => ['2026-01-06'],
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/281/lost-ship-in-the-sky-pilgrimage'
+        ],
+        // 2025
+        [
+            'code'      => 'indoor-skydiving',
+            'filter'    => 'adventure',
+            'title'     => 'Indoor Skydiving',
+            'locations' => ['bandar-utama'],
+            'dates'     => ['2025-04-27']
+        ],
+        // 2024
+        [
+            'code'      => 'yangmingshan',
+            'filter'    => 'others',
+            'title'     => 'Hike at Yangmingshan',
+            'locations' => ['taipei'],
+            'dates'     => ['2024-10-27'],
+        ],
+        [
+            'code'      => 'xiangshan',
+            'filter'    => 'others',
+            'title'     => 'Hike at Xiangshan',
+            'locations' => ['taipei'],
+            'dates'     => ['2024-10-26'],
+        ],
+        [
+            'code'      => 'the-only-one',
+            'filter'    => 'pilgrimage',
+            'title'     => 'The On1y One 某某',
+            'locations' => ['taipei'],
+            'dates'     => ['2024-10-25'],
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/202/the-on1y-one-pilgrimage'
+        ],
+        [
+            'code'      => 'capybara',
+            'filter'    => 'others',
+            'title'     => 'Meet Capybara',
+            'locations' => ['hualien'],
+            'dates'     => ['2024-10-24'],
+        ],
+        [
+            'code'      => 'taiwanese-aboriginal-clothes',
+            'filter'    => 'cultural',
+            'title'     => 'Taiwanese Aboriginal Clothes',
+            'locations' => ['hualien'],
+            'dates'     => ['2024-10-23']
+        ],
+        [
+            'code'      => 'komtar-tower',
+            'filter'    => 'observatory',
+            'title'     => 'KOMTAR Tower',
+            'locations' => ['george-town'],
+            'dates'     => ['2024-06-22']
+        ],
+        [
+            'code'      => 'archery',
+            'filter'    => 'adventure',
+            'title'     => 'Archery',
+            'locations' => ['osaka', 'hualien'],
+            'dates'     => ['2024-04-25', '2024-10-23']
+        ],
+        [
+            'code'      => 'tsutenkaku-tower',
+            'filter'    => 'observatory',
+            'title'     => 'Tsutenkaku Tower 通天閣',
+            'locations' => ['osaka'],
+            'dates'     => ['2024-05-01']
+        ],
+        [
+            'code'      => 'shibuya-scramble-square',
+            'filter'    => 'observatory',
+            'title'     => 'Shibuya Scramble Square 渋谷スクランブルスクエア',
+            'locations' => ['tokyo'],
+            'dates'     => ['2024-04-30']
+        ],
+        [
+            'code'      => 'your-name',
+            'filter'    => 'pilgrimage',
+            'title'     => 'Your Name 君の名は',
+            'locations' => ['tokyo'],
+            'dates'     => ['2024-04-29'],
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/184/kimi-no-na-wa-pilgrimage'
+        ],
+        [
+            'code'      => 'shinkansen',
+            'filter'    => 'others',
+            'title'     => 'Shinkansen 新幹線',
+            'locations' => ['kyoto', 'tokyo', 'osaka', 'himeji', 'kobe'],
+            'dates'     => ['2024-04-27', '2024-05-01', '2026-01-12'],
+        ],
+        [
+            'code'      => 'crossroad-in-the-ancient-capital',
+            'filter'    => 'pilgrimage',
+            'title'     => 'Crossroad In the Ancient Capital 迷宮の十字路',
+            'locations' => ['kyoto'],
+            'dates'     => ['2024-04-26', '2026-01-10'],
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/186/crossroad-in-the-ancient-capital-pilgrimage'
+        ],
+        [
+            'code'      => 'abeno-harukas',
+            'filter'    => 'observatory',
+            'title'     => 'Abeno Harukas あべのハルカス',
+            'locations' => ['osaka'],
+            'dates'     => ['2024-04-25']
+        ],
+        [
+            'code'      => 'umeda-sky-building',
+            'filter'    => 'observatory',
+            'title'     => 'Umeda Sky Building 梅田スカイビル',
+            'locations' => ['osaka'],
+            'dates'     => ['2024-04-25']
+        ],
+        [
+            'code'      => 'seshin',
+            'filter'    => 'cultural',
+            'title'     => 'Seshin 세신',
+            'locations' => ['pattaya', 'osaka'],
+            'dates'     => ['2024-02-08', '2024-05-01'],
+        ],
+        [
+            'code'      => 'surfing-flowrider',
+            'filter'    => 'adventure',
+            'title'     => 'Surfing (FlowRider)',
+            'locations' => ['pattaya', 'bandar-utama', 'phuket'],
+            'dates'     => ['2024-02-06', '2025-04-26', '2025-11-15']
+        ],
+        // 2023
+        [
+            'code'      => 'pride-parade',
+            'filter'    => 'cultural',
+            'title'     => 'Pride Parade',
+            'locations' => ['taipei'],
+            'dates'     => ['2023-10-28', '2024-10-26'],
+        ],
+        [
+            'code'      => 'surfing',
+            'filter'    => 'adventure',
+            'title'     => 'Surfing',
+            'locations' => ['bali'],
+            'dates'     => ['2023-10-18']
+        ],
+        [
+            'code'      => 'scuba-diving',
+            'filter'    => 'adventure',
+            'title'     => 'Scuba Diving',
+            'locations' => ['bali'],
+            'dates'     => ['2023-10-18']
+        ],
+        [
+            'code'      => 'balinese-clothes',
+            'filter'    => 'cultural',
+            'title'     => 'Balinese Clothes',
+            'locations' => ['bali'],
+            'dates'     => ['2023-10-16']
+        ],
+        [
+            'code'      => 'canyoneering',
+            'filter'    => 'adventure',
+            'title'     => 'Canyoneering',
+            'locations' => ['alegria'],
+            'dates'     => ['2023-07-04']
+        ],
+        // 2022
+        [
+            'code'      => 'bitexco-financial-tower',
+            'filter'    => 'observatory',
+            'title'     => 'Bitexco Financial Tower Tháp Tài chính Bitexco',
+            'locations' => ['ho-chi-minh-city'],
+            'dates'     => ['2022-10-30']
+        ],
+        [
+            'code'      => 'vincom-landmark-81',
+            'filter'    => 'observatory',
+            'title'     => 'Vincom Landmark 81',
+            'locations' => ['ho-chi-minh-city'],
+            'dates'     => ['2022-10-29']
+        ],
+        [
+            'code'      => 'mahanakhon',
+            'filter'    => 'observatory',
+            'title'     => 'Mahanakhon มหานคร',
+            'locations' => ['bangkok'],
+            'dates'     => ['2022-05-23', '2025-03-06']
+        ],
+        [
+            'code'      => 'naturist-resort',
+            'filter'    => 'cultural',
+            'title'     => 'Naturist Resort',
+            'locations' => ['phuket', 'pattaya'],
+            'dates'     => ['2022-05-XX', '2024-02-XX'],
+        ],
+        [
+            'code'      => 'zip-lining',
+            'filter'    => 'adventure',
+            'title'     => 'Zip-lining',
+            'locations' => ['phuket'],
+            'dates'     => ['2022-05-18']
+        ],
+        [
+            'code'      => 'jet-skiing',
+            'filter'    => 'adventure',
+            'title'     => 'Jet-skiing',
+            'locations' => ['phuket'],
+            'dates'     => ['2022-05-17']
+        ],
+        [
+            'code'      => 'parasailing',
+            'filter'    => 'adventure',
+            'title'     => 'Parasailing',
+            'locations' => ['phuket'],
+            'dates'     => ['2022-05-17']
+        ],
+        [
+            'code'      => 'snorkeling',
+            'filter'    => 'adventure',
+            'title'     => 'Snorkeling',
+            'locations' => ['phuket', 'mactan', 'bali'],
+            'dates'     => ['2022-05-16', '2023-07-02', '2023-10-17', '2025-11-15']
+        ],
+        // 2021
+        // 2020
+        [
+            'code'      => 'marina-bay-sands',
+            'filter'    => 'observatory',
+            'title'     => 'Marina Bay Sands',
+            'locations' => ['singapore'],
+            'dates'     => ['2020-12-05', '2022-08-14']
+        ],
+        // 2019
+        [
+            'code'      => 'penguin',
+            'filter'    => 'others',
+            'title'     => 'See Penguins in natural habitat',
+            'locations' => ['melbourne'],
+            'dates'     => ['2019-10-25']
+        ],
+        [
+            'code'      => 'eureka-tower',
+            'filter'    => 'observatory',
+            'title'     => 'Eureka Tower',
+            'locations' => ['melbourne'],
+            'dates'     => ['2019-10-22']
+        ],
+        [
+            'code'      => 'harry-potter',
+            'filter'    => 'pilgrimage',
+            'title'     => 'Harry Potter',
+            'locations' => ['melbourne', 'osaka', 'tokyo'],
+            'dates'     => ['2019-10-23', '2024-04-23', '2024-04-27', '2026-01-12'],
+            'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/188/harry-potter-pilgrimage'
+        ],
+        [
+            'code'      => 'nude-beach',
+            'filter'    => 'cultural',
+            'title'     => 'Nude Beach',
+            'locations' => ['sydney'],
+            'dates'     => ['2019-10-20']
+        ],
+        [
+            'code'      => 'blue-mountains',
+            'filter'    => 'others',
+            'title'     => 'Hike at Blue Mountains',
+            'locations' => ['sydney'],
+            'dates'     => ['2019-10-18']
+        ],
+        [
+            'code'      => 'sydney-tower',
+            'filter'    => 'observatory',
+            'title'     => 'Sydney Tower',
+            'locations' => ['sydney'],
+            'dates'     => ['2019-10-17']
+        ],
+        [
+            'code'      => 'sydney-opera-house',
+            'filter'    => 'others',
+            'title'     => 'Visit Sydney Opera House',
+            'locations' => ['sydney'],
+            'dates'     => ['2019-10-17']
+        ],
+        [
+            'code'      => 'airbus-380',
+            'filter'    => 'others',
+            'title'     => 'Airbus 380',
+            'locations' => ['singapore'],
+            'dates'     => ['2019-10-16'],
+        ],
+        [
+            'code'      => 'indoor-rock-climbing',
+            'filter'    => 'adventure',
+            'title'     => 'Indoor Rock Climbing',
+            'locations' => ['singapore', 'bangkok'],
+            'dates'     => ['2019-08-XX', '2019-10-XX']
+        ],
+        // 2018
+        [
+            'code'      => 'taiwan-hsr',
+            'filter'    => 'others',
+            'title'     => 'Taiwan HSR 台灣高鐵',
+            'locations' => ['taipei', 'taichung', 'kaohsiung', 'chiayi', 'tainan', 'taoyuan'],
+            'dates'     => ['2018-11-14'],
+        ],
+        [
+            'code'      => 'taipei-101',
+            'filter'    => 'observatory',
+            'title'     => 'Taipei 101 台北一〇一',
+            'locations' => ['taipei'],
+            'dates'     => ['2018-11-12', '2023-10-26']
+        ],
+        // 2017
+        [
+            'code'      => 'thai-traditional-clothes',
+            'filter'    => 'cultural',
+            'title'     => 'Thai Traditional Clothes ชุดไทย',
+            'locations' => ['kanchanaburi', 'bangkok'],
+            'dates'     => ['2017-10-11', '2025-03-09']
+        ],
+        // 2016
+        [
+            'code'      => 'tokyo-tower',
+            'filter'    => 'observatory',
+            'title'     => 'Tokyo Tower 東京タワー',
+            'locations' => ['tokyo'],
+            'dates'     => ['2016-06-XX']
+        ],
+        [
+            'code'      => 'tokyo-skytree',
+            'filter'    => 'observatory',
+            'title'     => 'Tokyo Skytree 東京スカイツリー',
+            'locations' => ['tokyo'],
+            'dates'     => ['2016-06-XX', '2024-04-29']
+        ],
+        [
+            'code'      => 'yukata',
+            'filter'    => 'cultural',
+            'title'     => 'Yukata 浴衣',
+            'locations' => ['singapore', 'bangkok', 'pattaya', 'tokyo', 'tottori', 'osaka'],
+            'dates'     => [],
+            'since'     => 2016
+        ],
+        [
+            'code'      => 'capsule-hotel',
+            'filter'    => 'cultural',
+            'title'     => 'Capsule Hotel',
+            'locations' => ['tokyo', 'kuala-lumpur', 'sydney', 'singapore'],
+            'dates'     => [],
+            'since'     => 2016
+        ],
+        [
+            'code'      => 'onsen',
+            'filter'    => 'cultural',
+            'title'     => 'Onsen, Sento　温泉と銭湯',
+            'locations' => ['tokyo', 'singapore', 'taipei', 'arimaonsen', 'osaka', 'kinosakionsen'],
+            'dates'     => [],
+            'since'     => 2016
+        ],
+        // 2015
+        [
+            'code'      => 'get-msc',
+            'filter'    => 'others',
+            'title'     => 'Get Masters Degree',
+            'locations' => ['singapore'],
+            'dates'     => ['2015-07-XX']
+        ],
+        // 2014
+        [
+            'code'      => 'petronas-towers',
+            'filter'    => 'observatory',
+            'title'     => 'Petronas Towers',
+            'locations' => ['kuala-lumpur'],
+            'dates'     => ['2014-05-13']
+        ],
+        // 2013
+        // 2012
+        // 2011
+        // 2010
+        [
+            'code'      => 'empire-state-building',
+            'filter'    => 'observatory',
+            'title'     => 'Empire State Building',
+            'locations' => ['new-york-city'],
+            'dates'     => ['2010-06-XX']
+        ],
+        [
+            'code'      => '30-rockefeller-plaza',
+            'filter'    => 'observatory',
+            'title'     => '30 Rockefeller Plaza',
+            'locations' => ['new-york-city'],
+            'dates'     => ['2010-06-XX']
+        ],
+        [
+            'code'      => 'willis-tower',
+            'filter'    => 'observatory',
+            'title'     => 'Willis Tower',
+            'locations' => ['chicago'],
+            'dates'     => ['2010-04-XX']
+        ],
     ];
 
     private array $trip_details = [
@@ -745,6 +1203,50 @@ class Home extends BaseController
         ]
     ];
 
+    private array $bucket_lists_to_fill = [
+        'observatory' => [
+            'lotte-world-tower'      => ['title' => 'Lotter World Tower', 'location' => ['seoul']],
+            'merdeka-118'            => ['title' => 'Merdeka 118', 'location' => ['kuala-lumpur']],
+            'tokyo-metropolitan'     => ['title' => 'Tokyo Metropolitan Government Building', 'location' => ['tokyo']],
+            '30-hudson-yard'         => ['title' => '30 Hudson Yards', 'location' => ['new-york-city']],
+            'n-seoul-tower'          => ['title' => 'N Seoul Tower', 'location' => ['seoul']],
+            'one-world-trade-center' => ['title' => 'One World Trade Center', 'location' => ['new-york-city']],
+            'sky-tower'              => ['title' => 'Sky Tower', 'location' => ['auckland']]
+        ],
+        'adventure'   => [
+            'skiing'       => ['title' => 'Skiing', 'location' => ['nakano']],
+            'wakeboarding' => ['title' => 'Wakeboarding', 'location' => []],
+            'canoeing'     => ['title' => 'Canoeing', 'location' => []],
+        ],
+        'cultural'    => [
+            'korean-clothes'           => ['title' => 'Korean Clothes', 'location' => ['south-korea']],
+            'sumo'                     => ['title' => 'Sumo', 'location' => ['japan']],
+            'sakura-sighting'          => ['title' => 'Sakura Sighting', 'location' => ['japan']],
+            'cruising'                 => ['title' => 'Cruising', 'location' => []],
+            'aurora-borealis-sighting' => ['title' => 'Aurora borealis sighting', 'location' => []],
+            'ice-hotel'                => ['title' => 'Ice Hotel (Jukkasjärvi)', 'location' => []],
+            'jjimjibang'               => ['title' => 'Jjimjibang', 'location' => ['south-korea']],
+            'ryokan'                   => ['title' => 'Ryokan', 'location' => ['japan']],
+        ],
+        'pilgrimage'  => [
+            'angels-and-demons'            => ['title' => 'Angels and Demons', 'location' => ['rome', 'vatican-city']],
+            'da-vinci-code'                => ['title' => 'Da Vinci Code', 'location' => ['paris', 'london', 'roslin-scotland']],
+            'inferno'                      => ['title' => 'Inferno', 'location' => ['florence', 'venice', 'istanbul']],
+            'origin'                       => ['title' => 'Origin', 'location' => ['bilbao', 'madrid', 'barcelona']],
+            'secret-of-secrets'            => ['title' => 'Secret Of Secrets', 'location' => ['prague', 'london', 'new-york-city']],
+            'one-eyed-flashback'           => ['title' => 'One-Eyed Flashback', 'location' => ['nakano', 'tokyo']],
+            'the-million-dollar-pentagram' => ['title' => 'The Million-dollar Pentagram', 'location' => ['sapporo', 'hakodate']],
+            'sherlock-holmes'              => ['title' => 'Sherlock Holmes', 'location' => ['london']],
+            'the-lord-of-the-rings'        => ['title' => 'The Lord of the Rings', 'location' => ['new-zealand']],
+        ],
+        'others'      => [
+            'ktx-train'              => ['title' => 'KTX Train', 'location' => ['south-korea']],
+            'yosemite-national-park' => ['title' => 'Yosemite National Park', 'location' => ['california']],
+            'join-naturist-trip'     => ['title' => 'Join a naturist trip', 'location' => []],
+            'mba'                    => ['title' => 'Get MBA', 'location' => ['sydney']],
+        ]
+    ];
+
     /**
      * Get locale
      */
@@ -799,492 +1301,8 @@ class Home extends BaseController
             'slug'                 => 'personal-life',
             'locale'               => $locale,
             'galleries'            => $this->trips,
-            'bucket_lists'         => [
-                // 2026
-                [
-                    'code'      => 'bungee-jumping',
-                    'filter'    => 'adventure',
-                    'title'     => 'Bungee Jumping',
-                    'locations' => ['singapore'],
-                    'dates'     => ['2026-08-14']
-                ],
-                [
-                    'code'      => 'fuji-sighting',
-                    'filter'    => 'cultural',
-                    'title'     => 'Fuji Sighting　富士山',
-                    'locations' => ['tokyo'],
-                    'dates'     => ['2026-01-XX']
-                ],
-                [
-                    'code'      => 'tokyo-city-view',
-                    'filter'    => 'observatory',
-                    'title'     => 'Tokyo City View',
-                    'locations' => ['tokyo'],
-                    'dates'     => ['2026-01-12']
-                ],
-                [
-                    'code'      => 'kobe-port-tower',
-                    'filter'    => 'observatory',
-                    'title'     => 'Kobe Port Tower 神戸ポートタワー',
-                    'locations' => ['kobe'],
-                    'dates'     => ['2026-01-09']
-                ],
-                [
-                    'code'      => 'conan-town',
-                    'filter'    => 'pilgrimage',
-                    'title'     => 'Conan Town コナンタウン',
-                    'locations' => ['hokuei'],
-                    'dates'     => ['2026-01-07'],
-                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/285/conan-town-pilgrimage'
-                ],
-                [
-                    'code'      => 'lost-ship-in-the-sky',
-                    'filter'    => 'pilgrimage',
-                    'title'     => 'Lost Ship in the Sky 天空の難破船',
-                    'locations' => ['nara', 'osaka'],
-                    'dates'     => ['2026-01-06'],
-                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/281/lost-ship-in-the-sky-pilgrimage'
-                ],
-                // 2025
-                [
-                    'code'      => 'indoor-skydiving',
-                    'filter'    => 'adventure',
-                    'title'     => 'Indoor Skydiving',
-                    'locations' => ['bandar-utama'],
-                    'dates'     => ['2025-04-27']
-                ],
-                // 2024
-                [
-                    'code'      => 'yangmingshan',
-                    'filter'    => 'others',
-                    'title'     => 'Hike at Yangmingshan',
-                    'locations' => ['taipei'],
-                    'dates'     => ['2024-10-27'],
-                ],
-                [
-                    'code'      => 'xiangshan',
-                    'filter'    => 'others',
-                    'title'     => 'Hike at Xiangshan',
-                    'locations' => ['taipei'],
-                    'dates'     => ['2024-10-26'],
-                ],
-                [
-                    'code'      => 'the-only-one',
-                    'filter'    => 'pilgrimage',
-                    'title'     => 'The On1y One 某某',
-                    'locations' => ['taipei'],
-                    'dates'     => ['2024-10-25'],
-                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/202/the-on1y-one-pilgrimage'
-                ],
-                [
-                    'code'      => 'capybara',
-                    'filter'    => 'others',
-                    'title'     => 'Meet Capybara',
-                    'locations' => ['hualien'],
-                    'dates'     => ['2024-10-24'],
-                ],
-                [
-                    'code'      => 'taiwanese-aboriginal-clothes',
-                    'filter'    => 'cultural',
-                    'title'     => 'Taiwanese Aboriginal Clothes',
-                    'locations' => ['hualien'],
-                    'dates'     => ['2024-10-23']
-                ],
-                [
-                    'code'      => 'komtar-tower',
-                    'filter'    => 'observatory',
-                    'title'     => 'KOMTAR Tower',
-                    'locations' => ['george-town'],
-                    'dates'     => ['2024-06-22']
-                ],
-                [
-                    'code'      => 'archery',
-                    'filter'    => 'adventure',
-                    'title'     => 'Archery',
-                    'locations' => ['osaka', 'hualien'],
-                    'dates'     => ['2024-04-25', '2024-10-23']
-                ],
-                [
-                    'code'      => 'tsutenkaku-tower',
-                    'filter'    => 'observatory',
-                    'title'     => 'Tsutenkaku Tower 通天閣',
-                    'locations' => ['osaka'],
-                    'dates'     => ['2024-05-01']
-                ],
-                [
-                    'code'      => 'shibuya-scramble-square',
-                    'filter'    => 'observatory',
-                    'title'     => 'Shibuya Scramble Square 渋谷スクランブルスクエア',
-                    'locations' => ['tokyo'],
-                    'dates'     => ['2024-04-30']
-                ],
-                [
-                    'code'      => 'your-name',
-                    'filter'    => 'pilgrimage',
-                    'title'     => 'Your Name 君の名は',
-                    'locations' => ['tokyo'],
-                    'dates'     => ['2024-04-29'],
-                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/184/kimi-no-na-wa-pilgrimage'
-                ],
-                [
-                    'code'      => 'shinkansen',
-                    'filter'    => 'others',
-                    'title'     => 'Shinkansen 新幹線',
-                    'locations' => ['kyoto', 'tokyo'],
-                    'dates'     => ['2024-04-27', '2024-05-01', '2026-01-12'],
-                ],
-                [
-                    'code'      => 'crossroad-in-the-ancient-capital',
-                    'filter'    => 'pilgrimage',
-                    'title'     => 'Crossroad In the Ancient Capital 迷宮の十字路',
-                    'locations' => ['kyoto'],
-                    'dates'     => ['2024-04-26', '2026-01-10'],
-                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/186/crossroad-in-the-ancient-capital-pilgrimage'
-                ],
-                [
-                    'code'      => 'abeno-harukas',
-                    'filter'    => 'observatory',
-                    'title'     => 'Abeno Harukas あべのハルカス',
-                    'locations' => ['osaka'],
-                    'dates'     => ['2024-04-25']
-                ],
-                [
-                    'code'      => 'umeda-sky-building',
-                    'filter'    => 'observatory',
-                    'title'     => 'Umeda Sky Building 梅田スカイビル',
-                    'locations' => ['osaka'],
-                    'dates'     => ['2024-04-25']
-                ],
-                [
-                    'code'      => 'seshin',
-                    'filter'    => 'cultural',
-                    'title'     => 'Seshin 세신',
-                    'locations' => ['pattaya', 'osaka'],
-                    'dates'     => ['2024-02-08', '2024-05-01'],
-                ],
-                [
-                    'code'      => 'surfing-flowrider',
-                    'filter'    => 'adventure',
-                    'title'     => 'Surfing (FlowRider)',
-                    'locations' => ['pattaya', 'bandar-utama', 'phuket'],
-                    'dates'     => ['2024-02-06', '2025-04-26', '2025-11-15']
-                ],
-                // 2023
-                [
-                    'code'      => 'pride-parade',
-                    'filter'    => 'cultural',
-                    'title'     => 'Pride Parade',
-                    'locations' => ['taipei'],
-                    'dates'     => ['2023-10-28', '2024-10-26'],
-                ],
-                [
-                    'code'      => 'surfing',
-                    'filter'    => 'adventure',
-                    'title'     => 'Surfing',
-                    'locations' => ['bali'],
-                    'dates'     => ['2023-10-18']
-                ],
-                [
-                    'code'      => 'scuba-diving',
-                    'filter'    => 'adventure',
-                    'title'     => 'Scuba Diving',
-                    'locations' => ['bali'],
-                    'dates'     => ['2023-10-18']
-                ],
-                [
-                    'code'      => 'balinese-clothes',
-                    'filter'    => 'cultural',
-                    'title'     => 'Balinese Clothes',
-                    'locations' => ['bali'],
-                    'dates'     => ['2023-10-16']
-                ],
-                [
-                    'code'      => 'canyoneering',
-                    'filter'    => 'adventure',
-                    'title'     => 'Canyoneering',
-                    'locations' => ['alegria'],
-                    'dates'     => ['2023-07-04']
-                ],
-                // 2022
-                [
-                    'code'      => 'bitexco-financial-tower',
-                    'filter'    => 'observatory',
-                    'title'     => 'Bitexco Financial Tower Tháp Tài chính Bitexco',
-                    'locations' => ['ho-chi-minh-city'],
-                    'dates'     => ['2022-10-30']
-                ],
-                [
-                    'code'      => 'vincom-landmark-81',
-                    'filter'    => 'observatory',
-                    'title'     => 'Vincom Landmark 81',
-                    'locations' => ['ho-chi-minh-city'],
-                    'dates'     => ['2022-10-29']
-                ],
-                [
-                    'code'      => 'mahanakhon',
-                    'filter'    => 'observatory',
-                    'title'     => 'Mahanakhon มหานคร',
-                    'locations' => ['bangkok'],
-                    'dates'     => ['2022-05-23', '2025-03-06']
-                ],
-                [
-                    'code'      => 'naturist-resort',
-                    'filter'    => 'cultural',
-                    'title'     => 'Naturist Resort',
-                    'locations' => ['phuket', 'pattaya'],
-                    'dates'     => ['2022-05-XX', '2024-02-XX'],
-                ],
-                [
-                    'code'      => 'zip-lining',
-                    'filter'    => 'adventure',
-                    'title'     => 'Zip-lining',
-                    'locations' => ['phuket'],
-                    'dates'     => ['2022-05-18']
-                ],
-                [
-                    'code'      => 'jet-skiing',
-                    'filter'    => 'adventure',
-                    'title'     => 'Jet-skiing',
-                    'locations' => ['phuket'],
-                    'dates'     => ['2022-05-17']
-                ],
-                [
-                    'code'      => 'parasailing',
-                    'filter'    => 'adventure',
-                    'title'     => 'Parasailing',
-                    'locations' => ['phuket'],
-                    'dates'     => ['2022-05-17']
-                ],
-                [
-                    'code'      => 'snorkeling',
-                    'filter'    => 'adventure',
-                    'title'     => 'Snorkeling',
-                    'locations' => ['phuket', 'mactan', 'bali'],
-                    'dates'     => ['2022-05-16', '2023-07-02', '2023-10-17', '2025-11-15']
-                ],
-                // 2021
-                // 2020
-                [
-                    'code'      => 'marina-bay-sands',
-                    'filter'    => 'observatory',
-                    'title'     => 'Marina Bay Sands',
-                    'locations' => ['singapore'],
-                    'dates'     => ['2020-12-05', '2022-08-14']
-                ],
-                // 2019
-                [
-                    'code'      => 'penguin',
-                    'filter'    => 'others',
-                    'title'     => 'See Penguins in natural habitat',
-                    'locations' => ['melbourne'],
-                    'dates'     => ['2019-10-25']
-                ],
-                [
-                    'code'      => 'eureka-tower',
-                    'filter'    => 'observatory',
-                    'title'     => 'Eureka Tower',
-                    'locations' => ['melbourne'],
-                    'dates'     => ['2019-10-22']
-                ],
-                [
-                    'code'      => 'harry-potter',
-                    'filter'    => 'pilgrimage',
-                    'title'     => 'Harry Potter',
-                    'locations' => ['melbourne', 'osaka', 'tokyo'],
-                    'dates'     => ['2019-10-23', '2024-04-23', '2024-04-27', '2026-01-12'],
-                    'link'      => 'https://lee.ratinan.com/' . $locale . '/blog-post/188/harry-potter-pilgrimage'
-                ],
-                [
-                    'code'      => 'nude-beach',
-                    'filter'    => 'cultural',
-                    'title'     => 'Nude Beach',
-                    'locations' => ['sydney'],
-                    'dates'     => ['2019-10-20']
-                ],
-                [
-                    'code'      => 'blue-mountains',
-                    'filter'    => 'others',
-                    'title'     => 'Hike at Blue Mountains',
-                    'locations' => ['sydney'],
-                    'dates'     => ['2019-10-18']
-                ],
-                [
-                    'code'      => 'sydney-tower',
-                    'filter'    => 'observatory',
-                    'title'     => 'Sydney Tower',
-                    'locations' => ['sydney'],
-                    'dates'     => ['2019-10-17']
-                ],
-                [
-                    'code'      => 'sydney-opera-house',
-                    'filter'    => 'others',
-                    'title'     => 'Visit Sydney Opera House',
-                    'locations' => ['sydney'],
-                    'dates'     => ['2019-10-17']
-                ],
-                [
-                    'code'      => 'airbus-380',
-                    'filter'    => 'others',
-                    'title'     => 'Airbus 380',
-                    'locations' => ['singapore'],
-                    'dates'     => ['2019-10-16'],
-                ],
-                [
-                    'code'      => 'indoor-rock-climbing',
-                    'filter'    => 'adventure',
-                    'title'     => 'Indoor Rock Climbing',
-                    'locations' => ['singapore', 'bangkok'],
-                    'dates'     => ['2019-08-XX', '2019-10-XX']
-                ],
-                // 2018
-                [
-                    'code'      => 'taiwan-hsr',
-                    'filter'    => 'others',
-                    'title'     => 'Taiwan HSR 台灣高鐵',
-                    'locations' => ['taipei', 'taichung', 'kaohsiung', 'chiayi', 'tainan', 'taoyuan'],
-                    'dates'     => ['2018-11-14'],
-                ],
-                [
-                    'code'      => 'taipei-101',
-                    'filter'    => 'observatory',
-                    'title'     => 'Taipei 101 台北一〇一',
-                    'locations' => ['taipei'],
-                    'dates'     => ['2018-11-12', '2023-10-26']
-                ],
-                // 2017
-                [
-                    'code'      => 'thai-traditional-clothes',
-                    'filter'    => 'cultural',
-                    'title'     => 'Thai Traditional Clothes ชุดไทย',
-                    'locations' => ['kanchanaburi', 'bangkok'],
-                    'dates'     => ['2017-10-11', '2025-03-09']
-                ],
-                // 2016
-                [
-                    'code'      => 'tokyo-tower',
-                    'filter'    => 'observatory',
-                    'title'     => 'Tokyo Tower 東京タワー',
-                    'locations' => ['tokyo'],
-                    'dates'     => ['2016-06-XX']
-                ],
-                [
-                    'code'      => 'tokyo-skytree',
-                    'filter'    => 'observatory',
-                    'title'     => 'Tokyo Skytree 東京スカイツリー',
-                    'locations' => ['tokyo'],
-                    'dates'     => ['2016-06-XX', '2024-04-29']
-                ],
-                [
-                    'code'      => 'yukata',
-                    'filter'    => 'cultural',
-                    'title'     => 'Yukata 浴衣',
-                    'locations' => [],
-                    'dates'     => [],
-                    'since'     => 2016
-                ],
-                [
-                    'code'      => 'capsule-hotel',
-                    'filter'    => 'cultural',
-                    'title'     => 'Capsule Hotel',
-                    'locations' => [],
-                    'dates'     => [],
-                    'since'     => 2016
-                ],
-                [
-                    'code'      => 'onsen',
-                    'filter'    => 'cultural',
-                    'title'     => 'Onsen, Sento　温泉と銭湯',
-                    'locations' => [],
-                    'dates'     => [],
-                    'since'     => 2016
-                ],
-                // 2015
-                [
-                    'code'      => 'get-msc',
-                    'filter'    => 'others',
-                    'title'     => 'Get Masters Degree',
-                    'locations' => ['singapore'],
-                    'dates'     => ['2015-07-XX']
-                ],
-                // 2014
-                [
-                    'code'      => 'petronas-towers',
-                    'filter'    => 'observatory',
-                    'title'     => 'Petronas Towers',
-                    'locations' => ['kuala-lumpur'],
-                    'dates'     => ['2014-05-13']
-                ],
-                // 2013
-                // 2012
-                // 2011
-                // 2010
-                [
-                    'code'      => 'empire-state-building',
-                    'filter'    => 'observatory',
-                    'title'     => 'Empire State Building',
-                    'locations' => ['new-york-city'],
-                    'dates'     => ['2010-06-XX']
-                ],
-                [
-                    'code'      => '30-rockefeller-plaza',
-                    'filter'    => 'observatory',
-                    'title'     => '30 Rockefeller Plaza',
-                    'locations' => ['new-york-city'],
-                    'dates'     => ['2010-06-XX']
-                ],
-                [
-                    'code'      => 'willis-tower',
-                    'filter'    => 'observatory',
-                    'title'     => 'Willis Tower',
-                    'locations' => ['chicago'],
-                    'dates'     => ['2010-04-XX']
-                ],
-            ],
-            'bucket_lists_to_fill' => [
-                'observatory' => [
-                    'Lotte World Tower',
-                    'Merdeka 118',
-                    'Tokyo Metropolitan Government Building',
-                    'Burj Khalifa',
-                    '30 Hudson Yards',
-                    'N Seoul Tower',
-                    'One World Trade Center',
-                    'Sky Tower'
-                ],
-                'adventure'   => [
-                    'Skiing',
-                    'Wakeboarding',
-                    'Canoeing'
-                ],
-                'cultural'    => [
-                    'Korean Clothes',
-                    'Sumo',
-                    'Sakura Sighting',
-                    'Cruising',
-                    'Aurora borealis sighting',
-                    'Ice Hotel (Jukkasjärvi)',
-                    'Jjimjibang',
-                    'Ryokan'
-                ],
-                'pilgrimage'  => [
-                    'Angels and Demons',
-                    'Da Vinci Code',
-                    'Inferno',
-                    'Origin',
-                    'One-Eyed Flashback',
-                    'The Million-dollar Pentagram',
-                    'First Note of Love',
-                    'Harry Potter',
-                    'Sherlock Holmes',
-                    'LOTR'
-                ],
-                'others'      => [
-                    'KTX Train',
-                    'Yosemite National Park',
-                    'join naturist trip',
-                    'Get MBA',
-                ]
-            ],
+            'bucket_lists'         => $this->bucket_lists,
+            'bucket_lists_to_fill' => $this->bucket_lists_to_fill,
         ];
         return view('personal_life', $data);
     }

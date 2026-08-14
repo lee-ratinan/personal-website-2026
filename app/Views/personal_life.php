@@ -240,6 +240,9 @@
                     ?>
                     <?php foreach ($bucket_lists as $i => $item) : ?>
                         <?php
+                        if (isset($bucket_lists_to_fill[$item['filter']][$item['code']])) {
+                            unset($bucket_lists_to_fill[$item['filter']][$item['code']]);
+                        }
                         $stats[$item['filter']] += 1;
                         $date_str = '';
                         if (!empty($item['dates'])) {
@@ -264,7 +267,7 @@
                                         <div class="portfolio-actions">
                                             <a href="<?= base_url('assets/img/bucket-lists/' . $item['code'] . '.jpg') ?>" class="glightbox portfolio-link" data-glightbox="title:<?= lang('PersonalLife.sections.bucket-list.filters.' . $item['filter']) ?> / <?= $item['title'] ?>; description: <i class='bi bi-geo-alt'></i> <?= implode(get_comma($locale), $locations) ?> <i class='bi bi-calendar-heart'></i> <?= $date_str ?>"><i class="bi bi-plus-lg"></i></a>
                                             <?php if (!empty($item['link'])) : ?>
-                                                <a href="<?= $item['link'] ?>" class="portfolio-details" target="_blank"><i class="bi bi-arrow-right"></i></a>
+                                                <a href="<?= str_replace('[[LOCALE]]', $locale, $item['link']) ?>" class="portfolio-details" target="_blank"><i class="bi bi-arrow-right"></i></a>
                                             <?php endif ?>
                                         </div>
                                     </div>
@@ -283,6 +286,44 @@
                                 </div>
                             </div>
                         </div>
+                    <?php endforeach; ?>
+                    <?php foreach ($bucket_lists_to_fill as $category_code => $category_items) : ?>
+                        <?php foreach ($category_items as $code => $item) : ?>
+                            <?php
+                            $locations = [];
+                            foreach ($item['location'] as $location) {
+                                $locations[] = lang('PersonalLife.locations.' . $location);
+                            }
+                            if (empty($locations)) {
+                                $locations[] = 'unknown';
+                            }
+                            ?>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?= 'filter-' . $category_code ?>">
+                                <div class="portfolio-card">
+                                    <div class="portfolio-image-container">
+                                        <img src="<?= base_url('assets/img/bucket-lists/' . $code . '.jpg') ?>" alt="<?= $item['title'] ?>" class="img-fluid" loading="lazy">
+                                        <div class="portfolio-overlay">
+                                            <div class="portfolio-info">
+                                                <h4><?= $item['title'] ?></h4>
+                                            </div>
+                                            <div class="portfolio-actions">
+                                                <a href="<?= base_url('assets/img/bucket-lists/' . $code . '.jpg') ?>" class="glightbox portfolio-link" data-glightbox="title:<?= lang('PersonalLife.sections.bucket-list.filters.' . $category_code) ?> / <?= $item['title'] ?>;"><i class="bi bi-plus-lg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-meta">
+                                        <div class="d-flex flex-nowrap overflow-x-auto gap-2 pb-2">
+                                            <span class="badge bg-success text-white text-nowrap">
+                                                <?= implode('</span><span class="badge bg-success text-white text-nowrap">', $locations) ?>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-meta overflow-x-auto">
+                                        <span class="small text-nowrap"><i class="bi bi-calendar-heart"></i> -</span>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
                     <?php endforeach; ?>
                 </div>
             </div>

@@ -98,7 +98,7 @@ return [
         'kinosakionsen'    => '城崎温泉',
         'kobe'             => '神戸',
         'kyoto'            => '京都',
-        'nakano'           => '中野',
+        'nagano'           => '長野',
         'nara'             => '奈良',
         'osaka'            => '大阪',
         'sapporo'          => '札幌',

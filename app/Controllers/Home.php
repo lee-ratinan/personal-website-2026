@@ -1216,7 +1216,7 @@ class Home extends BaseController
             'cn-tower'               => ['title' => 'CN Tower', 'location' => ['toronto']],
         ],
         'adventure'   => [
-            'skiing'       => ['title' => 'Skiing', 'location' => ['nakano']],
+            'skiing'       => ['title' => 'Skiing', 'location' => ['nagano']],
             'wakeboarding' => ['title' => 'Wakeboarding', 'location' => []],
             'canoeing'     => ['title' => 'Canoeing', 'location' => []],
         ],
@@ -1240,7 +1240,7 @@ class Home extends BaseController
             'secret-of-secrets'            => [
                 'title' => 'Secret Of Secrets', 'location' => ['prague', 'london', 'new-york-city']
             ],
-            'one-eyed-flashback'           => ['title' => 'One-Eyed Flashback', 'location' => ['nakano', 'tokyo']],
+            'one-eyed-flashback'           => ['title' => 'One-Eyed Flashback', 'location' => ['nagano', 'tokyo']],
             'the-million-dollar-pentagram' => ['title'    => 'The Million-dollar Pentagram',
                                                'location' => ['sapporo', 'hakodate']
             ],

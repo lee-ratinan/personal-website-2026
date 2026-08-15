@@ -98,7 +98,7 @@ return [
         'kinosakionsen'    => 'Kinosakionsen',
         'kobe'             => 'Kobe',
         'kyoto'            => 'Kyoto',
-        'nakano'           => 'Nakano',
+        'nagano'           => 'Nagano',
         'nara'             => 'Nara',
         'osaka'            => 'Osaka',
         'sapporo'          => 'Sapporo',

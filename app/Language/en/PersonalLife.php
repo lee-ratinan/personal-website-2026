@@ -87,17 +87,21 @@ return [
         'wulai'            => 'Wulai',
         'yangmingshan'     => 'Yangmingshan',
         // JAPAN
+        'japan'            => 'Japan',
         'arimaonsen'       => 'Arimaonsen',
         'fujisan'          => 'Fujisan',
         'fujisawa'         => 'Fujisawa',
+        'hakodate'         => 'Hakodate',
         'himeji'           => 'Himeji',
         'hokuei'           => 'Hokuei',
         'kamakura'         => 'Kamakura',
         'kinosakionsen'    => 'Kinosakionsen',
         'kobe'             => 'Kobe',
         'kyoto'            => 'Kyoto',
+        'nakano'           => 'Nakano',
         'nara'             => 'Nara',
         'osaka'            => 'Osaka',
+        'sapporo'          => 'Sapporo',
         'tokyo'            => 'Tokyo',
         'tottori'          => 'Tottori',
         'uji'              => 'Uji',
@@ -113,13 +117,39 @@ return [
         // VIETNAM
         'ho-chi-minh-city' => 'Ho Chi Minh City',
         // USA
+        'california'       => 'California',
         'chicago'          => 'Chicago, IL',
         'cincinnati'       => 'Cincinnati, OH',
         'covington'        => 'Covington, KY',
         'newport'          => 'Newport, KY',
         'new-york-city'    => 'New York City, NY',
+        'seattle'          => 'Seattle, WA',
+        // Canada
+        'toronto'          => 'Toronto, ON',
         // SG
         'singapore'        => 'Singapore',
+        // Europe
+        'barcelona'        => 'Barcelona',
+        'bilbao'           => 'Bilbao',
+        'florence'         => 'Florence',
+        'istanbul'         => 'Istanbul',
+        'madrid'           => 'Madrid',
+        'london'           => 'London',
+        'paris'            => 'Paris',
+        'prague'           => 'Prague',
+        'rome'             => 'Rome',
+        'roslin-scotland'  => 'Roslin',
+        'vatican-city'     => 'Vatican City',
+        'venice'           => 'Venice',
+        // NZ
+        'new-zealand'      => 'New Zealand',
+        'auckland'         => 'Auckland',
+        // SK
+        'south-korea'      => 'South Korea',
+        'seoul'            => 'Seoul',
+        // Other
+        'high-sea'         => 'High Sea',
+        'unknown'          => 'anywhere',
     ],
     'since'     => 'Since {0}',
     'trip'      => [

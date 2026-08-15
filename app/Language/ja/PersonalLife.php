@@ -87,17 +87,21 @@ return [
         'wulai'            => '烏来',
         'yangmingshan'     => '陽明山',
         // JAPAN
+        'japan'            => '日本',
         'arimaonsen'       => '有馬温泉',
         'fujisan'          => '富士山',
         'fujisawa'         => '藤沢',
+        'hakodate'         => '函館',
         'himeji'           => '姫路',
         'hokuei'           => '北栄',
         'kamakura'         => '鎌倉',
         'kinosakionsen'    => '城崎温泉',
         'kobe'             => '神戸',
         'kyoto'            => '京都',
+        'nakano'           => '中野',
         'nara'             => '奈良',
         'osaka'            => '大阪',
+        'sapporo'          => '札幌',
         'tokyo'            => '東京',
         'tottori'          => '鳥取',
         'uji'              => '宇治',
@@ -113,13 +117,39 @@ return [
         // VIETNAM
         'ho-chi-minh-city' => 'ホーチミン市',
         // USA
+        'california'       => 'カリフォルニア',
         'chicago'          => 'シカゴ',
         'cincinnati'       => 'シンシナティ',
         'covington'        => 'コビントン',
         'newport'          => 'ニューポート',
         'new-york-city'    => 'ニューヨーク市',
+        'seattle'          => 'シアトル',
+        // Canada
+        'toronto'          => 'トロント',
         // SG
         'singapore'        => 'シンガポール',
+        // Europe
+        'barcelona'        => 'バルセロナ',
+        'bilbao'           => 'ビルバオ',
+        'florence'         => 'フィレンツェ',
+        'istanbul'         => 'イスタンブール',
+        'madrid'           => 'マドリード',
+        'london'           => 'ロンドン',
+        'paris'            => 'パリ',
+        'prague'           => 'プラハ',
+        'rome'             => 'ローマ',
+        'roslin-scotland'  => 'ロスリン',
+        'vatican-city'     => 'バチカン市国',
+        'venice'           => 'ベネチア',
+        // NZ
+        'new-zealand'      => 'ニュージーランド',
+        'auckland'         => 'オークランド',
+        // SK
+        'south-korea'      => '韓国',
+        'seoul'            => 'ソウル',
+        // Other
+        'high-sea'         => '公海',
+        'unknown'          => 'どこでも',
     ],
     'since'     => '{0}から',
     'trip'      => [

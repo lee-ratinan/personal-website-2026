@@ -87,17 +87,21 @@ return [
         'wulai'            => '烏來',
         'yangmingshan'     => '陽明山',
         // JAPAN
+        'japan'            => '日本',
         'arimaonsen'       => '有馬溫泉',
         'fujisan'          => '富士山',
         'fujisawa'         => '藤澤',
+        'hakodate'         => '函館',
         'himeji'           => '姬路',
         'hokuei'           => '北榮町',
         'kamakura'         => '鎌倉',
         'kinosakionsen'    => '城崎溫泉',
         'kobe'             => '神戶',
         'kyoto'            => '京都',
+        'nakano'           => '中野',
         'nara'             => '奈良',
         'osaka'            => '大阪',
+        'sapporo'          => '札幌',
         'tokyo'            => '東京',
         'tottori'          => '鳥取',
         'uji'              => '宇治市',
@@ -113,13 +117,39 @@ return [
         // VIETNAM
         'ho-chi-minh-city' => '胡志明市',
         // USA
+        'california'       => '加利福尼亞州',
         'chicago'          => '芝加哥',
         'cincinnati'       => '辛辛那提',
         'covington'        => '科溫頓',
         'newport'          => '紐波特',
         'new-york-city'    => '紐約市',
+        'seattle'          => '西雅圖',
+        // Canada
+        'toronto'          => '多倫多',
         // SG
         'singapore'        => '新加坡',
+        // Europe
+        'barcelona'        => '巴塞隆納',
+        'bilbao'           => '畢爾包',
+        'florence'         => '佛羅倫斯',
+        'istanbul'         => '伊斯坦堡',
+        'madrid'           => '馬德里',
+        'london'           => '倫敦',
+        'paris'            => '巴黎',
+        'prague'           => '布拉格',
+        'rome'             => '羅馬',
+        'roslin-scotland'  => '蘇格蘭',
+        'vatican-city'     => '梵蒂岡',
+        'venice'           => '威尼斯',
+        // NZ
+        'new-zealand'      => '紐西蘭',
+        'auckland'         => '奧克蘭',
+        // SK
+        'south-korea'      => '韓國',
+        'seoul'            => '首爾',
+        // Other
+        'high-sea'         => '公海',
+        'unknown'          => '任何地方',
     ],
     'since'     => '自{0}',
     'trip'      => [

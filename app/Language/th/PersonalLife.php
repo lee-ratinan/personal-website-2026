@@ -87,17 +87,21 @@ return [
         'wulai'            => 'อูหลาย',
         'yangmingshan'     => 'หยางหมิงชาน',
         // JAPAN
+        'japan'            => 'ญี่ปุ่น',
         'arimaonsen'       => 'อะริมะออนเซ็น',
         'fujisan'          => 'ฟุจิซัน',
         'fujisawa'         => 'ฟุจิซะวะ',
+        'hakodate'         => 'ฮาโกดาเตะ',
         'himeji'           => 'ฮิเมจิ',
         'hokuei'           => 'โฮคุเอ',
         'kamakura'         => 'คะมะคุระ',
         'kinosakionsen'    => 'คิโนะซะคิออนเซ็น',
         'kobe'             => 'โคเบะ',
         'kyoto'            => 'เกียวโต',
+        'nakano'           => 'นากาโนะ',
         'nara'             => 'นาระ',
         'osaka'            => 'โอซะกะ',
+        'sapporo'          => 'ซัปโปโร',
         'tokyo'            => 'โตเกียว',
         'tottori'          => 'ทตโตริ',
         'uji'              => 'อุจิ',
@@ -113,13 +117,39 @@ return [
         // VIETNAM
         'ho-chi-minh-city' => 'โฮจิมินห์',
         // USA
+        'california'       => 'แคลิฟอร์เนีย',
         'chicago'          => 'ชิคาโก',
         'cincinnati'       => 'ซินซินเนตี',
         'covington'        => 'โควิงตัน',
         'newport'          => 'นิวพอร์ท',
         'new-york-city'    => 'นิวยอร์ค',
+        'seattle'          => 'ซีแอตเติล',
+        // Canada
+        'toronto'          => 'โทรอนโต',
         // SG
         'singapore'        => 'สิงคโปร์',
+        // Europe
+        'barcelona'        => 'บาร์เซโลนา',
+        'bilbao'           => 'บิลบาโอ',
+        'florence'         => 'ฟลอเรนซ์',
+        'istanbul'         => 'อิสตันบูล',
+        'madrid'           => 'มาดริด',
+        'london'           => 'ลอนดอน',
+        'paris'            => 'ปารีส',
+        'prague'           => 'ปราก',
+        'rome'             => 'โรม',
+        'roslin-scotland'  => 'รอสลิน',
+        'vatican-city'     => 'นครวาติกัน',
+        'venice'           => 'เวนิส',
+        // NZ
+        'new-zealand'      => 'นิวซีแลนด์',
+        'auckland'         => 'โอ๊คแลนด์',
+        // SK
+        'south-korea'      => 'เกาหลีใต้',
+        'seoul'            => 'โซล',
+        // Other
+        'unknown'          => 'ที่ไหนก็ได้',
+        'high-sea'         => 'ทะเลกว้าง'
     ],
     'since'     => 'ตั้งแต่ {0}',
     'trip'      => [

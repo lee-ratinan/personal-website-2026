@@ -1208,10 +1208,12 @@ class Home extends BaseController
             'lotte-world-tower'      => ['title' => 'Lotter World Tower', 'location' => ['seoul']],
             'merdeka-118'            => ['title' => 'Merdeka 118', 'location' => ['kuala-lumpur']],
             'tokyo-metropolitan'     => ['title' => 'Tokyo Metropolitan Government Building', 'location' => ['tokyo']],
-            '30-hudson-yard'         => ['title' => '30 Hudson Yards', 'location' => ['new-york-city']],
-            'n-seoul-tower'          => ['title' => 'N Seoul Tower', 'location' => ['seoul']],
+            '30-hudson-yards'        => ['title' => '30 Hudson Yards', 'location' => ['new-york-city']],
+            'n-seoul-tower'          => ['title' => 'Namsan Seoul Tower', 'location' => ['seoul']],
             'one-world-trade-center' => ['title' => 'One World Trade Center', 'location' => ['new-york-city']],
-            'sky-tower'              => ['title' => 'Sky Tower', 'location' => ['auckland']]
+            'sky-tower'              => ['title' => 'Sky Tower', 'location' => ['auckland']],
+            'space-needle'           => ['title' => 'Space Needle', 'location' => ['seattle']],
+            'cn-tower'               => ['title' => 'CN Tower', 'location' => ['toronto']],
         ],
         'adventure'   => [
             'skiing'       => ['title' => 'Skiing', 'location' => ['nakano']],
@@ -1222,7 +1224,7 @@ class Home extends BaseController
             'korean-clothes'           => ['title' => 'Korean Clothes', 'location' => ['south-korea']],
             'sumo'                     => ['title' => 'Sumo', 'location' => ['japan']],
             'sakura-sighting'          => ['title' => 'Sakura Sighting', 'location' => ['japan']],
-            'cruising'                 => ['title' => 'Cruising', 'location' => []],
+            'cruising'                 => ['title' => 'Cruising', 'location' => ['high-sea']],
             'aurora-borealis-sighting' => ['title' => 'Aurora borealis sighting', 'location' => []],
             'ice-hotel'                => ['title' => 'Ice Hotel (Jukkasjärvi)', 'location' => []],
             'jjimjibang'               => ['title' => 'Jjimjibang', 'location' => ['south-korea']],
@@ -1230,20 +1232,29 @@ class Home extends BaseController
         ],
         'pilgrimage'  => [
             'angels-and-demons'            => ['title' => 'Angels and Demons', 'location' => ['rome', 'vatican-city']],
-            'da-vinci-code'                => ['title' => 'Da Vinci Code', 'location' => ['paris', 'london', 'roslin-scotland']],
+            'da-vinci-code'                => [
+                'title' => 'The Da Vinci Code', 'location' => ['paris', 'london', 'roslin-scotland']
+            ],
             'inferno'                      => ['title' => 'Inferno', 'location' => ['florence', 'venice', 'istanbul']],
             'origin'                       => ['title' => 'Origin', 'location' => ['bilbao', 'madrid', 'barcelona']],
-            'secret-of-secrets'            => ['title' => 'Secret Of Secrets', 'location' => ['prague', 'london', 'new-york-city']],
+            'secret-of-secrets'            => [
+                'title' => 'Secret Of Secrets', 'location' => ['prague', 'london', 'new-york-city']
+            ],
             'one-eyed-flashback'           => ['title' => 'One-Eyed Flashback', 'location' => ['nakano', 'tokyo']],
-            'the-million-dollar-pentagram' => ['title' => 'The Million-dollar Pentagram', 'location' => ['sapporo', 'hakodate']],
+            'the-million-dollar-pentagram' => ['title'    => 'The Million-dollar Pentagram',
+                                               'location' => ['sapporo', 'hakodate']
+            ],
             'sherlock-holmes'              => ['title' => 'Sherlock Holmes', 'location' => ['london']],
             'the-lord-of-the-rings'        => ['title' => 'The Lord of the Rings', 'location' => ['new-zealand']],
+            'spider-man-far-from-home'     => ['title'    => 'Spider-man: Far From Home',
+                                               'location' => ['venice', 'prague', 'london']
+            ]
         ],
         'others'      => [
             'ktx-train'              => ['title' => 'KTX Train', 'location' => ['south-korea']],
             'yosemite-national-park' => ['title' => 'Yosemite National Park', 'location' => ['california']],
-            'join-naturist-trip'     => ['title' => 'Join a naturist trip', 'location' => []],
-            'mba'                    => ['title' => 'Get MBA', 'location' => ['sydney']],
+            'naturist-trip'          => ['title' => 'Join a naturist trip', 'location' => []],
+            'get-mba'                => ['title' => 'Get MBA', 'location' => ['sydney']],
         ]
     ];
 

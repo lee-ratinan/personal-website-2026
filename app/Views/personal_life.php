@@ -295,7 +295,7 @@
                                 $locations[] = lang('PersonalLife.locations.' . $location);
                             }
                             if (empty($locations)) {
-                                $locations[] = 'unknown';
+                                $locations[] = lang('PersonalLife.locations.unknown');
                             }
                             ?>
                             <div class="col-lg-3 col-md-4 col-6 portfolio-item isotope-item <?= 'filter-' . $category_code ?>">

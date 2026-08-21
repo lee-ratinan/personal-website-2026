@@ -137,46 +137,41 @@
                             <thead>
                             <tr>
                                 <th style="min-width:150px"><?= lang('Certifications.cefr.language') ?></th>
+                                <th style="max-width:50px"></th>
                                 <th style="min-width:250px"></th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>ภาษาไทย Thai</td>
-                                <td><div class="progress" role="progressbar" aria-label="ภาษาไทย Thai" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-success w-100"><?= lang('Certifications.cefr.mother-tongue') ?></div></div></td>
-                            </tr>
-                            <tr>
-                                <td>English</td>
-                                <td><div class="progress" role="progressbar" aria-label="English" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-success w-100">C2</div></div></td>
-                            </tr>
-                            <tr>
-                                <td>日本語 Japanese</td>
-                                <td><div class="progress" role="progressbar" aria-label="日本語 Japanese" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-warning" style="width:17%">A1</div></div></td>
-                            </tr>
-                            <tr>
-                                <td>國語 Taiwanese Mandarin</td>
-                                <td><div class="progress" role="progressbar" aria-label="國語 Taiwanese Mandarin" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-warning" style="width:17%">A1</div></div></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>
-                                    <div class="progress-stacked">
-                                        <div class="progress" role="progressbar" aria-label="A1" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width: 17%"><div class="progress-bar bg-info">A1</div></div>
-                                        <div class="progress" role="progressbar" aria-label="A2" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="width: 16%"><div class="progress-bar bg-primary">A2</div></div>
-                                        <div class="progress" role="progressbar" aria-label="B1" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width: 17%"><div class="progress-bar bg-info">B1</div></div>
-                                        <div class="progress" role="progressbar" aria-label="B2" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="width: 16%"><div class="progress-bar bg-primary">B2</div></div>
-                                        <div class="progress" role="progressbar" aria-label="C1" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width: 17%"><div class="progress-bar bg-info">C1</div></div>
-                                        <div class="progress" role="progressbar" aria-label="C2" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width: 17%"><div class="progress-bar bg-primary">C2</div></div>
-                                    </div>
-                                </td>
-                            </tr>
+                            <?php
+                            $languages = [
+                                'ภาษาไทย Thai'            => ['MT', 'C'],
+                                'English'                 => ['C2', 'C'],
+                                '國語 Taiwanese Mandarin' => ['A2', 'S'],
+                                '日本語 Japanese'         => ['A1', 'S']
+                            ];
+                            $levels = [
+                                'A1' => [14, 'bg-danger'],
+                                'A2' => [28, 'bg-warning'],
+                                'B1' => [42, 'bg-info'],
+                                'B2' => [56, 'bg-info'],
+                                'C1' => [70, 'bg-primary'],
+                                'C2' => [85, 'bg-primary'],
+                                'MT' => [100, 'bg-success'],
+                            ];
+                            foreach ($languages as $language => $lvl) {
+                                echo '<tr><td>' . $language . '</td><td>' . $lvl[0] . ('S' == $lvl[1] ? '*' : '') . '</td><td>
+                                    <div class="progress" role="progressbar" aria-label="' . $language . '" aria-valuenow="' . $levels[$lvl[0]][0] . '" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar ' . ('S' == $lvl[1] ? 'progress-bar-striped' : '') . ' ' . $levels[$lvl[0]][1] . '" style="width:' . $levels[$lvl[0]][0] . '%;">' . $lvl[0] . '</div>
+                                    </div></td></tr>';
+                            }
+                            ?>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-    </section><!-- /About Section -->
+    </section>
 </main>
 <?php include "_footer.php"; ?>
 </body>

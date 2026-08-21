@@ -12,6 +12,15 @@ class Home extends BaseController
 
     private array $trips = [
         [
+            'code'      => 'jhb2026',
+            'country'   => 'MY',
+            'filter'    => 'southeast-asia',
+            'title'     => 'JB 4DX',
+            'locations' => ['johor-bahru'],
+            'dates'     => ['2026-08-16', '2026-08-17'],
+            'details'   => 'Just wanted to watch Spider-Man in 4DX',
+        ],
+        [
             'code'      => 'tpe2026',
             'country'   => 'TW',
             'filter'    => 'east-asia',
@@ -450,7 +459,7 @@ class Home extends BaseController
             'filter'    => 'adventure',
             'title'     => 'Archery',
             'locations' => ['osaka', 'hualien'],
-            'dates'     => ['2024-04-25', '2024-10-23']
+            'dates'     => ['2024-04-25', '2024-10-23', '2026-08-16']
         ],
         [
             'code'      => 'tsutenkaku-tower',
@@ -471,7 +480,7 @@ class Home extends BaseController
             'filter'    => 'pilgrimage',
             'title'     => 'Your Name 君の名は',
             'locations' => ['tokyo'],
-            'dates'     => ['2024-04-29'],
+            'dates'     => ['2024-04-29', '2026-01-XX'],
             'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/184/kimi-no-na-wa-pilgrimage'
         ],
         [
@@ -479,7 +488,7 @@ class Home extends BaseController
             'filter'    => 'others',
             'title'     => 'Shinkansen 新幹線',
             'locations' => ['kyoto', 'tokyo', 'osaka', 'himeji', 'kobe'],
-            'dates'     => ['2024-04-27', '2024-05-01', '2026-01-12'],
+            'dates'     => ['2024-04-27', '2024-05-01', '2026-01-XX'],
         ],
         [
             'code'      => 'crossroad-in-the-ancient-capital',
@@ -639,7 +648,7 @@ class Home extends BaseController
             'filter'    => 'pilgrimage',
             'title'     => 'Harry Potter',
             'locations' => ['melbourne', 'osaka', 'tokyo'],
-            'dates'     => ['2019-10-23', '2024-04-23', '2024-04-27', '2026-01-12'],
+            'dates'     => ['2019-10-23', '2024-04-23', '2024-04-27', '2026-01-12', '2026-08-14'],
             'link'      => 'https://lee.ratinan.com/[[LOCALE]]/blog-post/188/harry-potter-pilgrimage'
         ],
         [
@@ -690,7 +699,7 @@ class Home extends BaseController
             'filter'    => 'others',
             'title'     => 'Taiwan HSR 台灣高鐵',
             'locations' => ['taipei', 'taichung', 'kaohsiung', 'chiayi', 'tainan', 'taoyuan'],
-            'dates'     => ['2018-11-14'],
+            'dates'     => ['2018-11-14', '2026-08-XX'],
         ],
         [
             'code'      => 'taipei-101',
